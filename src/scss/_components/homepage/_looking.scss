@@ -1,0 +1,57 @@
+// SECTION :: START
+
+.looking {
+	padding-top: 20px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		height: 120px;
+		padding: 15px 60px;
+		border-radius: 10px;
+		background-color: #663399;
+		background-image: url('../img/img-looking-graphics@2x.png');
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		background-size: contain;
+
+		&-left,
+		&-right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+		}
+
+		&-left {
+			padding-right: 30px;
+		}
+		&-right {
+			padding-left: 30px;
+		}
+	}
+
+	&__title,
+	&__subtitle {
+		color: #ffffff;
+	}
+
+	&__title {
+		line-height: 1;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+	}
+
+	&__btn {
+		.c-btn {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}
+
+// SECTION :: END

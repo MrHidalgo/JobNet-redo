@@ -1,58 +1,85 @@
 // BUTTON :: START
 
-// ==================================================
-// ==================================================
-// ==================================================
-
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
-
-$btn-color--border: rgba(#000, 1);
-
-// ==================================================
-// ==================================================
-// ==================================================
-
 .c-btn {
   outline: none;
   cursor: pointer;
+	overflow: hidden;
+	position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: $bth-width;
-  height: $bth-height;
-  border: $btn-border-width solid $btn-border-color;
-  box-shadow: $bth-box-shadow;
-  border-radius: $bth-border-radius;
-  color: $bth-color;
-  font-size: $bth-font-size;
-  font-weight: $bth-font-weight;
+	min-width: 180px;
+	height: 46px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 6px;
+	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+	@include transition(box-shadow);
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
-  }
+	&:hover {
+		box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+		@include transition(box-shadow);
 
-  &--bg {
-    background-color: $bth-background-color;
-  }
+		&:before,
+		&:after {
+			width: 50%;
+			@include transition(width);
+		}
+	}
 
-  &__text {
-    &-wrap {}
-  }
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 100%;
+		@include transition(width);
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
 
-  &__icon {
-    &-wrap {}
-  }
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	span {
+		z-index: 2;
+		position: relative;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&--white {
+		background-color: #fff;
+
+		&:before,
+		&:after {
+			background-color: darken(#fff, 2%);
+		}
+
+		span {
+			color: #663399;
+		}
+	}
+
+	&--green {
+		background-color: #1ac880;
+
+		&:before,
+		&:after {
+			background-color: lighten(#1ac880, 2%);
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
 }
 
 // BUTTON :: END

@@ -35,7 +35,7 @@
 /// ===============
 @import "_macros/logotype";
 @import "_macros/title";
-//@import "_macros/btn";
+@import "_macros/btn";
 //@import "_macros/nav";
 //@import "_macros/subtitle";
 //@import "_macros/modal";
@@ -46,5 +46,6 @@
 @import "_components/header";
 @import "_components/footer";
 
+@import "_components/homepage/looking";
 @import "_components/homepage/description";
 @import "_components/homepage/popular";
