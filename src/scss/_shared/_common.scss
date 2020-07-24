@@ -1,0 +1,135 @@
+// COMMON :: START
+
+.social {
+	display: flex;
+	align-items: center;
+
+	&__item {
+		&:not(:last-of-type) {
+			padding-right: 5px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background-color: #ffffff;
+		@include transition(background-color);
+
+		&:hover {
+			background-color: #663399;
+			@include transition(background-color);
+
+			.icon-font {
+				color: #ffffff;
+				@include transition(color);
+			}
+		}
+
+		.icon-font {
+			color: #373656;
+			font-size: 18px;
+			@include transition(color);
+
+			&.icon-google {
+				font-size: 29px;
+			}
+		}
+	}
+}
+
+.copyright {
+	display: flex;
+
+	& + .copyright {
+		padding-left: 30px;
+	}
+
+	&__text {
+		color: #ffffff;
+
+		a {
+			position: relative;
+			color: #ffffff;
+
+			&:hover {
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
+			}
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 1px;
+				background-color: #ffffff;
+				@include transition(width);
+			}
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
+		}
+	}
+}
+
+.browse {
+	display: flex;
+	align-items: center;
+
+	&__title {
+		padding-right: 30px;
+		color: #ffffff;
+		font-size: 16px;
+	}
+
+	&__link {
+		position: relative;
+		color: #ffffff;
+		text-transform: uppercase;
+
+		&:not(:last-of-type) {
+			margin-right: 15px;
+		}
+
+		&:hover {
+			color: #ffffff;
+
+			&:before,
+			&:after {
+				width: 50%;
+				@include transition(width);
+			}
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			width: 0;
+			height: 1px;
+			background-color: #ffffff;
+			@include transition(width);
+		}
+		&:before {
+			left: 50%;
+		}
+		&:after {
+			right: 50%;
+		}
+	}
+}
+
+// COMMON :: END
