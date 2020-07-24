@@ -60,6 +60,9 @@
 	@if $filename == shopping-bag {
 		$char: "\E00B";
 	}
+	@if $filename == star {
+		$char: "\E00C";
+	}
 
 	@return $char;
 }
@@ -117,5 +120,9 @@
 }
 .icon-shopping-bag {
 	@include icon(shopping-bag);
+
+}
+.icon-star {
+	@include icon(star);
 
 }

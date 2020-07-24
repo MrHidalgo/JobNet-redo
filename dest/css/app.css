@@ -6,7 +6,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-antenna:before, .icon-bank:before, .icon-cost:before, .icon-facebook:before, .icon-factory:before, .icon-google:before, .icon-home:before, .icon-linkedin:before, .icon-office-building:before, .icon-programming:before, .icon-shopping-bag:before {
+.icon-antenna:before, .icon-bank:before, .icon-cost:before, .icon-facebook:before, .icon-factory:before, .icon-google:before, .icon-home:before, .icon-linkedin:before, .icon-office-building:before, .icon-programming:before, .icon-shopping-bag:before, .icon-star:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,59 +17,64 @@
   text-transform: none;
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-antenna:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-bank:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-cost:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-factory:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-google:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-home:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-linkedin:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-office-building:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-programming:before {
   content: "";
 }
 
-/* line 68, src/scss/_generated/_spriteFont.scss */
+/* line 71, src/scss/_generated/_spriteFont.scss */
 .icon-shopping-bag:before {
   content: "";
+}
+
+/* line 71, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
+  content: "";
 }
 
 @font-face {
@@ -976,6 +981,72 @@ picture {
 }
 
 /* line 7, src/scss/_components/homepage/_details.scss */
+.details__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  -webkit-border-radius: 10px 10px 0 0;
+          border-radius: 10px 10px 0 0;
+  background-color: white;
+  border-top: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+
+/* line 16, src/scss/_components/homepage/_details.scss */
+.details__header > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 21, src/scss/_components/homepage/_details.scss */
+.details__header > div p {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* line 29, src/scss/_components/homepage/_details.scss */
+.details__header > div .icon-font {
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #663399;
+}
+
+/* line 36, src/scss/_components/homepage/_details.scss */
+.details__header-left {
+  width: 150px;
+  border-right: 1px solid #eaeaea;
+}
+
+/* line 41, src/scss/_components/homepage/_details.scss */
+.details__header-middle {
+  width: 100%;
+  max-width: -webkit-calc((100% - (150px + 250px)));
+  max-width: calc((100% - (150px + 250px)));
+}
+
+/* line 46, src/scss/_components/homepage/_details.scss */
+.details__header-right {
+  width: 250px;
+  border-left: 1px solid #eaeaea;
+}
+
+/* line 52, src/scss/_components/homepage/_details.scss */
 .details__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -985,33 +1056,33 @@ picture {
   border-style: solid;
   border-width: 1px;
   border-color: #eaeaea;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
   background-color: white;
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 17, src/scss/_components/homepage/_details.scss */
+/* line 62, src/scss/_components/homepage/_details.scss */
 .details__wrapper-left {
   width: 150px;
   border-right: 1px solid #eaeaea;
 }
 
-/* line 22, src/scss/_components/homepage/_details.scss */
+/* line 67, src/scss/_components/homepage/_details.scss */
 .details__wrapper-middle {
   width: 100%;
   max-width: -webkit-calc((100% - (150px + 250px)));
   max-width: calc((100% - (150px + 250px)));
 }
 
-/* line 27, src/scss/_components/homepage/_details.scss */
+/* line 72, src/scss/_components/homepage/_details.scss */
 .details__wrapper-right {
   width: 250px;
   border-left: 1px solid #eaeaea;
 }
 
-/* line 32, src/scss/_components/homepage/_details.scss */
+/* line 77, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll {
   overflow: hidden auto;
   display: -webkit-box;
@@ -1032,30 +1103,30 @@ picture {
   height: 100%;
 }
 
-/* line 41, src/scss/_components/homepage/_details.scss */
+/* line 86, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll-1 > div {
   width: 100%;
 }
 
-/* line 46, src/scss/_components/homepage/_details.scss */
+/* line 91, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll-2 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
 
-/* line 49, src/scss/_components/homepage/_details.scss */
+/* line 94, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll-2 > div {
   width: 50%;
 }
 
-/* line 54, src/scss/_components/homepage/_details.scss */
+/* line 99, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll > div {
   height: 100px;
   padding: 10px;
 }
 
-/* line 59, src/scss/_components/homepage/_details.scss */
+/* line 104, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1069,7 +1140,7 @@ picture {
   height: 100%;
 }
 
-/* line 66, src/scss/_components/homepage/_details.scss */
+/* line 111, src/scss/_components/homepage/_details.scss */
 .details__wrapper-scroll img {
   display: block;
   max-width: 100%;
@@ -1079,20 +1150,20 @@ picture {
   margin-right: auto;
 }
 
-/* line 77, src/scss/_components/homepage/_details.scss */
+/* line 122, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails {
   width: 100%;
   height: 100%;
 }
 
-/* line 82, src/scss/_components/homepage/_details.scss */
+/* line 127, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-inner {
   width: 100%;
   height: 100%;
   padding: 20px 10px;
 }
 
-/* line 88, src/scss/_components/homepage/_details.scss */
+/* line 133, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-indicators {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1110,7 +1181,7 @@ picture {
   margin: 0;
 }
 
-/* line 95, src/scss/_components/homepage/_details.scss */
+/* line 140, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-indicators li {
   width: 8px;
   height: 8px;
@@ -1119,13 +1190,13 @@ picture {
   background-color: #222222;
 }
 
-/* line 103, src/scss/_components/homepage/_details.scss */
+/* line 148, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item {
   width: 100%;
   height: 100%;
 }
 
-/* line 107, src/scss/_components/homepage/_details.scss */
+/* line 152, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1140,29 +1211,29 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 115, src/scss/_components/homepage/_details.scss */
+/* line 160, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item-content > div {
   width: 100%;
   max-width: 50%;
 }
 
-/* line 121, src/scss/_components/homepage/_details.scss */
+/* line 166, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item-content > div:nth-of-type(1) a, .details #sliderDetails .carousel-item-content > div:nth-of-type(2) a {
   border-top: 1px solid #eaeaea;
 }
 
-/* line 126, src/scss/_components/homepage/_details.scss */
+/* line 171, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item-content > div:nth-of-type(odd) {
   padding-right: 10px;
   border-right: 1px solid #eaeaea;
 }
 
-/* line 130, src/scss/_components/homepage/_details.scss */
+/* line 175, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item-content > div:nth-of-type(even) {
   padding-left: 10px;
 }
 
-/* line 136, src/scss/_components/homepage/_details.scss */
+/* line 181, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1187,7 +1258,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 147, src/scss/_components/homepage/_details.scss */
+/* line 192, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item a:hover {
   background-color: rgba(102, 51, 153, 0.05);
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -1195,7 +1266,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 152, src/scss/_components/homepage/_details.scss */
+/* line 197, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item a p,
 .details #sliderDetails .carousel-item a span {
   white-space: nowrap;
@@ -1204,7 +1275,7 @@ picture {
      text-overflow: ellipsis;
 }
 
-/* line 160, src/scss/_components/homepage/_details.scss */
+/* line 205, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item a p {
   color: #663399;
   font-size: 18px;
@@ -1214,7 +1285,7 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 167, src/scss/_components/homepage/_details.scss */
+/* line 212, src/scss/_components/homepage/_details.scss */
 .details #sliderDetails .carousel-item a span {
   color: #222222;
   font-size: 16px;
