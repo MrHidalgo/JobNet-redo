@@ -1,7 +1,7 @@
 // SECTION :: START
 
 .popular {
-	padding-top: 60px;
+	padding-top: 30px;
 	padding-bottom: 60px;
 
 	#pills-tab {
@@ -61,8 +61,6 @@
 
 			> div {
 				display: flex;
-				//width: 100%;
-				//max-width: calc(100% / 4);
 
 				&:nth-of-type(2),
 				&:nth-of-type(3) {

@@ -1,13 +1,13 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
+	color: #222222;
+	font-size: 40px;
+	font-weight: bold;
 
-  &__icon {
-    &-wrap {}
-  }
+  a {
+		color: #663399;
+	}
 }
 
 // TITLE :: END
