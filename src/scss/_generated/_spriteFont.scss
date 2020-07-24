@@ -27,14 +27,38 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == facebook {
+	@if $filename == antenna {
 		$char: "\E001";
 	}
-	@if $filename == google {
+	@if $filename == bank {
 		$char: "\E002";
 	}
-	@if $filename == linkedin {
+	@if $filename == cost {
 		$char: "\E003";
+	}
+	@if $filename == facebook {
+		$char: "\E004";
+	}
+	@if $filename == factory {
+		$char: "\E005";
+	}
+	@if $filename == google {
+		$char: "\E006";
+	}
+	@if $filename == home {
+		$char: "\E007";
+	}
+	@if $filename == linkedin {
+		$char: "\E008";
+	}
+	@if $filename == office-building {
+		$char: "\E009";
+	}
+	@if $filename == programming {
+		$char: "\E00A";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E00B";
 	}
 
 	@return $char;
@@ -51,15 +75,47 @@
 	}
 }
 
+.icon-antenna {
+	@include icon(antenna);
+
+}
+.icon-bank {
+	@include icon(bank);
+
+}
+.icon-cost {
+	@include icon(cost);
+
+}
 .icon-facebook {
 	@include icon(facebook);
+
+}
+.icon-factory {
+	@include icon(factory);
 
 }
 .icon-google {
 	@include icon(google);
 
 }
+.icon-home {
+	@include icon(home);
+
+}
 .icon-linkedin {
 	@include icon(linkedin);
+
+}
+.icon-office-building {
+	@include icon(office-building);
+
+}
+.icon-programming {
+	@include icon(programming);
+
+}
+.icon-shopping-bag {
+	@include icon(shopping-bag);
 
 }
