@@ -1,0 +1,177 @@
+// SECTION :: START
+
+.details {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	&__wrapper {
+		display: flex;
+		height: 650px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(234, 234, 234);
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+
+		&-left {
+			width: 150px;
+			border-right: 1px solid rgb(234, 234, 234);
+		}
+
+		&-middle {
+			width: 100%;
+			max-width: calc((100% - (150px + 250px)));
+		}
+
+		&-right {
+			width: 250px;
+			border-left: 1px solid rgb(234, 234, 234);
+		}
+
+		&-scroll {
+			overflow: hidden auto;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+
+			&-1 {
+				> div {
+					width: 100%;
+				}
+			}
+
+			&-2 {
+				flex-wrap: wrap;
+
+				> div {
+					width: 50%;
+				}
+			}
+
+			> div {
+				height: 100px;
+				padding: 10px;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				max-height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	#sliderDetails {
+		width: 100%;
+		height: 100%;
+
+		.carousel {
+			&-inner {
+				width: 100%;
+				height: 100%;
+				padding: 20px 10px;
+			}
+
+			&-indicators {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				margin: 0;
+
+				li {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background-color: #222222;
+				}
+			}
+
+			&-item {
+				width: 100%;
+				height: 100%;
+
+				&-content {
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+					height: 100%;
+					padding-bottom: 20px;
+					background-color: #ffffff;
+
+					> div {
+						width: 100%;
+						max-width: 50%;
+
+						&:nth-of-type(1),
+						&:nth-of-type(2) {
+							a {
+								border-top: 1px solid rgb(234, 234, 234);
+							}
+						}
+
+						&:nth-of-type(odd) {
+							padding-right: 10px;
+							border-right: 1px solid rgb(234, 234, 234);
+						}
+						&:nth-of-type(even) {
+							padding-left: 10px;
+						}
+					}
+				}
+
+				a {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 100%;
+					height: 100%;
+					padding-left: 10px;
+					padding-right: 10px;
+					border-bottom: 1px solid rgb(234, 234, 234);
+					@include transition(background-color);
+
+					&:hover {
+						background-color: rgba(#663399, 0.05);
+						@include transition(background-color);
+					}
+
+					p,
+					span {
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+
+					}
+
+					p {
+						color: #663399;
+						font-size: 18px;
+						font-weight: 700;
+						@include transition(color);
+					}
+
+					span {
+						color: #222222;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END
