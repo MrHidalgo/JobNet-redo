@@ -1,0 +1,88 @@
+// SECTION :: START
+
+mixin tabContent(arr)
+	ul
+		each val, idx in arr
+			li
+				a(href="#")!= val
+
+section#popular.popular
+	.c-grid
+		.popular__wrapper
+
+			ul#pills-tab.nav.nav-pills(role='tablist')
+				li.nav-item
+					a#popular-jobs-tab.active(
+						data-toggle='pill', href='#popular-jobs', role='tab', aria-controls='popular-jobs', aria-selected='true'
+						) Popular Jobs in Myanmar
+				li.nav-item
+					a#popular-industries-tab(
+						data-toggle='pill', href='#popular-industries', role='tab', aria-controls='popular-industries', aria-selected='false'
+						) Popular Industries
+				li.nav-item
+					a#popular-categories-tab(
+						data-toggle='pill', href='#popular-categories', role='tab', aria-controls='popular-categories', aria-selected='false'
+						) Popular Job Categories
+				li.nav-item
+					a#popular-location-tab(
+						data-toggle='pill', href='#popular-location', role='tab', aria-controls='popular-location', aria-selected='false'
+						) Popular Locations
+				li.nav-item
+					a#popular-companies-tab(
+						data-toggle='pill', href='#popular-companies', role='tab', aria-controls='popular-companies', aria-selected='false'
+						) Popular Companies
+
+			#pills-tabContent.tab-content
+				#popular-jobs.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='popular-jobs-tab')
+					.tab-pane-content
+						div
+							+tabContent(['HR Admin', 'Mechanical Engineer', 'Site Engineer Construction'])
+						div
+							+tabContent(['Waiter', 'PHP Developer', 'Programmer'])
+						div
+							+tabContent(['QS Engineer', 'Quantity Surveyor', 'Sales Engineer'])
+						div
+							+tabContent(['HR Manager', 'Account', 'View More'])
+				#popular-industries.tab-pane.fade(role='tabpanel', aria-labelledby='popular-industries-tab')
+					.tab-pane-content
+						div
+							+tabContent(['Accounting', 'Banking/Finance', 'Telecommunications'])
+						div
+							+tabContent(['Construction', 'IT', 'Recruitment / HR'])
+						div
+							+tabContent(['Logistics', 'Engineering', 'Manufacturing'])
+						div
+							+tabContent(['Trading / Distribution', 'Food and Beverage', 'View More'])
+				#popular-categories.tab-pane.fade(role='tabpanel', aria-labelledby='popular-categories-tab')
+					.tab-pane-content
+						div
+							+tabContent(['Accounting', 'Engineering', 'Driver, Security, Cleaner'])
+						div
+							+tabContent(['Management', 'Human Resources', 'Sales'])
+						div
+							+tabContent(['Administrative', 'IT', 'Marketing'])
+						div
+							+tabContent(['Customer Service', 'Hospitality / Tourism', 'View More'])
+				#popular-location.tab-pane.fade(role='tabpanel', aria-labelledby='popular-location-tab')
+					.tab-pane-content
+						div
+							+tabContent(['Yangon', 'Mandalay', 'NayPyiTaw'])
+						div
+							+tabContent(['Ayeyawady', 'Bago', 'Chin State'])
+						div
+							+tabContent(['Mon State', 'Shan State', 'Kachin State'])
+						div
+							+tabContent(['Sagaing', 'Magway', 'View More'])
+				#popular-companies.tab-pane.fade(role='tabpanel', aria-labelledby='popular-companies-tab')
+					.tab-pane-content
+						div
+							+tabContent(['HEINEKEN Myanmar Limited', 'Ooredoo Myanmar', 'Colgate Palmolive (Myanmar) Ltd.'])
+						div
+							+tabContent(['MPT - Myanma Posts & Telecommunications', 'City Mart Holding Co.Ltd', 'Wave Money'])
+						div
+							+tabContent(['Myanmar Information Technology Pte. Ltd. (MIT)', 'Pahtama Group Co.Ltd.', 'DKSH ( Myanmar ) Ltd.'])
+						div
+							+tabContent(['Peace Myanmar Group Co., Ltd. (PMG)', 'Myanmar Brewery Ltd', 'Myanmar Distribution Group Co., Ltd.(MDG)', 'View More'])
+
+
+// SECTION :: END

@@ -1,0 +1,129 @@
+// SECTION :: START
+
+.popular {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	#pills-tab {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		border-bottom: 2px solid #dcdcdc;
+
+		a {
+			position: relative;
+			padding-bottom: 15px;
+			color: #6e6e6e;
+			font-size: 20px;
+			font-weight: bold;
+			@include transition(color);
+
+			&:after {
+				content: '';
+				opacity: 0;
+				visibility: hidden;
+				position: absolute;
+				top: calc(100% + 2px);
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #663399;
+				@include transition(opacity, visibility);
+			}
+
+			&:hover {
+				color: #663399;
+				@include transition(color);
+			}
+
+			&.active {
+				color: #663399;
+				@include transition(color);
+
+				&:after {
+					opacity: 1;
+					visibility: visible;
+					@include transition(opacity, visibility);
+				}
+			}
+		}
+	}
+
+	#pills-tabContent {
+		padding-top: 30px;
+
+		.tab-pane-content {
+			display: flex;
+			justify-content: space-between;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			> div {
+				display: flex;
+				//width: 100%;
+				//max-width: calc(100% / 4);
+
+				&:nth-of-type(2),
+				&:nth-of-type(3) {
+					padding-left: 5px;
+					padding-right: 5px;
+					justify-content: center;
+				}
+
+				&:last-of-type {
+					justify-content: flex-end;
+				}
+			}
+
+			ul {
+				li {
+					&:not(:last-of-type) {
+						padding-bottom: 10px;
+					}
+				}
+
+				a {
+					position: relative;
+					color: #6e6e6e;
+					font-size: 16px;
+					@include transition(color);
+
+					&:hover {
+						color: #663399;
+						@include transition(color);
+
+						&:before,
+						&:after {
+							width: 50%;
+							@include transition(width);
+						}
+					}
+
+					&:before,
+					&:after {
+						content: '';
+						position: absolute;
+						top: 100%;
+						width: 0;
+						height: 1px;
+						background-color: #663399;
+						@include transition(width);
+					}
+					&:before {
+						left: 50%;
+					}
+					&:after {
+						right: 50%;
+					}
+				}
+			}
+		}
+
+		.fade {
+			transition: opacity .3s ease-in-out;
+		}
+	}
+}
+
+// SECTION :: END
