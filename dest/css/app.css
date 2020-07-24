@@ -756,6 +756,7 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100px;
   padding-left: 15px;
   background-color: #ffffff;
   color: #6e6e6e;
@@ -766,9 +767,14 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 65, src/scss/_components/homepage/_description.scss */
-.description__wrapper {
-  display: none;
+/* line 64, src/scss/_components/homepage/_description.scss */
+.description__more a:after {
+  content: attr(data-more);
+}
+
+/* line 74, src/scss/_components/homepage/_description.scss */
+.description .collapse.show + .description__more a:after {
+  content: attr(data-less);
 }
 
 /* line 3, src/scss/_components/homepage/_popular.scss */

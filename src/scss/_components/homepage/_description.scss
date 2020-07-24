@@ -53,17 +53,30 @@
 			z-index: 2;
 			position: relative;
 			display: flex;
+			min-width: 100px;
 			padding-left: 15px;
 			background-color: #ffffff;
 			color: #6e6e6e;
 			font-weight: bold;
 			text-transform: uppercase;
 			@include transition(color);
+
+			&:after {
+				content: attr(data-more);
+			}
 		}
 	}
 
-	&__wrapper {
-		display: none;
+	.collapse {
+		&.show {
+			& + .description__more {
+				a {
+					&:after {
+						content: attr(data-less);
+					}
+				}
+			}
+		}
 	}
 }
 

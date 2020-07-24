@@ -56,20 +56,20 @@ window.addEventListener('scroll', function (ev) {});
 	/*
  * CALLBACK :: start
  * ============================================= */
-	var descriptionToggleText = function descriptionToggleText() {
-		$('[description-btn-js]').on('click', function (ev) {
-			var el = $(ev.currentTarget);
-
-			el.toggleClass('is-active');
-			$('[description-more-js]').slideToggle(450);
-
-			if (el.hasClass('is-active')) {
-				el.text(el.attr('data-less'));
-			} else {
-				el.text(el.attr('data-more'));
-			}
-		});
-	};
+	// const descriptionToggleText = () => {
+	// 	$('[description-btn-js]').on('click', (ev) => {
+	// 		const el = $(ev.currentTarget);
+	//
+	// 		el.toggleClass('is-active');
+	// 		$('[description-more-js]').slideToggle(450);
+	//
+	// 		if(el.hasClass('is-active')) {
+	// 			el.text(el.attr('data-less'));
+	// 		} else {
+	// 			el.text(el.attr('data-more'));
+	// 		}
+	// 	});
+	// };
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -88,7 +88,7 @@ window.addEventListener('scroll', function (ev) {});
 		// ==========================================
 
 		// callback
-		descriptionToggleText();
+		// descriptionToggleText();
 		// ==========================================
 	};
 
