@@ -12,6 +12,7 @@
 	height: 46px;
 	padding-left: 15px;
 	padding-right: 15px;
+	border: none;
 	border-radius: 6px;
 	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 	@include transition(box-shadow);

@@ -42,26 +42,35 @@
 	@if $filename == factory {
 		$char: "\E005";
 	}
-	@if $filename == google {
+	@if $filename == folder {
 		$char: "\E006";
 	}
-	@if $filename == home {
+	@if $filename == google {
 		$char: "\E007";
 	}
-	@if $filename == linkedin {
+	@if $filename == home {
 		$char: "\E008";
 	}
-	@if $filename == office-building {
+	@if $filename == linkedin {
 		$char: "\E009";
 	}
-	@if $filename == programming {
+	@if $filename == office-building {
 		$char: "\E00A";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == pin {
 		$char: "\E00B";
 	}
-	@if $filename == star {
+	@if $filename == programming {
 		$char: "\E00C";
+	}
+	@if $filename == search {
+		$char: "\E00D";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E00E";
+	}
+	@if $filename == star {
+		$char: "\E00F";
 	}
 
 	@return $char;
@@ -98,6 +107,10 @@
 	@include icon(factory);
 
 }
+.icon-folder {
+	@include icon(folder);
+
+}
 .icon-google {
 	@include icon(google);
 
@@ -114,8 +127,16 @@
 	@include icon(office-building);
 
 }
+.icon-pin {
+	@include icon(pin);
+
+}
 .icon-programming {
 	@include icon(programming);
+
+}
+.icon-search {
+	@include icon(search);
 
 }
 .icon-shopping-bag {
