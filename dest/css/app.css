@@ -1277,7 +1277,6 @@ picture {
 /* line 7, src/scss/_components/homepage/_main.scss */
 .main__slider {
   z-index: 0;
-  opacity: 0.55;
   position: absolute;
   top: 0;
   left: 0;
@@ -1285,7 +1284,7 @@ picture {
   height: 100%;
 }
 
-/* line 17, src/scss/_components/homepage/_main.scss */
+/* line 16, src/scss/_components/homepage/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
@@ -1305,20 +1304,20 @@ picture {
   min-height: 375px;
 }
 
-/* line 27, src/scss/_components/homepage/_main.scss */
+/* line 26, src/scss/_components/homepage/_main.scss */
 .main__wrapper > div {
   width: 100%;
   max-width: 1220px;
 }
 
-/* line 33, src/scss/_components/homepage/_main.scss */
+/* line 32, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 40px;
   text-align: left;
   line-height: 1.2;
 }
 
-/* line 39, src/scss/_components/homepage/_main.scss */
+/* line 38, src/scss/_components/homepage/_main.scss */
 .main__form {
   position: relative;
   display: -webkit-box;
@@ -1341,7 +1340,7 @@ picture {
           box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 52, src/scss/_components/homepage/_main.scss */
+/* line 51, src/scss/_components/homepage/_main.scss */
 .main__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1354,7 +1353,7 @@ picture {
   min-height: 100%;
 }
 
-/* line 57, src/scss/_components/homepage/_main.scss */
+/* line 56, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1364,35 +1363,35 @@ picture {
   max-width: 100%;
 }
 
-/* line 63, src/scss/_components/homepage/_main.scss */
+/* line 62, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-2, .main__form-field.main__form-field-3 {
   border-left: 1px solid #eaeaea;
 }
 
-/* line 67, src/scss/_components/homepage/_main.scss */
+/* line 66, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-2 p, .main__form-field.main__form-field-3 p {
   width: 56px;
 }
 
-/* line 72, src/scss/_components/homepage/_main.scss */
+/* line 71, src/scss/_components/homepage/_main.scss */
 .main__form-field-2 {
   width: 100%;
   max-width: 300px;
 }
 
-/* line 76, src/scss/_components/homepage/_main.scss */
+/* line 75, src/scss/_components/homepage/_main.scss */
 .main__form-field-3 {
   width: 100%;
   max-width: 235px;
 }
 
-/* line 80, src/scss/_components/homepage/_main.scss */
+/* line 79, src/scss/_components/homepage/_main.scss */
 .main__form-field-4 {
   padding-left: 10px;
   border-left: 1px solid #eaeaea;
 }
 
-/* line 86, src/scss/_components/homepage/_main.scss */
+/* line 85, src/scss/_components/homepage/_main.scss */
 .main__form label {
   position: relative;
   display: -webkit-box;
@@ -1408,7 +1407,7 @@ picture {
   margin: 0;
 }
 
-/* line 95, src/scss/_components/homepage/_main.scss */
+/* line 94, src/scss/_components/homepage/_main.scss */
 .main__form p {
   cursor: pointer;
   display: -webkit-box;
@@ -1427,18 +1426,18 @@ picture {
   height: 100%;
 }
 
-/* line 104, src/scss/_components/homepage/_main.scss */
+/* line 103, src/scss/_components/homepage/_main.scss */
 .main__form .icon-font {
   color: #222222;
   font-size: 24px;
 }
 
-/* line 108, src/scss/_components/homepage/_main.scss */
+/* line 107, src/scss/_components/homepage/_main.scss */
 .main__form .icon-font.icon-folder, .main__form .icon-font.icon-pin {
   color: #6e6e6e;
 }
 
-/* line 114, src/scss/_components/homepage/_main.scss */
+/* line 113, src/scss/_components/homepage/_main.scss */
 .main__form input {
   outline: none;
   position: relative;
@@ -1490,7 +1489,7 @@ picture {
   color: #6e6e6e;
 }
 
-/* line 133, src/scss/_components/homepage/_main.scss */
+/* line 132, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1504,7 +1503,7 @@ picture {
   height: 100%;
 }
 
-/* line 139, src/scss/_components/homepage/_main.scss */
+/* line 138, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle {
   position: relative;
   display: -webkit-box;
@@ -1530,7 +1529,7 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 152, src/scss/_components/homepage/_main.scss */
+/* line 151, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle:hover {
   color: #663399;
   -webkit-transition: color 0.4s ease-in-out;
@@ -1538,7 +1537,7 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 157, src/scss/_components/homepage/_main.scss */
+/* line 156, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle:after {
   position: absolute;
   top: 50%;
@@ -1548,7 +1547,7 @@ picture {
   right: 10px;
 }
 
-/* line 165, src/scss/_components/homepage/_main.scss */
+/* line 164, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-menu {
   overflow-y: auto;
   left: auto !important;
@@ -1568,7 +1567,7 @@ picture {
           box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
-/* line 179, src/scss/_components/homepage/_main.scss */
+/* line 178, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item {
   font-size: 14px;
   font-weight: 600;
@@ -1577,7 +1576,7 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 184, src/scss/_components/homepage/_main.scss */
+/* line 183, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item:hover {
   background-color: rgba(102, 51, 153, 0.05);
   color: #663399;
@@ -1586,7 +1585,7 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 190, src/scss/_components/homepage/_main.scss */
+/* line 189, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item:active {
   background-color: #663399;
   color: #ffffff;
@@ -1595,28 +1594,136 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 198, src/scss/_components/homepage/_main.scss */
+/* line 197, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn {
   min-width: unset;
   height: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 205, src/scss/_components/homepage/_main.scss */
+/* line 204, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn__wrapper {
   height: 100%;
 }
 
-/* line 211, src/scss/_components/homepage/_main.scss */
+/* line 210, src/scss/_components/homepage/_main.scss */
+.main__hero {
+  z-index: 10;
+  opacity: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  height: 78px;
+  padding: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gainsboro;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: rgba(249, 249, 249, 0.902);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3), 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3), 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 229, src/scss/_components/homepage/_main.scss */
+.main__hero > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+}
+
+/* line 237, src/scss/_components/homepage/_main.scss */
+.main__hero h6,
+.main__hero p,
+.main__hero span {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: block;
+  line-height: 1.3;
+}
+
+/* line 247, src/scss/_components/homepage/_main.scss */
+.main__hero h6 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 253, src/scss/_components/homepage/_main.scss */
+.main__hero p,
+.main__hero span {
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+/* line 259, src/scss/_components/homepage/_main.scss */
+.main__hero-img {
+  overflow: hidden;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: white;
+  -webkit-box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.14);
+}
+
+/* line 275, src/scss/_components/homepage/_main.scss */
+.main__hero-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* line 284, src/scss/_components/homepage/_main.scss */
 .main #sliderMain {
   width: 100%;
   height: 100%;
 }
 
-/* line 216, src/scss/_components/homepage/_main.scss */
+/* line 289, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-inner, .main #sliderMain .carousel-item {
   width: 100%;
   height: 100%;
@@ -1626,17 +1733,50 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 225, src/scss/_components/homepage/_main.scss */
+/* line 298, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-item {
+  position: relative;
+  padding: 40px;
   -webkit-transition-duration: 850ms;
        -o-transition-duration: 850ms;
           transition-duration: 850ms;
 }
 
+/* line 303, src/scss/_components/homepage/_main.scss */
+.main #sliderMain .carousel-item:after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 314, src/scss/_components/homepage/_main.scss */
+.main #sliderMain .carousel-item-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  max-width: 1250px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* line 3, src/scss/_components/homepage/_employers.scss */
 .employers {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 /* line 7, src/scss/_components/homepage/_employers.scss */
@@ -1755,8 +1895,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_details.scss */
 .details {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* line 7, src/scss/_components/homepage/_details.scss */
@@ -2079,8 +2219,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_category.scss */
 .category {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* line 7, src/scss/_components/homepage/_category.scss */
@@ -2209,8 +2349,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_looking.scss */
 .looking {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* line 7, src/scss/_components/homepage/_looking.scss */
@@ -2289,8 +2429,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_description.scss */
 .description {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* line 7, src/scss/_components/homepage/_description.scss */
@@ -2390,8 +2530,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_popular.scss */
 .popular {
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 /* line 7, src/scss/_components/homepage/_popular.scss */
