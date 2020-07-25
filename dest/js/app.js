@@ -56,6 +56,16 @@ window.addEventListener('scroll', function (ev) {});
 	/*
  * CALLBACK :: start
  * ============================================= */
+	var headerSearch = function headerSearch() {
+		$('.header__form input').on('focus', function (ev) {
+			console.log('focus');
+			$(ev.currentTarget).closest('.header__form').addClass('is-focus');
+		});
+		$('.header__form input').on('blur', function (ev) {
+			console.log('blur');
+			$(ev.currentTarget).closest('.header__form').removeClass('is-focus');
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -74,6 +84,7 @@ window.addEventListener('scroll', function (ev) {});
 		// ==========================================
 
 		// callback
+		headerSearch();
 		// ==========================================
 	};
 

@@ -3,5 +3,34 @@
 header#header.header
 	.c-grid
 		.header__wrapper
+			.header__wrapper-left
+				div
+
+					.logo.logo--header
+						a.logo__btn(href="/")
+							img.logo__img(src="img/logo.png" srcset='img/logo@2x.png 2x' alt="")
+
+				div
+
+					form.header__form(action='' method='' autocomplete='off')
+						label
+							input(type='text' name='' required)
+							button(type='submit')
+								i.icon-font.icon-search
+
+			.header__wrapper-mobile
+				div
+
+					a.header__link(href="#") News
+
+					a.header__lang(href="#")
+						img(src="img/myanmar.svg" alt="")
+
+				div
+					a.header__link(href="#") Sign Up
+					a.header__link(href="#") Login
+					.c-btn__wrapper
+						a.c-btn.c-btn--purple(href="#")
+							span!= "Companies<br><small>Post Jobs and Find Talent</small>"
 
 // HEADER :: END

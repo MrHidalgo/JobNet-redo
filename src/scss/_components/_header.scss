@@ -1,5 +1,220 @@
 // HEADER :: START
 
-.header {}
+.header {
+	z-index: 1100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(254, 254, 254);
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 80px;
+
+		&-left {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			height: 100%;
+
+			> div {
+				display: flex;
+				align-items: center;
+				height: 100%;
+
+				&:nth-of-type(1) {
+					padding-right: 30px;
+				}
+
+				&:nth-of-type(2) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+					padding-right: 15px;
+				}
+			}
+		}
+
+		&-mobile {
+			display: flex;
+			align-items: center;
+
+			> div {
+				display: flex;
+				align-items: center;
+				height: 80px;
+				border-left: 1px solid #eaeaea;
+
+				&:nth-of-type(1) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+
+				&:nth-of-type(2) {
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		&:hover,
+		&.is-focus {
+			label {
+				border-color: #663399;
+				box-shadow: 0 0 5px 0 rgba(#eaeaea, 0.3);
+				@include transition(border-color, box-shadow);
+			}
+
+			button {
+				.icon-font {
+					color: #663399;
+					@include transition(color);
+				}
+			}
+		}
+
+		label {
+			overflow: hidden;
+			position: relative;
+			display: flex;
+			width: 100%;
+			margin: 0;
+			border-radius: 6px;
+			border: 1px solid transparent;
+			@include transition(border-color);
+		}
+
+		input,
+		button {
+			outline: none;
+			position: relative;
+			border: none;
+			border-radius: 0;
+			background-color: #ffffff;
+		}
+
+		input {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding: 0 50px 0 15px;
+			font-size: 16px;
+			font-weight: 600;
+			color: #222222;
+			@include inputPlaceholder {
+				font-size: 16px;
+				font-weight: 600;
+				color: #6e6e6e;
+			}
+		}
+
+		button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 100%;
+
+			.icon-font {
+				color: #222222;
+				font-size: 22px;
+				@include transition(color);
+			}
+		}
+	}
+
+	&__lang {
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+		margin-left: 15px;
+		border-radius: 50%;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__link {
+		outline: none;
+		position: relative;
+		display: flex;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #663399;
+		font-size: 18px;
+		font-weight: 600;
+
+		&:hover {
+			color: #663399;
+
+			&:before,
+			&:after {
+				width: 50%;
+				@include transition(width);
+			}
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			width: 0;
+			height: 1px;
+			background-color: #663399;
+			@include transition(width);
+		}
+		&:before {
+			left: 50%;
+		}
+		&:after {
+			right: 50%;
+		}
+	}
+
+	.c-btn {
+		display: flex;
+		justify-content: center;
+		height: 80px;
+		border-radius: 0;
+		margin-left: 15px;
+		min-width: 160px;
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.14);
+
+		span {
+			text-align: center;
+			line-height: 1;
+
+			small {
+				font-size: 12px;
+			}
+		}
+	}
+}
 
 // HEADER :: END
