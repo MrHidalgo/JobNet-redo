@@ -12,25 +12,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: 15px;
+		//padding-bottom: 15px;
 		border-bottom: 2px solid #dcdcdc;
 		@include adaptive(1023) {
-			white-space: nowrap;
-			overflow: auto hidden;
-			position: relative;
-			width: calc(100% + 15px);
-			display: block;
-			font-size: 0;
-
-			> li {
-				display: inline-block;
-				padding-right: 30px;
-			}
+			display: none;
 		}
 
 		a {
 			position: relative;
-			padding-bottom: 15px;
+			display: flex;
+			min-height: 35px;
+			//padding-bottom: 15px;
 			color: #6e6e6e;
 			font-size: 20px;
 			font-weight: bold;
@@ -47,7 +39,7 @@
 				opacity: 0;
 				visibility: hidden;
 				position: absolute;
-				top: calc(100% + 2px);
+				top: calc(100%);
 				left: 0;
 				width: 100%;
 				height: 2px;
@@ -75,103 +67,179 @@
 
 	#pills-tabContent {
 		padding-top: 30px;
+		@include adaptive(1023) {
+			padding-top: 0;
+			border: 1px solid #dcdcdc;
+		}
 
-		.tab-pane-content {
-			display: flex;
-			justify-content: space-between;
-			padding-left: 5px;
-			padding-right: 5px;
+		.tab-pane {
 			@include adaptive(1023) {
-				flex-wrap: wrap;
+				display: block;
+				opacity: 1;
+
+				&:not(:last-of-type) {
+					border-bottom: 1px solid #dcdcdc;
+				}
 			}
 
-			> div {
-				display: flex;
+			&-header {
+				cursor: pointer;
+				display: none;
+				align-items: center;
+				justify-content: space-between;
+				min-height: 50px;
+				padding: 5px 15px;
 				@include adaptive(1023) {
-					justify-content: center;
-					width: 100%;
-					max-width: calc(100% / 2);
-					text-align: center;
-					padding-bottom: 10px;
+					display: flex;
 				}
 
-				&:nth-of-type(2),
-				&:nth-of-type(3) {
-					padding-left: 5px;
-					padding-right: 5px;
-					justify-content: center;
-					@include adaptive(1023) {
-
+				&:hover {
+					p,
+					.icon-font {
+						color: #663399;
+						@include transition(transform, color);
 					}
 				}
 
-				&:last-of-type {
-					justify-content: flex-end;
-					@include adaptive(1023) {
-						justify-content: center;
+				&.is-active {
+					.icon-font {
+						transform: scaleY(-1);
+						@include transition(transform);
 					}
+				}
+
+				> div {
+					&:nth-of-type(1) {
+						flex: 1;
+						min-width: 1px;
+						max-width: 100%;
+					}
+				}
+
+				p {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					color: #6e6e6e;
+					font-size: 18px;
+					font-weight: bold;
+					@include transition(color);
+				}
+
+				.icon-font {
+					color: #6e6e6e;
+					font-size: 9px;
+					transform-origin: center;
+					backface-visibility: hidden;
+					@include transition(transform, color);
 				}
 			}
+			&-content {
+				display: flex;
+				justify-content: space-between;
+				padding-left: 5px;
+				padding-right: 5px;
+				@include adaptiveCustom('(min-width: 1024px)') {
+					display: flex !important;
+				}
+				@include adaptive(1023) {
+					display: none;
+					border-top: 1px solid #dcdcdc;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
 
-			ul {
-				li {
-					@include adaptive(767) {
-						display: flex;
+				> div {
+					display: flex;
+					@include adaptive(1023) {
 						justify-content: center;
-					}
-
-					&:not(:last-of-type) {
+						width: 100%;
+						max-width: calc(100% / 2);
+						text-align: center;
 						padding-bottom: 10px;
 					}
-				}
-
-				a {
-					position: relative;
-					color: #6e6e6e;
-					font-size: 16px;
-					@include transition(color);
-					@include adaptive(1279) {
-						font-size: 14px;
-					}
 					@include adaptive(1023) {
-						font-size: 16px;
+						max-width: 100%;
 					}
-					@include adaptive(767) {
-						text-align: center;
+
+					&:nth-of-type(2),
+					&:nth-of-type(3) {
 						padding-left: 5px;
 						padding-right: 5px;
-					}
+						justify-content: center;
+						@include adaptive(1023) {
 
-					&:hover {
-						color: #663399;
-						@include transition(color);
-
-						&:before,
-						&:after {
-							width: 50%;
-							@include transition(width);
 						}
 					}
 
-					&:before,
-					&:after {
-						content: '';
-						position: absolute;
-						top: 100%;
-						width: 0;
-						height: 1px;
-						background-color: #663399;
-						@include transition(width);
+					&:last-of-type {
+						justify-content: flex-end;
+						@include adaptive(1023) {
+							justify-content: center;
+						}
 					}
-					&:before {
-						left: 50%;
-					}
-					&:after {
-						right: 50%;
+				}
+
+				ul {
+					li {
+						@include adaptive(767) {
+							display: flex;
+							justify-content: center;
+						}
+
+						&:not(:last-of-type) {
+							padding-bottom: 10px;
+						}
 					}
 
-					span {
-						color: #663399;
+					a {
+						position: relative;
+						color: #6e6e6e;
+						font-size: 16px;
+						@include transition(color);
+						@include adaptive(1279) {
+							font-size: 14px;
+						}
+						@include adaptive(1023) {
+							font-size: 16px;
+						}
+						@include adaptive(767) {
+							text-align: center;
+							padding-left: 5px;
+							padding-right: 5px;
+						}
+
+						&:hover {
+							color: #663399;
+							@include transition(color);
+
+							&:before,
+							&:after {
+								width: 50%;
+								@include transition(width);
+							}
+						}
+
+						&:before,
+						&:after {
+							content: '';
+							position: absolute;
+							top: 100%;
+							width: 0;
+							height: 1px;
+							background-color: #663399;
+							@include transition(width);
+						}
+						&:before {
+							left: 50%;
+						}
+						&:after {
+							right: 50%;
+						}
+
+						span {
+							color: #663399;
+						}
 					}
 				}
 			}

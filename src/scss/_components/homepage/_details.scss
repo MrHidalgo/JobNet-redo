@@ -236,6 +236,10 @@
 	#sliderDetails {
 		width: 100%;
 		height: 100%;
+		@include adaptive(767) {
+			overflow-y: auto;
+			max-height: 450px;
+		}
 
 		.carousel {
 			&-inner {
@@ -243,7 +247,9 @@
 				height: 100%;
 				padding: 20px 10px;
 				@include adaptive(767) {
+					height: auto;
 					padding-top: 0;
+					padding-bottom: 0;
 				}
 			}
 
@@ -265,6 +271,21 @@
 			&-item {
 				width: 100%;
 				height: 100%;
+				@include adaptive(767) {
+					display: block;
+					float: none;
+					margin: 0;
+
+					&:last-of-type {
+						.carousel-item-content {
+							a {
+								&:last-of-type {
+									border-bottom: none;
+								}
+							}
+						}
+					}
+				}
 
 				&-content {
 					display: flex;
@@ -273,6 +294,9 @@
 					height: 100%;
 					padding-bottom: 20px;
 					background-color: #ffffff;
+					@include adaptive(767) {
+						padding-bottom: 0;
+					}
 
 					> div {
 						width: 100%;

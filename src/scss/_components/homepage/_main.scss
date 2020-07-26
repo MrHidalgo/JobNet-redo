@@ -45,7 +45,8 @@
 			padding-bottom: 150px;
 		}
 		@include adaptive(767) {
-			padding-top: 75px;
+			padding-top: 150px;
+			padding-bottom: 102px;
 		}
 
 		> div {
@@ -55,6 +56,12 @@
 			max-width: 1250px;
 			padding-left: 15px;
 			padding-right: 15px;
+			@include adaptive(767) {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				min-height: 283px;
+			}
 		}
 	}
 
@@ -164,6 +171,16 @@
 				@include adaptive(1023) {
 					padding-left: 0;
 					border: none;
+				}
+			}
+
+			&-2,
+			&-3 {
+				@include adaptiveCustom('(min-width: 768px)') {
+					display: flex !important;
+				}
+				@include adaptive(767) {
+					display: none;
 				}
 			}
 		}
@@ -316,15 +333,43 @@
 				padding-left: 25px;
 				padding-right: 25px;
 			}
-			@include adaptive(1023) {
-				width: 100%;
-			}
 
 			&:nth-child(1) {
 				border-top-right-radius: 0;
 				border-bottom-right-radius: 0;
+				@include adaptive(1023) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+				}
 			}
-			&:nth-child(2) {
+			&:nth-of-type(2) {
+				display: none;
+				align-items: center;
+				justify-content: center;
+				width: 75px;
+				border-radius: 0;
+				border-left: 1px solid #fff;
+				@include adaptive(767) {
+					display: flex;
+				}
+
+				&.is-active {
+					.icon-font {
+						transform: scaleY(-1);
+						@include transition(transform);
+					}
+				}
+
+				.icon-font {
+					color: #ffffff;
+					font-size: 12px;
+					transform-origin: center;
+					backface-visibility: hidden;
+					@include transition(transform);
+				}
+			}
+			&:nth-child(3) {
 				width: 50px;
 				min-width: unset;
 				padding-left: 10px;
@@ -333,7 +378,7 @@
 				border-top-left-radius: 0;
 				border-bottom-left-radius: 0;
 				@include adaptive(1023) {
-					width: 100px;
+					width: 75px;
 				}
 
 				.icon-font {
@@ -376,6 +421,11 @@
 			padding: 8px;
 			border-radius: 0;
 			background-color: #ffffff;
+		}
+		@include adaptive(767) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
 		}
 
 		> div {
@@ -458,6 +508,9 @@
 				}
 				@include adaptive(1023) {
 					padding: 0;
+				}
+				@include adaptive(767) {
+					padding-bottom: 82px;
 				}
 
 				&:after {

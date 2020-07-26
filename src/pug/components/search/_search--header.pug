@@ -3,7 +3,7 @@
 
 		p.search__header-res!= "<span>2,356</span> Graphic Designer Jobs found"
 
-	div
+	div(search-sort-node-js)
 		p Sort By:
 
 		.dropdown
@@ -12,3 +12,29 @@
 			.dropdown-menu.dropdown-menu-right
 				a.dropdown-item(href='#') Recommended
 				a.dropdown-item(href='#') Post Date
+
+		.search__header-head
+			p Sort By
+			a(href="#" search-sort-close-js)
+				i.icon-font.icon-close
+
+		.search__header-body
+
+			.list-group
+				a.list-group-item.list-group-item-action.active(href='#')
+					span Recommended
+					i.icon-font.icon-approved
+				a.list-group-item.list-group-item-action(href='#')
+					span Post Date
+					i.icon-font.icon-approved
+
+	div
+		a.search__header-btn.search__header-btn--filter(href="#" search-filter-js)
+			i.icon-font.icon-filter
+			span Filter
+			i.icon-font.icon-keyboard-arrow-down
+
+		a.search__header-btn.search__header-btn--sort(href="#" search-sort-js)
+			i.icon-font.icon-sort
+			span Sort By
+			i.icon-font.icon-keyboard-arrow-down

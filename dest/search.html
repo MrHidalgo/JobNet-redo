@@ -83,9 +83,7 @@
                 </div>
               </div>
               <div class="main__form-field main__form-field-4">
-                <div class="c-btn__wrapper">
-                  <button class="c-btn c-btn--green" type="submit"><span>Search</span></button><a class="c-btn c-btn--green" href="#"><span><i class="icon-font icon-menu"></i></span></a>
-                </div>
+                <div class="c-btn__wrapper"><a class="c-btn c-btn--green" href="/search.html"><span>Search</span></a><a class="c-btn c-btn--green" href="#" main-more-js><span><i class="icon-font icon-keyboard-arrow-down"></i></span></a><a class="c-btn c-btn--green" href="#"><span><i class="icon-font icon-menu"></i></span></a></div>
               </div>
             </form>
             <!-- SECTION :: END-->
@@ -97,13 +95,20 @@
               <div>
                 <p class="search__header-res"><span>2,356</span> Graphic Designer Jobs found</p>
               </div>
-              <div>
+              <div search-sort-node-js>
                 <p>Sort By:</p>
                 <div class="dropdown">
                   <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recommended</button>
                   <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Recommended</a><a class="dropdown-item" href="#">Post Date</a></div>
                 </div>
+                <div class="search__header-head">
+                  <p>Sort By</p><a href="#" search-sort-close-js><i class="icon-font icon-close"></i></a>
+                </div>
+                <div class="search__header-body">
+                  <div class="list-group"><a class="list-group-item list-group-item-action active" href="#"><span>Recommended</span><i class="icon-font icon-approved"></i></a><a class="list-group-item list-group-item-action" href="#"><span>Post Date</span><i class="icon-font icon-approved"></i></a></div>
+                </div>
               </div>
+              <div><a class="search__header-btn search__header-btn--filter" href="#" search-filter-js><i class="icon-font icon-filter"></i><span>Filter</span><i class="icon-font icon-keyboard-arrow-down"></i></a><a class="search__header-btn search__header-btn--sort" href="#" search-sort-js><i class="icon-font icon-sort"></i><span>Sort By</span><i class="icon-font icon-keyboard-arrow-down"></i></a></div>
             </div>
           </div>
           <div class="search__wrapper search__wrapper-2">
@@ -111,7 +116,7 @@
               <!-- SECTION :: START-->
               <div class="search__filter">
                 <div class="search__filter-head">
-                  <p class="search__filter-title">Advanced filters</p>
+                  <p class="search__filter-title">Advanced filters</p><a href="#" search-filter-close-js><i class="icon-font icon-close"></i></a>
                 </div>
                 <div class="search__filter-action">
                   <div class="c-btn__wrapper"><a class="search__filter-link" href="#">Clear All Filters</a><a class="c-btn c-btn--green" href="#"><span>Apply</span></a></div>
@@ -130,6 +135,87 @@
                           <option>Last 7 Days</option>
                           <option>Last 14 Days</option>
                           <option>Last 30 Days</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search__filter-content search__filter-content--mobile"><a class="search__filter-content-btn" data-toggle="collapse" href="#collapseJobFunction" role="button" aria-expanded="false" aria-controls="collapseJobFunction">
+                      <div>
+                        <p>Job Function</p>
+                      </div>
+                      <div><i class="icon-font icon-keyboard-arrow-down"></i></div></a>
+                    <div class="collapse" id="collapseJobFunction">
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>Job Function</option>
+                          <option>Accounting/Finance</option>
+                          <option>Administrative</option>
+                          <option>Consulting</option>
+                          <option>Customer Service/Support</option>
+                          <option>Design/Architecture</option>
+                          <option>Doctor/Nursing/Medical Staff</option>
+                          <option>Driver/Security/Cleaning</option>
+                          <option>Education/Teaching/Childcare</option>
+                          <option>Engineering/Technical</option>
+                          <option>Fitness/Wellbeing</option>
+                          <option>Food and Beverage</option>
+                          <option>Hair/Nails and Beauty</option>
+                          <option>HR/Training and Recruitment</option>
+                          <option>Hospitality/Tourism</option>
+                          <option>IT Hardware/Software</option>
+                          <option>Legal/Risk and Compliance</option>
+                          <option>Logistics/Distribution/Fleet</option>
+                          <option>Management</option>
+                          <option>Manufacturing/Warehouse</option>
+                          <option>Marketing/Media/Creative</option>
+                          <option>PR/Communications</option>
+                          <option>Procurement/Supply Chain</option>
+                          <option>Project Management</option>
+                          <option>Quality Assurance</option>
+                          <option>Research and Development</option>
+                          <option>Sales/Business Development</option>
+                          <option>Science/Technology</option>
+                          <option>Skilled Trades / Construction</option>
+                          <option>Strategy/Planning</option>
+                          <option>Translation</option>
+                          <option>Voluntary work</option>
+                          <option>Writing/Editing</option>
+                          <option>Others</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search__filter-content search__filter-content--mobile"><a class="search__filter-content-btn" data-toggle="collapse" href="#collapseLocation" role="button" aria-expanded="false" aria-controls="collapseLocation">
+                      <div>
+                        <p>Location</p>
+                      </div>
+                      <div><i class="icon-font icon-keyboard-arrow-down"></i></div></a>
+                    <div class="collapse" id="collapseLocation">
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>Location</option>
+                          <option>Yangon</option>
+                          <option>Mandalay</option>
+                          <option>NayPyiTaw</option>
+                          <option>Ayeyawady Division</option>
+                          <option>Bago Division</option>
+                          <option>Chin State</option>
+                          <option>Kachin State</option>
+                          <option>Kayah State</option>
+                          <option>Kayin State</option>
+                          <option>Magway Division</option>
+                          <option>Mon State</option>
+                          <option>Rakhine State</option>
+                          <option>Sagaing Division</option>
+                          <option>Shan State</option>
+                          <option>Taninthayi Division</option>
+                          <option>Singapore</option>
+                          <option>Malaysia</option>
+                          <option>Thailand</option>
+                          <option>Australia</option>
+                          <option>UK</option>
+                          <option>USA</option>
+                          <option>International</option>
                         </select>
                       </div>
                     </div>
@@ -451,17 +537,6 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
@@ -470,6 +545,17 @@
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -481,6 +567,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -496,23 +585,23 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -524,6 +613,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -539,17 +631,6 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
@@ -558,6 +639,17 @@
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -569,6 +661,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -584,23 +679,23 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -612,6 +707,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -627,17 +725,6 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
@@ -646,6 +733,17 @@
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -657,6 +755,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -672,23 +773,23 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -700,6 +801,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -715,17 +819,6 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
@@ -734,6 +827,17 @@
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -745,6 +849,9 @@
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                    </div>
+                                    <div>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
@@ -760,23 +867,23 @@
                                       <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
                                         <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
                                       </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
                                     </div>
                                     <div>
                                       <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
                                     </div>
                                   </div>
                                   <div class="search__job-body">
+                                    <ul class="search__job-list">
+                                      <li>
+                                        <p><strong>Benefits:</strong> Rewards for over performance</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
+                                      </li>
+                                      <li>
+                                        <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
+                                      </li>
+                                    </ul>
                                     <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
                                   </div>
                                   <div class="search__job-footer">
@@ -789,548 +896,24 @@
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
                                     </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
                                     <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo search__job-logo--wi"><i class="icon-font icon-photo"></i>
-                                        <p>No Image</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                </div>
-                <div>
-                                <div class="search__job search__job--hot">
-                                  <div class="search__job-head">
-                                    <div>
-                                      <div class="search__job-heading">
-                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                      </div>
-                                      <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
-                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
-                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
-                                      </div>
-                                      <ul class="search__job-list">
-                                        <li>
-                                          <p><strong>Benefits:</strong> Rewards for over performance</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Highlights:</strong> * Fun working environment * International standard * Make a different</p>
-                                        </li>
-                                        <li>
-                                          <p><strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training</p>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div>
-                                      <div class="search__job-logo"><img src="img/img-employers-unilever.png" alt=""></div>
-                                    </div>
-                                  </div>
-                                  <div class="search__job-body">
-                                    <p class="search__job-desc">Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per</p>
-                                  </div>
-                                  <div class="search__job-footer">
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
-                                    </div>
-                                    <div>
-                                      <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
+                                      <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>View</span></a></div>
                                     </div>
                                   </div>
                                 </div>
                 </div>
               </div>
               <div class="search__action">
-                <div class="search__action-left"><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i><i class="icon-font icon-keyboard-arrow-down"></i></a><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i></a></div>
-                <div class="search__action-middle"><a class="search__action-btn active" href="#">1</a><a class="search__action-btn" href="#">2</a><a class="search__action-btn" href="#">3</a><a class="search__action-btn" href="#">4</a><a class="search__action-btn" href="#">5</a><a class="search__action-btn" href="#">6</a><a class="search__action-btn" href="#">7</a><a class="search__action-btn" href="#">...</a></div>
-                <div class="search__action-right"><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i></a><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i><i class="icon-font icon-keyboard-arrow-down"></i></a></div>
+                <div class="search__action-left"><a class="search__action-btn search__action-btn--first" href="#"><i class="icon-font icon-keyboard-arrow-down"></i><i class="icon-font icon-keyboard-arrow-down"></i></a><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i></a></div>
+                <div class="search__action-middle"><a class="search__action-btn active" href="#">1</a><a class="search__action-btn" href="#">2</a><a class="search__action-btn" href="#">3</a><a class="search__action-btn" href="#">4</a><a class="search__action-btn" href="#">5</a><a class="search__action-btn" href="#">...</a></div>
+                <div class="search__action-right"><a class="search__action-btn" href="#"><i class="icon-font icon-keyboard-arrow-down"></i></a><a class="search__action-btn search__action-btn--last" href="#"><i class="icon-font icon-keyboard-arrow-down"></i><i class="icon-font icon-keyboard-arrow-down"></i></a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- SECTION :: END-->
+      <div class="overlay" id="overlay"></div>
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">

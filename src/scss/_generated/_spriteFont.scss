@@ -30,74 +30,83 @@
 	@if $filename == antenna {
 		$char: "\E001";
 	}
-	@if $filename == bank {
+	@if $filename == approved {
 		$char: "\E002";
 	}
-	@if $filename == clock {
+	@if $filename == bank {
 		$char: "\E003";
 	}
-	@if $filename == close {
+	@if $filename == clock {
 		$char: "\E004";
 	}
-	@if $filename == cogwheel {
+	@if $filename == close {
 		$char: "\E005";
 	}
-	@if $filename == cost {
+	@if $filename == cogwheel {
 		$char: "\E006";
 	}
-	@if $filename == dollar-symbol {
+	@if $filename == cost {
 		$char: "\E007";
 	}
-	@if $filename == facebook {
+	@if $filename == dollar-symbol {
 		$char: "\E008";
 	}
-	@if $filename == factory {
+	@if $filename == facebook {
 		$char: "\E009";
 	}
-	@if $filename == folder {
+	@if $filename == factory {
 		$char: "\E00A";
 	}
-	@if $filename == google {
+	@if $filename == filter {
 		$char: "\E00B";
 	}
-	@if $filename == home {
+	@if $filename == folder {
 		$char: "\E00C";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == google {
 		$char: "\E00D";
 	}
-	@if $filename == linkedin {
+	@if $filename == home {
 		$char: "\E00E";
 	}
-	@if $filename == menu {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E00F";
 	}
-	@if $filename == notification {
+	@if $filename == linkedin {
 		$char: "\E010";
 	}
-	@if $filename == office-building {
+	@if $filename == menu {
 		$char: "\E011";
 	}
-	@if $filename == photo {
+	@if $filename == notification {
 		$char: "\E012";
 	}
-	@if $filename == pin {
+	@if $filename == office-building {
 		$char: "\E013";
 	}
-	@if $filename == programming {
+	@if $filename == photo {
 		$char: "\E014";
 	}
-	@if $filename == search {
+	@if $filename == pin {
 		$char: "\E015";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == programming {
 		$char: "\E016";
 	}
-	@if $filename == star {
+	@if $filename == search {
 		$char: "\E017";
 	}
-	@if $filename == user {
+	@if $filename == shopping-bag {
 		$char: "\E018";
+	}
+	@if $filename == sort {
+		$char: "\E019";
+	}
+	@if $filename == star {
+		$char: "\E01A";
+	}
+	@if $filename == user {
+		$char: "\E01B";
 	}
 
 	@return $char;
@@ -116,6 +125,10 @@
 
 .icon-antenna {
 	@include icon(antenna);
+
+}
+.icon-approved {
+	@include icon(approved);
 
 }
 .icon-bank {
@@ -148,6 +161,10 @@
 }
 .icon-factory {
 	@include icon(factory);
+
+}
+.icon-filter {
+	@include icon(filter);
 
 }
 .icon-folder {
@@ -200,6 +217,10 @@
 }
 .icon-shopping-bag {
 	@include icon(shopping-bag);
+
+}
+.icon-sort {
+	@include icon(sort);
 
 }
 .icon-star {

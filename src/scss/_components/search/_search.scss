@@ -10,8 +10,12 @@
 
 		&-left {
 			width: 100%;
-			max-width: 300px;
+			max-width: 270px;
 			padding-right: 20px;
+			@include adaptive(1023) {
+				max-width: 0;
+				padding: 0;
+			}
 		}
 
 		&-right {

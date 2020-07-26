@@ -14,6 +14,9 @@
 		.search__action-btn {
 			&:first-of-type {
 				margin-right: 10px;
+				@include adaptive(767) {
+					margin-right: 0;
+				}
 			}
 
 			.icon-font {
@@ -25,6 +28,10 @@
 	&-middle {
 		padding-left: 10px;
 		padding-right: 10px;
+		@include adaptive(767) {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
 
 		.search__action-btn {
 			margin-left: 5px;
@@ -36,6 +43,9 @@
 		.search__action-btn {
 			&:first-of-type {
 				margin-right: 10px;
+				@include adaptive(767) {
+					margin-right: 0;
+				}
 			}
 
 			.icon-font {
@@ -58,6 +68,18 @@
 		color: #222222;
 		font-size: 14px;
 		font-weight: 600;
+		@include adaptive(767) {
+			width: 30px;
+			height: 30px;
+			font-size: 12px;
+		}
+
+		&--first,
+		&--last {
+			@include adaptive(767) {
+				display: none;
+			}
+		}
 
 		&:hover {
 			background-color: #663399;

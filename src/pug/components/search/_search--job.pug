@@ -17,14 +17,6 @@ mixin job(classMod, imageBool)
 						i.icon-font.icon-pin
 						span!= "Myanmar, Yangon"
 
-				ul.search__job-list
-					li
-						p!= "<strong>Benefits:</strong> Rewards for over performance"
-					li
-						p!= "<strong>Highlights:</strong> * Fun working environment * International standard * Make a different"
-					li
-						p!= "<strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training"
-
 			div
 				if(imageBool)
 					.search__job-logo
@@ -35,6 +27,14 @@ mixin job(classMod, imageBool)
 						p No Image
 
 		.search__job-body
+
+			ul.search__job-list
+				li
+					p!= "<strong>Benefits:</strong> Rewards for over performance"
+				li
+					p!= "<strong>Highlights:</strong> * Fun working environment * International standard * Make a different"
+				li
+					p!= "<strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training"
 
 			p.search__job-desc Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per
 
@@ -51,9 +51,13 @@ mixin job(classMod, imageBool)
 				p.search__job-posted
 					i.icon-font.icon-clock
 					span Posted Today
+			div
+				.c-btn__wrapper
+					a.c-btn.c-btn--purple(href="#")
+						span View
 
 .search__job-wrapper
-	each val, idx in [1,2,3,4,5,6,7,8,9,10]
+	each val, idx in [1,2,3,4]
 		div
 			+job('', false)
 		div

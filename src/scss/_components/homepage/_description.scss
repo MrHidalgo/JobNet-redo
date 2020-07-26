@@ -35,6 +35,9 @@
 		align-items: center;
 		justify-content: flex-end;
 		margin-bottom: 20px;
+		@include adaptive(1023) {
+			margin-bottom: 0;
+		}
 
 		&:hover {
 			&:after {

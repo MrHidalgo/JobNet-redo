@@ -6,6 +6,9 @@
 
 		p.search__filter-title Advanced filters
 
+		a(href="#" search-filter-close-js)
+			i.icon-font.icon-close
+
 	.search__filter-action
 
 		.c-btn__wrapper
@@ -29,6 +32,83 @@
 						option Last 7 Days
 						option Last 14 Days
 						option Last 30 Days
+
+		.search__filter-content.search__filter-content--mobile
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseJobFunction', role='button', aria-expanded='false', aria-controls='collapseJobFunction')
+				div
+					p Job Function
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseJobFunction.collapse
+				.form-group
+					select.form-control
+						option Job Function
+						option Accounting/Finance
+						option Administrative
+						option Consulting
+						option Customer Service/Support
+						option Design/Architecture
+						option Doctor/Nursing/Medical Staff
+						option Driver/Security/Cleaning
+						option Education/Teaching/Childcare
+						option Engineering/Technical
+						option Fitness/Wellbeing
+						option Food and Beverage
+						option Hair/Nails and Beauty
+						option HR/Training and Recruitment
+						option Hospitality/Tourism
+						option IT Hardware/Software
+						option Legal/Risk and Compliance
+						option Logistics/Distribution/Fleet
+						option Management
+						option Manufacturing/Warehouse
+						option Marketing/Media/Creative
+						option PR/Communications
+						option Procurement/Supply Chain
+						option Project Management
+						option Quality Assurance
+						option Research and Development
+						option Sales/Business Development
+						option Science/Technology
+						option Skilled Trades / Construction
+						option Strategy/Planning
+						option Translation
+						option Voluntary work
+						option Writing/Editing
+						option Others
+
+		.search__filter-content.search__filter-content--mobile
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseLocation', role='button', aria-expanded='false', aria-controls='collapseLocation')
+				div
+					p Location
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseLocation.collapse
+				.form-group
+					select.form-control
+						option Location
+						option Yangon
+						option Mandalay
+						option NayPyiTaw
+						option Ayeyawady Division
+						option Bago Division
+						option Chin State
+						option Kachin State
+						option Kayah State
+						option Kayin State
+						option Magway Division
+						option Mon State
+						option Rakhine State
+						option Sagaing Division
+						option Shan State
+						option Taninthayi Division
+						option Singapore
+						option Malaysia
+						option Thailand
+						option Australia
+						option UK
+						option USA
+						option International
 
 		.search__filter-content
 			a.search__filter-content-btn(data-toggle='collapse', href='#collapseIndustry', role='button', aria-expanded='true', aria-controls='collapseIndustry')

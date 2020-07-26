@@ -29,7 +29,6 @@ const initHamburger = () => {
 		$('[mobile-close-js]').on('click', (ev) => {
 			mobileContainer.classList.add('is-animated');
 
-			// btn.classList.remove('is-active');
 			mobileContainer.classList.remove('is-open');
 
 			hideScrollContainer.forEach((val, idx) => {

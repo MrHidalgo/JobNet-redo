@@ -12,6 +12,9 @@
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.14);
 	@include transition(transform, box-shadow);
+	@include adaptive(1535) {
+		padding: 15px;
+	}
 
 	&:hover {
 		transform: translateY(-5px);
@@ -46,6 +49,9 @@
 			}
 			&:nth-of-type(2) {
 				width: 100px;
+				@include adaptive(767) {
+					width: 75px;
+				}
 			}
 		}
 	}
@@ -61,6 +67,34 @@
 		margin-top: 20px;
 		padding-top: 20px;
 		border-top: 1px solid rgb(234, 234, 234);
+		@include adaptive(1023) {
+			margin-top: 15px;
+			padding-top: 15px;
+		}
+
+		> div {
+			&:nth-of-type(1),
+			&:nth-of-type(2) {
+				@include adaptive(1023) {
+					display: none;
+				}
+			}
+
+			&:nth-of-type(2) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			&:nth-of-type(4) {
+				display: none;
+				@include adaptive(1023) {
+					display: block;
+				}
+			}
+		}
+
+		.c-btn {
+			box-shadow: none;
+		}
 	}
 
 	&-heading {
@@ -72,6 +106,14 @@
 	&-additional {
 		display: flex;
 		align-items: center;
+		@include adaptive(767) {
+			flex-direction: column;
+			align-items: flex-start;
+
+			> a {
+				padding-bottom: 10px;
+			}
+		}
 	}
 
 	&-title {
@@ -81,12 +123,24 @@
 		color: #222222;
 		font-size: 30px;
 		font-weight: 700;
+		@include adaptive(1535) {
+			font-size: 26px;
+		}
+		@include adaptive(767) {
+			font-size: 22px;
+		}
 	}
 
 	&-subtitle {
 		padding-bottom: 15px;
 		color: #6e6e6e;
 		font-size: 20px;
+		@include adaptive(1535) {
+			font-size: 18px;
+		}
+		@include adaptive(767) {
+			font-size: 16px;
+		}
 	}
 
 	&-logo {
@@ -99,6 +153,10 @@
 		height: 100px;
 		border-radius: 6px;
 		background-color: rgb(255, 255, 255);
+		@include adaptive(767) {
+			width: 75px;
+			height: 75px;
+		}
 
 		&--wi {
 			flex-direction: column;
@@ -114,6 +172,9 @@
 		.icon-font {
 			color: #bdbdbd;
 			font-size: 40px;
+			@include adaptive(767) {
+				font-size: 26px;
+			}
 		}
 
 		p {
@@ -122,6 +183,9 @@
 			font-size: 11px;
 			font-weight: 700;
 			text-transform: uppercase;
+			@include adaptive(767) {
+				font-size: 9px;
+			}
 		}
 	}
 
@@ -156,7 +220,7 @@
 		display: flex;
 		flex-direction: column;
 		padding-left: 15px;
-		padding-top: 15px;
+		padding-bottom: 15px;
 
 		li {
 			list-style-type: disc;
@@ -167,6 +231,9 @@
 		}
 
 		p {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 			color: #222222;
 			font-size: 16px;
 
