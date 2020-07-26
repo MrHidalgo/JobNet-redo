@@ -36,53 +36,65 @@
 	@if $filename == clock {
 		$char: "\E003";
 	}
-	@if $filename == cost {
+	@if $filename == cogwheel {
 		$char: "\E004";
 	}
-	@if $filename == facebook {
+	@if $filename == cost {
 		$char: "\E005";
 	}
-	@if $filename == factory {
+	@if $filename == dollar-symbol {
 		$char: "\E006";
 	}
-	@if $filename == folder {
+	@if $filename == facebook {
 		$char: "\E007";
 	}
-	@if $filename == google {
+	@if $filename == factory {
 		$char: "\E008";
 	}
-	@if $filename == home {
+	@if $filename == folder {
 		$char: "\E009";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == google {
 		$char: "\E00A";
 	}
-	@if $filename == linkedin {
+	@if $filename == home {
 		$char: "\E00B";
 	}
-	@if $filename == menu {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E00C";
 	}
-	@if $filename == office-building {
+	@if $filename == linkedin {
 		$char: "\E00D";
 	}
-	@if $filename == photo {
+	@if $filename == menu {
 		$char: "\E00E";
 	}
-	@if $filename == pin {
+	@if $filename == notification {
 		$char: "\E00F";
 	}
-	@if $filename == programming {
+	@if $filename == office-building {
 		$char: "\E010";
 	}
-	@if $filename == search {
+	@if $filename == photo {
 		$char: "\E011";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == pin {
 		$char: "\E012";
 	}
-	@if $filename == star {
+	@if $filename == programming {
 		$char: "\E013";
+	}
+	@if $filename == search {
+		$char: "\E014";
+	}
+	@if $filename == shopping-bag {
+		$char: "\E015";
+	}
+	@if $filename == star {
+		$char: "\E016";
+	}
+	@if $filename == user {
+		$char: "\E017";
 	}
 
 	@return $char;
@@ -111,8 +123,16 @@
 	@include icon(clock);
 
 }
+.icon-cogwheel {
+	@include icon(cogwheel);
+
+}
 .icon-cost {
 	@include icon(cost);
+
+}
+.icon-dollar-symbol {
+	@include icon(dollar-symbol);
 
 }
 .icon-facebook {
@@ -147,6 +167,10 @@
 	@include icon(menu);
 
 }
+.icon-notification {
+	@include icon(notification);
+
+}
 .icon-office-building {
 	@include icon(office-building);
 
@@ -173,5 +197,9 @@
 }
 .icon-star {
 	@include icon(star);
+
+}
+.icon-user {
+	@include icon(user);
 
 }

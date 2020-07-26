@@ -9,11 +9,15 @@
 	background-color: rgb(254, 254, 254);
 	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
 
+	.c-grid-fluid {
+		padding-right: 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 80px;
+		height: 70px;
 
 		&-left {
 			display: flex;
@@ -49,16 +53,15 @@
 			> div {
 				display: flex;
 				align-items: center;
-				height: 80px;
-				border-left: 1px solid #eaeaea;
+				height: 70px;
 
 				&:nth-of-type(1) {
-					padding-left: 15px;
 					padding-right: 15px;
 				}
 
 				&:nth-of-type(2) {
 					padding-left: 10px;
+					border-left: 1px solid #eaeaea;
 				}
 			}
 		}
@@ -133,7 +136,7 @@
 			height: 100%;
 
 			.icon-font {
-				color: #222222;
+				color: #663399;
 				font-size: 22px;
 				@include transition(color);
 			}
@@ -142,12 +145,15 @@
 
 	&__lang {
 		overflow: hidden;
+		z-index: 2;
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 24px;
 		height: 24px;
 		margin-left: 15px;
+		margin-right: 10px;
 		border-radius: 50%;
 
 		img {
@@ -157,54 +163,115 @@
 		}
 	}
 
-	&__link {
-		outline: none;
+	&__icon {
+		z-index: 2;
 		position: relative;
 		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 24px;
+		margin-left: 15px;
+
+		&-wrapper {
+			z-index: 5;
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding-right: 15px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -10px;
+				width: calc(100% + 10px);
+				height: 100%;
+				background-color: #ffffff;
+				border-radius: 0 50px 50px 0;
+				box-shadow: 3px 0 5px 0 rgba(0,0,0,.1);
+			}
+		}
+
+		.icon-font {
+			color: #663399;
+			font-size: 22px;
+		}
+	}
+
+	&__link {
+		outline: none;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 100%;
 		margin-left: 5px;
 		margin-right: 5px;
 		padding-left: 10px;
 		padding-right: 10px;
 		color: #663399;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 600;
 
 		&:hover {
 			color: #663399;
 
-			&:before,
 			&:after {
-				width: 50%;
-				@include transition(width);
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+				@include transition(opacity, visibility, transform);
 			}
 		}
 
-		&:before,
 		&:after {
 			content: '';
+			opacity: 0;
+			visibility: hidden;
 			position: absolute;
-			top: 100%;
-			width: 0;
-			height: 1px;
+			top: calc(100% - 2px);
+			transform: translateY(100%);
+			left: 0;
+			width: 100%;
+			height: 2px;
 			background-color: #663399;
-			@include transition(width);
+			@include transition(opacity, visibility, transform);
 		}
-		&:before {
-			left: 50%;
-		}
-		&:after {
-			right: 50%;
+
+		&-wrapper {
+			z-index: 2;
+			position: relative;
+			display: flex;
+			height: 70px;
 		}
 	}
 
 	.c-btn {
+		position: relative;
 		display: flex;
 		justify-content: center;
-		height: 80px;
+		height: 70px;
+		padding-left: 30px;
 		border-radius: 0;
-		margin-left: 15px;
 		min-width: 160px;
 		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.14);
+
+		&__wrapper {
+			z-index: 0;
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -50px;
+				width: 50px;
+				height: 100%;
+				background-color: #663399;
+			}
+		}
 
 		span {
 			text-align: center;

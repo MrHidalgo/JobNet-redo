@@ -4,13 +4,20 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 280px;
-	padding: 30px;
+	padding: 20px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(234, 234, 234);
 	border-radius: 8px;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.14);
+	@include transition(transform, box-shadow);
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+		@include transition(transform, box-shadow);
+	}
 
 	&--hot {
 		border-color: rgb(252, 205, 205);
@@ -44,34 +51,42 @@
 	}
 
 	&-body {
-		padding-top: 30px;
+		padding-top: 15px;
 	}
 
 	&-footer {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-top: 30px;
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid rgb(234, 234, 234);
 	}
 
 	&-heading {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
-		> div {
-			&:nth-of-type(1) {
-				flex: 1;
-				min-width: 1px;
-				max-width: 100%;
-				padding-right: 15px;
-			}
-		}
 	}
 
-	&-sign {
-		color: #2c567e;
-		font-size: 16px;
+	&-additional {
+		display: flex;
+		align-items: center;
+	}
+
+	&-title {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #222222;
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	&-subtitle {
+		padding-bottom: 15px;
+		color: #6e6e6e;
+		font-size: 20px;
 	}
 
 	&-logo {
@@ -110,25 +125,38 @@
 		}
 	}
 
-	&-title {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		color: #222222;
-		font-size: 30px;
-		font-weight: 700;
+	&-sign {
+		display: flex;
+		align-items: center;
+		margin-right: 30px;
+		color: #2c567e;
+		font-size: 16px;
+
+		&:hover {
+			color: #2c567e;
+		}
 	}
 
-	&-subtitle {
-		color: #6e6e6e;
-		font-size: 20px;
+	&-location {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+
+		.icon-font {
+			margin-right: 5px;
+			color: #2c567e;
+		}
+
+		span {
+			color: #6e6e6e;
+		}
 	}
 
 	&-list {
 		display: flex;
 		flex-direction: column;
 		padding-left: 15px;
-		padding-top: 30px;
+		padding-top: 15px;
 
 		li {
 			list-style-type: disc;
@@ -156,10 +184,10 @@
 		font-size: 16px;
 	}
 
-	&-location {
+	&-category {
 		display: flex;
 		align-items: center;
-		font-size: 14px;
+		font-size: 16px;
 
 		.icon-font {
 			margin-right: 5px;
@@ -167,18 +195,7 @@
 		}
 
 		span {
-			display: flex;
-			align-items: center;
 			color: #6e6e6e;
-
-			i {
-				width: 3px;
-				height: 3px;
-				border-radius: 50%;
-				margin-left: 10px;
-				margin-right: 10px;
-				background-color: #6e6e6e;
-			}
 		}
 	}
 

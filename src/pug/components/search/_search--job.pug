@@ -4,12 +4,18 @@ mixin job(classMod, imageBool)
 			div
 
 				.search__job-heading
-					div
-						p.search__job-title Senior .NET Developer (Urgent)
-					div
-						a.search__job-sign(href="#") Login to view salary
+					p.search__job-title Senior .NET Developer (Urgent)
 
 				p.search__job-subtitle Codigo - The Mobile App Company
+
+				.search__job-additional
+					a.search__job-sign(href="#")
+						i.icon-font.icon-dollar-symbol
+						span Login to view salary
+
+					p.search__job-location
+						i.icon-font.icon-pin
+						span!= "Myanmar, Yangon"
 
 				ul.search__job-list
 					li
@@ -34,9 +40,13 @@ mixin job(classMod, imageBool)
 
 		.search__job-footer
 			div
-				p.search__job-location
-					i.icon-font.icon-pin
-					span!= "Myanmar, Yangon <i></i> IT Hardware/Software"
+				p.search__job-category
+					i.icon-font.icon-folder
+					span Job Function: Engineering/Technical
+			div
+				p.search__job-category
+					i.icon-font.icon-cogwheel
+					span Industry: Telecommunications
 			div
 				p.search__job-posted
 					i.icon-font.icon-clock

@@ -13,6 +13,7 @@
     <!-- FAVICON-->
     <link rel="shortcut icon" href="./icon/favicon.ico">
     <!-- STYLE :: START-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
@@ -20,7 +21,7 @@
   <body>
     <!-- HEADER :: START-->
     <header class="header" id="header">
-      <div class="c-grid">
+      <div class="c-grid-fluid">
         <div class="header__wrapper">
           <div class="header__wrapper-left">
             <div>
@@ -36,8 +37,18 @@
             </div>
           </div>
           <div class="header__wrapper-mobile">
-            <div><a class="header__link" href="#">News</a><a class="header__lang" href="#"><img src="img/myanmar.svg" alt=""></a></div>
-            <div><a class="header__link" href="#">Sign Up</a><a class="header__link" href="#">Login</a>
+            <div>
+              <div class="header__link-wrapper"><a class="header__link" href="#">Management Jobs</a><a class="header__link" href="#">Companies</a><a class="header__link" href="#">Jobs by Category</a><a class="header__link" href="#">News</a></div>
+            </div>
+            <div>
+              <div class="header__icon-wrapper"><a class="header__lang" href="#"><img src="img/myanmar.svg" alt=""></a>
+                <div class="header__link-wrapper"><a class="header__link" href="#">Sign Up</a><a class="header__link" href="#">Login</a></div>
+                <!--a.header__icon.header__icon--motify(href="#")-->
+                <!--	i.icon-font.icon-notification-->
+                <!---->
+                <!--a.header__icon.header__icon--sign(href="#")-->
+                <!--	i.icon-font.icon-user-->
+              </div>
               <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>Companies<br><small>Post Jobs and Find Talent</small></span></a></div>
             </div>
           </div>
@@ -433,12 +444,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -462,7 +473,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -475,12 +489,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -502,7 +516,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -515,12 +532,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -544,7 +561,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -557,12 +577,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -584,7 +604,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -597,12 +620,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -626,7 +649,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -639,12 +665,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -666,7 +692,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -679,12 +708,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -708,7 +737,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -721,12 +753,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -748,7 +780,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -761,12 +796,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -790,7 +825,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -803,12 +841,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -830,7 +868,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -843,12 +884,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -872,7 +913,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -885,12 +929,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -912,7 +956,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -925,12 +972,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -954,7 +1001,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -967,12 +1017,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -994,7 +1044,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1007,12 +1060,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1036,7 +1089,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1049,12 +1105,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1076,7 +1132,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1089,12 +1148,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1118,7 +1177,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1131,12 +1193,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1158,7 +1220,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1171,12 +1236,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1200,7 +1265,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1213,12 +1281,12 @@
                                   <div class="search__job-head">
                                     <div>
                                       <div class="search__job-heading">
-                                        <div>
-                                          <p class="search__job-title">Senior .NET Developer (Urgent)</p>
-                                        </div>
-                                        <div><a class="search__job-sign" href="#">Login to view salary</a></div>
+                                        <p class="search__job-title">Senior .NET Developer (Urgent)</p>
                                       </div>
                                       <p class="search__job-subtitle">Codigo - The Mobile App Company</p>
+                                      <div class="search__job-additional"><a class="search__job-sign" href="#"><i class="icon-font icon-dollar-symbol"></i><span>Login to view salary</span></a>
+                                        <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon</span></p>
+                                      </div>
                                       <ul class="search__job-list">
                                         <li>
                                           <p><strong>Benefits:</strong> Rewards for over performance</p>
@@ -1240,7 +1308,10 @@
                                   </div>
                                   <div class="search__job-footer">
                                     <div>
-                                      <p class="search__job-location"><i class="icon-font icon-pin"></i><span>Myanmar, Yangon <i></i> IT Hardware/Software</span></p>
+                                      <p class="search__job-category"><i class="icon-font icon-folder"></i><span>Job Function: Engineering/Technical</span></p>
+                                    </div>
+                                    <div>
+                                      <p class="search__job-category"><i class="icon-font icon-cogwheel"></i><span>Industry: Telecommunications</span></p>
                                     </div>
                                     <div>
                                       <p class="search__job-posted"><i class="icon-font icon-clock"></i><span>Posted Today</span></p>
@@ -1318,6 +1389,7 @@
   <!-- SCRIPT :: START-->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="js/vendor.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->
 </html>

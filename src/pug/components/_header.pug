@@ -1,7 +1,7 @@
 // HEADER :: START
 
 header#header.header
-	.c-grid
+	.c-grid-fluid
 		.header__wrapper
 			.header__wrapper-left
 				div
@@ -21,14 +21,27 @@ header#header.header
 			.header__wrapper-mobile
 				div
 
-					a.header__link(href="#") News
-
-					a.header__lang(href="#")
-						img(src="img/myanmar.svg" alt="")
+					.header__link-wrapper
+						a.header__link(href="#") Management Jobs
+						a.header__link(href="#") Companies
+						a.header__link(href="#") Jobs by Category
+						a.header__link(href="#") News
 
 				div
-					a.header__link(href="#") Sign Up
-					a.header__link(href="#") Login
+					.header__icon-wrapper
+						a.header__lang(href="#")
+							img(src="img/myanmar.svg" alt="")
+
+						.header__link-wrapper
+							a.header__link(href="#") Sign Up
+							a.header__link(href="#") Login
+
+						//a.header__icon.header__icon--motify(href="#")
+						//	i.icon-font.icon-notification
+						//
+						//a.header__icon.header__icon--sign(href="#")
+						//	i.icon-font.icon-user
+
 					.c-btn__wrapper
 						a.c-btn.c-btn--purple(href="#")
 							span!= "Companies<br><small>Post Jobs and Find Talent</small>"

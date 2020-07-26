@@ -3,6 +3,16 @@
 section#main.main
 	.main__slider
 		#sliderMain.carousel.carousel-fade.slide(data-ride="carousel" data-interval='6000')
+			ol.carousel-indicators
+				li.active(data-target='#sliderMain', data-slide-to='0')
+				li(data-target='#sliderMain', data-slide-to='1')
+				li(data-target='#sliderMain', data-slide-to='2')
+				li(data-target='#sliderMain', data-slide-to='3')
+				li(data-target='#sliderMain', data-slide-to='4')
+				li(data-target='#sliderMain', data-slide-to='5')
+				li(data-target='#sliderMain', data-slide-to='6')
+				li(data-target='#sliderMain', data-slide-to='7')
+
 			.carousel-inner
 				.carousel-item.active(style='background-image:url("img/img-main-slider-1.jpg");')
 					.carousel-item-content
@@ -85,12 +95,13 @@ section#main.main
 								p Telecommunications
 								span Yangon
 
-	.c-grid
-		.main__wrapper
-			div
 
-				h1.main__title.c-title.c-title--white Great Careers. Start here!
+	.main__wrapper
+		div
 
+			h1.main__title.c-title.c-title--white Great Careers. Start here!
+
+			.main__form-wrapper
 				form.main__form(action='' method='' autocomplete='off')
 					.main__form-field.main__form-field-1
 						label
@@ -173,7 +184,7 @@ section#main.main
 
 					.main__form-field.main__form-field-4
 						.c-btn__wrapper
-							button.c-btn.c-btn--green(type='submit')
+							a.c-btn.c-btn--green(href="/search.html")
 								span Search
 							a.c-btn.c-btn--green(href="#")
 								span
