@@ -1,0 +1,18 @@
+&__form {
+	z-index: 1200;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 95px;
+	padding: 10px;
+	background-color: #663399;
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+
+	&-wrapper {
+		width: 100%;
+		max-width: 1250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

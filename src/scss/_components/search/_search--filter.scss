@@ -1,0 +1,165 @@
+// SECTION :: START
+
+&__filter {
+	position: sticky;
+	top: 110px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(234, 234, 234);
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.14);
+
+	&-head {
+		display: flex;
+		align-items: center;
+		height: 60px;
+	}
+
+	&-action {
+		min-height: 55px;
+
+		.c-btn {
+			min-width: unset;
+			height: 36px;
+			padding-left: 15px;
+			padding-right: 15px;
+			box-shadow: none;
+
+			&__wrapper {
+				width: 100%;
+				justify-content: space-between;
+
+				a {
+					width: calc((100% - 10px) / 2);
+				}
+			}
+		}
+	}
+
+	&-body {}
+
+	&-title {
+		color: #222222;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&-link {
+		display: flex;
+		align-items: center;
+		color: #c81a1a;
+
+		&:hover {
+			color: #c81a1a;
+		}
+	}
+
+	&-content {
+		border-bottom: 1px solid #eaeaea;
+
+		&:first-of-type {
+			border-top: 1px solid #eaeaea;
+		}
+
+		&-btn {
+			display: flex;
+			align-items: center;
+			height: 50px;
+
+			&[aria-expanded='true'] {
+				.icon-font {
+					transform: rotate(0);
+					@include transition(transform);
+				}
+			}
+
+			> div {
+				display: flex;
+				align-items: center;
+				height: 100%;
+
+				&:nth-of-type(1) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+				}
+				&:nth-of-type(2) {
+					justify-content: flex-end;
+					width: 30px;
+				}
+			}
+
+			p {
+				color: #222222;
+				font-size: 14px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			.icon-font {
+				font-size: 7px;
+				color: #6d7886;
+				transform: rotate(-90deg);
+				transform-origin: center;
+				backface-visibility: hidden;
+				@include transition(transform);
+			}
+		}
+	}
+
+	&-more {
+		display: flex;
+		padding-bottom: 20px;
+		padding-left: 20px;
+
+		&[aria-expanded='true'] {
+			&:after {
+				content: attr(data-less);
+			}
+		}
+
+		&:after {
+			content: attr(data-more);
+			font-size: 16px;
+			color: #1155cc;
+		}
+	}
+
+	.form-group {
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 20px;
+		}
+
+		.form-check {
+			&-input {
+				margin-top: 0.25rem;
+			}
+			&-label {
+				color: #6e6e6e;
+				font-size: 16px;
+			}
+		}
+
+		.form {
+			&-control {
+				outline: none;
+
+				&:focus {
+					border-color: #ced4da;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END

@@ -1,0 +1,145 @@
+// SECTION :: START
+
+.search__filter
+
+	.search__filter-head
+
+		p.search__filter-title Advanced filters
+
+	.search__filter-action
+
+		.c-btn__wrapper
+			a.search__filter-link(href="#") Clear All Filters
+			a.c-btn.c-btn--green(href='#')
+				span Apply
+
+	.search__filter-body
+
+		.search__filter-content
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseFreshness', role='button', aria-expanded='true', aria-controls='collapseFreshness')
+				div
+					p Freshness
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseFreshness.collapse.show
+				.form-group
+					select.form-control
+						option Any Days
+						option Today
+						option Last 7 Days
+						option Last 14 Days
+						option Last 30 Days
+
+		.search__filter-content
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseIndustry', role='button', aria-expanded='true', aria-controls='collapseIndustry')
+				div
+					p Industry
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseIndustry.collapse.show
+				-
+					const arr1 = [
+						'Any',
+						'Accounting <span>(2)</span>',
+						'Advertising <span>(10)</span>',
+						'Agriculture <span>(5)</span>',
+						'Athletics <span>(3)</span>',
+						'Automotive <span>(6)</span>',
+						'Banking <span>(9)</span>',
+						'Biotechnology <span>(1)</span>',
+					];
+				each val, idx in [1,2,3,4,5,6,7,8]
+					.form-group
+						.form-check
+							input.form-check-input(type='radio', id!= 'radio' + val name='exampleRadios', value='option1', checked='')
+							label.form-check-label(for!= 'radio' + val)!= arr1[idx]
+
+				#collapseMoreLess.collapse
+					-
+						const arr2 = [
+							'Broadcasting <span>(15)</span>',
+							'Chemicals <span>(15)</span>',
+							'Clothing <span>(15)</span>',
+							'Construction <span>(15)</span>',
+							'Consulting <span>(15)</span>',
+							'Education <span>(15)</span>',
+							'Electronics <span>(15)</span>',
+							'Energy <span>(15)</span>',
+							'Engineering <span>(15)</span>',
+							'Entertainment <span>(15)</span>',
+							'FMCG <span>(15)</span>',
+							'Food and Bevg.Healthcare <span>(15)</span>',
+							'Hospitality <span>(15)</span>',
+							'Insurance <span>(15)</span>',
+							'Interior Design <span>(15)</span>',
+							'Internet Svcs.IT <span>(15)</span>',
+							'Jewellery <span>(15)</span>',
+							'Legal Services <span>(15)</span>',
+							'Logistics <span>(15)</span>',
+							'Manufacturing <span>(15)</span>',
+							'Media <span>(15)</span>',
+							'Medical <span>(15)</span>',
+							'Mining <span>(15)</span>',
+							'NGO <span>(15)</span>',
+							'Pharmaceutical <span>(15)</span>',
+							'Printing <span>(15)</span>',
+							'Real Estate <span>(15)</span>',
+							'Recruitment <span>(15)</span>',
+							'Retail <span>(15)</span>',
+							'Security <span>(15)</span>',
+							'Telecomms.Tourism <span>(15)</span>',
+							'Trading <span>(15)</span>',
+							'Others <span>(15)</span>',
+						];
+					each val, idx in [9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+						.form-group
+							.form-check
+								input.form-check-input(type='radio', id!= 'radio' + val name='exampleRadios', value='option1', checked='')
+								label.form-check-label(for!= 'radio' + val)!= arr2[idx]
+
+				a.search__filter-more(data-toggle='collapse', href='#collapseMoreLess', role='button', aria-expanded='false', aria-controls='collapseMoreLess' data-more='more...' data-less='less...')
+
+		.search__filter-content
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseExplevel', role='button', aria-expanded='false', aria-controls='collapseExplevel')
+				div
+					p Exp. level
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseExplevel.collapse
+				.form-group
+					select.form-control
+						option Any
+						option Entry Level
+						option Experienced Non-Manager
+						option Manager
+						option Director and Above
+
+		.search__filter-content
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseMinimumSalary', role='button', aria-expanded='false', aria-controls='collapseMinimumSalary')
+				div
+					p minimum salary
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseMinimumSalary.collapse
+				.form-group
+					input.form-control(type='number', placeholder='')
+
+
+		.search__filter-content
+			a.search__filter-content-btn(data-toggle='collapse', href='#collapseRepatExpat', role='button', aria-expanded='false', aria-controls='collapseRepatExpat')
+				div
+					p Repat / Expat
+				div
+					i.icon-font.icon-keyboard-arrow-down
+			#collapseRepatExpat.collapse
+				.form-group.form-check
+					input#checkboxRepat.form-check-input(type='checkbox')
+					label.form-check-label(for='checkboxRepat') Repat
+
+				.form-group.form-check
+					input#checkboxExpat.form-check-input(type='checkbox')
+					label.form-check-label(for='checkboxExpat') Expat
+
+
+
+// SECTION :: END

@@ -1,0 +1,50 @@
+mixin job(classMod, imageBool)
+	.search__job(class!= classMod)
+		.search__job-head
+			div
+
+				.search__job-heading
+					div
+						p.search__job-title Senior .NET Developer (Urgent)
+					div
+						a.search__job-sign(href="#") Login to view salary
+
+				p.search__job-subtitle Codigo - The Mobile App Company
+
+				ul.search__job-list
+					li
+						p!= "<strong>Benefits:</strong> Rewards for over performance"
+					li
+						p!= "<strong>Highlights:</strong> * Fun working environment * International standard * Make a different"
+					li
+						p!= "<strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training"
+
+			div
+				if(imageBool)
+					.search__job-logo
+						img(src="img/img-employers-unilever.png" alt="")
+				else
+					.search__job-logo.search__job-logo--wi
+						i.icon-font.icon-photo
+						p No Image
+
+		.search__job-body
+
+			p.search__job-desc Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per
+
+		.search__job-footer
+			div
+				p.search__job-location
+					i.icon-font.icon-pin
+					span!= "Myanmar, Yangon <i></i> IT Hardware/Software"
+			div
+				p.search__job-posted
+					i.icon-font.icon-clock
+					span Posted Today
+
+.search__job-wrapper
+	each val, idx in [1,2,3,4,5,6,7,8,9,10]
+		div
+			+job('', false)
+		div
+			+job('search__job--hot', true)

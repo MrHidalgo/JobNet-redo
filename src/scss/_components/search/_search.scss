@@ -1,0 +1,31 @@
+// SECTION :: START
+
+.search {
+	padding-bottom: 80px;
+
+	&__wrapper {
+		&-2 {
+			display: flex;
+		}
+
+		&-left {
+			width: 100%;
+			max-width: 300px;
+			padding-right: 20px;
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+		}
+	}
+
+	@import "search--form";
+	@import "search--header";
+	@import "search--filter";
+	@import "search--job";
+	@import "search--action";
+}
+
+// SECTION :: END

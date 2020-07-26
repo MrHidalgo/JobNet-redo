@@ -1,0 +1,48 @@
+&__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 90px;
+
+	> div {
+		&:nth-of-type(2) {
+			display: flex;
+			align-items: center;
+			height: 50px;
+			padding-left: 20px;
+			border-left: 1px solid #eaeaea;
+
+			p {
+				padding-right: 20px;
+				color: #6e6e6e;
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&-res {
+		color: #222222;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.dropdown {
+		&-toggle {
+			display: flex;
+			align-items: center;
+			outline: none;
+			border: none;
+			box-shadow: none;
+			background-color: transparent;
+			color: #222222;
+			font-size: 16px;
+			font-weight: 600;
+
+			&:after {
+				margin-left: 15px;
+			}
+		}
+	}
+}
