@@ -26,6 +26,11 @@
           <div class="header__wrapper-left">
             <div>
               <div class="logo logo--header"><a class="logo__btn" href="/"><img class="logo__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt=""></a></div>
+              <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
             </div>
             <div>
               <form class="header__form" action="" method="" autocomplete="off">
@@ -36,18 +41,14 @@
               </form>
             </div>
           </div>
-          <div class="header__wrapper-mobile">
-            <div>
+          <div class="header__wrapper-mobile" mobile-block-js>
+            <div class="header__wrapper-mobile-header"><a class="header__wrapper-mobile-close" href="#" mobile-close-js><i class="icon-font icon-close"></i></a></div>
+            <div class="header__wrapper-mobile-left">
               <div class="header__link-wrapper"><a class="header__link" href="#">Management Jobs</a><a class="header__link" href="#">Companies</a><a class="header__link" href="#">Jobs by Category</a><a class="header__link" href="#">News</a></div>
             </div>
-            <div>
+            <div class="header__wrapper-mobile-right">
               <div class="header__icon-wrapper"><a class="header__lang" href="#"><img src="img/myanmar.svg" alt=""></a>
-                <div class="header__link-wrapper"><a class="header__link" href="#">Sign Up</a><a class="header__link" href="#">Login</a></div>
-                <!--a.header__icon.header__icon--motify(href="#")-->
-                <!--	i.icon-font.icon-notification-->
-                <!---->
-                <!--a.header__icon.header__icon--sign(href="#")-->
-                <!--	i.icon-font.icon-user-->
+                <div class="header__link-wrapper"><a class="header__link" href="#">Register</a><a class="header__link" href="#">Login</a></div>
               </div>
               <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>Companies<br><small>Post Jobs and Find Talent</small></span></a></div>
             </div>
@@ -1339,9 +1340,6 @@
             <div class="logo logo--footer"><a class="logo__btn" href="/"><img class="logo__img" src="img/logo--white.png" srcset="img/logo--white@2x.png 2x" alt=""></a></div>
             <ul class="social">
               <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-facebook"></i></a></li>
-              <!--li.social__item-->
-              <!--	a.social__link(href="#")-->
-              <!--		i.icon-font.icon-google-->
               <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-linkedin"></i></a></li>
             </ul>
           </div>

@@ -10,6 +10,8 @@ header#header.header
 						a.logo__btn(href="/")
 							img.logo__img(src="img/logo.png" srcset='img/logo@2x.png 2x' alt="")
 
+					+hamburger()
+
 				div
 
 					form.header__form(action='' method='' autocomplete='off')
@@ -18,8 +20,11 @@ header#header.header
 							button(type='submit')
 								i.icon-font.icon-search
 
-			.header__wrapper-mobile
-				div
+			.header__wrapper-mobile(mobile-block-js)
+				.header__wrapper-mobile-header
+					a.header__wrapper-mobile-close(href="#" mobile-close-js)
+						i.icon-font.icon-close
+				.header__wrapper-mobile-left
 
 					.header__link-wrapper
 						a.header__link(href="#") Management Jobs
@@ -27,20 +32,14 @@ header#header.header
 						a.header__link(href="#") Jobs by Category
 						a.header__link(href="#") News
 
-				div
+				.header__wrapper-mobile-right
 					.header__icon-wrapper
 						a.header__lang(href="#")
 							img(src="img/myanmar.svg" alt="")
 
 						.header__link-wrapper
-							a.header__link(href="#") Sign Up
+							a.header__link(href="#") Register
 							a.header__link(href="#") Login
-
-						//a.header__icon.header__icon--motify(href="#")
-						//	i.icon-font.icon-notification
-						//
-						//a.header__icon.header__icon--sign(href="#")
-						//	i.icon-font.icon-user
 
 					.c-btn__wrapper
 						a.c-btn.c-btn--purple(href="#")

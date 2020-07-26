@@ -288,7 +288,7 @@ $breakpointsMedia: (
 		@warn "Unfortunately, no value could be retrieved from `#{$breakpointsMedia}`. Please make sure it is defined in `$breakpointsMedia` map.";
 	}
 }
-@mixin respondCustom($val) {
+@mixin adaptiveCustom($val) {
 	@media screen and #{$val} {
 		@content;
 	}

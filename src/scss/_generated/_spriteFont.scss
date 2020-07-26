@@ -36,65 +36,68 @@
 	@if $filename == clock {
 		$char: "\E003";
 	}
-	@if $filename == cogwheel {
+	@if $filename == close {
 		$char: "\E004";
 	}
-	@if $filename == cost {
+	@if $filename == cogwheel {
 		$char: "\E005";
 	}
-	@if $filename == dollar-symbol {
+	@if $filename == cost {
 		$char: "\E006";
 	}
-	@if $filename == facebook {
+	@if $filename == dollar-symbol {
 		$char: "\E007";
 	}
-	@if $filename == factory {
+	@if $filename == facebook {
 		$char: "\E008";
 	}
-	@if $filename == folder {
+	@if $filename == factory {
 		$char: "\E009";
 	}
-	@if $filename == google {
+	@if $filename == folder {
 		$char: "\E00A";
 	}
-	@if $filename == home {
+	@if $filename == google {
 		$char: "\E00B";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == home {
 		$char: "\E00C";
 	}
-	@if $filename == linkedin {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E00D";
 	}
-	@if $filename == menu {
+	@if $filename == linkedin {
 		$char: "\E00E";
 	}
-	@if $filename == notification {
+	@if $filename == menu {
 		$char: "\E00F";
 	}
-	@if $filename == office-building {
+	@if $filename == notification {
 		$char: "\E010";
 	}
-	@if $filename == photo {
+	@if $filename == office-building {
 		$char: "\E011";
 	}
-	@if $filename == pin {
+	@if $filename == photo {
 		$char: "\E012";
 	}
-	@if $filename == programming {
+	@if $filename == pin {
 		$char: "\E013";
 	}
-	@if $filename == search {
+	@if $filename == programming {
 		$char: "\E014";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E015";
 	}
-	@if $filename == star {
+	@if $filename == shopping-bag {
 		$char: "\E016";
 	}
-	@if $filename == user {
+	@if $filename == star {
 		$char: "\E017";
+	}
+	@if $filename == user {
+		$char: "\E018";
 	}
 
 	@return $char;
@@ -121,6 +124,10 @@
 }
 .icon-clock {
 	@include icon(clock);
+
+}
+.icon-close {
+	@include icon(close);
 
 }
 .icon-cogwheel {

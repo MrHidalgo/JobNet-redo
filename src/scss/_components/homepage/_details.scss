@@ -3,6 +3,10 @@
 .details {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@include adaptive(1535) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
 	&__container {
 		overflow: hidden;
@@ -18,6 +22,9 @@
 		border-top: 1px solid rgb(234, 234, 234);
 		border-left: 1px solid rgb(234, 234, 234);
 		border-right: 1px solid rgb(234, 234, 234);
+		@include adaptive(1023) {
+			display: none;
+		}
 
 		> div {
 			display: flex;
@@ -30,12 +37,18 @@
 				font-size: 16px;
 				font-weight: 600;
 				text-transform: uppercase;
+				@include adaptive(1535) {
+					font-size: 14px;
+				}
 			}
 
 			.icon-font {
 				margin-left: 2px;
 				margin-right: 2px;
 				color: #663399;
+				@include adaptive(1535) {
+					font-size: 12px;
+				}
 			}
 		}
 
@@ -63,14 +76,59 @@
 		border-color: rgb(234, 234, 234);
 		border-radius: 0 0 10px 10px;
 		background-color: rgb(255, 255, 255);
+		@include adaptive(1535) {
+			height: 580px;
+		}
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+			height: auto;
+		}
+
+		&-header {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			height: 45px;
+			border-bottom: 1px solid #eaeaea;
+			@include adaptive(1023) {
+				display: flex;
+			}
+
+			p {
+				padding-left: 5px;
+				padding-right: 5px;
+				font-size: 16px;
+				font-weight: 600;
+				text-transform: uppercase;
+				@include adaptive(1535) {
+					font-size: 14px;
+				}
+			}
+
+			.icon-font {
+				margin-left: 2px;
+				margin-right: 2px;
+				color: #663399;
+				@include adaptive(1535) {
+					font-size: 12px;
+				}
+			}
+		}
 
 		&-left {
 			width: 125px;
 			border-right: 1px solid rgb(234, 234, 234);
+			@include adaptive(1023) {
+				width: 100%;
+				border-bottom: 1px solid rgb(234, 234, 234);
+			}
 
 			.details__wrapper-scroll {
 				> div {
 					padding: 20px;
+					@include adaptive(1535) {
+						padding: 15px;
+					}
 				}
 			}
 		}
@@ -78,11 +136,22 @@
 		&-middle {
 			width: 100%;
 			max-width: calc((100% - (125px + 250px)));
+			@include adaptive(1023) {
+				display: flex;
+				flex-direction: column;
+				max-width: 100%;
+				height: 550px;
+				border-bottom: 1px solid rgb(234, 234, 234);
+			}
 		}
 
 		&-right {
 			width: 250px;
 			border-left: 1px solid rgb(234, 234, 234);
+			@include adaptive(1023) {
+				width: 100%;
+				border-left: none;
+			}
 		}
 
 		&-scroll {
@@ -92,24 +161,55 @@
 			justify-content: flex-start;
 			flex-wrap: wrap;
 			height: 100%;
+			@include adaptive(1023) {
+				height: auto;
+			}
 
 			&-1 {
+				@include adaptive(1023) {
+					white-space: nowrap;
+					overflow: auto hidden;
+					position: relative;
+					display: block;
+					font-size: 0;
+				}
+
 				> div {
 					width: 100%;
+					@include adaptive(1023) {
+						display: inline-block;
+						width: 100px;
+						height: 75px !important;
+					}
 				}
 			}
 
 			&-2 {
 				flex-wrap: wrap;
+				@include adaptive(1023) {
+					white-space: nowrap;
+					overflow: auto hidden;
+					display: block;
+					position: relative;
+					font-size: 0;
+				}
 
 				> div {
 					width: 50%;
+					@include adaptive(1023) {
+						display: inline-block;
+						width: 100px;
+						height: 100px !important;
+					}
 				}
 			}
 
 			> div {
 				height: 100px;
 				padding: 10px;
+				@include adaptive(1535) {
+					height: 75px;
+				}
 			}
 
 			a {
@@ -210,7 +310,6 @@
 						white-space: nowrap;
 						overflow: hidden;
 						text-overflow: ellipsis;
-
 					}
 
 					p {
@@ -218,11 +317,17 @@
 						font-size: 18px;
 						font-weight: 700;
 						@include transition(color);
+						@include adaptive(1535) {
+							font-size: 16px;
+						}
 					}
 
 					span {
 						color: #222222;
 						font-size: 16px;
+						@include adaptive(1535) {
+							font-size: 14px;
+						}
 					}
 				}
 			}

@@ -51,6 +51,9 @@
 
 	&__text {
 		color: #ffffff;
+		@include adaptive(1279) {
+			font-size: 12px;
+		}
 
 		a {
 			position: relative;
@@ -92,12 +95,18 @@
 		padding-right: 30px;
 		color: #ffffff;
 		font-size: 16px;
+		@include adaptive(1279) {
+			font-size: 14px;
+		}
 	}
 
 	&__link {
 		position: relative;
 		color: #ffffff;
 		text-transform: uppercase;
+		@include adaptive(1279) {
+			font-size: 12px;
+		}
 
 		&:not(:last-of-type) {
 			margin-right: 15px;

@@ -18,6 +18,9 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 70px;
+		@include adaptive(1535) {
+			height: 60px;
+		}
 
 		&-left {
 			display: flex;
@@ -35,6 +38,11 @@
 
 				&:nth-of-type(1) {
 					padding-right: 30px;
+					@include adaptive(1023) {
+						justify-content: space-between;
+						width: 100%;
+						padding-right: 15px;
+					}
 				}
 
 				&:nth-of-type(2) {
@@ -42,6 +50,9 @@
 					min-width: 1px;
 					max-width: 100%;
 					padding-right: 15px;
+					@include adaptive(1023) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -49,19 +60,82 @@
 		&-mobile {
 			display: flex;
 			align-items: center;
+			@include adaptive(1023) {
+				z-index: 1200;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(100%);
+				overflow-y: auto;
+				position: fixed;
+				top: 0;
+				right: 0;
+				display: block;
+				width: 100%;
+				max-width: 300px;
+				height: 100%;
+				padding: 0 15px 60px;
+				background-color: #ffffff;
+				box-shadow: 0 -2px 5px 0 rgba(#000, 0.15);
 
-			> div {
+				&.is-animated {
+					@include transition(opacity, visibility, transform);
+				}
+
+				&.is-open {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0);
+					@include transition(opacity, visibility, transform);
+				}
+			}
+
+			&-header {
+				display: none;
+				@include adaptive(1023) {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					height: 60px;
+				}
+			}
+
+			&-left,
+			&-right {
 				display: flex;
 				align-items: center;
 				height: 70px;
-
-				&:nth-of-type(1) {
-					padding-right: 15px;
+				@include adaptive(1535) {
+					height: 60px;
 				}
+				@include adaptive(1023) {
+					display: block;
+					height: auto;
+				}
+			}
 
-				&:nth-of-type(2) {
-					padding-left: 10px;
-					border-left: 1px solid #eaeaea;
+			&-left {
+				padding-right: 15px;
+				@include adaptive(1023) {
+					padding-right: 0;
+					padding-bottom: 30px;
+				}
+			}
+
+			&-right {
+				padding-left: 10px;
+				border-left: 1px solid #eaeaea;
+				@include adaptive(1023) {
+					padding-left: 0;
+					border-left: 0;
+				}
+			}
+
+			&-close {
+				color: #663399;
+				font-size: 20px;
+
+				&:hover {
+					color: #663399;
 				}
 			}
 		}
@@ -73,6 +147,13 @@
 		height: 100%;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		@include adaptive(1535) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		@include adaptive(1279) {
+			display: none;
+		}
 
 		&:hover,
 		&.is-focus {
@@ -123,6 +204,9 @@
 				font-weight: 600;
 				color: #6e6e6e;
 			}
+			@include adaptive(1535) {
+				font-size: 14px;
+			}
 		}
 
 		button {
@@ -139,6 +223,9 @@
 				color: #663399;
 				font-size: 22px;
 				@include transition(color);
+				@include adaptive(1535) {
+					font-size: 20px;
+				}
 			}
 		}
 	}
@@ -155,6 +242,11 @@
 		margin-left: 15px;
 		margin-right: 10px;
 		border-radius: 50%;
+		@include adaptive(1023) {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+		}
 
 		img {
 			display: block;
@@ -180,6 +272,11 @@
 			align-items: center;
 			height: 100%;
 			padding-right: 15px;
+			@include adaptive(1023) {
+				flex-direction: column;
+				padding-right: 0;
+				padding-bottom: 30px;
+			}
 
 			&:after {
 				content: '';
@@ -191,6 +288,9 @@
 				background-color: #ffffff;
 				border-radius: 0 50px 50px 0;
 				box-shadow: 3px 0 5px 0 rgba(0,0,0,.1);
+				@include adaptive(1023) {
+					display: none;
+				}
 			}
 		}
 
@@ -214,6 +314,16 @@
 		color: #663399;
 		font-size: 16px;
 		font-weight: 600;
+		@include adaptive(1535) {
+			font-size: 14px;
+		}
+		@include adaptive(1023) {
+			justify-content: center;
+			min-height: 45px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 16px;
+		}
 
 		&:hover {
 			color: #663399;
@@ -245,6 +355,13 @@
 			position: relative;
 			display: flex;
 			height: 70px;
+			@include adaptive(1535) {
+				height: 60px;
+			}
+			@include adaptive(1023) {
+				flex-direction: column;
+				height: auto;
+			}
 		}
 	}
 
@@ -257,10 +374,21 @@
 		border-radius: 0;
 		min-width: 160px;
 		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.14);
+		@include adaptive(1535) {
+			height: 60px;
+			padding-left: 10px;
+		}
+		@include adaptive(1023) {
+			width: 100%;
+		}
 
 		&__wrapper {
 			z-index: 0;
 			position: relative;
+			@include adaptive(1023) {
+				left: -25px;
+				width: calc(100% + 50px);
+			}
 
 			&:after {
 				content: '';
@@ -270,6 +398,9 @@
 				width: 50px;
 				height: 100%;
 				background-color: #663399;
+				@include adaptive(1023) {
+					display: none;
+				}
 			}
 		}
 

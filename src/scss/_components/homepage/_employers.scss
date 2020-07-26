@@ -3,9 +3,16 @@
 .employers {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@include adaptive(1535) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 
 	&__title {
 		padding-bottom: 30px;
+		@include adaptive(1535) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__wrapper {
@@ -20,6 +27,10 @@
 		border-radius: 10px;
 		background-color: rgb(255, 255, 255);
 		box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+		@include adaptive(1535) {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 
 		> div {
 			width: 100%;
@@ -60,6 +71,14 @@
 			margin-right: auto;
 			transform-origin: center;
 			@include transition(transform);
+			@include adaptive(1535) {
+				width: 100px;
+				height: 100px;
+			}
+			@include adaptive(1279) {
+				width: 80px;
+				height: 80px;
+			}
 
 			img {
 				display: block;
@@ -78,6 +97,9 @@
 				color: #6e6e6e;
 				font-size: 16px;
 				@include transition(color);
+				@include adaptive(1279) {
+					font-size: 14px;
+				}
 			}
 		}
 	}

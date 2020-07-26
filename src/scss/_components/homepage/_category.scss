@@ -3,9 +3,19 @@
 .category {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@include adaptive(1535) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@include adaptive(1023) {
+		padding-bottom: 5px;
+	}
 
 	&__title {
 		padding-bottom: 30px;
+		@include adaptive(1535) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__box {
@@ -36,10 +46,17 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 8);
+				@include adaptive(1023) {
+					max-width: calc(100% / 4);
+					padding-bottom: 15px;
+				}
 			}
 		}
 
@@ -58,10 +75,17 @@
 			background-color: rgb(255, 255, 255);
 			box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 			@include transition(transform, border-color, box-shadow);
+			@include adaptive(1535) {
+				width: 80px;
+				height: 80px;
+			}
 
 			.icon-font {
 				color: #663399;
 				font-size: 30px;
+				@include adaptive(1535) {
+					font-size: 28px;
+				}
 			}
 		}
 

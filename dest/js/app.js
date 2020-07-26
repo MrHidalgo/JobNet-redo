@@ -16,6 +16,49 @@
 * */
 
 /**
+ * @name initHamburger
+ *
+ * @description Init hamburger logic with animated
+ */
+var initHamburger = function initHamburger() {
+
+	var btn = document.querySelector("[hamburger-js]"),
+	    hideScrollContainer = document.querySelectorAll("html, body"),
+	    mobileContainer = document.querySelector("[mobile-block-js]");
+
+	/**
+   * @description
+  */
+	if (btn) {
+		btn.addEventListener("click", function (ev) {
+			var elem = ev.currentTarget;
+
+			// elem.classList.toggle("is-active");
+			mobileContainer.classList.toggle("is-open");
+
+			hideScrollContainer.forEach(function (val, idx) {
+				val.classList.toggle("is-hideScroll");
+			});
+		});
+
+		$('[mobile-close-js]').on('click', function (ev) {
+			mobileContainer.classList.add('is-animated');
+
+			// btn.classList.remove('is-active');
+			mobileContainer.classList.remove('is-open');
+
+			hideScrollContainer.forEach(function (val, idx) {
+				val.classList.remove("is-hideScroll");
+			});
+
+			setTimeout(function () {
+				mobileContainer.classList.remove('is-animated');
+			}, 350);
+		});
+	}
+};
+
+/**
  * @name initPreventBehavior
  *
  * @description
@@ -81,6 +124,7 @@ window.addEventListener('scroll', function (ev) {});
 		// ==========================================
 
 		// lib
+		initHamburger();
 		// ==========================================
 
 		// callback

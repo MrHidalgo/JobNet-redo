@@ -16,6 +16,12 @@
 	border-radius: 6px;
 	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 	@include transition(box-shadow);
+	@include adaptive(1535) {
+		height: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		min-width: 150px;
+	}
 
 	&:hover {
 		box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
@@ -54,6 +60,9 @@
 		position: relative;
 		font-size: 18px;
 		font-weight: 600;
+		@include adaptive(1535) {
+			font-size: 16px;
+		}
 	}
 
 	&--white {

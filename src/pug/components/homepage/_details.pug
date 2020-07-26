@@ -17,6 +17,8 @@ section#details.details
 
 			.details__wrapper
 				.details__wrapper-left
+					.details__wrapper-header
+						p companies
 					.details__wrapper-scroll.details__wrapper-scroll-1
 						each val, idx in [1,2,3,4,5]
 							div
@@ -38,7 +40,12 @@ section#details.details
 								a(href="#")
 									img(src="img/img-employers-unilever.png" alt="")
 				.details__wrapper-middle
-
+					.details__wrapper-header
+						i.icon-font.icon-star
+						i.icon-font.icon-star
+						p top jobs
+						i.icon-font.icon-star
+						i.icon-font.icon-star
 					#sliderDetails.carousel.slide(data-ride='carousel' data-interval="10000")
 						ol.carousel-indicators
 							li.active(data-target='#sliderDetails', data-slide-to='0')
@@ -68,6 +75,8 @@ section#details.details
 												span Prudential Myanmar
 
 				.details__wrapper-right
+					.details__wrapper-header
+						p leading employers
 					.details__wrapper-scroll.details__wrapper-scroll-2
 						each val, idx in [1,2,3,4,5]
 							div
