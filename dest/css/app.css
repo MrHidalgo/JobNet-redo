@@ -1919,7 +1919,14 @@ picture {
           flex-direction: column;
 }
 
-/* line 89, src/scss/_components/_footer.scss */
+@media screen and (max-width: 1023px) {
+  /* line 84, src/scss/_components/_footer.scss */
+  .footer__nav {
+    padding-right: 10px;
+  }
+}
+
+/* line 92, src/scss/_components/_footer.scss */
 .footer__nav-link {
   white-space: nowrap;
   position: relative;
@@ -1931,17 +1938,24 @@ picture {
   font-size: 16px;
 }
 
-/* line 96, src/scss/_components/_footer.scss */
+@media screen and (max-width: 1023px) {
+  /* line 92, src/scss/_components/_footer.scss */
+  .footer__nav-link {
+    white-space: normal;
+  }
+}
+
+/* line 102, src/scss/_components/_footer.scss */
 .footer__nav-link:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-/* line 100, src/scss/_components/_footer.scss */
+/* line 106, src/scss/_components/_footer.scss */
 .footer__nav-link:hover {
   color: #ffffff;
 }
 
-/* line 103, src/scss/_components/_footer.scss */
+/* line 109, src/scss/_components/_footer.scss */
 .footer__nav-link:hover:before, .footer__nav-link:hover:after {
   width: 50%;
   -webkit-transition: width 0.4s ease-in-out;
@@ -1949,7 +1963,7 @@ picture {
   transition: width 0.4s ease-in-out;
 }
 
-/* line 110, src/scss/_components/_footer.scss */
+/* line 116, src/scss/_components/_footer.scss */
 .footer__nav-link:before, .footer__nav-link:after {
   content: '';
   position: absolute;
@@ -1962,12 +1976,12 @@ picture {
   transition: width 0.4s ease-in-out;
 }
 
-/* line 120, src/scss/_components/_footer.scss */
+/* line 126, src/scss/_components/_footer.scss */
 .footer__nav-link:before {
   left: 50%;
 }
 
-/* line 123, src/scss/_components/_footer.scss */
+/* line 129, src/scss/_components/_footer.scss */
 .footer__nav-link:after {
   right: 50%;
 }

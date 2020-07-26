@@ -85,6 +85,9 @@
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
+		@include adaptive(1023) {
+			padding-right: 10px;
+		}
 
 		&-link {
 			white-space: nowrap;
@@ -92,6 +95,9 @@
 			display: flex;
 			color: #ffffff;
 			font-size: 16px;
+			@include adaptive(1023) {
+				white-space: normal;
+			}
 
 			&:not(:last-of-type) {
 				margin-bottom: 10px;
