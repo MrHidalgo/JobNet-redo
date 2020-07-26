@@ -47,6 +47,10 @@
 
 	& + .copyright {
 		padding-left: 30px;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-bottom: 30px;
+		}
 	}
 
 	&__text {

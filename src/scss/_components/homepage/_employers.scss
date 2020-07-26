@@ -31,10 +31,18 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
+		@include adaptive(767) {
+			flex-wrap: wrap;
+			padding-bottom: 0;
+		}
 
 		> div {
 			width: 100%;
 			max-width: calc(100% / 6);
+			@include adaptive(767) {
+				max-width: calc(100% / 3);
+				padding-bottom: 20px;
+			}
 		}
 	}
 
@@ -44,6 +52,10 @@
 		padding-left: 5px;
 		padding-right: 5px;
 		text-align: center;
+		@include adaptive(767) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 
 		&:hover {
 			.employers__box {

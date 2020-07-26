@@ -44,6 +44,9 @@
 			padding-top: 150px;
 			padding-bottom: 150px;
 		}
+		@include adaptive(767) {
+			padding-top: 75px;
+		}
 
 		> div {
 			z-index: 2;
@@ -52,15 +55,12 @@
 			max-width: 1250px;
 			padding-left: 15px;
 			padding-right: 15px;
-			@include adaptive(1023) {
-			}
 		}
 	}
 
 	&__title {
 		padding-bottom: 20px;
 		text-align: left;
-		font-weight: 600;
 		line-height: 1.2;
 		@include adaptive(1535) {
 			padding-bottom: 10px;
@@ -97,6 +97,9 @@
 			@include adaptive(1023) {
 				padding: 8px;
 			}
+			@include adaptive(767) {
+				padding: 5px;
+			}
 		}
 
 		&-field {
@@ -107,6 +110,9 @@
 			@include adaptive(1023) {
 				height: 60px;
 				width: 100%;
+			}
+			@include adaptive(767) {
+				height: 55px;
 			}
 
 			&.main__form-field-1 {
@@ -136,12 +142,20 @@
 					max-width: 50%;
 					border-left: none !important;
 				}
+				@include adaptive(767) {
+					max-width: 100%;
+					border-bottom: 1px solid #eaeaea;
+				}
 			}
 			&-3 {
 				width: 100%;
 				max-width: 235px;
 				@include adaptive(1023) {
 					max-width: 50%;
+				}
+				@include adaptive(767) {
+					max-width: 100%;
+					border-left: none !important;
 				}
 			}
 			&-4 {
@@ -267,6 +281,9 @@
 				@include adaptive(1023) {
 					transform: translate3d(0px, 60px, 0px) !important;
 					max-height: 250px;
+				}
+				@include adaptive(767) {
+					transform: translate3d(0px, 55px, 0px) !important;
 				}
 			}
 

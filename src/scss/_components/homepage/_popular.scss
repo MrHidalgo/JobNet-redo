@@ -115,6 +115,11 @@
 
 			ul {
 				li {
+					@include adaptive(767) {
+						display: flex;
+						justify-content: center;
+					}
+
 					&:not(:last-of-type) {
 						padding-bottom: 10px;
 					}
@@ -130,6 +135,11 @@
 					}
 					@include adaptive(1023) {
 						font-size: 16px;
+					}
+					@include adaptive(767) {
+						text-align: center;
+						padding-left: 5px;
+						padding-right: 5px;
 					}
 
 					&:hover {

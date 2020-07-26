@@ -37,11 +37,18 @@
 					flex: 1;
 					min-width: 1px;
 					max-width: 100%;
+					@include adaptive(767) {
+						flex-wrap: wrap;
+					}
 
 					> div {
 						@include adaptive(1279) {
 							width: 100%;
 							max-width: calc(100% / 4);
+						}
+						@include adaptive(767) {
+							max-width: calc(100% / 2);
+							padding-bottom: 30px;
 						}
 
 						&:not(:last-of-type) {
@@ -60,11 +67,21 @@
 			justify-content: space-between;
 			min-height: 55px;
 			border-top: 1px solid #4b4a67;
+			@include adaptive(767) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+				flex-direction: column;
+				text-align: center;
+			}
 
 			.footer__wrapper {
 				&-left {
 					display: flex;
 					align-items: center;
+					@include adaptive(767) {
+						flex-direction: column;
+						text-align: center;
+					}
 				}
 			}
 		}

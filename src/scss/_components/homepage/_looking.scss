@@ -28,6 +28,13 @@
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+		@include adaptive(767) {
+			flex-wrap: wrap;
+			height: auto;
+			padding-top: 75px;
+			padding-bottom: 20px;
+			background-position: top center;
+		}
 
 		&-left,
 		&-right {
@@ -35,6 +42,9 @@
 			align-items: center;
 			justify-content: center;
 			width: 50%;
+			@include adaptive(767) {
+				width: 100%;
+			}
 		}
 
 		&-left {
@@ -45,7 +55,12 @@
 			@include adaptive(1023) {
 				padding-right: 10px;
 			}
+			@include adaptive(767) {
+				padding-bottom: 15px;
+				padding-right: 0;
+			}
 		}
+
 		&-right {
 			padding-left: 30px;
 			@include adaptive(1535) {
@@ -53,6 +68,9 @@
 			}
 			@include adaptive(1023) {
 				padding-left: 10px;
+			}
+			@include adaptive(767) {
+				padding-left: 0;
 			}
 		}
 	}
@@ -69,6 +87,9 @@
 		@include adaptive(1535) {
 			font-size: 26px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 10px;
+		}
 	}
 
 	&__subtitle {
@@ -78,10 +99,24 @@
 		}
 	}
 
-	&__btn {
-		.c-btn {
-			margin-left: 10px;
-			margin-right: 10px;
+	.c-btn {
+		margin-left: 10px;
+		margin-right: 10px;
+		@include adaptive(767) {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+
+			&:nth-of-type(1) {
+				margin-bottom: 15px;
+			}
+		}
+
+		&__wrapper {
+			@include adaptive(767) {
+				flex-direction: column;
+				width: 100%;
+			}
 		}
 	}
 }

@@ -57,6 +57,9 @@
 					max-width: calc(100% / 4);
 					padding-bottom: 15px;
 				}
+				@include adaptive(767) {
+					max-width: calc(100% / 2);
+				}
 			}
 		}
 
