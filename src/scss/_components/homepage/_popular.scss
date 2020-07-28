@@ -24,14 +24,14 @@
 			min-height: 35px;
 			//padding-bottom: 15px;
 			color: #6e6e6e;
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: bold;
 			@include transition(color);
 			@include adaptive(1535) {
-				font-size: 18px;
+				font-size: 16px;
 			}
 			@include adaptive(1279) {
-				font-size: 16px;
+				font-size: 14px;
 			}
 
 			&:after {
@@ -121,7 +121,7 @@
 					overflow: hidden;
 					text-overflow: ellipsis;
 					color: #6e6e6e;
-					font-size: 18px;
+					font-size: 16px;
 					font-weight: bold;
 					@include transition(color);
 				}
@@ -154,12 +154,9 @@
 					@include adaptive(1023) {
 						justify-content: center;
 						width: 100%;
-						max-width: calc(100% / 2);
-						text-align: center;
-						padding-bottom: 10px;
-					}
-					@include adaptive(1023) {
 						max-width: 100%;
+						text-align: left;
+						padding-bottom: 10px;
 					}
 
 					&:nth-of-type(2),
@@ -168,7 +165,8 @@
 						padding-right: 5px;
 						justify-content: center;
 						@include adaptive(1023) {
-
+							padding-left: 0;
+							padding-right: 0;
 						}
 					}
 
@@ -181,6 +179,12 @@
 				}
 
 				ul {
+					@include adaptive(1023) {
+						width: 100%;
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+
 					li {
 						@include adaptive(767) {
 							display: flex;
@@ -195,13 +199,10 @@
 					a {
 						position: relative;
 						color: #6e6e6e;
-						font-size: 16px;
+						font-size: 14px;
 						@include transition(color);
-						@include adaptive(1279) {
-							font-size: 14px;
-						}
 						@include adaptive(1023) {
-							font-size: 16px;
+							font-size: 14px;
 						}
 						@include adaptive(767) {
 							text-align: center;
@@ -239,6 +240,8 @@
 
 						span {
 							color: #663399;
+							font-size: 13px;
+							text-transform: uppercase;
 						}
 					}
 				}

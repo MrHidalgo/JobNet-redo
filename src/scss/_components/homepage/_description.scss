@@ -18,9 +18,9 @@
 	&__desc {
 		padding-bottom: 20px;
 		color: #6e6e6e;
-		font-size: 18px;
+		font-size: 16px;
 		@include adaptive(1279) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 
 		a {
@@ -71,6 +71,7 @@
 			background-color: #ffffff;
 			color: #6e6e6e;
 			font-weight: bold;
+			font-size: 13px;
 			text-transform: uppercase;
 			@include transition(color);
 

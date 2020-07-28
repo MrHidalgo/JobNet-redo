@@ -59,8 +59,8 @@
 			> p {
 				padding-right: 20px;
 				color: #6e6e6e;
-				font-size: 16px;
-				font-weight: 600;
+				font-size: 14px;
+				font-weight: 500;
 				@include adaptive(1023) {
 					display: none;
 				}
@@ -82,7 +82,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		@include adaptive(1535) {
-			font-size: 16px;
+			font-size: 15px;
 		}
 		@include adaptive(767) {
 			font-size: 14px;
@@ -152,13 +152,13 @@
 			}
 
 			&.icon-keyboard-arrow-down {
+				padding-left: 5px;
 				font-size: 6px;
 			}
 		}
 
 		span {
 			padding-left: 10px;
-			padding-right: 5px;
 			color: #6e6e6e;
 			font-size: 14px;
 		}
@@ -177,8 +177,8 @@
 			box-shadow: none;
 			background-color: transparent;
 			color: #222222;
-			font-size: 16px;
-			font-weight: 600;
+			font-size: 14px;
+			font-weight: 500;
 
 			&:after {
 				margin-left: 15px;

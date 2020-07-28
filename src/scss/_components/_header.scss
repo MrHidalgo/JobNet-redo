@@ -200,12 +200,12 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding: 0 50px 0 15px;
-			font-size: 16px;
-			font-weight: 600;
+			font-size: 14px;
+			font-weight: 500;
 			color: #222222;
 			@include inputPlaceholder {
-				font-size: 16px;
-				font-weight: 600;
+				font-size: 14px;
+				font-weight: 500;
 				color: #6e6e6e;
 			}
 			@include adaptive(1535) {
@@ -316,8 +316,8 @@
 		padding-left: 10px;
 		padding-right: 10px;
 		color: #663399;
-		font-size: 16px;
-		font-weight: 600;
+		font-size: 14px;
+		font-weight: 500;
 		@include adaptive(1535) {
 			font-size: 14px;
 		}
@@ -326,7 +326,7 @@
 			min-height: 45px;
 			margin-left: auto;
 			margin-right: auto;
-			font-size: 16px;
+			font-size: 15px;
 		}
 
 		&:hover {

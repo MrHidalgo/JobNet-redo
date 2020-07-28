@@ -3,8 +3,7 @@
 &__job {
 	display: flex;
 	flex-direction: column;
-	min-height: 280px;
-	padding: 20px;
+	padding: 10px 20px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(234, 234, 234);
@@ -13,7 +12,10 @@
 	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.14);
 	@include transition(transform, box-shadow);
 	@include adaptive(1535) {
-		padding: 15px;
+		padding: 10px 15px;
+	}
+	@include adaptive(767) {
+		padding: 10px;
 	}
 
 	&:hover {
@@ -48,28 +50,28 @@
 				padding-right: 30px;
 			}
 			&:nth-of-type(2) {
-				width: 100px;
+				width: 90px;
 				@include adaptive(767) {
-					width: 75px;
+					width: 55px;
 				}
 			}
 		}
 	}
 
 	&-body {
-		padding-top: 15px;
+		padding-top: 10px;
 	}
 
 	&-footer {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-top: 20px;
-		padding-top: 20px;
+		margin-top: 10px;
+		padding-top: 10px;
 		border-top: 1px solid rgb(234, 234, 234);
-		@include adaptive(1023) {
-			margin-top: 15px;
-			padding-top: 15px;
+		@include adaptive(767) {
+			margin-top: 5px;
+			padding-top: 5px;
 		}
 
 		> div {
@@ -93,7 +95,13 @@
 		}
 
 		.c-btn {
+			min-width: unset;
+			width: 100%;
 			box-shadow: none;
+
+			&__wrapper {
+				width: 100px;
+			}
 		}
 	}
 
@@ -106,14 +114,7 @@
 	&-additional {
 		display: flex;
 		align-items: center;
-		@include adaptive(767) {
-			flex-direction: column;
-			align-items: flex-start;
-
-			> a {
-				padding-bottom: 10px;
-			}
-		}
+		width: calc(100% + 85px);
 	}
 
 	&-title {
@@ -121,25 +122,19 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		color: #222222;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 700;
 		@include adaptive(1535) {
-			font-size: 26px;
-		}
-		@include adaptive(767) {
 			font-size: 22px;
 		}
 	}
 
 	&-subtitle {
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 		color: #6e6e6e;
-		font-size: 20px;
-		@include adaptive(1535) {
-			font-size: 18px;
-		}
+		font-size: 18px;
 		@include adaptive(767) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -149,13 +144,13 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100px;
-		height: 100px;
+		width: 90px;
+		height: 90px;
 		border-radius: 6px;
 		background-color: rgb(255, 255, 255);
 		@include adaptive(767) {
-			width: 75px;
-			height: 75px;
+			width: 55px;
+			height: 55px;
 		}
 
 		&--wi {
@@ -194,7 +189,7 @@
 		align-items: center;
 		margin-right: 30px;
 		color: #2c567e;
-		font-size: 16px;
+		font-size: 14px;
 
 		&:hover {
 			color: #2c567e;
@@ -204,7 +199,7 @@
 	&-location {
 		display: flex;
 		align-items: center;
-		font-size: 16px;
+		font-size: 14px;
 
 		.icon-font {
 			margin-right: 5px;
@@ -219,15 +214,11 @@
 	&-list {
 		display: flex;
 		flex-direction: column;
-		padding-left: 15px;
-		padding-bottom: 15px;
+		padding-left: 20px;
+		padding-bottom: 10px;
 
 		li {
 			list-style-type: disc;
-
-			&:not(:last-of-type) {
-				padding-bottom: 5px;
-			}
 		}
 
 		p {
@@ -235,10 +226,11 @@
 			overflow: hidden;
 			text-overflow: ellipsis;
 			color: #222222;
-			font-size: 16px;
+			font-size: 14px;
+			line-height: 1.8;
 
 			strong {
-				font-weight: 600;
+				font-weight: 700;
 			}
 		}
 	}
@@ -248,13 +240,13 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		color: #6e6e6e;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	&-category {
 		display: flex;
 		align-items: center;
-		font-size: 16px;
+		font-size: 14px;
 
 		.icon-font {
 			margin-right: 5px;

@@ -34,8 +34,8 @@
 			p {
 				padding-left: 5px;
 				padding-right: 5px;
-				font-size: 16px;
-				font-weight: 600;
+				font-size: 14px;
+				font-weight: 500;
 				text-transform: uppercase;
 				@include adaptive(1535) {
 					font-size: 14px;
@@ -70,14 +70,15 @@
 
 	&__wrapper {
 		display: flex;
-		height: 650px;
+		//height: 650px;
+		max-height: 650px;
 		border-style: solid;
 		border-width: 1px;
 		border-color: rgb(234, 234, 234);
 		border-radius: 0 0 10px 10px;
 		background-color: rgb(255, 255, 255);
 		@include adaptive(1535) {
-			height: 580px;
+			//height: 580px;
 		}
 		@include adaptive(1023) {
 			flex-wrap: wrap;
@@ -97,8 +98,8 @@
 			p {
 				padding-left: 5px;
 				padding-right: 5px;
-				font-size: 16px;
-				font-weight: 600;
+				font-size: 15px;
+				font-weight: 500;
 				text-transform: uppercase;
 				@include adaptive(1535) {
 					font-size: 14px;
@@ -117,6 +118,8 @@
 
 		&-left {
 			width: 125px;
+			min-height: 100%;
+			max-height: 100%;
 			border-right: 1px solid rgb(234, 234, 234);
 			@include adaptive(1023) {
 				width: 100%;
@@ -124,6 +127,9 @@
 			}
 
 			.details__wrapper-scroll {
+				height: 100%;
+				max-height: 100%;
+
 				> div {
 					padding: 20px;
 					@include adaptive(1535) {
@@ -136,6 +142,8 @@
 		&-middle {
 			width: 100%;
 			max-width: calc((100% - (125px + 250px)));
+			min-height: 100%;
+			max-height: 100%;
 			@include adaptive(1023) {
 				display: flex;
 				flex-direction: column;
@@ -146,6 +154,12 @@
 			@include adaptive(767) {
 				height: auto;
 			}
+
+			//.details__wrapper-scroll {
+			//	//display: flex;
+			//	height: 100%;
+			//	max-height: 100%;
+			//}
 		}
 
 		&-right {
@@ -164,6 +178,7 @@
 			justify-content: flex-start;
 			flex-wrap: wrap;
 			height: 100%;
+			max-height: 100%;
 			@include adaptive(1023) {
 				height: auto;
 			}
@@ -199,6 +214,7 @@
 
 				> div {
 					width: 50%;
+					height: 100px !important;
 					@include adaptive(1023) {
 						display: inline-block;
 						width: 100px;
@@ -213,13 +229,13 @@
 				@include adaptive(1535) {
 					height: 75px;
 				}
-			}
 
-			a {
-				display: flex;
-				align-items: center;
-				width: 100%;
-				height: 100%;
+				> a {
+					display: flex;
+					align-items: center;
+					width: 100%;
+					height: 100%;
+				}
 			}
 
 			img {
@@ -233,102 +249,40 @@
 		}
 	}
 
-	#sliderDetails {
-		width: 100%;
-		height: 100%;
-		@include adaptive(767) {
-			overflow-y: auto;
-			max-height: 450px;
-		}
-
-		.carousel {
-			&-inner {
+	.carousel {
+		&-item {
+			&-content {
+				display: flex;
+				flex-wrap: wrap;
 				width: 100%;
-				height: 100%;
-				padding: 20px 10px;
+				max-height: 100%;
+				padding-bottom: 20px;
+				background-color: #ffffff;
 				@include adaptive(767) {
-					height: auto;
-					padding-top: 0;
 					padding-bottom: 0;
 				}
-			}
 
-			&-indicators {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				height: 40px;
-				margin: 0;
-
-				li {
-					width: 8px;
-					height: 8px;
-					border-radius: 50%;
-					background-color: #222222;
-				}
-			}
-
-			&-item {
-				width: 100%;
-				height: 100%;
-				@include adaptive(767) {
-					display: block;
-					float: none;
-					margin: 0;
-
-					&:last-of-type {
-						.carousel-item-content {
-							a {
-								&:last-of-type {
-									border-bottom: none;
-								}
-							}
-						}
-					}
-				}
-
-				&-content {
-					display: flex;
-					flex-wrap: wrap;
+				> div {
 					width: 100%;
-					height: 100%;
-					padding-bottom: 20px;
-					background-color: #ffffff;
+					max-width: 50%;
+					height: 75px;
 					@include adaptive(767) {
-						padding-bottom: 0;
+						max-width: 100%;
+						height: 65px;
 					}
 
-					> div {
-						width: 100%;
-						max-width: 50%;
+					&:nth-of-type(odd) {
+						padding-right: 10px;
+						border-right: 1px solid rgb(234, 234, 234);
 						@include adaptive(767) {
-							max-width: 100%;
-							height: 65px;
+							padding-right: 0;
+							border-right: none;
 						}
-
-						&:nth-of-type(1),
-						&:nth-of-type(2) {
-							a {
-								border-top: 1px solid rgb(234, 234, 234);
-								@include adaptive(767) {
-									border-top: none;
-								}
-							}
-						}
-
-						&:nth-of-type(odd) {
-							padding-right: 10px;
-							border-right: 1px solid rgb(234, 234, 234);
-							@include adaptive(767) {
-								padding-right: 0;
-								border-right: none;
-							}
-						}
-						&:nth-of-type(even) {
-							padding-left: 10px;
-							@include adaptive(767) {
-								padding-left: 0;
-							}
+					}
+					&:nth-of-type(even) {
+						padding-left: 10px;
+						@include adaptive(767) {
+							padding-left: 0;
 						}
 					}
 				}
@@ -358,20 +312,17 @@
 
 					p {
 						color: #663399;
-						font-size: 18px;
-						font-weight: 700;
+						font-size: 16px;
+						font-weight: 500;
 						@include transition(color);
-						@include adaptive(1535) {
-							font-size: 16px;
+						@include adaptive(1279) {
+							font-size: 14px;
 						}
 					}
 
 					span {
 						color: #222222;
-						font-size: 16px;
-						@include adaptive(1535) {
-							font-size: 14px;
-						}
+						font-size: 13px;
 					}
 				}
 			}

@@ -90,7 +90,7 @@
 	&__title {
 		padding-bottom: 25px;
 		color: #ffffff;
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: bold;
 		text-transform: uppercase;
 		@include adaptive(1535) {
@@ -111,7 +111,7 @@
 			position: relative;
 			display: flex;
 			color: #ffffff;
-			font-size: 16px;
+			font-size: 14px;
 			@include adaptive(1023) {
 				white-space: normal;
 			}
