@@ -70,7 +70,6 @@
 
 	&__wrapper {
 		display: flex;
-		//height: 650px;
 		max-height: 650px;
 		border-style: solid;
 		border-width: 1px;
@@ -78,11 +77,13 @@
 		border-radius: 0 0 10px 10px;
 		background-color: rgb(255, 255, 255);
 		@include adaptive(1535) {
-			//height: 580px;
+			max-height: 580px;
 		}
 		@include adaptive(1023) {
+			overflow: hidden;
 			flex-wrap: wrap;
-			height: auto;
+			max-height: unset;
+			border-radius: 10px;
 		}
 
 		&-header {
@@ -122,18 +123,29 @@
 			max-height: 100%;
 			border-right: 1px solid rgb(234, 234, 234);
 			@include adaptive(1023) {
+				order: 3;
 				width: 100%;
+				border-right: none;
+				border-top: 1px solid rgb(234, 234, 234);
 				border-bottom: 1px solid rgb(234, 234, 234);
 			}
 
 			.details__wrapper-scroll {
 				height: 100%;
 				max-height: 100%;
+				@include adaptive(1023) {
+					height: auto;
+					max-height: unset;
+				}
 
 				> div {
 					padding: 20px;
 					@include adaptive(1535) {
 						padding: 15px;
+					}
+					@include adaptive(1023) {
+						width: 100%;
+						max-width: calc(100% / 3);
 					}
 				}
 			}
@@ -145,27 +157,27 @@
 			min-height: 100%;
 			max-height: 100%;
 			@include adaptive(1023) {
+				order: 1;
 				display: flex;
 				flex-direction: column;
 				max-width: 100%;
 				height: 550px;
 				border-bottom: 1px solid rgb(234, 234, 234);
 			}
-			@include adaptive(767) {
-				height: auto;
-			}
 
-			//.details__wrapper-scroll {
-			//	//display: flex;
-			//	height: 100%;
-			//	max-height: 100%;
-			//}
+			.details__wrapper-scroll {
+				@include adaptive(1023) {
+					height: 100%;
+					max-height: 100%;
+				}
+			}
 		}
 
 		&-right {
 			width: 250px;
 			border-left: 1px solid rgb(234, 234, 234);
 			@include adaptive(1023) {
+				order: 2;
 				width: 100%;
 				border-left: none;
 			}
@@ -184,14 +196,6 @@
 			}
 
 			&-1 {
-				@include adaptive(1023) {
-					white-space: nowrap;
-					overflow: auto hidden;
-					position: relative;
-					display: block;
-					font-size: 0;
-				}
-
 				> div {
 					width: 100%;
 					@include adaptive(1023) {
@@ -204,20 +208,13 @@
 
 			&-2 {
 				flex-wrap: wrap;
-				@include adaptive(1023) {
-					white-space: nowrap;
-					overflow: auto hidden;
-					display: block;
-					position: relative;
-					font-size: 0;
-				}
 
 				> div {
 					width: 50%;
 					height: 100px !important;
 					@include adaptive(1023) {
-						display: inline-block;
-						width: 100px;
+						width: 100%;
+						max-width: calc(100% / 3);
 						height: 100px !important;
 					}
 				}
