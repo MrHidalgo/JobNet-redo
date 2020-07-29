@@ -99,7 +99,7 @@ section#main.main
 	.main__wrapper
 		div
 
-			h1.main__title.c-title.c-title--white Great Careers. Start here!
+			h1.main__title.c-title.c-title--white!= "Great Careers. <span>Start here!</span>"
 
 			.main__form-wrapper
 				form.main__form(action='' method='' autocomplete='off')
@@ -185,7 +185,7 @@ section#main.main
 					.main__form-field.main__form-field-4
 						.c-btn__wrapper
 							a.c-btn.c-btn--green(href="/search.html")
-								span Search
+								span Find Jobs
 							a.c-btn.c-btn--green(href="#" main-more-js)
 								span
 									i.icon-font.icon-keyboard-arrow-down

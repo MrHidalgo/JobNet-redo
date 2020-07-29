@@ -2,11 +2,17 @@
 
 .employers {
 	padding-top: 30px;
+	@include adaptive(767) {
+		padding-top: 20px;
+	}
 
 	&__title {
 		padding-bottom: 30px;
 		@include adaptive(1535) {
 			padding-bottom: 20px;
+		}
+		@include adaptive(767) {
+			display: none;
 		}
 	}
 
