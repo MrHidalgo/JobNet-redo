@@ -2334,8 +2334,8 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 22, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
-    padding-top: 85px;
-    padding-bottom: 102px;
+    padding-top: 87px;
+    padding-bottom: 25px;
   }
 }
 
@@ -2366,10 +2366,12 @@ picture {
         -ms-flex-pack: end;
             justify-content: flex-end;
     min-height: 283px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
-/* line 61, src/scss/_components/homepage/_main.scss */
+/* line 63, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 20px;
   text-align: left;
@@ -2377,25 +2379,25 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 61, src/scss/_components/homepage/_main.scss */
+  /* line 63, src/scss/_components/homepage/_main.scss */
   .main__title {
     padding-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 61, src/scss/_components/homepage/_main.scss */
+  /* line 63, src/scss/_components/homepage/_main.scss */
   .main__title {
     display: none;
   }
 }
 
-/* line 72, src/scss/_components/homepage/_main.scss */
+/* line 74, src/scss/_components/homepage/_main.scss */
 .main__title span {
   text-decoration: underline;
 }
 
-/* line 77, src/scss/_components/homepage/_main.scss */
+/* line 79, src/scss/_components/homepage/_main.scss */
 .main__form {
   position: relative;
   display: -webkit-box;
@@ -2419,14 +2421,14 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 77, src/scss/_components/homepage/_main.scss */
+  /* line 79, src/scss/_components/homepage/_main.scss */
   .main__form {
     height: 60px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 77, src/scss/_components/homepage/_main.scss */
+  /* line 79, src/scss/_components/homepage/_main.scss */
   .main__form {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2435,7 +2437,16 @@ picture {
   }
 }
 
-/* line 97, src/scss/_components/homepage/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/homepage/_main.scss */
+  .main__form {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* line 104, src/scss/_components/homepage/_main.scss */
 .main__form-wrapper {
   padding: 8px;
   -webkit-border-radius: 8px;
@@ -2444,27 +2455,28 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 97, src/scss/_components/homepage/_main.scss */
+  /* line 104, src/scss/_components/homepage/_main.scss */
   .main__form-wrapper {
     padding: 5px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 97, src/scss/_components/homepage/_main.scss */
+  /* line 104, src/scss/_components/homepage/_main.scss */
   .main__form-wrapper {
     padding: 8px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 97, src/scss/_components/homepage/_main.scss */
+  /* line 104, src/scss/_components/homepage/_main.scss */
   .main__form-wrapper {
-    padding: 5px;
+    padding: 0;
+    background-color: transparent;
   }
 }
 
-/* line 112, src/scss/_components/homepage/_main.scss */
+/* line 120, src/scss/_components/homepage/_main.scss */
 .main__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2479,7 +2491,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 112, src/scss/_components/homepage/_main.scss */
+  /* line 120, src/scss/_components/homepage/_main.scss */
   .main__form-field {
     height: 60px;
     width: 100%;
@@ -2487,13 +2499,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 112, src/scss/_components/homepage/_main.scss */
+  /* line 120, src/scss/_components/homepage/_main.scss */
   .main__form-field {
     height: 55px;
   }
+  /* line 132, src/scss/_components/homepage/_main.scss */
+  .main__form-field:not(:last-of-type) {
+    margin-bottom: 3px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+  }
 }
 
-/* line 125, src/scss/_components/homepage/_main.scss */
+/* line 138, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2504,7 +2522,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 125, src/scss/_components/homepage/_main.scss */
+  /* line 138, src/scss/_components/homepage/_main.scss */
   .main__form-field.main__form-field-1 {
     -webkit-box-flex: unset;
     -webkit-flex: unset;
@@ -2515,24 +2533,31 @@ picture {
   }
 }
 
-/* line 136, src/scss/_components/homepage/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 138, src/scss/_components/homepage/_main.scss */
+  .main__form-field.main__form-field-1 {
+    overflow: hidden;
+  }
+}
+
+/* line 152, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-2, .main__form-field.main__form-field-3 {
   border-left: 1px solid #eaeaea;
 }
 
-/* line 140, src/scss/_components/homepage/_main.scss */
+/* line 156, src/scss/_components/homepage/_main.scss */
 .main__form-field.main__form-field-2 p, .main__form-field.main__form-field-3 p {
   width: 56px;
 }
 
-/* line 145, src/scss/_components/homepage/_main.scss */
+/* line 161, src/scss/_components/homepage/_main.scss */
 .main__form-field-2 {
   width: 100%;
   max-width: 300px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 145, src/scss/_components/homepage/_main.scss */
+  /* line 161, src/scss/_components/homepage/_main.scss */
   .main__form-field-2 {
     max-width: 50%;
     border-left: none !important;
@@ -2540,50 +2565,58 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 145, src/scss/_components/homepage/_main.scss */
+  /* line 161, src/scss/_components/homepage/_main.scss */
   .main__form-field-2 {
     max-width: 100%;
     border-bottom: 1px solid #eaeaea;
   }
 }
 
-/* line 157, src/scss/_components/homepage/_main.scss */
+/* line 173, src/scss/_components/homepage/_main.scss */
 .main__form-field-3 {
   width: 100%;
   max-width: 235px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 157, src/scss/_components/homepage/_main.scss */
+  /* line 173, src/scss/_components/homepage/_main.scss */
   .main__form-field-3 {
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 157, src/scss/_components/homepage/_main.scss */
+  /* line 173, src/scss/_components/homepage/_main.scss */
   .main__form-field-3 {
     max-width: 100%;
     border-left: none !important;
   }
 }
 
-/* line 168, src/scss/_components/homepage/_main.scss */
+/* line 184, src/scss/_components/homepage/_main.scss */
 .main__form-field-4 {
   padding-left: 5px;
   border-left: 1px solid #eaeaea;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 168, src/scss/_components/homepage/_main.scss */
+  /* line 184, src/scss/_components/homepage/_main.scss */
   .main__form-field-4 {
     padding-left: 0;
     border: none;
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* line 184, src/scss/_components/homepage/_main.scss */
+  .main__form-field-4 {
+    height: 45px;
+    background-color: transparent;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  /* line 177, src/scss/_components/homepage/_main.scss */
+  /* line 197, src/scss/_components/homepage/_main.scss */
   .main__form-field-2, .main__form-field-3 {
     display: -webkit-box !important;
     display: -webkit-flex !important;
@@ -2593,13 +2626,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 177, src/scss/_components/homepage/_main.scss */
+  /* line 197, src/scss/_components/homepage/_main.scss */
   .main__form-field-2, .main__form-field-3 {
     display: none;
   }
 }
 
-/* line 188, src/scss/_components/homepage/_main.scss */
+/* line 208, src/scss/_components/homepage/_main.scss */
 .main__form label {
   position: relative;
   display: -webkit-box;
@@ -2615,7 +2648,7 @@ picture {
   margin: 0;
 }
 
-/* line 197, src/scss/_components/homepage/_main.scss */
+/* line 217, src/scss/_components/homepage/_main.scss */
 .main__form p {
   cursor: pointer;
   display: -webkit-box;
@@ -2635,31 +2668,31 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 197, src/scss/_components/homepage/_main.scss */
+  /* line 217, src/scss/_components/homepage/_main.scss */
   .main__form p {
     width: 36px;
   }
 }
 
-/* line 209, src/scss/_components/homepage/_main.scss */
+/* line 229, src/scss/_components/homepage/_main.scss */
 .main__form .icon-font {
   color: #222222;
   font-size: 24px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 209, src/scss/_components/homepage/_main.scss */
+  /* line 229, src/scss/_components/homepage/_main.scss */
   .main__form .icon-font {
     font-size: 20px;
   }
 }
 
-/* line 216, src/scss/_components/homepage/_main.scss */
+/* line 236, src/scss/_components/homepage/_main.scss */
 .main__form .icon-font.icon-folder, .main__form .icon-font.icon-pin {
   color: #6e6e6e;
 }
 
-/* line 222, src/scss/_components/homepage/_main.scss */
+/* line 242, src/scss/_components/homepage/_main.scss */
 .main__form input {
   outline: none;
   position: relative;
@@ -2707,7 +2740,7 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 222, src/scss/_components/homepage/_main.scss */
+  /* line 242, src/scss/_components/homepage/_main.scss */
   .main__form input {
     font-size: 14px;
   }
@@ -2733,7 +2766,7 @@ picture {
   }
 }
 
-/* line 246, src/scss/_components/homepage/_main.scss */
+/* line 266, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2747,7 +2780,7 @@ picture {
   height: 100%;
 }
 
-/* line 252, src/scss/_components/homepage/_main.scss */
+/* line 272, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle {
   position: relative;
   display: -webkit-box;
@@ -2773,13 +2806,13 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 252, src/scss/_components/homepage/_main.scss */
+  /* line 272, src/scss/_components/homepage/_main.scss */
   .main__form .dropdown-toggle {
     font-size: 14px;
   }
 }
 
-/* line 267, src/scss/_components/homepage/_main.scss */
+/* line 287, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle:hover {
   color: #663399;
   -webkit-transition: color 0.4s ease-in-out;
@@ -2787,7 +2820,7 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 272, src/scss/_components/homepage/_main.scss */
+/* line 292, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-toggle:after {
   position: absolute;
   top: 50%;
@@ -2797,7 +2830,7 @@ picture {
   right: 10px;
 }
 
-/* line 280, src/scss/_components/homepage/_main.scss */
+/* line 300, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-menu {
   overflow-y: auto;
   left: auto !important;
@@ -2818,7 +2851,7 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 280, src/scss/_components/homepage/_main.scss */
+  /* line 300, src/scss/_components/homepage/_main.scss */
   .main__form .dropdown-menu {
     -webkit-transform: translate3d(0px, 53px, 0px) !important;
             transform: translate3d(0px, 53px, 0px) !important;
@@ -2826,7 +2859,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 280, src/scss/_components/homepage/_main.scss */
+  /* line 300, src/scss/_components/homepage/_main.scss */
   .main__form .dropdown-menu {
     -webkit-transform: translate3d(0px, 60px, 0px) !important;
             transform: translate3d(0px, 60px, 0px) !important;
@@ -2835,14 +2868,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 280, src/scss/_components/homepage/_main.scss */
+  /* line 300, src/scss/_components/homepage/_main.scss */
   .main__form .dropdown-menu {
     -webkit-transform: translate3d(0px, 55px, 0px) !important;
             transform: translate3d(0px, 55px, 0px) !important;
   }
 }
 
-/* line 304, src/scss/_components/homepage/_main.scss */
+/* line 324, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item {
   font-size: 14px;
   font-weight: 500;
@@ -2851,7 +2884,7 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 309, src/scss/_components/homepage/_main.scss */
+/* line 329, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item:hover {
   background-color: rgba(102, 51, 153, 0.05);
   color: #663399;
@@ -2860,7 +2893,7 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 315, src/scss/_components/homepage/_main.scss */
+/* line 335, src/scss/_components/homepage/_main.scss */
 .main__form .dropdown-item:active {
   background-color: #663399;
   color: #ffffff;
@@ -2869,7 +2902,7 @@ picture {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
-/* line 323, src/scss/_components/homepage/_main.scss */
+/* line 343, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn {
   min-width: unset;
   height: 100%;
@@ -2880,14 +2913,14 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 323, src/scss/_components/homepage/_main.scss */
+  /* line 343, src/scss/_components/homepage/_main.scss */
   .main__form .c-btn {
     padding-left: 25px;
     padding-right: 25px;
   }
 }
 
-/* line 334, src/scss/_components/homepage/_main.scss */
+/* line 354, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-child(1) {
   -webkit-border-top-right-radius: 0;
           border-top-right-radius: 0;
@@ -2896,7 +2929,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 334, src/scss/_components/homepage/_main.scss */
+  /* line 354, src/scss/_components/homepage/_main.scss */
   .main__form .c-btn:nth-child(1) {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -2907,7 +2940,7 @@ picture {
   }
 }
 
-/* line 343, src/scss/_components/homepage/_main.scss */
+/* line 363, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-of-type(2) {
   display: none;
   -webkit-box-align: center;
@@ -2925,7 +2958,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 343, src/scss/_components/homepage/_main.scss */
+  /* line 363, src/scss/_components/homepage/_main.scss */
   .main__form .c-btn:nth-of-type(2) {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2934,7 +2967,7 @@ picture {
   }
 }
 
-/* line 355, src/scss/_components/homepage/_main.scss */
+/* line 375, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-of-type(2).is-active .icon-font {
   -webkit-transform: scaleY(-1);
       -ms-transform: scaleY(-1);
@@ -2946,7 +2979,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 361, src/scss/_components/homepage/_main.scss */
+/* line 381, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-of-type(2) .icon-font {
   color: #ffffff;
   font-size: 12px;
@@ -2962,7 +2995,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 369, src/scss/_components/homepage/_main.scss */
+/* line 389, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-child(3) {
   width: 50px;
   min-width: unset;
@@ -2976,31 +3009,31 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 369, src/scss/_components/homepage/_main.scss */
+  /* line 389, src/scss/_components/homepage/_main.scss */
   .main__form .c-btn:nth-child(3) {
     width: 75px;
   }
 }
 
-/* line 381, src/scss/_components/homepage/_main.scss */
+/* line 401, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn:nth-child(3) .icon-font {
   color: #ffffff;
   font-size: 18px;
 }
 
-/* line 387, src/scss/_components/homepage/_main.scss */
+/* line 407, src/scss/_components/homepage/_main.scss */
 .main__form .c-btn__wrapper {
   height: 100%;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 387, src/scss/_components/homepage/_main.scss */
+  /* line 407, src/scss/_components/homepage/_main.scss */
   .main__form .c-btn__wrapper {
     width: 100%;
   }
 }
 
-/* line 396, src/scss/_components/homepage/_main.scss */
+/* line 416, src/scss/_components/homepage/_main.scss */
 .main__hero {
   z-index: 10;
   opacity: 1;
@@ -3025,7 +3058,7 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 396, src/scss/_components/homepage/_main.scss */
+  /* line 416, src/scss/_components/homepage/_main.scss */
   .main__hero {
     height: auto;
     padding: 5px;
@@ -3033,7 +3066,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 396, src/scss/_components/homepage/_main.scss */
+  /* line 416, src/scss/_components/homepage/_main.scss */
   .main__hero {
     max-width: 100%;
     padding: 8px;
@@ -3047,15 +3080,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 396, src/scss/_components/homepage/_main.scss */
+  /* line 416, src/scss/_components/homepage/_main.scss */
   .main__hero {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: none;
   }
 }
 
-/* line 428, src/scss/_components/homepage/_main.scss */
+/* line 446, src/scss/_components/homepage/_main.scss */
 .main__hero > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3066,7 +3097,7 @@ picture {
   padding-left: 10px;
 }
 
-/* line 436, src/scss/_components/homepage/_main.scss */
+/* line 454, src/scss/_components/homepage/_main.scss */
 .main__hero h6,
 .main__hero p,
 .main__hero span {
@@ -3079,7 +3110,7 @@ picture {
   line-height: 1.3;
 }
 
-/* line 447, src/scss/_components/homepage/_main.scss */
+/* line 465, src/scss/_components/homepage/_main.scss */
 .main__hero h6 {
   color: #fff;
   font-size: 14px;
@@ -3087,13 +3118,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 447, src/scss/_components/homepage/_main.scss */
+  /* line 465, src/scss/_components/homepage/_main.scss */
   .main__hero h6 {
     color: #333333;
   }
 }
 
-/* line 456, src/scss/_components/homepage/_main.scss */
+/* line 474, src/scss/_components/homepage/_main.scss */
 .main__hero p,
 .main__hero span {
   color: #aeaeae;
@@ -3101,14 +3132,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 456, src/scss/_components/homepage/_main.scss */
+  /* line 474, src/scss/_components/homepage/_main.scss */
   .main__hero p,
   .main__hero span {
     color: #777;
   }
 }
 
-/* line 465, src/scss/_components/homepage/_main.scss */
+/* line 483, src/scss/_components/homepage/_main.scss */
 .main__hero-img {
   overflow: hidden;
   position: relative;
@@ -3138,14 +3169,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 465, src/scss/_components/homepage/_main.scss */
+  /* line 483, src/scss/_components/homepage/_main.scss */
   .main__hero-img {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-/* line 484, src/scss/_components/homepage/_main.scss */
+/* line 502, src/scss/_components/homepage/_main.scss */
 .main__hero-img img {
   display: block;
   max-width: 100%;
@@ -3153,13 +3184,13 @@ picture {
   max-height: 100%;
 }
 
-/* line 493, src/scss/_components/homepage/_main.scss */
+/* line 511, src/scss/_components/homepage/_main.scss */
 .main #sliderMain {
   width: 100%;
   height: 100%;
 }
 
-/* line 498, src/scss/_components/homepage/_main.scss */
+/* line 516, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-inner, .main #sliderMain .carousel-item {
   width: 100%;
   height: 100%;
@@ -3169,7 +3200,7 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 507, src/scss/_components/homepage/_main.scss */
+/* line 525, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-item {
   position: relative;
   padding: 40px 40px 50px;
@@ -3179,7 +3210,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 507, src/scss/_components/homepage/_main.scss */
+  /* line 525, src/scss/_components/homepage/_main.scss */
   .main #sliderMain .carousel-item {
     padding-left: 15px;
     padding-right: 15px;
@@ -3187,20 +3218,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 507, src/scss/_components/homepage/_main.scss */
+  /* line 525, src/scss/_components/homepage/_main.scss */
   .main #sliderMain .carousel-item {
     padding: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 507, src/scss/_components/homepage/_main.scss */
+  /* line 525, src/scss/_components/homepage/_main.scss */
   .main #sliderMain .carousel-item {
     padding-bottom: 82px;
   }
 }
 
-/* line 522, src/scss/_components/homepage/_main.scss */
+/* line 540, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-item:after {
   z-index: 0;
   content: '';
@@ -3212,7 +3243,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 533, src/scss/_components/homepage/_main.scss */
+/* line 551, src/scss/_components/homepage/_main.scss */
 .main #sliderMain .carousel-item-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3232,20 +3263,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 533, src/scss/_components/homepage/_main.scss */
+  /* line 551, src/scss/_components/homepage/_main.scss */
   .main #sliderMain .carousel-item-content {
     padding-left: 5px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 533, src/scss/_components/homepage/_main.scss */
+  /* line 551, src/scss/_components/homepage/_main.scss */
   .main #sliderMain .carousel-item-content {
     padding: 0;
   }
 }
 
-/* line 555, src/scss/_components/homepage/_main.scss */
+/* line 573, src/scss/_components/homepage/_main.scss */
 .main .carousel-indicators {
   z-index: 15;
   bottom: 0;
@@ -3267,13 +3298,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 555, src/scss/_components/homepage/_main.scss */
+  /* line 573, src/scss/_components/homepage/_main.scss */
   .main .carousel-indicators {
     display: none;
   }
 }
 
-/* line 568, src/scss/_components/homepage/_main.scss */
+/* line 586, src/scss/_components/homepage/_main.scss */
 .main .carousel-indicators li {
   opacity: 1;
   height: 8px;
@@ -3289,7 +3320,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 579, src/scss/_components/homepage/_main.scss */
+/* line 597, src/scss/_components/homepage/_main.scss */
 .main .carousel-indicators li.active {
   background-color: #ffffff;
   -webkit-transition: background-color 0.4s ease-in-out;
