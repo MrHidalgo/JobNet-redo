@@ -9,15 +9,13 @@
   align-items: center;
   justify-content: center;
 	min-width: 180px;
-	height: 46px;
+	height: 40px;
 	padding-left: 15px;
 	padding-right: 15px;
 	border: none;
 	border-radius: 6px;
-	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1), 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 	@include transition(box-shadow);
 	@include adaptive(1535) {
-		height: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 		min-width: 150px;
@@ -59,11 +57,8 @@
 		z-index: 2;
 		position: relative;
 		font-family: 'Quicksand', sans-serif;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 700;
-		@include adaptive(1535) {
-			font-size: 14px;
-		}
 	}
 
 	&--white {

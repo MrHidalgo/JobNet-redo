@@ -1,22 +1,20 @@
 // SECTION :: START
 
 .details {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	@include adaptive(1535) {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
+	padding-top: 40px;
 
 	&__container {
 		overflow: hidden;
 		border-radius: 10px;
 		box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+		@include adaptive(1023) {
+			box-shadow: none;
+		}
 	}
 
 	&__header {
 		display: flex;
-		height: 45px;
+		height: 48px;
 		border-radius: 10px 10px 0 0;
 		background-color: rgb(255, 255, 255);
 		border-top: 1px solid rgb(234, 234, 234);
@@ -34,6 +32,71 @@
 			p {
 				padding-left: 5px;
 				padding-right: 5px;
+				color: #3b3b3b;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+				@include adaptive(1535) {
+					font-size: 14px;
+				}
+			}
+
+			.icon-font {
+				margin-left: 2px;
+				margin-right: 2px;
+				color: #f28602;
+				@include adaptive(1535) {
+					font-size: 12px;
+				}
+			}
+		}
+
+		&-left {
+			width: 100px;
+			border-right: 1px solid rgb(234, 234, 234);
+		}
+
+		&-middle {
+			width: 100%;
+			max-width: calc((100% - (100px + 230px)));
+		}
+
+		&-right {
+			width: 230px;
+			border-left: 1px solid rgb(234, 234, 234);
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		max-height: 920px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(234, 234, 234);
+		border-radius: 0 0 10px 10px;
+		background-color: rgb(255, 255, 255);
+		@include adaptive(1023) {
+			overflow: hidden;
+			flex-wrap: wrap;
+			max-height: unset;
+			border-radius: 10px;
+			border: none;
+		}
+
+		&-header {
+			display: none;
+			align-items: center;
+			justify-content: center;
+			height: 45px;
+			border-bottom: 1px solid #eaeaea;
+			@include adaptive(1023) {
+				display: flex;
+			}
+
+			p {
+				padding-left: 5px;
+				padding-right: 5px;
+				color: #3b3b3b;
 				font-size: 14px;
 				font-weight: 500;
 				text-transform: uppercase;
@@ -53,81 +116,16 @@
 		}
 
 		&-left {
-			width: 125px;
-			border-right: 1px solid rgb(234, 234, 234);
-		}
-
-		&-middle {
-			width: 100%;
-			max-width: calc((100% - (125px + 250px)));
-		}
-
-		&-right {
-			width: 250px;
-			border-left: 1px solid rgb(234, 234, 234);
-		}
-	}
-
-	&__wrapper {
-		display: flex;
-		max-height: 650px;
-		border-style: solid;
-		border-width: 1px;
-		border-color: rgb(234, 234, 234);
-		border-radius: 0 0 10px 10px;
-		background-color: rgb(255, 255, 255);
-		@include adaptive(1535) {
-			max-height: 580px;
-		}
-		@include adaptive(1023) {
-			overflow: hidden;
-			flex-wrap: wrap;
-			max-height: unset;
-			border-radius: 10px;
-		}
-
-		&-header {
-			display: none;
-			align-items: center;
-			justify-content: center;
-			height: 45px;
-			border-bottom: 1px solid #eaeaea;
-			@include adaptive(1023) {
-				display: flex;
-			}
-
-			p {
-				padding-left: 5px;
-				padding-right: 5px;
-				font-size: 15px;
-				font-weight: 500;
-				text-transform: uppercase;
-				@include adaptive(1535) {
-					font-size: 14px;
-				}
-			}
-
-			.icon-font {
-				margin-left: 2px;
-				margin-right: 2px;
-				color: #663399;
-				@include adaptive(1535) {
-					font-size: 12px;
-				}
-			}
-		}
-
-		&-left {
-			width: 125px;
+			width: 100px;
 			min-height: 100%;
 			max-height: 100%;
 			border-right: 1px solid rgb(234, 234, 234);
 			@include adaptive(1023) {
-				order: 3;
+				order: 4;
 				width: 100%;
-				border-right: none;
-				border-top: 1px solid rgb(234, 234, 234);
-				border-bottom: 1px solid rgb(234, 234, 234);
+				margin-top: 10px;
+				border-radius: 10px;
+				border: 1px solid rgb(234, 234, 234);
 			}
 
 			.details__wrapper-scroll {
@@ -153,7 +151,7 @@
 
 		&-middle {
 			width: 100%;
-			max-width: calc((100% - (125px + 250px)));
+			max-width: calc((100% - (100px + 230px)));
 			min-height: 100%;
 			max-height: 100%;
 			@include adaptive(1023) {
@@ -161,8 +159,10 @@
 				display: flex;
 				flex-direction: column;
 				max-width: 100%;
-				height: 550px;
-				border-bottom: 1px solid rgb(234, 234, 234);
+				height: 500px;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				border: 1px solid rgb(234, 234, 234);
 			}
 
 			.details__wrapper-scroll {
@@ -174,12 +174,13 @@
 		}
 
 		&-right {
-			width: 250px;
+			width: 230px;
 			border-left: 1px solid rgb(234, 234, 234);
 			@include adaptive(1023) {
 				order: 2;
 				width: 100%;
-				border-left: none;
+				border-radius: 10px;
+				border: 1px solid rgb(234, 234, 234);
 			}
 		}
 
@@ -263,7 +264,7 @@
 					width: 100%;
 					max-width: 50%;
 					height: 75px;
-					@include adaptive(767) {
+					@include adaptive(1023) {
 						max-width: 100%;
 						height: 65px;
 					}
@@ -271,14 +272,14 @@
 					&:nth-of-type(odd) {
 						padding-right: 10px;
 						border-right: 1px solid rgb(234, 234, 234);
-						@include adaptive(767) {
+						@include adaptive(1023) {
 							padding-right: 0;
 							border-right: none;
 						}
 					}
 					&:nth-of-type(even) {
 						padding-left: 10px;
-						@include adaptive(767) {
+						@include adaptive(1023) {
 							padding-left: 0;
 						}
 					}
@@ -308,18 +309,15 @@
 					}
 
 					p {
-						color: #663399;
+						color: #9458d1;
 						font-size: 16px;
-						font-weight: 500;
+						font-weight: 700;
 						@include transition(color);
-						@include adaptive(1279) {
-							font-size: 14px;
-						}
 					}
 
 					span {
-						color: #222222;
-						font-size: 13px;
+						color: #777777;
+						font-size: 14px;
 					}
 				}
 			}

@@ -2,20 +2,13 @@
 
 .category {
 	padding-top: 30px;
-	padding-bottom: 30px;
-	@include adaptive(1535) {
-		padding-top: 20px;
+	@include adaptive(767) {
 		padding-bottom: 20px;
-	}
-	@include adaptive(1023) {
-		padding-bottom: 5px;
+		border-bottom: 1px solid #dfdfdf;
 	}
 
 	&__title {
-		padding-bottom: 30px;
-		@include adaptive(1535) {
-			padding-bottom: 20px;
-		}
+		padding-bottom: 15px;
 	}
 
 	&__box {
@@ -49,16 +42,19 @@
 			@include adaptive(1023) {
 				flex-wrap: wrap;
 			}
+			@include adaptive(767) {
+				justify-content: flex-start;
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 8);
+				padding-top: 20px;
 				@include adaptive(1023) {
 					max-width: calc(100% / 4);
-					padding-bottom: 15px;
 				}
 				@include adaptive(767) {
-					max-width: calc(100% / 2);
+					max-width: calc(100% / 3);
 				}
 			}
 		}
@@ -101,7 +97,7 @@
 				overflow: hidden;
 				text-overflow: ellipsis;
 				font-size: 14px;
-				color: #6e6e6e;
+				color: #777777;
 				@include transition(color);
 			}
 		}

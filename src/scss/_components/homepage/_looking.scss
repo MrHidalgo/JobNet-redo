@@ -2,17 +2,40 @@
 
 .looking {
 	padding-top: 30px;
-	padding-bottom: 30px;
-	@include adaptive(1535) {
-		padding-top: 20px;
-		padding-bottom: 20px;
+
+	&--desktop {
+		@include adaptive(1023) {
+			display: none;
+		}
+	}
+	&--mobile {
+		display: none;
+		order: 3;
+		width: 100%;
+		padding-top: 10px;
+		@include adaptive(1023) {
+			display: block;
+		}
+
+		.c-grid {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.looking {
+			&__wrapper {
+				box-shadow: none;
+			}
+		}
 	}
 
 	&__wrapper {
+		overflow: hidden;
 		display: flex;
 		align-items: center;
-		height: 120px;
-		padding: 15px 60px;
+		justify-content: space-between;
+		height: 95px;
+		padding: 15px 44px 15px 130px;
 		border-radius: 10px;
 		background-color: #663399;
 		box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
@@ -20,20 +43,12 @@
 		background-repeat: no-repeat;
 		background-position: left bottom;
 		background-size: contain;
-		@include adaptive(1535) {
-			padding-left: 40px;
-			padding-right: 40px;
-		}
 		@include adaptive(1023) {
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-left: 44px;
 		}
 		@include adaptive(767) {
-			flex-wrap: wrap;
-			height: auto;
-			padding-top: 75px;
-			padding-bottom: 20px;
-			background-position: top center;
+			flex-direction: column;
+			padding: 5px 15px;
 		}
 
 		&-left,
@@ -41,84 +56,38 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 50%;
-			@include adaptive(767) {
-				width: 100%;
-			}
-		}
-
-		&-left {
-			padding-right: 30px;
-			@include adaptive(1535) {
-				padding-right: 20px;
-			}
-			@include adaptive(1023) {
-				padding-right: 10px;
-			}
-			@include adaptive(767) {
-				padding-bottom: 15px;
-				padding-right: 0;
-			}
-		}
-
-		&-right {
-			padding-left: 30px;
-			@include adaptive(1535) {
-				padding-left: 20px;
-			}
-			@include adaptive(1023) {
-				padding-left: 10px;
-			}
-			@include adaptive(767) {
-				padding-left: 0;
-			}
 		}
 	}
 
 	&__title,
 	&__subtitle {
 		color: #ffffff;
+		@include adaptive(767) {
+			text-align: center;
+		}
 	}
 
 	&__title {
 		line-height: 1;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: bold;
-		@include adaptive(1535) {
-			font-size: 26px;
-		}
 		@include adaptive(767) {
-			padding-bottom: 10px;
+			font-size: 18px;
 		}
 	}
 
 	&__subtitle {
-		font-size: 20px;
-		@include adaptive(1535) {
-			font-size: 18px;
+		font-size: 17px;
+		@include adaptive(767) {
+			font-size: 14px;
 		}
 	}
 
 	.c-btn {
 		margin-left: 10px;
 		margin-right: 10px;
-		@include adaptive(767) {
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
-
-			&:nth-of-type(1) {
-				margin-bottom: 15px;
-			}
-		}
-
-		&__wrapper {
-			@include adaptive(767) {
-				flex-direction: column;
-				width: 100%;
-				max-width: 320px;
-			}
-		}
+		font-family: 'GothamPro', 'Quicksand', sans-serif;
+		font-weight: 700;
 	}
 }
 
