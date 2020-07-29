@@ -1,7 +1,263 @@
 // FOOTER :: START
 
 .footer {
-	background-color: #373656;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+
+	&__wrapper {
+		&-1,
+		&-2 {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: 67px;
+			border-bottom: 1px solid #aeaeae;
+			@include adaptive(767) {
+				justify-content: center;
+			}
+
+			> div {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&-1 {
+			max-width: 50%;
+			@include adaptive(1023) {
+				max-width: 35%;
+			}
+			@include adaptive(767) {
+				order: 1;
+				max-width: 100%;
+			}
+
+			> div {
+				max-width: calc(1180px / 2);
+				margin-left: auto;
+				padding-left: 10px;
+				@include adaptive(767) {
+					justify-content: center;
+					padding-right: 10px;
+				}
+			}
+		}
+
+		&-2 {
+			max-width: 50%;
+			@include adaptive(1023) {
+				max-width: 65%;
+			}
+			@include adaptive(767) {
+				order: 3;
+				max-width: 100%;
+				height: auto;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			> div {
+				justify-content: flex-end;
+				max-width: calc(1180px / 2);
+				margin-right: auto;
+				padding-right: 10px;
+				@include adaptive(767) {
+					justify-content: center;
+					padding-left: 10px;
+				}
+			}
+		}
+
+		&-3 {
+			width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #aeaeae;
+			@include adaptive(767) {
+				order: 2;
+				border-bottom: none;
+			}
+		}
+
+		&-4 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			height: 45px;
+			@include adaptive(767) {
+				order: 4;
+				height: auto;
+				padding-top: 28px;
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__col {
+		@include adaptive(767) {
+			justify-content: center;
+			width: 100%;
+		}
+
+		&-1 {
+			display: flex;
+			align-items: center;
+			@include adaptive(767) {
+				flex-direction: column;
+			}
+		}
+
+		&-2 {
+			@include adaptive(767) {
+				display: flex;
+				padding-top: 15px;
+				padding-bottom: 24px;
+			}
+		}
+	}
+
+	&__collapse {
+		display: flex;
+		flex-direction: column;
+
+		&-head {
+			display: none;
+			align-items: center;
+			justify-content: space-between;
+			height: 41px;
+			padding-top: 20px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #aeaeae;
+			@include adaptive(767) {
+				display: flex;
+			}
+
+			&[aria-expanded="true"] {
+				.icon-font {
+					transform: scaleY(-1);
+					@include transition(transform);
+				}
+			}
+
+			span {
+				text-transform: uppercase;
+				color: #777777;
+				line-height: 1;
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			.icon-font {
+				color: #777777;
+				font-size: 7px;
+				@include transition(transform);
+			}
+		}
+
+		&-body {
+			display: flex;
+			justify-content: space-between;
+			@include adaptive(767) {
+				flex-direction: column;
+				width: 100%;
+				max-width: 280px;
+				margin-left: auto;
+				margin-right: auto;
+
+				> div {
+					width: 100%;
+
+					&:first-of-type {
+						.footer__collapse-head {
+							height: 22px;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+
+			p {
+				padding-bottom: 18px;
+				text-transform: uppercase;
+				color: #777777;
+				line-height: 1;
+				font-size: 16px;
+				font-weight: 700;
+				@include adaptive(767) {
+					display: none;
+				}
+			}
+
+			.collapse {
+				@include adaptiveCustom('(min-width: 768px)') {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		@include adaptive(767) {
+			padding: 12px 0 22px;
+		}
+
+		&-link {
+			white-space: nowrap;
+			position: relative;
+			display: flex;
+			color: #777777;
+			line-height: 1;
+			font-size: 12px;
+
+			&:not(:last-of-type) {
+				margin-bottom: 13px;
+			}
+
+			&:hover {
+				color: #777777;
+
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
+			}
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 1px;
+				background-color: #777777;
+				@include transition(width);
+			}
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
+		}
+	}
+
+	/*background-color: #373656;
 
 	&__wrapper {
 		display: flex;
@@ -147,7 +403,7 @@
 				right: 50%;
 			}
 		}
-	}
+	}*/
 }
 
 // FOOTER :: END

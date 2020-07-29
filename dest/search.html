@@ -20,44 +20,7 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!-- HEADER :: START-->
-    <header class="header" id="header">
-      <div class="c-grid-fluid">
-        <div class="header__wrapper">
-          <div class="header__wrapper-left">
-            <div>
-              <div class="logo logo--header"><a class="logo__btn" href="/"><img class="logo__img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt=""></a></div>
-              <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <form class="header__form" action="" method="" autocomplete="off">
-                <label>
-                  <input type="text" name="" required>
-                  <button type="submit"><i class="icon-font icon-search"></i></button>
-                </label>
-              </form>
-            </div>
-          </div>
-          <div class="header__wrapper-mobile" mobile-block-js>
-            <div class="header__wrapper-mobile-header"><a class="header__wrapper-mobile-close" href="#" mobile-close-js><i class="icon-font icon-close"></i></a></div>
-            <div class="header__wrapper-mobile-left">
-              <div class="header__link-wrapper"><a class="header__link" href="#">Management Jobs</a><a class="header__link" href="#">Companies</a><a class="header__link" href="#">Jobs by Category</a><a class="header__link" href="#">News</a></div>
-            </div>
-            <div class="header__wrapper-mobile-right">
-              <div class="header__icon-wrapper"><a class="header__lang" href="#"><img src="img/myanmar.svg" alt=""></a>
-                <div class="header__link-wrapper"><a class="header__link" href="#">Register</a><a class="header__link" href="#">Login</a></div>
-              </div>
-              <div class="c-btn__wrapper"><a class="c-btn c-btn--purple" href="#"><span>Companies<br><small>Post Jobs and Find Talent</small></span></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HEADER :: END-->
+    <!--include ../components/_header-->
     <div class="body body--start p-home">
       <!-- SECTION :: START-->
       <section class="search" id="search">
@@ -918,49 +881,69 @@
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">
-      <div class="c-grid">
-        <div class="footer__wrapper footer__wrapper-1">
-          <div class="footer__wrapper-left">
-            <div class="logo logo--footer"><a class="logo__btn" href="/"><img class="logo__img" src="img/logo--white.png" srcset="img/logo--white@2x.png 2x" alt=""></a></div>
-            <ul class="social">
-              <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-facebook"></i></a></li>
-              <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-linkedin"></i></a></li>
-            </ul>
+      <div class="footer__wrapper footer__wrapper-1">
+        <div>
+          <div class="logo logo--footer"><a class="logo__btn" href="/"><img class="logo__img" src="img/logo.png" alt=""></a></div>
+        </div>
+      </div>
+      <div class="footer__wrapper footer__wrapper-2">
+        <div>
+          <div class="browse">
+            <div>
+              <p class="browse__title">Browse By</p>
+            </div>
+            <div><a class="browse__link" href="#">Jobs</a><a class="browse__link" href="#">Location</a></div>
           </div>
-          <div class="footer__wrapper-right">
-            <div>
-              <p class="footer__title">JobNet</p>
-              <nav class="footer__nav"><a class="footer__nav-link" href="#">About Us</a><a class="footer__nav-link" href="#">News</a><a class="footer__nav-link" href="#">Careers@JobNet</a></nav>
-            </div>
-            <div>
-              <p class="footer__title">Employers</p>
-              <nav class="footer__nav"><a class="footer__nav-link" href="#">Free Employer</a><a class="footer__nav-link" href="#">Advertise with Us</a></nav>
-            </div>
-            <div>
-              <p class="footer__title">job seekers</p>
-              <nav class="footer__nav"><a class="footer__nav-link" href="#">Free Job Seeker Account</a><a class="footer__nav-link" href="#">Upload CV</a><a class="footer__nav-link" href="#">Browse Jobs</a></nav>
-            </div>
-            <div>
-              <p class="footer__title">partners</p>
-              <nav class="footer__nav"><a class="footer__nav-link" href="#">Myanmar Real Estate & Property</a></nav>
+        </div>
+      </div>
+      <div class="footer__wrapper footer__wrapper-3">
+        <div class="c-grid">
+          <div class="footer__collapse">
+            <div class="footer__collapse-body">
+              <div><a class="footer__collapse-head" data-toggle="collapse" href="#collapseBlock1" role="button" aria-expanded="false" aria-controls="collapseBlock1"><span>JobNet</span><i class="icon-font icon-keyboard-arrow-down"></i></a>
+                <div class="collapse" id="collapseBlock1">
+                  <p>JobNet</p>
+                  <nav class="footer__nav"><a class="footer__nav-link" href="#">About Us</a><a class="footer__nav-link" href="#">News</a><a class="footer__nav-link" href="#">Careers@JobNet</a></nav>
+                </div>
+              </div>
+              <div><a class="footer__collapse-head" data-toggle="collapse" href="#collapseBlock2" role="button" aria-expanded="false" aria-controls="collapseBlock2"><span>Employers</span><i class="icon-font icon-keyboard-arrow-down"></i></a>
+                <div class="collapse" id="collapseBlock2">
+                  <p>Employers</p>
+                  <nav class="footer__nav"><a class="footer__nav-link" href="#">Free Employer</a><a class="footer__nav-link" href="#">Advertise with Us</a></nav>
+                </div>
+              </div>
+              <div><a class="footer__collapse-head" data-toggle="collapse" href="#collapseBlock3" role="button" aria-expanded="false" aria-controls="collapseBlock3"><span>Job Seekers</span><i class="icon-font icon-keyboard-arrow-down"></i></a>
+                <div class="collapse" id="collapseBlock3">
+                  <p>Job Seekers</p>
+                  <nav class="footer__nav"><a class="footer__nav-link" href="#">Free Job Seeker Account</a><a class="footer__nav-link" href="#">Upload CV</a><a class="footer__nav-link" href="#">Browse Jobs</a></nav>
+                </div>
+              </div>
+              <div><a class="footer__collapse-head" data-toggle="collapse" href="#collapseBlock4" role="button" aria-expanded="false" aria-controls="collapseBlock4"><span>Partners</span><i class="icon-font icon-keyboard-arrow-down"></i></a>
+                <div class="collapse" id="collapseBlock4">
+                  <p>Partners</p>
+                  <nav class="footer__nav"><a class="footer__nav-link" href="#">Myanmar Real Estate & Property</a></nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="footer__wrapper footer__wrapper-2">
-          <div class="footer__wrapper-left">
-            <div class="copyright">
-              <p class="copyright__text">Copyright © 2020 JobNet.com.mm</p>
-            </div>
-            <div class="copyright copyright--link">
-              <p class="copyright__text"><a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a></p>
-            </div>
-          </div>
-          <div class="footer__wrapper-right">
-            <div class="browse">
-              <div>
-                <p class="browse__title">Browse by:</p>
+      </div>
+      <div class="footer__wrapper footer__wrapper-4">
+        <div class="c-grid">
+          <div class="footer__row">
+            <div class="footer__col footer__col-1">
+              <div class="copyright">
+                <p class="copyright__text">Copyright © 2020 JobNet.com.mm</p>
               </div>
-              <div><a class="browse__link" href="#">Jobs</a><a class="browse__link" href="#">Location</a></div>
+              <div class="copyright copyright--link">
+                <p class="copyright__text"><a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a> | <a href='#'>About Us</a></p>
+              </div>
+            </div>
+            <div class="footer__col footer__col-2">
+              <ul class="social">
+                <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-facebook"></i></a></li>
+                <li class="social__item"><a class="social__link" href="#"><i class="icon-font icon-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>

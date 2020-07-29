@@ -1,8 +1,8 @@
 ///
 /// ADDITIONALLY
 /// ===============
-$maxWidth: 1280px;
-$paddingLeft: 15px;
+$maxWidth: 1180px;
+$paddingLeft: 10px;
 $paddingRight: $paddingLeft;
 
 %grid {
@@ -13,10 +13,6 @@ $paddingRight: $paddingLeft;
   padding-left: $paddingLeft;
 }
 
-
-///
-/// MAIN
-/// ===============
 .c-grid {
   @extend %grid;
   @if($maxWidth) {

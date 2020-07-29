@@ -2,64 +2,90 @@
 
 footer#footer.footer
 
-	.c-grid
+	.footer__wrapper.footer__wrapper-1
+		div
 
-		.footer__wrapper.footer__wrapper-1
+			.logo.logo--footer
+				a.logo__btn(href="/")
+					img.logo__img(src="img/logo.png" alt="")
 
-			.footer__wrapper-left
+	.footer__wrapper.footer__wrapper-2
+		div
 
-				.logo.logo--footer
-					a.logo__btn(href="/")
-						img.logo__img(src="img/logo--white.png" srcset='img/logo--white@2x.png 2x' alt="")
-
-				ul.social
-					li.social__item
-						a.social__link(href="#")
-							i.icon-font.icon-facebook
-					li.social__item
-						a.social__link(href="#")
-							i.icon-font.icon-linkedin
-
-			.footer__wrapper-right
+			.browse
 				div
-					p.footer__title JobNet
-					nav.footer__nav
-						a.footer__nav-link(href="#") About Us
-						a.footer__nav-link(href="#") News
-						a.footer__nav-link(href="#") Careers@JobNet
+					p.browse__title Browse By
 				div
-					p.footer__title Employers
-					nav.footer__nav
-						a.footer__nav-link(href="#") Free Employer
-						a.footer__nav-link(href="#") Advertise with Us
-				div
-					p.footer__title job seekers
-					nav.footer__nav
-						a.footer__nav-link(href="#") Free Job Seeker Account
-						a.footer__nav-link(href="#") Upload CV
-						a.footer__nav-link(href="#") Browse Jobs
-				div
-					p.footer__title partners
-					nav.footer__nav
-						a.footer__nav-link(href="#") Myanmar Real Estate & Property
+					a.browse__link(href="#") Jobs
+					a.browse__link(href="#") Location
 
-		.footer__wrapper.footer__wrapper-2
+	.footer__wrapper.footer__wrapper-3
+		.c-grid
 
-			.footer__wrapper-left
-
-				.copyright
-					p.copyright__text Copyright © 2020 JobNet.com.mm
-
-				.copyright.copyright--link
-					p.copyright__text!= "<a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a>"
-
-			.footer__wrapper-right
-
-				.browse
+			.footer__collapse
+				.footer__collapse-body
 					div
-						p.browse__title Browse by:
+						a.footer__collapse-head(data-toggle='collapse', href='#collapseBlock1', role='button', aria-expanded='false', aria-controls='collapseBlock1')
+							span JobNet
+							i.icon-font.icon-keyboard-arrow-down
+						#collapseBlock1.collapse
+							p JobNet
+							nav.footer__nav
+								a.footer__nav-link(href="#") About Us
+								a.footer__nav-link(href="#") News
+								a.footer__nav-link(href="#") Careers@JobNet
 					div
-						a.browse__link(href="#") Jobs
-						a.browse__link(href="#") Location
+						a.footer__collapse-head(data-toggle='collapse', href='#collapseBlock2', role='button', aria-expanded='false', aria-controls='collapseBlock2')
+							span Employers
+							i.icon-font.icon-keyboard-arrow-down
+						#collapseBlock2.collapse
+							p Employers
+							nav.footer__nav
+								a.footer__nav-link(href="#") Free Employer
+								a.footer__nav-link(href="#") Advertise with Us
+
+					div
+						a.footer__collapse-head(data-toggle='collapse', href='#collapseBlock3', role='button', aria-expanded='false', aria-controls='collapseBlock3')
+							span Job Seekers
+							i.icon-font.icon-keyboard-arrow-down
+						#collapseBlock3.collapse
+							p Job Seekers
+
+							nav.footer__nav
+								a.footer__nav-link(href="#") Free Job Seeker Account
+								a.footer__nav-link(href="#") Upload CV
+								a.footer__nav-link(href="#") Browse Jobs
+
+					div
+						a.footer__collapse-head(data-toggle='collapse', href='#collapseBlock4', role='button', aria-expanded='false', aria-controls='collapseBlock4')
+							span Partners
+							i.icon-font.icon-keyboard-arrow-down
+						#collapseBlock4.collapse
+							p Partners
+							nav.footer__nav
+								a.footer__nav-link(href="#") Myanmar Real Estate & Property
+
+
+	.footer__wrapper.footer__wrapper-4
+		.c-grid
+
+			.footer__row
+				.footer__col.footer__col-1
+
+					.copyright
+						p.copyright__text Copyright © 2020 JobNet.com.mm
+
+					.copyright.copyright--link
+						p.copyright__text!= "<a href='#'>Privacy Policy</a> | <a href='#'>Terms & Conditions</a> | <a href='#'>About Us</a>"
+
+				.footer__col.footer__col-2
+
+					ul.social
+						li.social__item
+							a.social__link(href="#")
+								i.icon-font.icon-facebook
+						li.social__item
+							a.social__link(href="#")
+								i.icon-font.icon-linkedin
 
 // FOOTER :: END

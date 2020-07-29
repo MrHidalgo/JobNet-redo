@@ -66,5 +66,4 @@
 @include mixinFontFace("GothamPro", "-Bold", "../fonts/", bold, woff2 woff ttf svg);
 @include mixinFontFace("GothamPro", "-Light", "../fonts/", 300, woff2 woff ttf svg);
 @include mixinFontFace("GothamPro", "-Medium", "../fonts/", 500, woff2 woff ttf svg);
-@include mixinFontFace("GothamPro", "-Black", "../fonts/", 900, woff2 woff ttf svg);
-@include mixinFontFace("ProximaNova", "-Regular", "../fonts/", normal, woff2 woff ttf svg);
+@include mixinFontFace("GothamPro", "-Regular", "../fonts/", normal, woff2 woff ttf svg);

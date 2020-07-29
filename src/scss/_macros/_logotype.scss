@@ -1,19 +1,10 @@
 // LOGOTYPE :: START
 
 .logo {
-	&.logo--footer {
-		padding-bottom: 65px;
-		@include adaptive(1279) {
-			padding-bottom: 0;
-		}
-	}
-
 	&__btn {
 		display: flex;
 		align-items: flex-start;
-		@include adaptive(1535) {
-			max-width: 157px;
-		}
+		max-width: 197px;
 	}
 
 	&__img {
