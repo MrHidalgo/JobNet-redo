@@ -2,11 +2,6 @@
 
 .employers {
 	padding-top: 30px;
-	padding-bottom: 30px;
-	@include adaptive(1535) {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
 
 	&__title {
 		padding-bottom: 30px;
