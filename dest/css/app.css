@@ -848,14 +848,15 @@ picture {
   color: #3b3b3b;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
-/* line 8, src/scss/_macros/_title.scss */
+/* line 9, src/scss/_macros/_title.scss */
 .c-title--white {
   color: #ffffff;
 }
 
-/* line 12, src/scss/_macros/_title.scss */
+/* line 13, src/scss/_macros/_title.scss */
 .c-title a {
   color: #663399;
 }
@@ -2270,35 +2271,72 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_banner.scss */
 .banner {
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 1535px) {
+@media screen and (max-width: 1279px) {
   /* line 3, src/scss/_components/homepage/_banner.scss */
   .banner {
     padding-top: 20px;
   }
 }
 
-/* line 9, src/scss/_components/homepage/_banner.scss */
-.banner__wrapper {
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 1535px) {
-  /* line 9, src/scss/_components/homepage/_banner.scss */
-  .banner__wrapper {
-    padding-bottom: 20px;
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/homepage/_banner.scss */
+  .banner {
+    padding-bottom: 10px;
   }
 }
 
+/* line 13, src/scss/_components/homepage/_banner.scss */
+.banner__wrapper {
+  padding-bottom: 20px;
+}
+
 /* line 16, src/scss/_components/homepage/_banner.scss */
-.banner img {
+.banner__wrapper:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 21, src/scss/_components/homepage/_banner.scss */
+.banner__img {
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 28, src/scss/_components/homepage/_banner.scss */
+  .banner__img--desktop {
+    display: none;
+  }
+}
+
+/* line 33, src/scss/_components/homepage/_banner.scss */
+.banner__img--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_components/homepage/_banner.scss */
+  .banner__img--mobile {
+    display: block;
+  }
+}
+
+/* line 41, src/scss/_components/homepage/_banner.scss */
+.banner a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* line 3, src/scss/_components/homepage/_description.scss */
