@@ -1,19 +1,25 @@
 // SECTION :: START
 
 .popular {
-	padding-top: 30px;
-	padding-bottom: 60px;
-	@include adaptive(1535) {
-		padding-top: 20px;
-		padding-bottom: 40px;
+	background-color: #663399;
+	@include adaptive(1023) {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	&__wrapper {
+		&-1 {
+			border-bottom: 1px solid #fff;
+			@include adaptive(1023) {
+				border-bottom: none;
+			}
+		}
 	}
 
 	#pills-tab {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		//padding-bottom: 15px;
-		border-bottom: 2px solid #dcdcdc;
 		@include adaptive(1023) {
 			display: none;
 		}
@@ -21,39 +27,33 @@
 		a {
 			position: relative;
 			display: flex;
-			min-height: 35px;
-			//padding-bottom: 15px;
-			color: #6e6e6e;
-			font-size: 18px;
+			align-items: center;
+			height: 60px;
+			color: #ddbffb;
+			font-size: 16px;
 			font-weight: bold;
 			@include transition(color);
-			@include adaptive(1535) {
-				font-size: 16px;
-			}
-			@include adaptive(1279) {
-				font-size: 14px;
-			}
 
 			&:after {
 				content: '';
 				opacity: 0;
 				visibility: hidden;
 				position: absolute;
-				top: calc(100%);
+				top: calc(100% - 1px);
 				left: 0;
 				width: 100%;
-				height: 2px;
-				background-color: #663399;
+				height: 1px;
+				background-color: #fff;
 				@include transition(opacity, visibility);
 			}
 
 			&:hover {
-				color: #663399;
+				color: #fff;
 				@include transition(color);
 			}
 
 			&.active {
-				color: #663399;
+				color: #fff;
 				@include transition(color);
 
 				&:after {
@@ -67,19 +67,20 @@
 
 	#pills-tabContent {
 		padding-top: 30px;
+		padding-bottom: 30px;
 		@include adaptive(1023) {
-			padding-top: 0;
-			border: 1px solid #dcdcdc;
+			width: 100%;
+			max-width: 280px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
 		}
 
 		.tab-pane {
 			@include adaptive(1023) {
-				display: block;
 				opacity: 1;
-
-				&:not(:last-of-type) {
-					border-bottom: 1px solid #dcdcdc;
-				}
+				display: block;
+				border-bottom: 1px solid #c692fb;
 			}
 
 			&-header {
@@ -87,16 +88,19 @@
 				display: none;
 				align-items: center;
 				justify-content: space-between;
-				min-height: 50px;
-				padding: 5px 15px;
+				height: 60px;
+				padding-top: 5px;
+				padding-bottom: 5px;
 				@include adaptive(1023) {
 					display: flex;
+					padding-left: 0;
+					padding-right: 0;
 				}
 
 				&:hover {
 					p,
 					.icon-font {
-						color: #663399;
+						color: #fff;
 						@include transition(transform, color);
 					}
 				}
@@ -120,14 +124,15 @@
 					white-space: nowrap;
 					overflow: hidden;
 					text-overflow: ellipsis;
-					color: #6e6e6e;
+					color: #ddbffb;
 					font-size: 16px;
 					font-weight: bold;
+					text-transform: uppercase;
 					@include transition(color);
 				}
 
 				.icon-font {
-					color: #6e6e6e;
+					color: #ddbffb;
 					font-size: 9px;
 					transform-origin: center;
 					backface-visibility: hidden;
@@ -144,9 +149,9 @@
 				}
 				@include adaptive(1023) {
 					display: none;
-					border-top: 1px solid #dcdcdc;
-					padding-top: 15px;
-					padding-bottom: 15px;
+					padding-left: 0;
+					padding-right: 0;
+					border-top: 1px solid #c692fb;
 				}
 
 				> div {
@@ -157,6 +162,13 @@
 						max-width: 100%;
 						text-align: left;
 						padding-bottom: 10px;
+
+						&:first-of-type {
+							padding-top: 15px;
+						}
+						&:last-of-type {
+							padding-bottom: 15px;
+						}
 					}
 
 					&:nth-of-type(2),
@@ -181,29 +193,26 @@
 				ul {
 					@include adaptive(1023) {
 						width: 100%;
-						padding-left: 10px;
-						padding-right: 10px;
 					}
 
 					li {
+						display: flex;
 						@include adaptive(767) {
 							display: flex;
 							justify-content: center;
 						}
 
 						&:not(:last-of-type) {
-							padding-bottom: 10px;
+							padding-bottom: 13px;
 						}
 					}
 
 					a {
 						position: relative;
-						color: #6e6e6e;
-						font-size: 14px;
+						font-size: 12px;
+						color: #ffffff;
+						line-height: 1;
 						@include transition(color);
-						@include adaptive(1023) {
-							font-size: 14px;
-						}
 						@include adaptive(767) {
 							text-align: center;
 							padding-left: 5px;
@@ -211,7 +220,7 @@
 						}
 
 						&:hover {
-							color: #663399;
+							color: #fff;
 							@include transition(color);
 
 							&:before,
@@ -228,7 +237,7 @@
 							top: 100%;
 							width: 0;
 							height: 1px;
-							background-color: #663399;
+							background-color: #fff;
 							@include transition(width);
 						}
 						&:before {
@@ -239,8 +248,7 @@
 						}
 
 						span {
-							color: #663399;
-							font-size: 13px;
+							color: #fff;
 							text-transform: uppercase;
 						}
 					}

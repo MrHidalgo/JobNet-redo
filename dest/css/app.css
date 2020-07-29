@@ -1820,153 +1820,6 @@ picture {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding-top: 15px;
-  /*background-color: #373656;
-
-	&__wrapper {
-		display: flex;
-		@include adaptive(1279) {
-			flex-wrap: wrap;
-		}
-
-		&-1 {
-			padding-top: 45px;
-			padding-bottom: 35px;
-			@include adaptive(1535) {
-				padding-top: 40px;
-				padding-bottom: 20px;
-			}
-
-			.footer__wrapper {
-				&-left {
-					display: flex;
-					flex-direction: column;
-					justify-content: space-between;
-					width: 100%;
-					max-width: 353px;
-					@include adaptive(1279) {
-						flex-direction: row;
-						align-items: center;
-						max-width: 100%;
-						padding-bottom: 40px;
-					}
-				}
-
-				&-right {
-					display: flex;
-					flex: 1;
-					min-width: 1px;
-					max-width: 100%;
-					@include adaptive(767) {
-						flex-wrap: wrap;
-					}
-
-					> div {
-						@include adaptive(1279) {
-							width: 100%;
-							max-width: calc(100% / 4);
-						}
-						@include adaptive(767) {
-							max-width: calc(100% / 2);
-							padding-bottom: 30px;
-						}
-
-						&:not(:last-of-type) {
-							padding-right: 70px;
-							@include adaptive(1279) {
-								padding-right: 0;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		&-2 {
-			align-items: center;
-			justify-content: space-between;
-			min-height: 55px;
-			border-top: 1px solid #4b4a67;
-			@include adaptive(767) {
-				padding-top: 30px;
-				padding-bottom: 30px;
-				flex-direction: column;
-				text-align: center;
-			}
-
-			.footer__wrapper {
-				&-left {
-					display: flex;
-					align-items: center;
-					@include adaptive(767) {
-						flex-direction: column;
-						text-align: center;
-					}
-				}
-			}
-		}
-	}
-
-	&__title {
-		padding-bottom: 25px;
-		color: #ffffff;
-		font-size: 18px;
-		font-weight: bold;
-		text-transform: uppercase;
-		@include adaptive(1535) {
-			font-size: 18px;
-		}
-	}
-
-	&__nav {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		@include adaptive(1023) {
-			padding-right: 10px;
-		}
-
-		&-link {
-			white-space: nowrap;
-			position: relative;
-			display: flex;
-			color: #ffffff;
-			font-size: 14px;
-			@include adaptive(1023) {
-				white-space: normal;
-			}
-
-			&:not(:last-of-type) {
-				margin-bottom: 10px;
-			}
-
-			&:hover {
-				color: #ffffff;
-
-				&:before,
-				&:after {
-					width: 50%;
-					@include transition(width);
-				}
-			}
-
-			&:before,
-			&:after {
-				content: '';
-				position: absolute;
-				top: 100%;
-				width: 0;
-				height: 1px;
-				background-color: #ffffff;
-				@include transition(width);
-			}
-			&:before {
-				left: 50%;
-			}
-			&:after {
-				right: 50%;
-			}
-		}
-	}*/
 }
 
 /* line 9, src/scss/_components/_footer.scss */
@@ -2427,6 +2280,605 @@ picture {
 /* line 254, src/scss/_components/_footer.scss */
 .footer__nav-link:after {
   right: 50%;
+}
+
+/* line 3, src/scss/_components/homepage/_banner.scss */
+.banner {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_components/homepage/_banner.scss */
+  .banner {
+    padding-top: 20px;
+  }
+}
+
+/* line 9, src/scss/_components/homepage/_banner.scss */
+.banner__wrapper {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 9, src/scss/_components/homepage/_banner.scss */
+  .banner__wrapper {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 16, src/scss/_components/homepage/_banner.scss */
+.banner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 3, src/scss/_components/homepage/_description.scss */
+.description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 3, src/scss/_components/homepage/_description.scss */
+  .description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 11, src/scss/_components/homepage/_description.scss */
+.description__title {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1535px) {
+  /* line 11, src/scss/_components/homepage/_description.scss */
+  .description__title {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 18, src/scss/_components/homepage/_description.scss */
+.description__desc {
+  padding-bottom: 20px;
+  color: #6e6e6e;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 18, src/scss/_components/homepage/_description.scss */
+  .description__desc {
+    font-size: 14px;
+  }
+}
+
+/* line 26, src/scss/_components/homepage/_description.scss */
+.description__desc a {
+  color: #663399;
+  font-weight: bold;
+}
+
+/* line 32, src/scss/_components/homepage/_description.scss */
+.description__more {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 32, src/scss/_components/homepage/_description.scss */
+  .description__more {
+    margin-bottom: 0;
+  }
+}
+
+/* line 43, src/scss/_components/homepage/_description.scss */
+.description__more:hover:after {
+  background-color: #663399;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* line 48, src/scss/_components/homepage/_description.scss */
+.description__more:hover a {
+  color: #663399;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 54, src/scss/_components/homepage/_description.scss */
+.description__more:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dcdcdc;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* line 65, src/scss/_components/homepage/_description.scss */
+.description__more a {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100px;
+  padding-left: 15px;
+  background-color: #ffffff;
+  color: #6e6e6e;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 78, src/scss/_components/homepage/_description.scss */
+.description__more a:after {
+  content: attr(data-more);
+}
+
+/* line 88, src/scss/_components/homepage/_description.scss */
+.description .collapse.show + .description__more a:after {
+  content: attr(data-less);
+}
+
+/* line 3, src/scss/_components/homepage/_popular.scss */
+.popular {
+  background-color: #663399;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/homepage/_popular.scss */
+  .popular {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+/* line 11, src/scss/_components/homepage/_popular.scss */
+.popular__wrapper-1 {
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 11, src/scss/_components/homepage/_popular.scss */
+  .popular__wrapper-1 {
+    border-bottom: none;
+  }
+}
+
+/* line 19, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 19, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tab {
+    display: none;
+  }
+}
+
+/* line 27, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  color: #ddbffb;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 37, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab a:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -webkit-calc(100% - 1px);
+  top: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 50, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab a:hover {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 55, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab a.active {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 59, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tab a.active:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 68, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 68, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent {
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 79, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane {
+    opacity: 1;
+    display: block;
+    border-bottom: 1px solid #c692fb;
+  }
+}
+
+/* line 86, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header {
+  cursor: pointer;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 86, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 101, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header:hover p,
+.popular #pills-tabContent .tab-pane-header:hover .icon-font {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 109, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header.is-active .icon-font {
+  -webkit-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 116, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 123, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  color: #ddbffb;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 134, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-header .icon-font {
+  color: #ddbffb;
+  font-size: 9px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 142, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 142, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 142, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content {
+    display: none;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 1px solid #c692fb;
+  }
+}
+
+/* line 157, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 157, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content > div {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  /* line 166, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content > div:first-of-type {
+    padding-top: 15px;
+  }
+  /* line 169, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content > div:last-of-type {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 174, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content > div:nth-of-type(2), .popular #pills-tabContent .tab-pane-content > div:nth-of-type(3) {
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 174, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content > div:nth-of-type(2), .popular #pills-tabContent .tab-pane-content > div:nth-of-type(3) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 185, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content > div:last-of-type {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 185, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content > div:last-of-type {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 193, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content ul {
+    width: 100%;
+  }
+}
+
+/* line 198, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 198, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 205, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul li:not(:last-of-type) {
+  padding-bottom: 13px;
+}
+
+/* line 210, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a {
+  position: relative;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 1;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 210, src/scss/_components/homepage/_popular.scss */
+  .popular #pills-tabContent .tab-pane-content ul a {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* line 222, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a:hover {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 226, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a:hover:before, .popular #pills-tabContent .tab-pane-content ul a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 233, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a:before, .popular #pills-tabContent .tab-pane-content ul a:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 243, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a:before {
+  left: 50%;
+}
+
+/* line 246, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a:after {
+  right: 50%;
+}
+
+/* line 250, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .tab-pane-content ul a span {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* line 259, src/scss/_components/homepage/_popular.scss */
+.popular #pills-tabContent .fade {
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
