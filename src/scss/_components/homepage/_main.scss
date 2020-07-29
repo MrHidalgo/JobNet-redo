@@ -235,6 +235,12 @@
 				font-size: 16px;
 				color: #6e6e6e;
 			}
+			@include adaptive(1535) {
+				font-size: 14px;
+				@include inputPlaceholder {
+					font-size: 14px;
+				}
+			}
 		}
 
 		.dropdown {
