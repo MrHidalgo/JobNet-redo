@@ -4,7 +4,7 @@ mixin job(classMod, imageBool)
 			div
 
 				.search__job-heading
-					p.search__job-title Senior .NET Developer (Urgent)
+					a.search__job-title(href='#') Senior .NET Developer (Urgent)
 
 				p.search__job-subtitle Codigo - The Mobile App Company
 
@@ -50,7 +50,7 @@ mixin job(classMod, imageBool)
 			div
 				p.search__job-posted
 					i.icon-font.icon-clock
-					span Posted Today
+					span!= "Posted: <u>Today</u>"
 			div
 				.c-btn__wrapper
 					a.c-btn.c-btn--purple(href="#")

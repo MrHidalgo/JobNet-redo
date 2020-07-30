@@ -2,10 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 90px;
-	@include adaptive(1535) {
-		min-height: 80px;
-	}
+	min-height: 70px;
 
 	> div {
 		&:nth-of-type(1) {
@@ -86,6 +83,10 @@
 		}
 		@include adaptive(767) {
 			font-size: 14px;
+		}
+
+		span {
+			color: #f57c00;
 		}
 	}
 
