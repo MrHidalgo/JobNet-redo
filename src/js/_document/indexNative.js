@@ -120,6 +120,46 @@
 			}
 		});
 	};
+
+
+	const stickyElements = () => {
+		const searchForm = $('.search__form'),
+			searchAction = $('.search__action'),
+			searchFilter = $('.search__filter');
+
+		function isAnyPartOfElementInViewport(el) {
+			const rect = el.getBoundingClientRect();
+			const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+			const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+			const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+			const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+			return (vertInView && horInView);
+		}
+
+		stickybits('.search__filter', {
+			useStickyClasses: true,
+			stickyBitStickyOffset: 95
+		});
+
+		if(isAnyPartOfElementInViewport(searchAction[0])) {
+			searchFilter.css({
+				'max-height': 'calc(100vh - ' + ($(window).height() - (searchAction[0].getBoundingClientRect().top + searchAction[0].getBoundingClientRect().height - (searchForm[0].getBoundingClientRect().height + 15))) + 'px)'
+			});
+		}
+
+		$(window).on('scroll', (ev) => {
+			if(searchFilter.hasClass('js-is-stuck')) {
+				searchFilter.css({
+					'max-height': 'calc(100vh - ' + ($(window).height() - (searchAction[0].getBoundingClientRect().top + searchAction[0].getBoundingClientRect().height - (searchForm[0].getBoundingClientRect().height + 15))) + 'px)'
+				});
+			} else {
+				searchFilter.css({
+					'max-height': 'calc(100vh - 105px)'
+				});
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -146,6 +186,7 @@
 		popularCollapse();
 		searchFilterToggle();
 		searchSortToggle();
+		stickyElements();
 		// ==========================================
 	};
 

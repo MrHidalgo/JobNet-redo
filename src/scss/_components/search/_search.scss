@@ -1,11 +1,6 @@
 // SECTION :: START
 
 .search {
-	padding-bottom: 80px;
-	@include adaptive(767) {
-		padding-bottom: 30px;
-	}
-
 	&__wrapper {
 		&-2 {
 			display: flex;
@@ -29,6 +24,7 @@
 	}
 
 	@import "search--form";
+	@import "search--alert";
 	@import "search--header";
 	@import "search--filter";
 	@import "search--job";

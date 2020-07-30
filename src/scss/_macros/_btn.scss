@@ -100,6 +100,19 @@
 		}
 	}
 
+	&--orange {
+		background-color: #f69322;
+
+		&:before,
+		&:after {
+			background-color: lighten(#f69322, 2%);
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
+
 	&--borderPurple {
 		border: 1px solid #dcdcdc;
 		background-color: #fff;

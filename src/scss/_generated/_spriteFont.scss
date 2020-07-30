@@ -75,38 +75,41 @@
 	@if $filename == linkedin {
 		$char: "\E010";
 	}
-	@if $filename == menu {
+	@if $filename == mail {
 		$char: "\E011";
 	}
-	@if $filename == notification {
+	@if $filename == menu {
 		$char: "\E012";
 	}
-	@if $filename == office-building {
+	@if $filename == notification {
 		$char: "\E013";
 	}
-	@if $filename == photo {
+	@if $filename == office-building {
 		$char: "\E014";
 	}
-	@if $filename == pin {
+	@if $filename == photo {
 		$char: "\E015";
 	}
-	@if $filename == programming {
+	@if $filename == pin {
 		$char: "\E016";
 	}
-	@if $filename == search {
+	@if $filename == programming {
 		$char: "\E017";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E018";
 	}
-	@if $filename == sort {
+	@if $filename == shopping-bag {
 		$char: "\E019";
 	}
-	@if $filename == star {
+	@if $filename == sort {
 		$char: "\E01A";
 	}
-	@if $filename == user {
+	@if $filename == star {
 		$char: "\E01B";
+	}
+	@if $filename == user {
+		$char: "\E01C";
 	}
 
 	@return $char;
@@ -185,6 +188,10 @@
 }
 .icon-linkedin {
 	@include icon(linkedin);
+
+}
+.icon-mail {
+	@include icon(mail);
 
 }
 .icon-menu {

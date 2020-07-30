@@ -68,14 +68,14 @@
 				z-index: 1500;
 				opacity: 0;
 				visibility: hidden;
-				transform: translateX(100%);
+				transform: translateX(-100%);
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				right: 0;
+				left: 0;
 				display: block;
 				width: 100%;
-				max-width: 300px;
+				max-width: 270px;
 				height: 100%;
 				padding: 0 15px 60px;
 				background-color: #ffffff;
@@ -247,7 +247,7 @@
 		margin-right: 10px;
 		border-radius: 50%;
 		@include adaptive(1023) {
-			margin-left: auto;
+			margin-left: 10px;
 			margin-right: auto;
 			margin-bottom: 15px;
 		}
@@ -322,7 +322,8 @@
 			font-size: 14px;
 		}
 		@include adaptive(1023) {
-			justify-content: center;
+			justify-content: flex-start;
+			width: 100%;
 			min-height: 45px;
 			margin-left: auto;
 			margin-right: auto;
@@ -364,6 +365,7 @@
 			}
 			@include adaptive(1023) {
 				flex-direction: column;
+				width: 100%;
 				height: auto;
 			}
 		}
