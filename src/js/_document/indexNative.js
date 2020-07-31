@@ -137,7 +137,7 @@
 			return (vertInView && horInView);
 		}
 
-		if($(window).width() < 1024) {
+		if($(window).width() > 1023) {
 			stickybits('.search__filter', {
 				useStickyClasses: true,
 				stickyBitStickyOffset: 95
@@ -199,8 +199,8 @@
 	window.addEventListener('resize', (ev) => {
 		if($(window).width() > 1023 && $('html').hasClass('is-hideScroll')) {
 			$('html, body').removeClass('is-hideScroll');
-			$('.search__filter, [search-sort-node-js]').removeClass('is-show');
-			$('[mobile-block-js]').removeClass('is-open');
+			// $('.search__filter, [search-sort-node-js]').removeClass('is-show');
+			// $('[mobile-block-js]').removeClass('is-open');
 		}
 	}, false);
 })();

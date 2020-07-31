@@ -4,7 +4,10 @@
 	&__btn {
 		display: flex;
 		align-items: flex-start;
-		max-width: 197px;
+		max-width: 187px;
+		@include adaptive(1023) {
+			max-width: 157px;
+		}
 	}
 
 	&__img {

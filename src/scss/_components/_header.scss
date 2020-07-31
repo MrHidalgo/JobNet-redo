@@ -42,10 +42,13 @@
 
 				&:nth-of-type(1) {
 					padding-right: 30px;
+					@include adaptive(1279) {
+						padding-right: 15px;
+					}
 					@include adaptive(1023) {
 						justify-content: space-between;
 						width: 100%;
-						padding-right: 15px;
+						padding-right: 10px;
 					}
 				}
 
@@ -54,6 +57,9 @@
 					min-width: 1px;
 					max-width: 100%;
 					padding-right: 15px;
+					@include adaptive(1279) {
+						padding-right: 0;
+					}
 					@include adaptive(1023) {
 						display: none;
 					}
