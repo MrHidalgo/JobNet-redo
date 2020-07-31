@@ -224,28 +224,30 @@ window.addEventListener('scroll', function (ev) {});
 			return vertInView && horInView;
 		}
 
-		stickybits('.search__filter', {
-			useStickyClasses: true,
-			stickyBitStickyOffset: 95
-		});
-
-		if (isAnyPartOfElementInViewport(searchAction[0])) {
-			searchFilter.css({
-				'max-height': 'calc(100vh - ' + ($(window).height() - (searchAction[0].getBoundingClientRect().top + searchAction[0].getBoundingClientRect().height - (searchForm[0].getBoundingClientRect().height + 15))) + 'px)'
+		if ($(window).width() < 1024) {
+			stickybits('.search__filter', {
+				useStickyClasses: true,
+				stickyBitStickyOffset: 95
 			});
-		}
 
-		$(window).on('scroll', function (ev) {
-			if (searchFilter.hasClass('js-is-stuck')) {
+			if (isAnyPartOfElementInViewport(searchAction[0])) {
 				searchFilter.css({
 					'max-height': 'calc(100vh - ' + ($(window).height() - (searchAction[0].getBoundingClientRect().top + searchAction[0].getBoundingClientRect().height - (searchForm[0].getBoundingClientRect().height + 15))) + 'px)'
 				});
-			} else {
-				searchFilter.css({
-					'max-height': 'calc(100vh - 105px)'
-				});
 			}
-		});
+
+			$(window).on('scroll', function (ev) {
+				if (searchFilter.hasClass('js-is-stuck')) {
+					searchFilter.css({
+						'max-height': 'calc(100vh - ' + ($(window).height() - (searchAction[0].getBoundingClientRect().top + searchAction[0].getBoundingClientRect().height - (searchForm[0].getBoundingClientRect().height + 15))) + 'px)'
+					});
+				} else {
+					searchFilter.css({
+						'max-height': 'calc(100vh - 105px)'
+					});
+				}
+			});
+		}
 	};
 	/*
  * CALLBACK :: end
@@ -278,5 +280,13 @@ window.addEventListener('scroll', function (ev) {});
 
 	window.addEventListener('load', function (ev) {
 		initNative();
+	}, false);
+
+	window.addEventListener('resize', function (ev) {
+		if ($(window).width() > 1023 && $('html').hasClass('is-hideScroll')) {
+			$('html, body').removeClass('is-hideScroll');
+			$('.search__filter, [search-sort-node-js]').removeClass('is-show');
+			$('[mobile-block-js]').removeClass('is-open');
+		}
 	}, false);
 })();

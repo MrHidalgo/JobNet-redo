@@ -2,7 +2,7 @@
 
 &__filter {
 	z-index: 1150;
-	position: static;
+	position: sticky;
 	top: 95px;
 	display: flex;
 	flex-direction: column;
@@ -21,13 +21,13 @@
 		opacity: 0;
 		visibility: hidden;
 		transform: translateX(-100%);
-		position: fixed;
-		top: 0;
-		left: 0;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
 		width: 100%;
 		max-width: 300px;
 		height: 100%;
-		max-height: 100%;
+		max-height: 100% !important;
 		border: none;
 		border-radius: 0;
 		background-color: #ffffff;

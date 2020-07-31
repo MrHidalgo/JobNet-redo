@@ -154,6 +154,9 @@
 				font-size: 17px;
 				color: #777777;
 				@include transition(color);
+				@include adaptive(1279) {
+					font-size: 15px;
+				}
 
 				&:hover {
 					color: #663399;

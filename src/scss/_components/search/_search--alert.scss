@@ -9,6 +9,12 @@
 	border-radius: 7px;
 	background-color: #cde8fb;
 	@include transition(box-shadow);
+	@include adaptive(767) {
+		flex-wrap: wrap;
+		height: auto;
+		min-height: 80px;
+		padding: 10px;
+	}
 
 	&:hover {
 		box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
@@ -31,6 +37,25 @@
 
 		&:nth-of-type(1) {
 			width: 120px;
+			@include adaptive(767) {
+				display: none;
+			}
+
+			.icon-font {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				&:nth-of-type(1) {
+					color: #ffffff;
+					font-size: 75px;
+				}
+				&:nth-of-type(2) {
+					color: #2c557e;
+					font-size: 55px;
+				}
+			}
 		}
 		&:nth-of-type(2) {
 			flex: 1;
@@ -38,27 +63,26 @@
 			max-width: 100%;
 		}
 
-		.icon-font {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-
-			&:nth-of-type(1) {
-				color: #ffffff;
-				font-size: 75px;
-			}
-			&:nth-of-type(2) {
-				color: #2c557e;
-				font-size: 55px;
-			}
-		}
-
 		p {
 			padding-bottom: 5px;
 			color: #2c557e;
 			font-weight: 500;
 			font-size: 16px;
+			@include adaptive(767) {
+				padding-right: 10px;
+				padding-bottom: 10px;
+				line-height: 1.2;
+			}
+
+			.icon-font {
+				display: none;
+				margin-right: 5px;
+				font-size: 20px;
+				@include adaptive(767) {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
 		}
 
 		form {
@@ -66,6 +90,9 @@
 			align-items: center;
 			justify-content: flex-start;
 			width: 100%;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+			}
 
 			label {
 				display: flex;
@@ -74,6 +101,11 @@
 				width: 100%;
 				max-width: 350px;
 				padding-right: 10px;
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-right: 0;
+					padding-bottom: 5px;
+				}
 			}
 
 			input {
@@ -93,6 +125,15 @@
 		.c-btn {
 			min-width: unset;
 			height: 35px;
+			@include adaptive(767) {
+				width: 100%;
+			}
+
+			&__wrapper {
+				@include adaptive(767) {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
