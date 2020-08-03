@@ -137,7 +137,7 @@
 			return (vertInView && horInView);
 		}
 
-		if($(window).width() > 1023) {
+		if($(window).width() > 1023 && searchForm.length) {
 			stickybits('.search__filter', {
 				useStickyClasses: true,
 				stickyBitStickyOffset: 95
@@ -161,6 +161,13 @@
 				}
 			});
 		}
+	};
+
+
+	const modals = () => {
+		setTimeout((ev) => {
+			$('[home-modalAuto-js]').trigger('click');
+		}, 2000);
 	};
 	/*
 	* CALLBACK :: end
@@ -189,6 +196,7 @@
 		searchFilterToggle();
 		searchSortToggle();
 		stickyElements();
+		modals();
 		// ==========================================
 	};
 
@@ -199,8 +207,6 @@
 	window.addEventListener('resize', (ev) => {
 		if($(window).width() > 1023 && $('html').hasClass('is-hideScroll')) {
 			$('html, body').removeClass('is-hideScroll');
-			// $('.search__filter, [search-sort-node-js]').removeClass('is-show');
-			// $('[mobile-block-js]').removeClass('is-open');
 		}
 	}, false);
 })();

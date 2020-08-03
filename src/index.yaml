@@ -3,10 +3,10 @@ ProjectTitle: JobNet
 PageList:
 - file: index.html
   titleName: Home
-  ready: 95
+  ready: 100
 - file: search.html
   titleName: Search
-  ready: 95
+  ready: 100
 - file: login.html
   titleName: Login
   ready: 1
