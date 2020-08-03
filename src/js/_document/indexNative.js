@@ -164,6 +164,14 @@
 	};
 
 
+	const applyJobDetails = () => {
+		$('[apply-here-js]').on('click', (ev) => {
+			$(ev.currentTarget).addClass('disabled');
+			$('[apply-node-js]').slideDown(400);
+		});
+	};
+
+
 	const modals = () => {
 		setTimeout((ev) => {
 			$('[home-modalAuto-js]').trigger('click');
@@ -196,6 +204,7 @@
 		searchFilterToggle();
 		searchSortToggle();
 		stickyElements();
+		applyJobDetails();
 		modals();
 		// ==========================================
 	};

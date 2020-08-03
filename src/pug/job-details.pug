@@ -1,0 +1,13 @@
+---
+title: JobNet | Job Details
+
+pageClassName: p-job-details
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/job-details/_job-details
+
+		#overlay.overlay

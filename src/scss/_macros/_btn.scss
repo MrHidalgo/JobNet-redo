@@ -113,6 +113,19 @@
 		}
 	}
 
+	&--green {
+		background-color: #36AF90;
+
+		&:before,
+		&:after {
+			background-color: lighten(#36AF90, 2%);
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
+
 	&--borderPurple {
 		border: 1px solid #dcdcdc;
 		background-color: #fff;

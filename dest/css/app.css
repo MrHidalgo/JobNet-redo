@@ -162,7 +162,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-dollar-symbol:before, .icon-facebook:before, .icon-factory:before, .icon-filter:before, .icon-folder:before, .icon-google:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-linkedin:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star:before, .icon-user:before {
+.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-book:before, .icon-calendar:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-dollar-symbol:before, .icon-edit:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-folder:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-user:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,144 +173,189 @@
   text-transform: none;
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
+/* line 146, src/scss/_generated/_spriteFont.scss */
 .icon-antenna:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
+/* line 146, src/scss/_generated/_spriteFont.scss */
 .icon-approved:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
+/* line 146, src/scss/_generated/_spriteFont.scss */
 .icon-bank:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-clock:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-book:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-close:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-calendar:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-cogwheel:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-clock:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-cost:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-close:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-dollar-symbol:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-cogwheel:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-cost:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-factory:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-dollar-symbol:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-filter:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-edit:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-folder:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-google:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-factory:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-home:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-fast-forward:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-keyboard-arrow-down:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-filter:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-folder:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-google:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-menu:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-graph:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-notification:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-home:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-office-building:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-keyboard-arrow-down:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-photo:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-like:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-programming:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-menu:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-shopping-bag:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-notification:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-sort:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-office-building:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-star:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-photo:before {
   content: "";
 }
 
-/* line 119, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-printer:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-programming:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-shopping-bag:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-sort:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-star-empty:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-success:before {
+  content: "";
+}
+
+/* line 146, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
 }
 
 @font-face {
@@ -1044,17 +1089,32 @@ picture {
 }
 
 /* line 116, src/scss/_macros/_btn.scss */
+.c-btn--green {
+  background-color: #36AF90;
+}
+
+/* line 119, src/scss/_macros/_btn.scss */
+.c-btn--green:before, .c-btn--green:after {
+  background-color: #38b796;
+}
+
+/* line 124, src/scss/_macros/_btn.scss */
+.c-btn--green span {
+  color: #ffffff;
+}
+
+/* line 129, src/scss/_macros/_btn.scss */
 .c-btn--borderPurple {
   border: 1px solid #dcdcdc;
   background-color: #fff;
 }
 
-/* line 120, src/scss/_macros/_btn.scss */
+/* line 133, src/scss/_macros/_btn.scss */
 .c-btn--borderPurple:before, .c-btn--borderPurple:after {
   background-color: #f8f8f8;
 }
 
-/* line 125, src/scss/_macros/_btn.scss */
+/* line 138, src/scss/_macros/_btn.scss */
 .c-btn--borderPurple span {
   color: #663399;
 }
@@ -7132,6 +7192,1450 @@ picture {
   -webkit-transition: color 0.4s ease-in-out;
   -o-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
+}
+
+/* line 3, src/scss/_components/job-details/_job-details.scss */
+.job-details {
+  position: relative;
+}
+
+/* line 6, src/scss/_components/job-details/_job-details.scss */
+.job-details__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 39px;
+}
+
+/* line 11, src/scss/_components/job-details/_job-details.scss */
+.job-details__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 17, src/scss/_components/job-details/_job-details.scss */
+.job-details__wrapper-right {
+  width: -webkit-calc(272px + 28px);
+  width: calc(272px + 28px);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--banner.scss */
+.job-details__banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 180px;
+  padding: 10px 0;
+  background-image: url("../img/img-jobdetails-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.83);
+}
+
+/* line 10, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 14px;
+}
+
+/* line 17, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero-logo {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  width: 60px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* line 28, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* line 36, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero p,
+.job-details__hero span,
+.job-details__hero u {
+  line-height: 1.1;
+}
+
+/* line 42, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* line 48, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero span {
+  font-size: 12px;
+  color: #5f5d5d;
+}
+
+/* line 53, src/scss/_components/job-details/_job-details--hero.scss */
+.job-details__hero u {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 12px;
+  color: blue;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 15px 20px 15px 34px;
+  border: 1px solid #dfdfdf;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* line 10, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 20px;
+}
+
+/* line 20, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 25, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 4px;
+}
+
+/* line 33, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-body > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  color: #3b3b3b;
+  font-size: 14px;
+}
+
+/* line 42, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-body .icon-font {
+  margin-right: 5px;
+}
+
+/* line 46, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-body span {
+  line-height: 1;
+}
+
+/* line 51, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-logo {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85px;
+  height: 85px;
+}
+
+/* line 60, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* line 68, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #3b3b3b;
+}
+
+/* line 74, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-subtitle {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #049fc3;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 81, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-subtitle:hover {
+  color: #f69322;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 87, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #03b6df;
+  line-height: 34px;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 94, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-login:hover {
+  color: #13d651;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 99, src/scss/_components/job-details/_job-details--card.scss */
+.job-details__card-login .icon-font {
+  color: #13d651;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 5, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-title {
+  padding: 20px 0 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* line 12, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-subtitle {
+  font-weight: 500;
+}
+
+/* line 16, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 20, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-wrapper:not(:last-of-type) {
+  border-bottom: 1px solid #e2e0e0;
+}
+
+/* line 25, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-wrapper:nth-of-type(1) .job-details__description-title {
+  padding-top: 0;
+}
+
+/* line 31, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-contant {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+/* line 36, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 40, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-details-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+/* line 47, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-details .icon-font {
+  margin-right: 5px;
+  color: #1AC880;
+  font-size: 18px;
+}
+
+/* line 53, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description-details span {
+  line-height: 1;
+  font-size: 14px;
+  color: #999999;
+}
+
+/* line 60, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description ol,
+.job-details__description ul {
+  margin: 14px 10px 14px 10px;
+  padding-left: 10px;
+}
+
+/* line 65, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description ol li,
+.job-details__description ul li {
+  line-height: 1.5;
+}
+
+/* line 68, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description ol li strong,
+.job-details__description ul li strong {
+  font-weight: 500;
+}
+
+/* line 75, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description ul li {
+  list-style-type: disc;
+}
+
+/* line 81, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description ol li {
+  list-style-type: decimal;
+}
+
+/* line 87, src/scss/_components/job-details/_job-details--description.scss */
+.job-details__description p:not(:last-of-type) {
+  padding-bottom: 20px;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 20px;
+}
+
+/* line 8, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+/* line 12, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-more a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 17, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-more a .icon-font,
+.job-details__option-more a span {
+  color: #9458d1;
+}
+
+/* line 22, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-more a .icon-font {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* line 27, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-more a span {
+  font-size: 14px;
+}
+
+/* line 33, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 39, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option .c-btn {
+  min-width: 235px;
+  height: 36px;
+}
+
+/* line 43, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option .c-btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 49, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option .c-btn__wrapper > div {
+  margin-left: 5px;
+}
+
+/* line 55, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #3b3b3b;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffffff;
+  color: #3b3b3b;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* line 67, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social:hover {
+  color: #ffffff;
+  background-color: #3b3b3b;
+  -webkit-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* line 73, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+/* line 77, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social--facebook {
+  border-color: #185890;
+  color: #185890;
+}
+
+/* line 81, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social--facebook:hover {
+  background-color: #185890;
+  color: #ffffff;
+}
+
+/* line 86, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social--linkedin {
+  border-color: #2c81b4;
+  color: #2c81b4;
+}
+
+/* line 90, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social--linkedin:hover {
+  background-color: #2c81b4;
+  color: #ffffff;
+}
+
+/* line 96, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social .icon-font {
+  font-size: 15px;
+}
+
+/* line 100, src/scss/_components/job-details/_job-details--option.scss */
+.job-details__option-social-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 30px 21px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #663398;
+}
+
+/* line 9, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-head {
+  padding-bottom: 5px;
+}
+
+/* line 13, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-body > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding: 8px 8px 8px 0;
+}
+
+/* line 21, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-body > div + div {
+  padding-left: 22px;
+}
+
+/* line 25, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-body > div:nth-of-type(2) {
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+}
+
+/* line 32, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 45px;
+}
+
+/* line 36, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-footer a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 46, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* line 52, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 55px;
+}
+
+/* line 58, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading > div:nth-of-type(1) {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55px;
+  height: 45px;
+}
+
+/* line 65, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100px;
+}
+
+/* line 72, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading .icon-font {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* line 76, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading .icon-font:nth-of-type(2) {
+  opacity: 0.25;
+  position: absolute;
+  font-size: 45px;
+}
+
+/* line 83, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-heading p {
+  white-space: nowrap;
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 92, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+/* line 98, src/scss/_components/job-details/_job-details--offer.scss */
+.job-details__offer-list span {
+  font-size: 12px;
+  color: #e0dbdb;
+}
+
+/* line 2, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-wrapper {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* line 15, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-title {
+  padding: 0 10px 15px;
+  border-bottom: 1px solid purple;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* line 25, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-btn.c-btn__wrapper {
+  padding-top: 15px;
+}
+
+/* line 28, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-btn.c-btn__wrapper .c-btn {
+  width: 100%;
+  height: 36px;
+}
+
+/* line 32, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-btn.c-btn__wrapper .c-btn.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* line 37, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-btn.c-btn__wrapper .c-btn span {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 45, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+}
+
+/* line 50, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-wrapper {
+  display: none;
+}
+
+/* line 54, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-field {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* line 58, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-field label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 63, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-field input {
+  outline: none;
+  width: 100%;
+  height: 36px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  padding: 0 17px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f4));
+  background: -webkit-linear-gradient(#ffffff, #f5f5f4);
+  background: -o-linear-gradient(#ffffff, #f5f5f4);
+  background: linear-gradient(#ffffff, #f5f5f4);
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* line 76, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-field input[type='button'] {
+  border: none;
+  background: none;
+  padding-right: 0;
+  text-align: right;
+  text-transform: uppercase;
+  color: #f1a73f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* line 89, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-divider {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+
+/* line 96, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-divider:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+
+/* line 107, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form-divider span {
+  z-index: 2;
+  position: relative;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  color: #3b3b3b;
+}
+
+/* line 120, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn {
+  width: 100%;
+  height: 36px;
+}
+
+/* line 125, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn.c-btn--ttu span {
+  text-transform: none;
+}
+
+/* line 130, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* line 135, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 141, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--cv .c-btn {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  width: 100%;
+  border: 1px solid silver;
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 3px 1px #e4e2e2;
+          box-shadow: 0px 0px 3px 1px #e4e2e2;
+}
+
+/* line 151, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--cv .c-btn span {
+  font-size: 13px;
+  color: blue;
+  text-transform: none;
+}
+
+/* line 159, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social {
+  padding-bottom: 7px;
+}
+
+/* line 162, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn {
+  white-space: nowrap;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #F9F9F9;
+}
+
+/* line 170, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 175, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+}
+
+/* line 180, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 15px;
+}
+
+/* line 188, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn img {
+  z-index: 2;
+  position: relative;
+  max-width: 100%;
+  height: 18px;
+}
+
+/* line 195, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social .c-btn span {
+  color: #444;
+  text-transform: none;
+}
+
+/* line 201, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-form .c-btn__wrapper--social + .c-btn__wrapper--social {
+  padding-top: 5px;
+}
+
+/* line 208, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional {
+  padding-top: 10px;
+}
+
+/* line 212, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 220, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.input p, .job-details__apply-additional > div.radio p {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 227, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.input {
+  border: none;
+}
+
+/* line 230, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.input input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 20px;
+  padding: 0 15px 0 5px;
+  border: none;
+  border-bottom: 1px #ddd solid;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #777;
+}
+
+/* line 245, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.input .icon-font {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 10px;
+  color: #1ac880;
+}
+
+/* line 254, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 259, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.radio > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 264, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div.radio > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100px;
+}
+
+/* line 273, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div > label {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 281, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div .radio__box {
+  position: relative;
+}
+
+/* line 284, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div .radio__box:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+/* line 288, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div .radio__box input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* line 296, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div .radio__box input:checked + label {
+  background-color: #1AC880;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* line 303, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional > div .radio__box label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 21px;
+  color: white;
+  padding: 2px 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #f1a73f;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* line 323, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional .form-check {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  color: #908e8e;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 334, src/scss/_components/job-details/_job-details--apply.scss */
+.job-details__apply-additional .form-check input {
+  position: static;
+  margin: 0 0 0 5px;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 5, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing + .job-details__showing {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #dfdfdf;
+}
+
+/* line 11, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing-wrapper {
+  padding: 17px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #dbccea;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #F9F7FC;
+}
+
+/* line 20, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* line 27, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing > div:nth-of-type(2) {
+  padding-left: 10px;
+}
+
+/* line 31, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing > div .icon-font {
+  color: #757478;
+  font-size: 26px;
+}
+
+/* line 36, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing > div p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.5;
+}
+
+/* line 43, src/scss/_components/job-details/_job-details--showing.scss */
+.job-details__showing > div span {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9458d1;
+}
+
+/* line 1, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid #efeeee;
+  -webkit-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+/* line 8, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar:hover {
+  background: rgba(1, 131, 218, 0.1);
+  -webkit-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+/* line 14, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 16px;
+}
+
+/* line 21, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar > div p,
+.job-details__similar > div span {
+  line-height: 1.1;
+}
+
+/* line 26, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar > div p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #1b1b1b;
+  display: block;
+}
+
+/* line 33, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar > div span {
+  display: block;
+  font-size: 14px;
+  color: #777777;
+  display: block;
+}
+
+/* line 41, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 46, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-footer {
+  padding-top: 22px;
+}
+
+/* line 49, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-footer .c-btn {
+  width: 100%;
+  height: 36px;
+  border: 1px solid silver;
+  -webkit-box-shadow: 0px 0px 3px 1px #e4e2e2;
+          box-shadow: 0px 0px 3px 1px #e4e2e2;
+}
+
+/* line 58, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-footer .c-btn span {
+  font-size: 12px;
+}
+
+/* line 64, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-title {
+  color: #4e4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 13px;
+  border-bottom: 1.5px solid #d2d1d1;
+  margin-bottom: 5px;
+}
+
+/* line 73, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 81, src/scss/_components/job-details/_job-details--similar.scss */
+.job-details__similar-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

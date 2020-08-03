@@ -1,0 +1,91 @@
+&__description {
+	display: flex;
+	flex-direction: column;
+
+	&-title {
+		padding: 20px 0 15px;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&-subtitle {
+		font-weight: 500;
+	}
+
+	&-wrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid #e2e0e0;
+		}
+
+		&:nth-of-type(1) {
+			.job-details__description-title {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&-contant {
+		padding-left: 15px;
+		padding-bottom: 20px;
+	}
+
+	&-details {
+		display: flex;
+		align-items: center;
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 20px;
+		}
+
+		.icon-font {
+			margin-right: 5px;
+			color: #1AC880;
+			font-size: 18px;
+		}
+
+		span {
+			line-height: 1;
+			font-size: 14px;
+			color: #999999;
+		}
+	}
+
+	ol,
+	ul {
+		margin: 14px 10px 14px 10px;
+		padding-left: 10px;
+
+		li {
+			line-height: 1.5;
+
+			strong {
+				font-weight: 500;
+			}
+		}
+	}
+
+	ul {
+		li {
+			list-style-type: disc;
+		}
+	}
+
+	ol {
+		li {
+			list-style-type: decimal;
+		}
+	}
+
+	p {
+		&:not(:last-of-type) {
+			padding-bottom: 20px;
+		}
+	}
+}

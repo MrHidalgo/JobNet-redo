@@ -250,6 +250,13 @@ window.addEventListener('scroll', function (ev) {});
 		}
 	};
 
+	var applyJobDetails = function applyJobDetails() {
+		$('[apply-here-js]').on('click', function (ev) {
+			$(ev.currentTarget).addClass('disabled');
+			$('[apply-node-js]').slideDown(400);
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -281,6 +288,7 @@ window.addEventListener('scroll', function (ev) {});
 		searchFilterToggle();
 		searchSortToggle();
 		stickyElements();
+		applyJobDetails();
 		modals();
 		// ==========================================
 	};

@@ -1,0 +1,35 @@
+// SECTION :: START
+
+.job-details {
+	position: relative;
+
+	&__wrapper {
+		display: flex;
+		padding-top: 20px;
+		padding-bottom: 39px;
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+		}
+
+		&-right {
+			width: calc(272px + 28px);
+			padding-left: 14px;
+			padding-right: 14px;
+		}
+	}
+
+	@import "job-details--banner";
+	@import "job-details--hero";
+	@import "job-details--card";
+	@import "job-details--description";
+	@import "job-details--option";
+	@import "job-details--offer";
+	@import "job-details--apply";
+	@import "job-details--showing";
+	@import "job-details--similar";
+}
+
+// SECTION :: END

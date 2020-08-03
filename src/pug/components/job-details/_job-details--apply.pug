@@ -1,0 +1,97 @@
+.job-details__apply-wrapper
+	p.job-details__apply-title APPLY FOR THIS JOB
+
+	.job-details__apply-form-wrapper(apply-node-js)
+		form.job-details__apply-form(action='' method='' autocomplete='off')
+			.c-btn__wrapper.c-btn__wrapper--social
+				a.c-btn.c-btn--white(href="#")
+					div
+						img(src='img/google.svg')
+					div
+						span Continue with Google
+			.c-btn__wrapper.c-btn__wrapper--social
+				a.c-btn.c-btn--white(href="#")
+					div
+						img(src='img/facebook.svg')
+					div
+						span Continue with Facebook
+
+			.job-details__apply-form-divider
+				span OR
+
+			.job-details__apply-form-field
+				label
+					input(type='email' name='' placeholder='Email' required)
+			.job-details__apply-form-field
+				label
+					input(type='password' name='' placeholder='Password' required)
+			.job-details__apply-form-field
+				label
+					input(type='button' name='' value='Forgot Password?')
+
+			.job-details__apply-form-field
+				.c-btn__wrapper
+					a.c-btn.c-btn--purple(href="#")
+						span Sign In with EMAIL
+
+			.job-details__apply-form-field
+				label
+					input(type='text' name='' placeholder='First Name' disabled required)
+			.job-details__apply-form-field
+				label
+					input(type='text' name='' placeholder='Last Name' disabled required)
+			.job-details__apply-form-field
+				label
+					input(type='text' name='' placeholder='Phone' disabled required)
+
+			.c-btn__wrapper.c-btn__wrapper--cv
+				a.c-btn.c-btn--white.disabled(href="#")
+					span Upload a NEW CV here ...
+
+			.job-details__apply-additional
+				div.radio
+					div
+						p Do you have at least three years experience in related position?
+					div
+						.radio__box
+							input(type='radio' name='experience' id='experience-1')
+							label(for='experience-1') Yes
+						.radio__box
+							input(type='radio' name='experience' id='experience-2')
+							label(for='experience-2') No
+				div.radio
+					div
+						p Can you use English four skills in fluently?
+					div
+						.radio__box
+							input(type='radio' name='english-skills' id='english-skills-1')
+							label(for='english-skills-1') Yes
+						.radio__box
+							input(type='radio' name='english-skills' id='english-skills-2')
+							label(for='english-skills-2') No
+				div.input
+					label
+						p Do you have at least 3 years experiences in related fields?
+						input(type='text' name='')
+						i.icon-font.icon-success
+				div.input
+					label
+						p How do you understand HR operations?
+						input(type='text' name='')
+						i.icon-font.icon-success
+				div
+					.c-btn__wrapper
+						a.c-btn.c-btn--ttu.c-btn--orange(href="#")
+							span Apply with CV Attachment
+				div
+					.c-btn__wrapper
+						a.c-btn.c-btn--ttu.c-btn--green(href="#")
+							span Apply with JobNet CV
+				div
+					.form-check
+						label.form-check-label(for='allowEmployers') Allow Employers to find me
+						input#allowEmployers.form-check-input(type='checkbox')
+
+	.job-details__apply-btn.c-btn__wrapper
+		a.c-btn.c-btn--orange(href="#" apply-here-js)
+			span Apply here
