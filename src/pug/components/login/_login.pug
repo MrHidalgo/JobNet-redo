@@ -1,0 +1,59 @@
+// SECTION :: START
+
+section#login.login
+
+	.login__wrapper
+
+		.login__box
+			p.login__box-title Sign In with a JobNet Profile
+
+			form(action='' method='')
+				.form-group
+					label(for='emailLogin') Email
+					.input-group
+						.input-group-prepend
+							i.icon-font.icon-email
+						input.form-control.rounded-right(type='text', id='emailLogin', placeholder='E-mail' required)
+
+				.form-group
+					label(for='passwordLogin') Password
+					.input-group
+						.input-group-prepend
+							i.icon-font.icon-locked
+						input.form-control.rounded-right(type='text', id='passwordLogin', placeholder="Password" required)
+
+				.form-group
+					.c-btn__wrapper
+						button.c-btn.c-btn--orange(type='submit')
+							span Log In
+
+				.form-group
+					a.login__box-link(href="#") Forgot Password ?
+
+				.form-group
+					.login__box-separate
+						span OR
+
+				.form-group.form-group--social
+					.c-btn__wrapper.c-btn__wrapper--social
+						a.c-btn.c-btn--white(href="#")
+							div
+								img(src='img/google.svg')
+							div
+								span Continue with Google
+					.c-btn__wrapper.c-btn__wrapper--social
+						a.c-btn.c-btn--white(href="#")
+							div
+								img(src='img/facebook.svg')
+							div
+								span Continue with Facebook
+
+				.form-group
+					p.login__box-info Don't have an account?
+
+				.form-group
+					.c-btn__wrapper
+						a.c-btn.c-btn--borderPurple(href="#")
+							span Register
+
+// SECTION :: END

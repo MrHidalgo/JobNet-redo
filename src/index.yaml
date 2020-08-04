@@ -13,6 +13,9 @@ PageList:
 - file: register.html
   titleName: Register
   ready: 1
+- file: forgot.html
+  titleName: Forgot Password
+  ready: 1
 - file: job-details.html
   titleName: Job Details
-  ready: 1
+  ready: 100

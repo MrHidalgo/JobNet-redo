@@ -268,11 +268,13 @@ window.addEventListener('scroll', function (ev) {});
 			}
 		}
 
-		_helperCheckOffset();
-
-		$(window).on('scroll', function (ev) {
+		if (_jdMainSection.length) {
 			_helperCheckOffset();
-		});
+
+			$(window).on('scroll', function (ev) {
+				_helperCheckOffset();
+			});
+		}
 	};
 
 	var modals = function modals() {

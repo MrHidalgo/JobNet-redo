@@ -38,11 +38,15 @@ body {
 		padding-top: 60px;
 	}
 
+	&.p-register {
+		padding-top: 0;
+	}
+
   > .body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 0 auto;
+    //flex: 1 0 auto;
 
     &--start {
       justify-content: flex-start;

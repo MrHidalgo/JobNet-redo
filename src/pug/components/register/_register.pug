@@ -1,0 +1,85 @@
+// SECTION :: START
+
+section#login.login.login--register
+
+	.login__logo
+
+		.logo.logo--header
+			a.logo__btn(href="/")
+				img.logo__img(src="img/logo--white.png" alt="")
+
+	.login__wrapper
+
+		.login__box
+			p.login__box-title Sign Up To Create A JobNet Profile
+
+			.login__partners
+				div
+					img(src="img/img-employers-ooredoo.png" alt="")
+				div
+					img(src="img/img-employers-kbz-bank.png" alt="")
+				div
+					img(src="img/img-employers-cdsg.png" alt="")
+				div
+					img(src="img/img-employers-prudential.png" alt="")
+				div
+					img(src="img/img-employers-jotun-myanmar.jpg" alt="")
+				div
+					img(src="img/img-employers-unilever.png" alt="")
+
+			form(action='' method='')
+				.row
+					.col
+						.input-group
+							input.form-control(type='text', placeholder='First Name' required)
+					.col
+						.input-group
+							input.form-control(type='text' placeholder="Last Name" required)
+
+
+				.form-group
+					.input-group
+						input.form-control(type='text' placeholder='E-mail' required)
+
+				.form-group
+					.input-group
+						input.form-control(type='text' placeholder="Password" required)
+
+				.form-group
+					.input-group
+						input.form-control(type='text' placeholder="Phone, eg. +95 1 502 077" required)
+
+				.form-group
+					p.login__box-info!= "By continuing, you agree to <a href='#'>Terms and Conditions</a>"
+
+				.form-group
+					.c-btn__wrapper
+						button.c-btn.c-btn--orange(type='submit')
+							span Register
+
+				.form-group
+					.login__box-separate
+						span OR
+
+				.form-group.form-group--social
+					.c-btn__wrapper.c-btn__wrapper--social
+						a.c-btn.c-btn--white(href="#")
+							div
+								img(src='img/google.svg')
+							div
+								span Continue with Google
+					.c-btn__wrapper.c-btn__wrapper--social
+						a.c-btn.c-btn--white(href="#")
+							div
+								img(src='img/facebook.svg')
+							div
+								span Continue with Facebook
+
+				.form-group
+					.login__box-separate
+						span
+
+				.form-group.form-group--pb0
+					p.login__box-info!= "Already have an account? <a href='#'>Log In</a>"
+
+// SECTION :: END

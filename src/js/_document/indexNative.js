@@ -183,11 +183,13 @@
 			}
 		}
 
-		_helperCheckOffset();
-
-		$(window).on('scroll', (ev) => {
+		if(_jdMainSection.length) {
 			_helperCheckOffset();
-		});
+
+			$(window).on('scroll', (ev) => {
+				_helperCheckOffset();
+			});
+		}
 	};
 
 

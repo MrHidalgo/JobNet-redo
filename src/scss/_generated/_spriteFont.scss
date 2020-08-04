@@ -60,83 +60,89 @@
 	@if $filename == edit {
 		$char: "\E00B";
 	}
-	@if $filename == facebook {
+	@if $filename == email {
 		$char: "\E00C";
 	}
-	@if $filename == factory {
+	@if $filename == facebook {
 		$char: "\E00D";
 	}
-	@if $filename == fast-forward {
+	@if $filename == factory {
 		$char: "\E00E";
 	}
-	@if $filename == filter {
+	@if $filename == fast-forward {
 		$char: "\E00F";
 	}
-	@if $filename == folder {
+	@if $filename == filter {
 		$char: "\E010";
 	}
-	@if $filename == google {
+	@if $filename == folder {
 		$char: "\E011";
 	}
-	@if $filename == graph {
+	@if $filename == google {
 		$char: "\E012";
 	}
-	@if $filename == home {
+	@if $filename == graph {
 		$char: "\E013";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == home {
 		$char: "\E014";
 	}
-	@if $filename == like {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E015";
 	}
-	@if $filename == linkedin {
+	@if $filename == like {
 		$char: "\E016";
 	}
-	@if $filename == mail {
+	@if $filename == linkedin {
 		$char: "\E017";
 	}
-	@if $filename == menu {
+	@if $filename == locked {
 		$char: "\E018";
 	}
-	@if $filename == notification {
+	@if $filename == mail {
 		$char: "\E019";
 	}
-	@if $filename == office-building {
+	@if $filename == menu {
 		$char: "\E01A";
 	}
-	@if $filename == photo {
+	@if $filename == notification {
 		$char: "\E01B";
 	}
-	@if $filename == pin {
+	@if $filename == office-building {
 		$char: "\E01C";
 	}
-	@if $filename == printer {
+	@if $filename == photo {
 		$char: "\E01D";
 	}
-	@if $filename == programming {
+	@if $filename == pin {
 		$char: "\E01E";
 	}
-	@if $filename == search {
+	@if $filename == printer {
 		$char: "\E01F";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == programming {
 		$char: "\E020";
 	}
-	@if $filename == sort {
+	@if $filename == search {
 		$char: "\E021";
 	}
-	@if $filename == star-empty {
+	@if $filename == shopping-bag {
 		$char: "\E022";
 	}
-	@if $filename == star {
+	@if $filename == sort {
 		$char: "\E023";
 	}
-	@if $filename == success {
+	@if $filename == star-empty {
 		$char: "\E024";
 	}
-	@if $filename == user {
+	@if $filename == star {
 		$char: "\E025";
+	}
+	@if $filename == success {
+		$char: "\E026";
+	}
+	@if $filename == user {
+		$char: "\E027";
 	}
 
 	@return $char;
@@ -197,6 +203,10 @@
 	@include icon(edit);
 
 }
+.icon-email {
+	@include icon(email);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
@@ -239,6 +249,10 @@
 }
 .icon-linkedin {
 	@include icon(linkedin);
+
+}
+.icon-locked {
+	@include icon(locked);
 
 }
 .icon-mail {
