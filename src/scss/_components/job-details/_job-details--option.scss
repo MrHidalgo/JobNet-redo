@@ -4,6 +4,26 @@
 	padding-left: 45px;
 	padding-right: 45px;
 	margin-bottom: 20px;
+	@include adaptive(767) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&--tablet {
+		display: none;
+		margin-top: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		@include adaptive(1023) {
+			display: block;
+
+			.job-details__option {
+				&-wrapper {
+					display: block;
+				}
+			}
+		}
+	}
 
 	&-more {
 		display: flex;
@@ -34,6 +54,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@include adaptive(1023) {
+			display: none;
+		}
 	}
 
 	.c-btn {
@@ -100,6 +123,20 @@
 		&-wrapper {
 			display: flex;
 			align-items: center;
+			@include adaptive(1023) {
+				justify-content: center;
+			}
+		}
+
+		&-title {
+			border-bottom: 1px solid silver;
+			padding-top: 20px;
+			padding-bottom: 5px;
+			margin-bottom: 12px;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 500;
+			color: silver;
 		}
 	}
 }

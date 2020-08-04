@@ -68,6 +68,9 @@
 		padding-bottom: 13px;
 		border-bottom: 1.5px solid #d2d1d1;
 		margin-bottom: 5px;
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
 	}
 
 	&-logo {

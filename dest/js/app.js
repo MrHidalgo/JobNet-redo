@@ -257,6 +257,24 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	var jobDetailsCard = function jobDetailsCard() {
+		var _jdMainSection = $('[jd-main-js]');
+
+		function _helperCheckOffset() {
+			if ($('[jd-card-js]')[0].getBoundingClientRect().top + $('[jd-card-js]').outerHeight() - $('#header').outerHeight() <= 0) {
+				_jdMainSection.addClass('is-sticky');
+			} else {
+				_jdMainSection.removeClass('is-sticky');
+			}
+		}
+
+		_helperCheckOffset();
+
+		$(window).on('scroll', function (ev) {
+			_helperCheckOffset();
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -289,6 +307,8 @@ window.addEventListener('scroll', function (ev) {});
 		searchSortToggle();
 		stickyElements();
 		applyJobDetails();
+		jobDetailsCard();
+
 		modals();
 		// ==========================================
 	};

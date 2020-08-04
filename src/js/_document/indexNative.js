@@ -172,6 +172,26 @@
 	};
 
 
+	const jobDetailsCard = () => {
+		const _jdMainSection = $('[jd-main-js]');
+
+		function _helperCheckOffset() {
+			if(($('[jd-card-js]')[0].getBoundingClientRect().top + $('[jd-card-js]').outerHeight() - $('#header').outerHeight()) <= 0) {
+				_jdMainSection.addClass('is-sticky');
+			} else {
+				_jdMainSection.removeClass('is-sticky');
+			}
+		}
+
+		_helperCheckOffset();
+
+		$(window).on('scroll', (ev) => {
+			_helperCheckOffset();
+		});
+	};
+
+
+
 	const modals = () => {
 		setTimeout((ev) => {
 			$('[home-modalAuto-js]').trigger('click');
@@ -205,6 +225,8 @@
 		searchSortToggle();
 		stickyElements();
 		applyJobDetails();
+		jobDetailsCard();
+
 		modals();
 		// ==========================================
 	};

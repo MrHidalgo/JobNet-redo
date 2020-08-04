@@ -7,4 +7,7 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	@include adaptive(1023) {
+		display: none;
+	}
 }

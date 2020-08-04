@@ -16,6 +16,10 @@
 	&-wrapper {
 		padding-left: 30px;
 		padding-right: 30px;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 		&:not(:last-of-type) {
 			border-bottom: 1px solid #e2e0e0;
@@ -31,6 +35,14 @@
 	&-contant {
 		padding-left: 15px;
 		padding-bottom: 20px;
+
+		&--text {
+			> p {
+				&:not(:last-of-type) {
+					padding-bottom: 20px;
+				}
+			}
+		}
 	}
 
 	&-details {
@@ -42,6 +54,18 @@
 			align-items: center;
 			justify-content: space-between;
 			padding-bottom: 20px;
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+				padding-left: 20px;
+
+				> div {
+					width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 10px;
+					}
+				}
+			}
 		}
 
 		.icon-font {
@@ -80,12 +104,6 @@
 	ol {
 		li {
 			list-style-type: decimal;
-		}
-	}
-
-	p {
-		&:not(:last-of-type) {
-			padding-bottom: 20px;
 		}
 	}
 }
