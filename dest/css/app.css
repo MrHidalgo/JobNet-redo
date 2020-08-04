@@ -1297,6 +1297,16 @@ picture {
   }
 }
 
+/* line 114, src/scss/_macros/_modal.scss */
+.modal {
+  z-index: 2000;
+}
+
+/* line 117, src/scss/_macros/_modal.scss */
+.modal-backdrop {
+  z-index: 1999;
+}
+
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 1100;
@@ -9461,9 +9471,10 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 12px;
 }
 
-/* line 190, src/scss/_components/login/_login.scss */
+/* line 191, src/scss/_components/login/_login.scss */
 .login__box-separate:after {
   content: '';
   position: absolute;
@@ -9477,7 +9488,7 @@ picture {
   background-color: #c8c8c8;
 }
 
-/* line 201, src/scss/_components/login/_login.scss */
+/* line 202, src/scss/_components/login/_login.scss */
 .login__box-separate span {
   z-index: 2;
   position: relative;
@@ -9485,11 +9496,12 @@ picture {
   padding-left: 5px;
   padding-right: 5px;
   font-size: 12px;
+  line-height: 1;
   text-transform: uppercase;
   background-color: #ffffff;
 }
 
-/* line 213, src/scss/_components/login/_login.scss */
+/* line 215, src/scss/_components/login/_login.scss */
 .login__box .c-btn {
   width: 100%;
   height: 36px;
@@ -9497,17 +9509,17 @@ picture {
           border-radius: 2px;
 }
 
-/* line 218, src/scss/_components/login/_login.scss */
+/* line 220, src/scss/_components/login/_login.scss */
 .login__box .c-btn span {
   font-size: 13px;
 }
 
-/* line 222, src/scss/_components/login/_login.scss */
+/* line 224, src/scss/_components/login/_login.scss */
 .login__box .c-btn__wrapper {
   width: 100%;
 }
 
-/* line 227, src/scss/_components/login/_login.scss */
+/* line 229, src/scss/_components/login/_login.scss */
 .login__box .row {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -9518,7 +9530,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 227, src/scss/_components/login/_login.scss */
+  /* line 229, src/scss/_components/login/_login.scss */
   .login__box .row {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -9526,7 +9538,7 @@ picture {
   }
 }
 
-/* line 235, src/scss/_components/login/_login.scss */
+/* line 237, src/scss/_components/login/_login.scss */
 .login__box .row .col {
   width: 100%;
   max-width: -webkit-calc((100% - 15px) / 2);
@@ -9536,7 +9548,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 235, src/scss/_components/login/_login.scss */
+  /* line 237, src/scss/_components/login/_login.scss */
   .login__box .row .col {
     -webkit-box-flex: unset;
     -webkit-flex: unset;
@@ -9544,24 +9556,24 @@ picture {
             flex: unset;
     max-width: 100%;
   }
-  /* line 244, src/scss/_components/login/_login.scss */
+  /* line 246, src/scss/_components/login/_login.scss */
   .login__box .row .col:first-of-type {
     margin-bottom: 15px;
   }
 }
 
-/* line 252, src/scss/_components/login/_login.scss */
+/* line 254, src/scss/_components/login/_login.scss */
 .login__box .form-group {
   width: 100%;
   margin-bottom: 15px;
 }
 
-/* line 256, src/scss/_components/login/_login.scss */
+/* line 258, src/scss/_components/login/_login.scss */
 .login__box .form-group--pb0 {
   margin-bottom: 0;
 }
 
-/* line 260, src/scss/_components/login/_login.scss */
+/* line 262, src/scss/_components/login/_login.scss */
 .login__box .form-group--social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9578,7 +9590,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 260, src/scss/_components/login/_login.scss */
+  /* line 262, src/scss/_components/login/_login.scss */
   .login__box .form-group--social {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -9586,7 +9598,7 @@ picture {
   }
 }
 
-/* line 268, src/scss/_components/login/_login.scss */
+/* line 270, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn {
   white-space: nowrap;
   padding-left: 8px;
@@ -9597,7 +9609,7 @@ picture {
   background-color: #F9F9F9;
 }
 
-/* line 276, src/scss/_components/login/_login.scss */
+/* line 278, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn__wrapper {
   width: 100%;
   max-width: -webkit-calc((100% - 15px) / 2);
@@ -9605,23 +9617,23 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 276, src/scss/_components/login/_login.scss */
+  /* line 278, src/scss/_components/login/_login.scss */
   .login__box .form-group--social .c-btn__wrapper {
     max-width: 100%;
   }
-  /* line 282, src/scss/_components/login/_login.scss */
+  /* line 284, src/scss/_components/login/_login.scss */
   .login__box .form-group--social .c-btn__wrapper:first-of-type {
     margin-bottom: 15px;
   }
 }
 
-/* line 288, src/scss/_components/login/_login.scss */
+/* line 290, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 293, src/scss/_components/login/_login.scss */
+/* line 295, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9634,7 +9646,7 @@ picture {
   width: 36px;
 }
 
-/* line 298, src/scss/_components/login/_login.scss */
+/* line 300, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -9646,14 +9658,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 298, src/scss/_components/login/_login.scss */
+  /* line 300, src/scss/_components/login/_login.scss */
   .login__box .form-group--social .c-btn > div:nth-of-type(2) {
     text-align: center;
     padding-right: 51px;
   }
 }
 
-/* line 310, src/scss/_components/login/_login.scss */
+/* line 312, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn img {
   z-index: 2;
   position: relative;
@@ -9661,13 +9673,13 @@ picture {
   height: 18px;
 }
 
-/* line 317, src/scss/_components/login/_login.scss */
+/* line 319, src/scss/_components/login/_login.scss */
 .login__box .form-group--social .c-btn span {
   color: #444;
   text-transform: none;
 }
 
-/* line 324, src/scss/_components/login/_login.scss */
+/* line 326, src/scss/_components/login/_login.scss */
 .login__box .form-group label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9679,7 +9691,7 @@ picture {
   line-height: 1;
 }
 
-/* line 333, src/scss/_components/login/_login.scss */
+/* line 335, src/scss/_components/login/_login.scss */
 .login__box .form-control {
   outline: none;
   height: 34px;
@@ -9729,13 +9741,13 @@ picture {
   font-weight: 400;
 }
 
-/* line 350, src/scss/_components/login/_login.scss */
+/* line 352, src/scss/_components/login/_login.scss */
 .login__box .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 357, src/scss/_components/login/_login.scss */
+/* line 359, src/scss/_components/login/_login.scss */
 .login__box .input-group-prepend {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9758,7 +9770,7 @@ picture {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 368, src/scss/_components/login/_login.scss */
+/* line 370, src/scss/_components/login/_login.scss */
 .login__box .input-group-prepend .icon-font {
   color: #808080;
   font-size: 16px;

@@ -186,6 +186,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			height: 12px;
 
 			&:after {
 				content: '';
@@ -205,6 +206,7 @@
 				padding-left: 5px;
 				padding-right: 5px;
 				font-size: 12px;
+				line-height: 1;
 				text-transform: uppercase;
 				background-color: #ffffff;
 			}
