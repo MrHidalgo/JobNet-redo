@@ -338,6 +338,20 @@ window.addEventListener('scroll', function (ev) {});
 				$('[add-work-js]').closest('.form-group').removeClass('is-add');
 			}
 		});
+
+		if ($(window).width() < 768) {
+			$('#pills-work-experience').trigger('click');
+		} else {
+			$('#pills-upload-cv').trigger('click');
+		}
+
+		$(window).on('resize', function (ev) {
+			if ($(window).width() < 768) {
+				$('#pills-work-experience').trigger('click');
+			} else {
+				$('#pills-upload-cv').trigger('click');
+			}
+		});
 	};
 
 	var modals = function modals() {
