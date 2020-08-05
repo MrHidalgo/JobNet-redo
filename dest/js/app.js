@@ -306,6 +306,40 @@ window.addEventListener('scroll', function (ev) {});
 		}
 	};
 
+	var initDatePicker = function initDatePicker() {
+		$.each($('.datepicker'), function (idx, val) {
+			new Pikaday({
+				field: $(val)[0],
+				format: 'DD/MM/YYYY'
+			});
+		});
+	};
+
+	var addMoreWork = function addMoreWork() {
+		var tmpl = function tmpl(idx) {
+			return "\n\t\t\t<div class=\"login__more-wrapper\">\n\t\t\t\t<div class=\"login__more-close\">\n\t\t\t\t\t<a href=\"#\" class=\"\" close-more-js>\n\t\t\t\t\t\t<i class=\"icon-font icon-close\"></i>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"login__more\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<div class=\"input-group\">\n\t\t\t\t\t\t\t<input class=\"form-control\" type=\"text\" placeholder=\"Position, eg. HR Manager, Accountant, Sales...\" required=\"\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<div class=\"input-group\">\n\t\t\t\t\t\t\t<input class=\"form-control\" type=\"text\" placeholder=\"Company Name\" required=\"\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t\t<select class=\"form-control\">\n\t\t\t\t\t\t\t\t<option value=\"0\" selected=\"selected\">Job Function</option>\n\t\t\t\t\t\t\t\t<option value=\"1\">Accounting, Finance</option>\n\t\t\t\t\t\t\t\t<option value=\"2\">Administrative</option>\n\t\t\t\t\t\t\t\t<option value=\"7\">Architecture, Design</option>\n\t\t\t\t\t\t\t\t<option value=\"4\">Consulting</option>\n\t\t\t\t\t\t\t\t<option value=\"6\">Customer Service, Support</option>\n\t\t\t\t\t\t\t\t<option value=\"23\">Doctor, Nursing, Medical Staff</option>\n\t\t\t\t\t\t\t\t<option value=\"8\">Driver, Delivery, Motorbike</option>\n\t\t\t\t\t\t\t\t<option value=\"9\">Education, Teaching, Childcare</option>\n\t\t\t\t\t\t\t\t<option value=\"10\">Engineering, Technical, HSE</option>\n\t\t\t\t\t\t\t\t<option value=\"13\">Food and Beverage</option>\n\t\t\t\t\t\t\t\t<option value=\"39\">General Workers</option>\n\t\t\t\t\t\t\t\t<option value=\"14\">Health, Beauty, Fitness</option>\n\t\t\t\t\t\t\t\t<option value=\"16\">HR, Training and Recruitment</option>\n\t\t\t\t\t\t\t\t<option value=\"15\">Hospitality, Hotel, Tourism</option>\n\t\t\t\t\t\t\t\t<option value=\"17\">IT Hardware, Software</option>\n\t\t\t\t\t\t\t\t<option value=\"18\">Legal, Risk and Compliance</option>\n\t\t\t\t\t\t\t\t<option value=\"19\">Logistics, Distribution, Fleet</option>\n\t\t\t\t\t\t\t\t<option value=\"20\">Management</option>\n\t\t\t\t\t\t\t\t<option value=\"21\">Manufacturing, Warehouse</option>\n\t\t\t\t\t\t\t\t<option value=\"22\">Marketing, Media, Creative</option>\n\t\t\t\t\t\t\t\t<option value=\"25\">PR, Communications</option>\n\t\t\t\t\t\t\t\t<option value=\"38\">Procurement, Supply Chain</option>\n\t\t\t\t\t\t\t\t<option value=\"24\">Project, Operations Management</option>\n\t\t\t\t\t\t\t\t<option value=\"26\">Quality Assurance</option>\n\t\t\t\t\t\t\t\t<option value=\"27\">Research and Development</option>\n\t\t\t\t\t\t\t\t<option value=\"30\">Sales, Business Development</option>\n\t\t\t\t\t\t\t\t<option value=\"31\">Science, Technology</option>\n\t\t\t\t\t\t\t\t<option value=\"32\">Skilled Trades , Construction</option>\n\t\t\t\t\t\t\t\t<option value=\"33\">Strategy, Planning</option>\n\t\t\t\t\t\t\t\t<option value=\"34\">Translation</option>\n\t\t\t\t\t\t\t\t<option value=\"35\">Voluntary work</option>\n\t\t\t\t\t\t\t\t<option value=\"36\">Writing, Editing</option>\n\t\t\t\t\t\t\t\t<option value=\"37\">Others</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t\t<select class=\"form-control\">\n\t\t\t\t\t\t\t\t<option value=\"0\" selected=\"selected\">Experience Level</option>\n\t\t\t\t\t\t\t\t<option value=\"1\">Entry Level</option>\n\t\t\t\t\t\t\t\t<option value=\"2\">Experienced Non-Manager</option>\n\t\t\t\t\t\t\t\t<option value=\"3\">Manager</option>\n\t\t\t\t\t\t\t\t<option value=\"4\">Director and Above</option>\n\t\t\t\t\t\t\t</select>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t\t<div class=\"input-group input-group--date\">\n\t\t\t\t\t\t\t\t<input class=\"form-control datepicker\" type=\"text\" placeholder=\"From Date\" required=\"\"><i class=\"icon-font icon-calendar-1\"></i>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col\">\n\t\t\t\t\t\t\t<div class=\"input-group input-group--date\">\n\t\t\t\t\t\t\t\t<input class=\"form-control datepicker\" type=\"text\" placeholder=\"To Date\" required=\"\"><i class=\"icon-font icon-calendar-1\"></i>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group mb-2\">\n\t\t\t\t\t\t<div class=\"custom-control custom-switch\">\n\t\t\t\t\t\t\t<input class=\"custom-control-input\" id=\"currentWorkChecked-" + idx + "\" type=\"checkbox\">\n\t\t\t\t\t\t\t<label class=\"custom-control-label\" for=\"currentWorkChecked-" + idx + "\">I Currently Work Here</label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<div class=\"login__box-separate\"><span></span></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t";
+		};
+
+		var num = 0;
+
+		$('[add-work-js]').on('click', function (ev) {
+			$('#login__scroll').append(tmpl(num));
+			num++;
+
+			initDatePicker();
+
+			$(ev.currentTarget).closest('.form-group').addClass('is-add');
+		});
+
+		$(document).on('click', '[close-more-js]', function (ev) {
+			$(ev.currentTarget).closest('.login__more-wrapper').remove();
+
+			if (!$('.login__more-wrapper').length) {
+				$('[add-work-js]').closest('.form-group').removeClass('is-add');
+			}
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -340,6 +374,8 @@ window.addEventListener('scroll', function (ev) {});
 		stickyElements();
 		applyJobDetails();
 		jobDetailsCard();
+		initDatePicker();
+		addMoreWork();
 
 		modals();
 		// ==========================================

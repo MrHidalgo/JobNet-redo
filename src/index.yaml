@@ -9,13 +9,19 @@ PageList:
   ready: 100
 - file: login.html
   titleName: Login
-  ready: 1
+  ready: 100
 - file: register.html
   titleName: Register
+  ready: 100
+- file: register-step-2.html
+  titleName: Register Step 2
+  ready: 1
+- file: register-step-3.html
+  titleName: Register Step 3
   ready: 1
 - file: forgot.html
   titleName: Forgot Password
-  ready: 1
+  ready: 100
 - file: job-details.html
   titleName: Job Details
   ready: 100

@@ -193,6 +193,130 @@
 	};
 
 
+	const initDatePicker = () => {
+		$.each($('.datepicker'), (idx, val) => {
+			new Pikaday({
+				field: $(val)[0],
+				format: 'DD/MM/YYYY',
+			});
+		});
+	};
+
+
+	const addMoreWork = () => {
+		const tmpl = (idx) => `
+			<div class="login__more-wrapper">
+				<div class="login__more-close">
+					<a href="#" class="" close-more-js>
+						<i class="icon-font icon-close"></i>
+					</a>
+				</div>
+				<div class="login__more">
+					<div class="form-group">
+						<div class="input-group">
+							<input class="form-control" type="text" placeholder="Position, eg. HR Manager, Accountant, Sales..." required="">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<input class="form-control" type="text" placeholder="Company Name" required="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<select class="form-control">
+								<option value="0" selected="selected">Job Function</option>
+								<option value="1">Accounting, Finance</option>
+								<option value="2">Administrative</option>
+								<option value="7">Architecture, Design</option>
+								<option value="4">Consulting</option>
+								<option value="6">Customer Service, Support</option>
+								<option value="23">Doctor, Nursing, Medical Staff</option>
+								<option value="8">Driver, Delivery, Motorbike</option>
+								<option value="9">Education, Teaching, Childcare</option>
+								<option value="10">Engineering, Technical, HSE</option>
+								<option value="13">Food and Beverage</option>
+								<option value="39">General Workers</option>
+								<option value="14">Health, Beauty, Fitness</option>
+								<option value="16">HR, Training and Recruitment</option>
+								<option value="15">Hospitality, Hotel, Tourism</option>
+								<option value="17">IT Hardware, Software</option>
+								<option value="18">Legal, Risk and Compliance</option>
+								<option value="19">Logistics, Distribution, Fleet</option>
+								<option value="20">Management</option>
+								<option value="21">Manufacturing, Warehouse</option>
+								<option value="22">Marketing, Media, Creative</option>
+								<option value="25">PR, Communications</option>
+								<option value="38">Procurement, Supply Chain</option>
+								<option value="24">Project, Operations Management</option>
+								<option value="26">Quality Assurance</option>
+								<option value="27">Research and Development</option>
+								<option value="30">Sales, Business Development</option>
+								<option value="31">Science, Technology</option>
+								<option value="32">Skilled Trades , Construction</option>
+								<option value="33">Strategy, Planning</option>
+								<option value="34">Translation</option>
+								<option value="35">Voluntary work</option>
+								<option value="36">Writing, Editing</option>
+								<option value="37">Others</option>
+							</select>
+						</div>
+						<div class="col">
+							<select class="form-control">
+								<option value="0" selected="selected">Experience Level</option>
+								<option value="1">Entry Level</option>
+								<option value="2">Experienced Non-Manager</option>
+								<option value="3">Manager</option>
+								<option value="4">Director and Above</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="input-group input-group--date">
+								<input class="form-control datepicker" type="text" placeholder="From Date" required=""><i class="icon-font icon-calendar-1"></i>
+							</div>
+						</div>
+						<div class="col">
+							<div class="input-group input-group--date">
+								<input class="form-control datepicker" type="text" placeholder="To Date" required=""><i class="icon-font icon-calendar-1"></i>
+							</div>
+						</div>
+					</div>
+					<div class="form-group mb-2">
+						<div class="custom-control custom-switch">
+							<input class="custom-control-input" id="currentWorkChecked-${idx}" type="checkbox">
+							<label class="custom-control-label" for="currentWorkChecked-${idx}">I Currently Work Here</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="login__box-separate"><span></span></div>
+					</div>
+				</div>
+			</div>
+		`;
+
+		let num = 0;
+
+		$('[add-work-js]').on('click', (ev) => {
+			$('#login__scroll').append(tmpl(num));
+			num++;
+
+			initDatePicker();
+
+			$(ev.currentTarget).closest('.form-group').addClass('is-add');
+		});
+
+		$(document).on('click', '[close-more-js]', (ev) => {
+			$(ev.currentTarget).closest('.login__more-wrapper').remove();
+
+			if(!$('.login__more-wrapper').length) {
+				$('[add-work-js]').closest('.form-group').removeClass('is-add');
+			}
+		});
+	};
+
+
 
 	const modals = () => {
 		setTimeout((ev) => {
@@ -229,6 +353,8 @@
 		stickyElements();
 		applyJobDetails();
 		jobDetailsCard();
+		initDatePicker();
+		addMoreWork();
 
 		modals();
 		// ==========================================

@@ -30,6 +30,10 @@
 			width: 50%;
 			@include transition(width);
 		}
+
+		span {
+			@include transition(color);
+		}
 	}
 
 	&:before,
@@ -59,6 +63,7 @@
 		font-family: 'Quicksand', sans-serif;
 		font-size: 16px;
 		font-weight: 700;
+		@include transition(color);
 	}
 
 	&--white {
@@ -130,13 +135,53 @@
 		border: 1px solid #663399;
 		background-color: #fff;
 
+		&:hover {
+			span {
+				color: #ffffff;
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: lighten(#663399, 11%);
+		}
+
+		span {
+			color: #663399;
+		}
+	}
+
+	&--borderGreen {
+		border: 1px solid #36AF90;
+		background-color: #fff;
+
 		&:before,
 		&:after {
 			background-color: lighten(#DCDCDC, 11%);
 		}
 
 		span {
-			color: #663399;
+			color: #36AF90;
+		}
+	}
+
+	&--borderBlue {
+		border: 1px solid #2A65D1;
+		background-color: #fff;
+
+		&:hover {
+			span {
+				color: #ffffff;
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: lighten(#2A65D1, 11%);
+		}
+
+		span {
+			color: #2A65D1;
 		}
 	}
 }

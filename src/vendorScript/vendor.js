@@ -4,5 +4,6 @@
 *
 * - jquery;
 * - stickybits.min.js;
+* - pikaday.js;
 *
 * */

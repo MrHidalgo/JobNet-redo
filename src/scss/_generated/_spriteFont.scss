@@ -39,110 +39,119 @@
 	@if $filename == book {
 		$char: "\E004";
 	}
-	@if $filename == calendar {
+	@if $filename == calendar-1 {
 		$char: "\E005";
 	}
-	@if $filename == clock {
+	@if $filename == calendar {
 		$char: "\E006";
 	}
-	@if $filename == close {
+	@if $filename == clock {
 		$char: "\E007";
 	}
-	@if $filename == cogwheel {
+	@if $filename == close {
 		$char: "\E008";
 	}
-	@if $filename == cost {
+	@if $filename == cogwheel {
 		$char: "\E009";
 	}
-	@if $filename == dollar-symbol {
+	@if $filename == cost {
 		$char: "\E00A";
 	}
-	@if $filename == edit {
+	@if $filename == dollar-symbol {
 		$char: "\E00B";
 	}
-	@if $filename == email {
+	@if $filename == edit {
 		$char: "\E00C";
 	}
-	@if $filename == facebook {
+	@if $filename == email {
 		$char: "\E00D";
 	}
-	@if $filename == factory {
+	@if $filename == facebook {
 		$char: "\E00E";
 	}
-	@if $filename == fast-forward {
+	@if $filename == factory {
 		$char: "\E00F";
 	}
-	@if $filename == filter {
+	@if $filename == fast-forward {
 		$char: "\E010";
 	}
-	@if $filename == folder {
+	@if $filename == filter {
 		$char: "\E011";
 	}
-	@if $filename == google {
+	@if $filename == folder {
 		$char: "\E012";
 	}
-	@if $filename == graph {
+	@if $filename == google {
 		$char: "\E013";
 	}
-	@if $filename == home {
+	@if $filename == graph {
 		$char: "\E014";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == home {
 		$char: "\E015";
 	}
-	@if $filename == like {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E016";
 	}
-	@if $filename == linkedin {
+	@if $filename == like {
 		$char: "\E017";
 	}
-	@if $filename == locked {
+	@if $filename == linkedin {
 		$char: "\E018";
 	}
-	@if $filename == mail {
+	@if $filename == locked {
 		$char: "\E019";
 	}
-	@if $filename == menu {
+	@if $filename == mail {
 		$char: "\E01A";
 	}
-	@if $filename == notification {
+	@if $filename == menu {
 		$char: "\E01B";
 	}
-	@if $filename == office-building {
+	@if $filename == notification {
 		$char: "\E01C";
 	}
-	@if $filename == photo {
+	@if $filename == office-building {
 		$char: "\E01D";
 	}
-	@if $filename == pin {
+	@if $filename == photo {
 		$char: "\E01E";
 	}
-	@if $filename == printer {
+	@if $filename == pin {
 		$char: "\E01F";
 	}
-	@if $filename == programming {
+	@if $filename == printer {
 		$char: "\E020";
 	}
-	@if $filename == search {
+	@if $filename == programming {
 		$char: "\E021";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E022";
 	}
-	@if $filename == sort {
+	@if $filename == shopping-bag {
 		$char: "\E023";
 	}
-	@if $filename == star-empty {
+	@if $filename == sort {
 		$char: "\E024";
 	}
-	@if $filename == star {
+	@if $filename == star-empty {
 		$char: "\E025";
 	}
-	@if $filename == success {
+	@if $filename == star {
 		$char: "\E026";
 	}
-	@if $filename == user {
+	@if $filename == success {
 		$char: "\E027";
+	}
+	@if $filename == three-chevron-arrows {
+		$char: "\E028";
+	}
+	@if $filename == upload {
+		$char: "\E029";
+	}
+	@if $filename == user {
+		$char: "\E02A";
 	}
 
 	@return $char;
@@ -173,6 +182,10 @@
 }
 .icon-book {
 	@include icon(book);
+
+}
+.icon-calendar-1 {
+	@include icon(calendar-1);
 
 }
 .icon-calendar {
@@ -309,6 +322,14 @@
 }
 .icon-success {
 	@include icon(success);
+
+}
+.icon-three-chevron-arrows {
+	@include icon(three-chevron-arrows);
+
+}
+.icon-upload {
+	@include icon(upload);
 
 }
 .icon-user {
