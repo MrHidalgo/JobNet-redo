@@ -77,6 +77,35 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSmoothScroll
+ *
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+	var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+	var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+
+
+	$(btnName).on("click", function (e) {
+		var linkHref = $(e.currentTarget).attr('href'),
+		    headerHeight = $(".header").outerHeight() || 0,
+		    topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+		if (linkHref === '#jobApply') {
+			var cardStickyMain = $('[jd-main-js]').outerHeight(true);
+
+			$('body, html').animate({
+				scrollTop: $(linkHref).offset().top - cardStickyMain
+			}, animateSpeed);
+		} else {
+			$('body, html').animate({
+				scrollTop: topHeightOffset
+			}, animateSpeed);
+		}
+	});
+};
+
+/**
  * @description Window on load.
  */
 window.addEventListener('load', function (ev) {});
@@ -298,6 +327,7 @@ window.addEventListener('scroll', function (ev) {});
 
 		// lib
 		initHamburger();
+		initSmoothScroll();
 		// ==========================================
 
 		// callback

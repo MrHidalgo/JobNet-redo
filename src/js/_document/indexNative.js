@@ -216,6 +216,7 @@
 
 		// lib
 		initHamburger();
+		initSmoothScroll();
 		// ==========================================
 
 		// callback
