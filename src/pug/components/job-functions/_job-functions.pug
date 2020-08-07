@@ -1,0 +1,34 @@
+// SECTION :: START
+
+section#job-functions.job-functions
+	.job-functions__wrapper.job-functions__wrapper-1
+		.job-functions__banner
+			p Top Job Categories to Work in Myanmar
+
+	.c-grid
+		.job-functions__wrapper.job-functions__wrapper-2
+
+			.job-functions__box-wrapper
+				-for(let i = 0; i < 31; i++)
+					div
+						a.job-functions__box(href="#")
+							.job-functions__box-head
+							.job-functions__box-body
+								p!= "Customer services, Support <span>(213)</span>"
+
+		.job-functions__wrapper.job-functions__wrapper-3
+
+			p.companies__title Popular Loctions
+			.companies__line
+
+			.companies__locations-wrapper
+				each val, idx in [1,2,3,4,5,6,7]
+					div
+						a.companies__locations(href="#")
+							.companies__locations-head
+								img(src="img/img-jobdetails-banner.jpg" alt="")
+							.companies__locations-body
+								p Ayeyawady Division
+
+
+// SECTION :: END
