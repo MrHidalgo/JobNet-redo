@@ -1,0 +1,32 @@
+// SECTION :: START
+
+section#companies.companies
+	.companies__wrapper.companies__wrapper-1
+		.companies__banner
+			p Top Companies to Work in Myanmar
+
+	.c-grid
+		.companies__wrapper.companies__wrapper-2
+
+			.companies__box-wrapper
+				-for(let i = 0; i < 30; i++)
+					div
+						a.companies__box(href="#")
+							img(src="img/img-employers-unilever.png" alt="")
+
+		.companies__wrapper.companies__wrapper-3
+
+			p.companies__title Popular Loctions
+			.companies__line
+
+			.companies__locations-wrapper
+				each val, idx in [1,2,3,4,5,6,7]
+					div
+						a.companies__locations(href="#")
+							.companies__locations-head
+								img(src="img/img-jobdetails-banner.jpg" alt="")
+							.companies__locations-body
+								p Ayeyawady Division
+
+
+// SECTION :: END

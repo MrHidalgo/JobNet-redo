@@ -25,3 +25,21 @@ PageList:
 - file: job-details.html
   titleName: Job Details
   ready: 100
+- file: companies.html
+  titleName: Companies
+  ready: 1
+- file: locations.html
+  titleName: Locations
+  ready: 1
+- file: job-functions.html
+  titleName: Job Functions
+  ready: 1
+- file: industries.html
+  titleName: Industries
+  ready: 1
+- file: positions.html
+  titleName: Positions
+  ready: 1
+- file: blog.html
+  titleName: Blog
+  ready: 1
