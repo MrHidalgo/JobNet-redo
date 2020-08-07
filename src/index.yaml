@@ -27,16 +27,16 @@ PageList:
   ready: 100
 - file: companies.html
   titleName: Companies
-  ready: 1
+  ready: 33
 - file: locations.html
   titleName: Locations
-  ready: 1
+  ready: 33
 - file: job-functions.html
   titleName: Job Functions
-  ready: 1
+  ready: 33
 - file: industries.html
   titleName: Industries
-  ready: 1
+  ready: 33
 - file: positions.html
   titleName: Positions
   ready: 1

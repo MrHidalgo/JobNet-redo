@@ -1,0 +1,60 @@
+// SECTION :: START
+
+.positions {
+	padding-top: 15px;
+
+	&__wrapper {
+		&-1 {}
+		&-2 {
+			padding-top: 15px;
+		}
+	}
+
+	&__banner {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		padding: 5px 15px;
+		background-color: #9359db;
+
+		p {
+			color: #ffffff;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			display: flex;
+			width: 100%;
+			max-width: calc(100% / 3);
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			min-height: 40px;
+			border-bottom: 1px solid #ccc;
+
+			i {
+				width: 10px;
+				height: 10px;
+				margin-right: 5px;
+				border-radius: 50%;
+				background-color: #9359db;
+			}
+
+			span {
+				color: #9359db;
+				font-weight: 500;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+// SECTION :: END
