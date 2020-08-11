@@ -40,6 +40,15 @@ PageList:
 - file: positions.html
   titleName: Positions
   ready: 100
+- file: privacy.html
+  titleName: Privacy Policy
+  ready: 100
+- file: terms.html
+  titleName: Terms and Conditions
+  ready: 1
+- file: about.html
+  titleName: About
+  ready: 1
 - file: blog.html
   titleName: Blog
   ready: 1

@@ -11327,4 +11327,98 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/privacy/_privacy.scss */
+.privacy {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #eeeeee;
+}
+
+/* line 8, src/scss/_components/privacy/_privacy.scss */
+.privacy__wrapper {
+  width: 100%;
+  max-width: -webkit-calc(100% - (95px * 2));
+  max-width: calc(100% - (95px * 2));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 50px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+          box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 8, src/scss/_components/privacy/_privacy.scss */
+  .privacy__wrapper {
+    max-width: -webkit-calc(100% - (30px * 2));
+    max-width: calc(100% - (30px * 2));
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 8, src/scss/_components/privacy/_privacy.scss */
+  .privacy__wrapper {
+    max-width: -webkit-calc(100% - (15px * 2));
+    max-width: calc(100% - (15px * 2));
+    padding: 25px 20px;
+  }
+}
+
+/* line 27, src/scss/_components/privacy/_privacy.scss */
+.privacy__wrapper .privacy__wrapper-footer {
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* line 31, src/scss/_components/privacy/_privacy.scss */
+.privacy__wrapper .privacy__wrapper-footer p,
+.privacy__wrapper .privacy__wrapper-footer b {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 37, src/scss/_components/privacy/_privacy.scss */
+.privacy__wrapper .privacy__wrapper-footer p b,
+.privacy__wrapper .privacy__wrapper-footer b b {
+  font-weight: bold;
+}
+
+/* line 44, src/scss/_components/privacy/_privacy.scss */
+.privacy h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 50, src/scss/_components/privacy/_privacy.scss */
+.privacy h5 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 56, src/scss/_components/privacy/_privacy.scss */
+.privacy b {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 62, src/scss/_components/privacy/_privacy.scss */
+.privacy p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* line 67, src/scss/_components/privacy/_privacy.scss */
+.privacy p a {
+  color: #1155CC;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
