@@ -11495,4 +11495,183 @@ picture {
   color: #1155CC;
 }
 
+/* line 3, src/scss/_components/about/_about.scss */
+.about {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #eeeeee;
+}
+
+/* line 8, src/scss/_components/about/_about.scss */
+.about__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: -webkit-calc(100% - (95px * 2));
+  max-width: calc(100% - (95px * 2));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 50px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+          box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 8, src/scss/_components/about/_about.scss */
+  .about__wrapper {
+    max-width: -webkit-calc(100% - (30px * 2));
+    max-width: calc(100% - (30px * 2));
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 8, src/scss/_components/about/_about.scss */
+  .about__wrapper {
+    max-width: -webkit-calc(100% - (15px * 2));
+    max-width: calc(100% - (15px * 2));
+    padding: 25px 20px;
+  }
+}
+
+/* line 29, src/scss/_components/about/_about.scss */
+.about__wrapper-left, .about__wrapper-right {
+  width: 100%;
+  max-width: -webkit-calc((100% - 70px) / 2);
+  max-width: calc((100% - 70px) / 2);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 29, src/scss/_components/about/_about.scss */
+  .about__wrapper-left, .about__wrapper-right {
+    max-width: 100%;
+  }
+  /* line 36, src/scss/_components/about/_about.scss */
+  .about__wrapper-left:first-child, .about__wrapper-right:first-child {
+    padding-bottom: 25px;
+  }
+}
+
+/* line 43, src/scss/_components/about/_about.scss */
+.about__title {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+/* line 48, src/scss/_components/about/_about.scss */
+.about__address {
+  padding-bottom: 20px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  color: #616161;
+}
+
+/* line 55, src/scss/_components/about/_about.scss */
+.about table {
+  margin-bottom: 20px;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+/* line 59, src/scss/_components/about/_about.scss */
+.about table td {
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3F3F3F;
+}
+
+/* line 66, src/scss/_components/about/_about.scss */
+.about table td:nth-of-type(2) {
+  padding-left: 36px;
+  font-weight: normal;
+  color: #616161;
+}
+
+/* line 74, src/scss/_components/about/_about.scss */
+.about__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #1155cc;
+  line-height: 30px;
+}
+
+/* line 85, src/scss/_components/about/_about.scss */
+.about__content p {
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: #000;
+}
+
+/* line 90, src/scss/_components/about/_about.scss */
+.about__content p a {
+  color: #1155CC;
+}
+
+/* line 96, src/scss/_components/about/_about.scss */
+.about__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 100, src/scss/_components/about/_about.scss */
+.about__social li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 103, src/scss/_components/about/_about.scss */
+.about__social li:not(:last-of-type) {
+  padding-right: 10px;
+}
+
+/* line 108, src/scss/_components/about/_about.scss */
+.about__social a {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* line 118, src/scss/_components/about/_about.scss */
+.about__social a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
