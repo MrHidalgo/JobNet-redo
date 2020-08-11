@@ -39,7 +39,7 @@ PageList:
   ready: 100
 - file: positions.html
   titleName: Positions
-  ready: 33
+  ready: 100
 - file: blog.html
   titleName: Blog
   ready: 1
