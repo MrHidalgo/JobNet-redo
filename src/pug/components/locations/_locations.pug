@@ -9,12 +9,29 @@ section#locations.locations
 		.locations__wrapper.locations__wrapper-2
 
 			.locations__box-wrapper
-				-for(let i = 0; i < 15; i++)
+				-
+					const locationsArr = [
+									'Yangon <span>(2379)</span>',
+									'Mandalay <span>(135)</span>',
+									'NayPyiTaw <span>(32)</span>',
+									'Shan State <span>(19)</span>',
+									'Bago Division <span>(17)</span>',
+									'International <span>(16)</span>',
+									'Ayeyawady Division <span>(16)</span>',
+									'Sagaing Division <span>(14)</span>',
+									'Magway Division <span>(13)</span>',
+									'Mon State <span>(12)</span>',
+									'Kachin State <span>(10)</span>',
+									'Taninthayi Division <span>(7)</span>',
+									'Rakhine State <span>(6)</span>',
+									'Kayin State <span>(5)</span>',
+					];
+				-for(let i = 0; i < 14; i++)
 					div
 						a.locations__box(href="#")
 							.locations__box-head
 								img(src="img/img-jobdetails-banner.jpg" alt="")
 							.locations__box-body
-								p!= "International <span>(213)</span>"
+								p!= locationsArr[i]
 
 // SECTION :: END
