@@ -9,12 +9,47 @@ section#job-functions.job-functions
 		.job-functions__wrapper.job-functions__wrapper-2
 
 			.job-functions__box-wrapper
+				-
+					const jobFunctionArr = [
+						'Sales, Business Development <span>(550)</span>',
+						'IT Hardware, Software <span>(342)</span>',
+						'Accounting, Finance <span>(314)</span>',
+						'Engineering, Technical, HSE <span>(271)</span>',
+						'Marketing, Media, Creative <span>(269)</span>',
+						'Administrative <span>(141)</span>',
+						'Customer Service, Support <span>(119)</span>',
+						'HR, Training and Recruitment <span>(113)</span>',
+						'Legal, Risk and Compliance <span>(68)</span>',
+						'Procurement, Supply Chain <span>(66)</span>',
+						'Logistics, Distribution, Fleet <span>(60)</span>',
+						'Manufacturing, Warehouse <span>(57)</span>',
+						'Project, Operations Management <span>(52)</span>',
+						'Management <span>(43)</span>',
+						'Education, Teaching, Childcare <span>(29)</span>',
+						'Quality Assurance <span>(24)</span>',
+						'PR, Communications <span>(22)</span>',
+						'Strategy, Planning <span>(22)</span>',
+						'Food and Beverage <span>(22)</span>',
+						'Architecture, Design <span>(20)</span>',
+						'Translation <span>(16)</span>',
+						'Driver, Delivery, Motorbike <span>(15)</span>',
+						'General Workers <span>(11)</span>',
+						'Skilled Trades , Construction <span>(10)</span>',
+						'Research and Development <span>(8)</span>',
+						'Doctor, Nursing, Medical Staff <span>(6)</span>',
+						'Consulting <span>(3)</span>',
+						'Hospitality, Hotel, Tourism <span>(3)</span>',
+						'Writing, Editing <span>(2)</span>',
+						'Science, Technology <span>(2)</span>',
+						'Health, Beauty, Fitness <span>(1)</span>'
+					];
 				-for(let i = 0; i < 31; i++)
 					div
 						a.job-functions__box(href="#")
 							.job-functions__box-head
+								i.icon-font.icon-home
 							.job-functions__box-body
-								p!= "Customer services, Support <span>(213)</span>"
+								p!= jobFunctionArr[i]
 
 		.job-functions__wrapper.job-functions__wrapper-3
 

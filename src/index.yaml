@@ -27,13 +27,13 @@ PageList:
   ready: 100
 - file: companies.html
   titleName: Companies
-  ready: 33
+  ready: 100
 - file: locations.html
   titleName: Locations
   ready: 33
 - file: job-functions.html
   titleName: Job Functions
-  ready: 33
+  ready: 100
 - file: industries.html
   titleName: Industries
   ready: 33
