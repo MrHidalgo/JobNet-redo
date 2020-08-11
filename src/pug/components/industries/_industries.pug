@@ -9,12 +9,59 @@ section#industries.industries
 		.industries__wrapper.industries__wrapper-2
 
 			.industries__box-wrapper
-				-for(let i = 0; i < 48; i++)
+				-
+					const industriesArr = [
+									'Banking/ Financial Services/ Microfinance <span>(392)</span>',
+									'Trading/Distribution/Import/Export <span>(233)</span>',
+									'Telecommunications <span>(211)</span>',
+									'Construction/Building/Architecture <span>(211)</span>',
+									'FMCG <span>(183)</span>',
+									'IT/Computer <span>(144)</span>',
+									'Manufacturing <span>(121)</span>',
+									'Internet Services <span>(101)</span>',
+									'Food and Beverage/Catering <span>(89)</span>',
+									'Education/Training <span>(87)</span>',
+									'Engineering/Machinery <span>(71)</span>',
+									'Automotive <span>(66)</span>',
+									'Retail/Wholesale <span>(64)</span>',
+									'Insurance/Pensions <span>(61)</span>',
+									'Energy/Water/Oil & Gas/Waste <span>(61)</span>',
+									'Real Estate/Property Development <span>(55)</span>',
+									'Agriculture/Forestry/Fishing <span>(53)</span>',
+									'Pharmaceutical/Life Sciences <span>(53)</span>',
+									'Logistics/Transport <span>(45)</span>',
+									'Others <span>(35)</span>',
+									'Advertising/PR/Marketing <span>(34)</span>',
+									'Consulting/Professional Services <span>(33)</span>',
+									'Medical/Hospital <span>(30)</span>',
+									'Electronics/Electrical Equipment <span>(26)</span>',
+									'Accounting/Audit/Tax Services <span>(25)</span>',
+									'Broadcasting/Music/Film <span>(21)</span>',
+									'Interior Design/Decoration <span>(20)</span>',
+									'Hospitality/Hotels <span>(19)</span>',
+									'Healthcare/Beauty Care <span>(16)</span>',
+									'NGO/UN/Non Profit <span>(15)</span>',
+									'Media/Publishing <span>(14)</span>',
+									'Chemicals/Petro-Chemicals <span>(14)</span>',
+									'Clothing/Garment/Textile <span>(11)</span>',
+									'Tourism/Travel Agency <span>(10)</span>',
+									'Recruitment/Employment Agency <span>(9)</span>',
+									'Entertainment <span>(9)</span>',
+									'Athletics/Sports <span>(8)</span>',
+									'Security/Surveillance <span>(7)</span>',
+									'Biotechnology/Pharmaceuticals <span>(5)</span>',
+									'Jewellery/Gems <span>(3)</span>',
+									'Mining <span>(3)</span>',
+									'Printing/Graphic Design <span>(2)</span>',
+									'Legal Services <span>(1)</span>',
+					];
+				-for(let i = 0; i < 43; i++)
 					div
 						a.industries__box(href="#")
 							.industries__box-head
+								i.icon-font.icon-home
 							.industries__box-body
-								p!= "Real Estate/Property Development<span>(213)</span>"
+								p!= industriesArr[i]
 
 		.industries__wrapper.industries__wrapper-3
 

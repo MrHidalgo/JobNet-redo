@@ -16,11 +16,21 @@
 		align-items: center;
 		justify-content: center;
 		height: 70px;
-		padding: 10px;
+		padding: 25px 10px;
+		border-radius: 0;
 		background-color: #643499;
+		background-image: url('../img/img-industries-banner.png');
+		@include adaptive(767) {
+			height: auto;
+			min-height: 70px;
+		}
 
 		p {
 			color: #ffffff;
+			font-weight: 600;
+			font-size: 19px;
+			line-height: 1.1;
+			text-align: center;
 		}
 	}
 
@@ -32,32 +42,58 @@
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
-			padding-top: 15px;
-			border-radius: 10px;
+			padding: 5px;
+			border-radius: 5px;
+			box-shadow: 1px 0 11px 3px #e2e0e0;
 			background-color: white;
-			box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 5);
-				padding-left: 7px;
-				padding-right: 7px;
-				padding-bottom: 20px;
+				padding: 13px 12px;
+				@include adaptive(1279) {
+					max-width: calc(100% / 3);
+				}
+				@include adaptive(767) {
+					max-width: calc(100% / 2);
+				}
+
+				&:nth-child(n+6):nth-child(-n + 10),
+				&:nth-child(n+41):nth-child(-n + 45) {
+					.industries__box-head {
+						border-color: pink;
+					}
+				}
+				&:nth-child(n+11):nth-child(-n + 20) ,
+				&:nth-child(n+31):nth-child(-n + 40) {
+					.industries__box-head {
+						border-color: lightblue;
+					}
+				}
+				&:nth-child(n+21):nth-child(-n + 30) {
+					.industries__box-head {
+						border-color: #ee82eead;
+					}
+				}
 			}
 		}
 
 		&-head {
 			overflow: hidden;
 			position: relative;
-			width: 70px;
-			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 65px;
+			height: 65px;
 			margin-left: auto;
 			margin-right: auto;
 			border-radius: 50%;
-			border: 1px solid #f3abf4;
+			border: 2px solid rgba(128, 0, 128, 0.25);
 
-			img {
-				@extend %imageResCoverAbs;
+			.icon-font {
+				color: #643499;
+				font-size: 30px;
 			}
 		}
 
@@ -65,9 +101,11 @@
 			padding-top: 10px;
 
 			p {
+				word-break: break-word;
 				text-align: center;
-				font-size: 13px;
-				font-weight: 600;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 1.3;
 				color: #000000;
 
 				span {

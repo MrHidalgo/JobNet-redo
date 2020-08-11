@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.companies__locations-head img, .industries__box-head img, .locations__box-head img {
+.companies__locations-head img, .locations__box-head img {
   position: absolute;
   top: 0;
   left: 0;
@@ -10751,16 +10751,31 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70px;
-  padding: 10px;
+  padding: 25px 10px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   background-color: #643499;
+  background-image: url("../img/img-industries-banner.png");
 }
 
-/* line 22, src/scss/_components/industries/_industries.scss */
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/industries/_industries.scss */
+  .industries__banner {
+    height: auto;
+    min-height: 70px;
+  }
+}
+
+/* line 28, src/scss/_components/industries/_industries.scss */
 .industries__banner p {
   color: #ffffff;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.1;
+  text-align: center;
 }
 
-/* line 27, src/scss/_components/industries/_industries.scss */
+/* line 37, src/scss/_components/industries/_industries.scss */
 .industries__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10777,7 +10792,7 @@ picture {
           align-items: center;
 }
 
-/* line 32, src/scss/_components/industries/_industries.scss */
+/* line 42, src/scss/_components/industries/_industries.scss */
 .industries__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10786,51 +10801,100 @@ picture {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding-top: 15px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 1px 0 11px 3px #e2e0e0;
+          box-shadow: 1px 0 11px 3px #e2e0e0;
   background-color: white;
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* line 40, src/scss/_components/industries/_industries.scss */
+/* line 50, src/scss/_components/industries/_industries.scss */
 .industries__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
   max-width: calc(100% / 5);
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-bottom: 20px;
+  padding: 13px 12px;
 }
 
-/* line 49, src/scss/_components/industries/_industries.scss */
+@media screen and (max-width: 1279px) {
+  /* line 50, src/scss/_components/industries/_industries.scss */
+  .industries__box-wrapper > div {
+    max-width: -webkit-calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 50, src/scss/_components/industries/_industries.scss */
+  .industries__box-wrapper > div {
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+/* line 63, src/scss/_components/industries/_industries.scss */
+.industries__box-wrapper > div:nth-child(n+6):nth-child(-n + 10) .industries__box-head, .industries__box-wrapper > div:nth-child(n+41):nth-child(-n + 45) .industries__box-head {
+  border-color: pink;
+}
+
+/* line 69, src/scss/_components/industries/_industries.scss */
+.industries__box-wrapper > div:nth-child(n+11):nth-child(-n + 20) .industries__box-head, .industries__box-wrapper > div:nth-child(n+31):nth-child(-n + 40) .industries__box-head {
+  border-color: lightblue;
+}
+
+/* line 74, src/scss/_components/industries/_industries.scss */
+.industries__box-wrapper > div:nth-child(n+21):nth-child(-n + 30) .industries__box-head {
+  border-color: #ee82eead;
+}
+
+/* line 81, src/scss/_components/industries/_industries.scss */
 .industries__box-head {
   overflow: hidden;
   position: relative;
-  width: 70px;
-  height: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: 65px;
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 1px solid #f3abf4;
+  border: 2px solid rgba(128, 0, 128, 0.25);
 }
 
-/* line 64, src/scss/_components/industries/_industries.scss */
+/* line 94, src/scss/_components/industries/_industries.scss */
+.industries__box-head .icon-font {
+  color: #643499;
+  font-size: 30px;
+}
+
+/* line 100, src/scss/_components/industries/_industries.scss */
 .industries__box-body {
   padding-top: 10px;
 }
 
-/* line 67, src/scss/_components/industries/_industries.scss */
+/* line 103, src/scss/_components/industries/_industries.scss */
 .industries__box-body p {
+  word-break: break-word;
   text-align: center;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
   color: #000000;
 }
 
-/* line 73, src/scss/_components/industries/_industries.scss */
+/* line 111, src/scss/_components/industries/_industries.scss */
 .industries__box-body p span {
   padding-left: 5px;
   color: #f49521;

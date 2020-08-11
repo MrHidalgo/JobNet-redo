@@ -36,10 +36,10 @@ PageList:
   ready: 100
 - file: industries.html
   titleName: Industries
-  ready: 33
+  ready: 100
 - file: positions.html
   titleName: Positions
-  ready: 1
+  ready: 33
 - file: blog.html
   titleName: Blog
   ready: 1
