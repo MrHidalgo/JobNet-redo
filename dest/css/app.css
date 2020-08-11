@@ -11421,4 +11421,78 @@ picture {
   color: #1155CC;
 }
 
+/* line 3, src/scss/_components/terms/_terms.scss */
+.terms {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #eeeeee;
+}
+
+/* line 8, src/scss/_components/terms/_terms.scss */
+.terms__wrapper {
+  width: 100%;
+  max-width: -webkit-calc(100% - (95px * 2));
+  max-width: calc(100% - (95px * 2));
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 50px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+          box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.59);
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 8, src/scss/_components/terms/_terms.scss */
+  .terms__wrapper {
+    max-width: -webkit-calc(100% - (30px * 2));
+    max-width: calc(100% - (30px * 2));
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 8, src/scss/_components/terms/_terms.scss */
+  .terms__wrapper {
+    max-width: -webkit-calc(100% - (15px * 2));
+    max-width: calc(100% - (15px * 2));
+    padding: 25px 20px;
+  }
+}
+
+/* line 28, src/scss/_components/terms/_terms.scss */
+.terms h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 34, src/scss/_components/terms/_terms.scss */
+.terms h5 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 40, src/scss/_components/terms/_terms.scss */
+.terms b {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* line 46, src/scss/_components/terms/_terms.scss */
+.terms p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* line 51, src/scss/_components/terms/_terms.scss */
+.terms p a {
+  color: #1155CC;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

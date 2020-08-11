@@ -45,7 +45,7 @@ PageList:
   ready: 100
 - file: terms.html
   titleName: Terms and Conditions
-  ready: 1
+  ready: 100
 - file: about.html
   titleName: About
   ready: 1
