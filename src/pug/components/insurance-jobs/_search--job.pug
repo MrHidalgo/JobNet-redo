@@ -1,0 +1,61 @@
+mixin job(classMod, imageBool)
+	.search__job(class!= classMod)
+		.search__job-head
+			div
+
+				.search__job-heading
+					a.search__job-title(href='#') Junior Project Manager/ Project Coordinator
+
+				p.search__job-subtitle KBZ MS
+
+				.search__job-additional
+					a.search__job-sign(href="/login.html")
+						i.icon-font.icon-dollar-symbol
+						span Login to view salary
+
+					p.search__job-location
+						i.icon-font.icon-cursor
+						span!= "Yangon"
+
+			div
+				if(imageBool)
+					.search__job-logo
+						img(src="img/img-kbz-ms.png" alt="")
+				else
+					.search__job-logo.search__job-logo--wi
+						i.icon-font.icon-photo
+						p No Image
+
+		.search__job-body
+
+			ul.search__job-list
+				li
+					p!= "<strong>Benefits:</strong> Rewards for over performance"
+				li
+					p!= "<strong>Highlights:</strong> * Fun working environment * International standard * Make a different"
+				li
+					p!= "<strong>Career Opportunities:</strong> * Opportunities for promotion * Possibility for job training"
+
+			p.search__job-desc Greet visitors appropriately - Answer incoming phone calls in a timely and polite manner calls to appropriate per visitors appropriately incoming phone calls in a timely and polite manner -Forward calls to appropriate per
+
+		.search__job-footer
+			div
+				p.search__job-category
+					i.icon-font.icon-folder
+					span Job Function: Engineering/Technical
+			div
+				p.search__job-category
+					i.icon-font.icon-cogwheel
+					span Industry: Telecommunications
+			div
+				p.search__job-posted
+					i.icon-font.icon-clock
+					span!= "Posted: 13 Aug 2020"
+			div
+
+.search__job-wrapper
+	each val, idx in [1,2,3,4]
+		div
+			+job('', true)
+		div
+			+job('', true)

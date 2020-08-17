@@ -6,6 +6,20 @@
 		padding-top: 20px;
 	}
 
+	&.employers--insurance-jobs {
+		.employers {
+			&__wrapper {
+				> div {
+					@include adaptive(767) {
+						max-width: 100%;
+						padding-bottom: 0;
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
 	&__title {
 		padding-bottom: 30px;
 		@include adaptive(1535) {

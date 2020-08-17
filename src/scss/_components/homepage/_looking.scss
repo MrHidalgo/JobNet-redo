@@ -17,6 +17,10 @@
 			display: block;
 		}
 
+		&.looking--insurance-jobs {
+			order: unset;
+		}
+
 		.c-grid {
 			padding-left: 0;
 			padding-right: 0;

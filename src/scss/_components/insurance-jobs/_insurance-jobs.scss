@@ -1,0 +1,84 @@
+// SECTION :: START
+
+.insurance-jobs {
+	@include adaptive(767) {
+		padding-bottom: 10px;
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		font-weight: 500;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		span {
+			padding-bottom: 10px;
+			border-bottom: 2px solid purple;
+		}
+	}
+
+	&__wrapper {
+		width: 100%;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.search__job {
+		&-title {
+			color: #2765cf;
+			font-size: 24px;
+			font-weight: normal;
+			@include adaptive(767) {
+				font-size: 20px;
+			}
+		}
+
+		&-subtitle {
+			color: #000000;
+			font-size: 18px;
+		}
+
+		&-list {
+			padding-bottom: 0;
+
+			p {
+				color: #000000;
+			}
+		}
+
+		&-desc {
+			color: #000000;
+		}
+
+		&-sign {
+			.icon-font {
+				color: #06d54c;
+			}
+
+			span {
+				color: #0591c0;
+			}
+		}
+
+		&-location {
+			.icon-font,
+			span {
+				color: #666666;
+			}
+		}
+	}
+
+	.c-btn {
+		&__wrapper {
+			@include adaptive(767) {
+				justify-content: center;
+			}
+		}
+	}
+}
+
+// SECTION :: END

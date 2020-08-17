@@ -48,7 +48,22 @@ PageList:
   ready: 100
 - file: about.html
   titleName: About
+  ready: 100
+- file: insurance-jobs.html
+  titleName: Insurance Jobs
+  ready: 100
+- file: employers.html
+  titleName: Employers
+  ready: 1
+- file: employers-signup.html
+  titleName: Employers Sign Up
+  ready: 1
+- file: employers-login.html
+  titleName: Employers Sign In
   ready: 1
 - file: blog.html
   titleName: Blog
+  ready: 1
+- file: blog-details.html
+  titleName: Blog Details
   ready: 1

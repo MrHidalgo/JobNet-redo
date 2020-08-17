@@ -1,0 +1,19 @@
+---
+title: JobNet | Insurance Jobs
+
+pageClassName: p-insurance-jobs
+---
+extends shared/_layout
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/insurance-jobs/_main
+		include components/insurance-jobs/_employers
+		include components/insurance-jobs/_insurance-jobs
+		include components/insurance-jobs/_looking--mobile
+
+		include components/homepage/_description
+		include components/homepage/_popular
+
+		#overlay.overlay
