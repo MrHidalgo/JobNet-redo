@@ -1,0 +1,39 @@
+// SECTION :: START
+
+section#employers-login.employers-login
+
+	.employers-login__wrapper
+
+		form.employers-login__form(action='' method='' autocomplete='off')
+			.employers-login__form-header
+				i.icon-font.icon-users
+				span Talent Management Solutions
+
+			.employers-login__form-body
+
+				p.employers-login__form-title Sign In your Employer Account
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='email', placeholder='E-mail' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control.rounded-right(type='password',placeholder='Password' required)
+
+				.employers-login__form-field
+					.form-group
+						.c-btn__wrapper
+							button.c-btn.c-btn--purple(type='button')
+								span Login
+
+				a.employers-login__form-link(href="/forgot.html") Forgot Password?
+
+				.employers-login__form-info
+					span Don't have an account?
+					a(href="/employers-signup.html") Register Now
+
+
+// SECTION :: END

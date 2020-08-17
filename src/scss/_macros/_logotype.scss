@@ -1,6 +1,31 @@
 // LOGOTYPE :: START
 
 .logo {
+	&.logo--employers {
+		.logo {
+			&__btn {
+				align-items: center;
+				max-width: unset;
+
+				img {
+					position: relative;
+					top: -2px;
+				}
+
+				span {
+					padding-left: 5px;
+					color: #ffffff;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 22px;
+
+					&:last-of-type {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 	&__btn {
 		display: flex;
 		align-items: flex-start;

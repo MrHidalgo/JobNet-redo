@@ -7,7 +7,64 @@
 	left: 0;
 	width: 100%;
 	background-color: rgb(254, 254, 254);
-	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+
+	&.header--employers {
+		background-color: transparent;
+		box-shadow: none;
+		font-family: "Roboto", sans-serif;
+
+		.c-grid {
+			max-width: 1220px;
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+
+		.header {
+			&__wrapper {
+				@include adaptive(767) {
+					flex-wrap: wrap;
+				}
+
+				&-left,
+				&-right {
+					@include adaptive(767) {
+						width: 100%;
+					}
+				}
+
+				&-left {
+					@include adaptive(767) {
+						padding-top: 18px;
+						padding-bottom: 18px;
+					}
+				}
+
+				.c-btn {
+					min-width: 137px;
+					height: 39px;
+					border-radius: 0;
+
+					&:not(:last-of-type) {
+						margin-right: 20px;
+						@include adaptive(767) {
+							margin-right: 5px;
+						}
+					}
+
+					span {
+						font-size: 13px;
+					}
+
+					&__wrapper {
+						@include adaptive(767) {
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
 
 	.is-hideScroll & {
 		z-index: 1350;
@@ -147,6 +204,62 @@
 				&:hover {
 					color: #663399;
 				}
+			}
+
+			.c-btn {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				height: 70px;
+				padding-left: 30px;
+				border-radius: 0;
+				min-width: 160px;
+				box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.14);
+				@include adaptive(1535) {
+					height: 60px;
+					padding-left: 10px;
+				}
+				@include adaptive(1023) {
+					width: 100%;
+				}
+
+				&__wrapper {
+					z-index: 0;
+					position: relative;
+					@include adaptive(1023) {
+						left: -25px;
+						width: calc(100% + 50px);
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: -50px;
+						width: 60px;
+						height: 100%;
+						background-color: #663399;
+						@include adaptive(1023) {
+							display: none;
+						}
+					}
+				}
+
+				span {
+					text-align: center;
+					line-height: 1;
+
+					small {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		.hamburger {
+			display: none;
+			@include adaptive(1023) {
+				display: flex;
 			}
 		}
 	}
@@ -374,62 +487,6 @@
 				width: 100%;
 				height: auto;
 			}
-		}
-	}
-
-	.c-btn {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		height: 70px;
-		padding-left: 30px;
-		border-radius: 0;
-		min-width: 160px;
-		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.14);
-		@include adaptive(1535) {
-			height: 60px;
-			padding-left: 10px;
-		}
-		@include adaptive(1023) {
-			width: 100%;
-		}
-
-		&__wrapper {
-			z-index: 0;
-			position: relative;
-			@include adaptive(1023) {
-				left: -25px;
-				width: calc(100% + 50px);
-			}
-
-			&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -50px;
-				width: 60px;
-				height: 100%;
-				background-color: #663399;
-				@include adaptive(1023) {
-					display: none;
-				}
-			}
-		}
-
-		span {
-			text-align: center;
-			line-height: 1;
-
-			small {
-				font-size: 12px;
-			}
-		}
-	}
-
-	.hamburger {
-		display: none;
-		@include adaptive(1023) {
-			display: flex;
 		}
 	}
 }

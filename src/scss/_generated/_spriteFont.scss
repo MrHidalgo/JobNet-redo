@@ -156,6 +156,9 @@
 	@if $filename == user {
 		$char: "\E02B";
 	}
+	@if $filename == users {
+		$char: "\E02C";
+	}
 
 	@return $char;
 }
@@ -341,5 +344,9 @@
 }
 .icon-user {
 	@include icon(user);
+
+}
+.icon-users {
+	@include icon(users);
 
 }

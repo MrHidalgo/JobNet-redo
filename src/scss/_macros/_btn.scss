@@ -184,6 +184,26 @@
 			color: #2A65D1;
 		}
 	}
+
+	&--borderWhite {
+		border: 1px solid #fff;
+		background-color: transparent;
+
+		&:hover {
+			span {
+				color: #000;
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: lighten(#fff, 11%);
+		}
+
+		span {
+			color: #fff;
+		}
+	}
 }
 
 // BUTTON :: END
