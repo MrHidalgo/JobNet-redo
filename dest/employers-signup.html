@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex">
     <meta name="AdsBot-Google" content="noindex">
     <!-- TITLE-->
-    <title>JobNet | Employers Sign In</title>
+    <title>JobNet | Employers Sign Up</title>
     <!-- FAVICON-->
     <link rel="shortcut icon" href="./icon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Roboto:wght@100;300;400;500;700;900&amp;family=Lato:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
   </head>
-  <body class="p-employers-login">
+  <body class="p-employers-signup">
     <!-- HEADER :: START-->
     <header class="header header--employers" id="header">
       <div class="c-grid">
@@ -34,36 +34,82 @@
       </div>
     </header>
     <!-- HEADER :: END-->
-    <div class="body body--start p-employers-login">
+    <div class="body body--start p-employers-signup">
       <!-- SECTION :: START-->
-      <section class="employers-login" id="employers-login">
+      <section class="employers-login employers-login--signup" id="employers-login">
         <div class="employers-login__wrapper">
           <form class="employers-login__form" action="" method="" autocomplete="off">
             <div class="employers-login__form-header"><i class="icon-font icon-users"></i><span>Talent Management Solutions</span></div>
             <div class="employers-login__form-body">
-              <p class="employers-login__form-title">Sign In your Employer Account</p>
+              <p class="employers-login__form-title">Sign Up for your New Employer Account</p>
               <div class="employers-login__form-field">
                 <div class="form-group">
                   <div class="input-group">
-                    <input class="form-control" type="email" placeholder="E-mail" required>
+                    <input class="form-control" type="email" placeholder="E-mail *" required>
                   </div>
                 </div>
               </div>
               <div class="employers-login__form-field">
                 <div class="form-group">
                   <div class="input-group">
-                    <input class="form-control" type="password" placeholder="Password" required>
+                    <input class="form-control" type="password" placeholder="Password *" required>
                   </div>
                 </div>
+              </div>
+              <div class="employers-login__form-field">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Main Contact Name *" required>
+                  </div>
+                </div>
+              </div>
+              <div class="employers-login__form-field">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Company Name *" required>
+                  </div>
+                </div>
+              </div>
+              <div class="employers-login__form-field">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Phone Number" required>
+                  </div>
+                </div>
+              </div>
+              <div class="employers-login__form-field">
+                <div class="form-group">
+                  <div class="input-group">
+                    <select class="form-control" name="">
+                      <option value="0">Number of Employees *</option>
+                      <option value="1">1-5</option>
+                      <option value="2">6-10</option>
+                      <option value="3">11-20</option>
+                      <option value="4">21-50</option>
+                      <option value="5">51-100</option>
+                      <option value="6">101-200</option>
+                      <option value="7">201-500</option>
+                      <option value="8">501-1000</option>
+                      <option value="9">1001-5000</option>
+                      <option value="10">5001-10000</option>
+                      <option value="11">10001-20000</option>
+                      <option value="12">More than 20000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="employers-login__form-rule">
+                <p>By continuing, you agree to our <a href="/terms.html">Terms</a> and <a href="/privacy.html">Privacy Policy</a></p>
               </div>
               <div class="employers-login__form-field">
                 <div class="form-group">
                   <div class="c-btn__wrapper">
-                    <button class="c-btn c-btn--purple" type="button"><span>Login</span></button>
+                    <button class="c-btn c-btn--purple" type="button"><span>Continue</span></button>
                   </div>
                 </div>
-              </div><a class="employers-login__form-link" href="/forgot.html">Forgot Password?</a>
-              <div class="employers-login__form-info"><span>Don't have an account?</span><a href="/employers-signup.html">Register Now</a></div>
+              </div>
+              <div class="employers-login__form-line"></div>
+              <div class="employers-login__form-info"><span>Already have an account?</span><a href="/employers-login.html">Log In</a></div>
             </div>
           </form>
         </div>

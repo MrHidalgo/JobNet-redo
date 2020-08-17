@@ -57,7 +57,7 @@ PageList:
   ready: 1
 - file: employers-signup.html
   titleName: Employers Sign Up
-  ready: 1
+  ready: 100
 - file: employers-login.html
   titleName: Employers Sign In
   ready: 100

@@ -491,11 +491,11 @@ body {
 }
 
 /* line 41, src/scss/_shared/_main-setting-reset.scss */
-body.p-register, body.p-employers-login {
+body.p-register, body.p-employers-login, body.p-employers-signup {
   padding-top: 0;
 }
 
-/* line 46, src/scss/_shared/_main-setting-reset.scss */
+/* line 47, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -512,7 +512,7 @@ body > .body {
           justify-content: center;
 }
 
-/* line 52, src/scss/_shared/_main-setting-reset.scss */
+/* line 53, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -520,19 +520,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 59, src/scss/_shared/_main-setting-reset.scss */
+/* line 60, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 62, src/scss/_shared/_main-setting-reset.scss */
+/* line 63, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 69, src/scss/_shared/_main-setting-reset.scss */
+/* line 70, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -542,36 +542,36 @@ textarea {
   margin: 0;
 }
 
-/* line 79, src/scss/_shared/_main-setting-reset.scss */
+/* line 80, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 85, src/scss/_shared/_main-setting-reset.scss */
+/* line 86, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 91, src/scss/_shared/_main-setting-reset.scss */
+/* line 92, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 97, src/scss/_shared/_main-setting-reset.scss */
+/* line 98, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 103, src/scss/_shared/_main-setting-reset.scss */
+/* line 104, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 108, src/scss/_shared/_main-setting-reset.scss */
+/* line 109, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -579,36 +579,36 @@ hr {
   padding: 0;
 }
 
-/* line 116, src/scss/_shared/_main-setting-reset.scss */
+/* line 117, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 121, src/scss/_shared/_main-setting-reset.scss */
+/* line 122, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 127, src/scss/_shared/_main-setting-reset.scss */
+/* line 128, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 132, src/scss/_shared/_main-setting-reset.scss */
+/* line 133, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 139, src/scss/_shared/_main-setting-reset.scss */
+/* line 140, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 143, src/scss/_shared/_main-setting-reset.scss */
+/* line 144, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11964,19 +11964,41 @@ picture {
 }
 
 /* line 11, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login.employers-login--signup {
+  background-image: url("../img/img-employers-signup-bg.jpg");
+}
+
+/* line 15, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login.employers-login--signup .employers-login__form {
+  max-width: 480px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, src/scss/_components/employers-login/_employers-login.scss */
+  .employers-login.employers-login--signup .employers-login__form {
+    max-width: 90%;
+  }
+}
+
+/* line 22, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login.employers-login--signup .employers-login__form-field .form-group {
+  margin-bottom: 10px;
+}
+
+/* line 30, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__wrapper {
   padding-top: -webkit-calc(5% + 25px);
   padding-top: calc(5% + 25px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/employers-login/_employers-login.scss */
+  /* line 30, src/scss/_components/employers-login/_employers-login.scss */
   .employers-login__wrapper {
     padding-top: 140px;
   }
 }
 
-/* line 18, src/scss/_components/employers-login/_employers-login.scss */
+/* line 37, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11995,13 +12017,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 18, src/scss/_components/employers-login/_employers-login.scss */
+  /* line 37, src/scss/_components/employers-login/_employers-login.scss */
   .employers-login__form {
     max-width: 90%;
   }
 }
 
-/* line 30, src/scss/_components/employers-login/_employers-login.scss */
+/* line 49, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12020,13 +12042,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 30, src/scss/_components/employers-login/_employers-login.scss */
+  /* line 49, src/scss/_components/employers-login/_employers-login.scss */
   .employers-login__form-header {
     display: none;
   }
 }
 
-/* line 40, src/scss/_components/employers-login/_employers-login.scss */
+/* line 59, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-header .icon-font,
 .employers-login__form-header span {
   color: white;
@@ -12035,23 +12057,23 @@ picture {
   line-height: 1;
 }
 
-/* line 48, src/scss/_components/employers-login/_employers-login.scss */
+/* line 67, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-header .icon-font {
   margin-right: 20px;
   font-size: 24px;
 }
 
-/* line 53, src/scss/_components/employers-login/_employers-login.scss */
+/* line 72, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-header span {
   font-weight: 600;
 }
 
-/* line 58, src/scss/_components/employers-login/_employers-login.scss */
+/* line 77, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-body {
   padding: 13px 30px 25px 30px;
 }
 
-/* line 62, src/scss/_components/employers-login/_employers-login.scss */
+/* line 81, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-title {
   padding-top: 5px;
   padding-bottom: 20px;
@@ -12061,13 +12083,14 @@ picture {
   font-size: 18px;
 }
 
-/* line 72, src/scss/_components/employers-login/_employers-login.scss */
+/* line 91, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-field .form-group {
   margin-bottom: 20px;
 }
 
-/* line 76, src/scss/_components/employers-login/_employers-login.scss */
-.employers-login__form-field input {
+/* line 95, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login__form-field input,
+.employers-login__form-field select {
   outline: none;
   height: 37px;
   padding: 5px 2%;
@@ -12088,7 +12111,7 @@ picture {
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 }
 
-/* line 91, src/scss/_components/employers-login/_employers-login.scss */
+/* line 111, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-field button {
   width: 100%;
   height: 45px;
@@ -12096,7 +12119,7 @@ picture {
           border-radius: 0;
 }
 
-/* line 98, src/scss/_components/employers-login/_employers-login.scss */
+/* line 118, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12118,7 +12141,7 @@ picture {
   color: #115DB5;
 }
 
-/* line 110, src/scss/_components/employers-login/_employers-login.scss */
+/* line 130, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -12135,19 +12158,61 @@ picture {
   padding-top: 15px;
 }
 
-/* line 116, src/scss/_components/employers-login/_employers-login.scss */
+/* line 136, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-info span {
   padding-right: 15px;
   color: #828282;
   font-size: 13px;
 }
 
-/* line 122, src/scss/_components/employers-login/_employers-login.scss */
+/* line 142, src/scss/_components/employers-login/_employers-login.scss */
 .employers-login__form-info a {
   font-size: 13px;
   font-family: 'Gotham Pro', sans-serif;
   font-weight: 500;
   color: #642891;
+}
+
+/* line 150, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login__form-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 1px;
+  margin-top: 15px;
+  background-color: silver;
+}
+
+/* line 158, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login__form-rule {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* line 164, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login__form-rule p {
+  font-size: 12px;
+  text-align: center;
+  color: #8E8E8E;
+  font-weight: 500;
+}
+
+/* line 170, src/scss/_components/employers-login/_employers-login.scss */
+.employers-login__form-rule p a {
+  color: #115DB5;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

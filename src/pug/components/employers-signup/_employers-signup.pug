@@ -1,0 +1,76 @@
+// SECTION :: START
+
+section#employers-login.employers-login.employers-login--signup
+
+	.employers-login__wrapper
+
+		form.employers-login__form(action='' method='' autocomplete='off')
+			.employers-login__form-header
+				i.icon-font.icon-users
+				span Talent Management Solutions
+
+			.employers-login__form-body
+
+				p.employers-login__form-title Sign Up for your New Employer Account
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='email', placeholder='E-mail *' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='password', placeholder='Password *' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='text', placeholder='Main Contact Name *' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='text', placeholder='Company Name *' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							input.form-control(type='text', placeholder='Phone Number' required)
+
+				.employers-login__form-field
+					.form-group
+						.input-group
+							select.form-control(name='')
+								option(value='0') Number of Employees *
+								option(value='1') 1-5
+								option(value='2') 6-10
+								option(value='3') 11-20
+								option(value='4') 21-50
+								option(value='5') 51-100
+								option(value='6') 101-200
+								option(value='7') 201-500
+								option(value='8') 501-1000
+								option(value='9') 1001-5000
+								option(value='10') 5001-10000
+								option(value='11') 10001-20000
+								option(value='12') More than 20000
+
+
+				.employers-login__form-rule
+					p!= 'By continuing, you agree to our <a href="/terms.html">Terms</a> and <a href="/privacy.html">Privacy Policy</a>'
+
+				.employers-login__form-field
+					.form-group
+						.c-btn__wrapper
+							button.c-btn.c-btn--purple(type='button')
+								span Continue
+
+				.employers-login__form-line
+
+				.employers-login__form-info
+					span Already have an account?
+					a(href="/employers-login.html") Log In
+
+
+// SECTION :: END
