@@ -341,6 +341,13 @@
 			$('.benefits__box').removeClass('is-show');
 			$('.benefits__box-' + elID).addClass('is-show');
 		});
+
+
+		$('[video-select-js]').on('change', (ev) => {
+			const selectedVal = $(ev.currentTarget).find('option:selected').val();
+
+			$('#' + selectedVal).trigger('click');
+		});
 	};
 
 

@@ -1,0 +1,45 @@
+// SECTION :: START
+
+section#video.video
+	.c-grid
+		.video__wrapper.video__wrapper-1
+
+			.video__select
+				select(video-select-js)
+					option(value='postJobsEasy-tab') Post Jobs Easy
+					option(value='findTalentFast-tab') Find Talent Fast
+					option(value='reachCandidates-tab') Reach Candidates
+
+
+			ul#myTab.nav.nav-tabs(role='tablist')
+				li.nav-item(role='presentation')
+					a#postJobsEasy-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='postJobsEasy', aria-selected='true')
+						span Post Jobs Easy
+				li.nav-item(role='presentation')
+					a#findTalentFast-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='findTalentFast', aria-selected='false')
+						span Find Talent Fast
+				li.nav-item(role='presentation')
+					a#reachCandidates-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='reachCandidates', aria-selected='false')
+						span Reach Candidates
+
+			#myTabContent.tab-content
+				#home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='postJobsEasy-tab')
+					video(controls)
+						source(src='/media/video-employer-1.mp4', type='video/mp4')
+
+				#profile.tab-pane.fade(role='tabpanel', aria-labelledby='findTalentFast-tab')
+					video(controls)
+						source(src='/media/video-employer-2.mp4', type='video/mp4')
+
+				#contact.tab-pane.fade(role='tabpanel', aria-labelledby='reachCandidates-tab')
+					video(controls)
+						source(src='/media/video-employer-3.mp4', type='video/mp4')
+
+
+		.video__wrapper.video__wrapper-2
+
+			.c-btn__wrapper
+				a.c-btn.c-btn--orange(href="/employers-signup.html")
+					span Get Started
+
+// SECTION :: END

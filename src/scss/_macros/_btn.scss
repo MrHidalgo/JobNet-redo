@@ -185,6 +185,26 @@
 		}
 	}
 
+	&--borderOrange {
+		border: 1px solid #f69322;
+		background-color: transparent;
+
+		&:hover {
+			span {
+				color: #f69322;
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: lighten(#DCDCDC, 11%);
+		}
+
+		span {
+			color: #f69322;
+		}
+	}
+
 	&--borderWhite {
 		border: 1px solid #fff;
 		background-color: transparent;
@@ -197,7 +217,7 @@
 
 		&:before,
 		&:after {
-			background-color: lighten(#fff, 11%);
+			background-color: lighten(#DCDCDC, 11%);
 		}
 
 		span {

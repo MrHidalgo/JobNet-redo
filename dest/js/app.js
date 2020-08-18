@@ -364,6 +364,12 @@ window.addEventListener('scroll', function (ev) {});
 			$('.benefits__box').removeClass('is-show');
 			$('.benefits__box-' + elID).addClass('is-show');
 		});
+
+		$('[video-select-js]').on('change', function (ev) {
+			var selectedVal = $(ev.currentTarget).find('option:selected').val();
+
+			$('#' + selectedVal).trigger('click');
+		});
 	};
 
 	var modals = function modals() {
