@@ -13949,7 +13949,7 @@ picture {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1535px) {
   /* line 61, src/scss/_components/blog/_blog.scss */
   .blog__box .card-head {
     height: 200px;

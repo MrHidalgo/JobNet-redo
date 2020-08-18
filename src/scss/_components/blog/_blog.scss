@@ -63,7 +63,7 @@
 				position: relative;
 				height: 300px;
 				width: 100%;
-				@include adaptive(767) {
+				@include adaptive(1535) {
 					height: 200px;
 				}
 
