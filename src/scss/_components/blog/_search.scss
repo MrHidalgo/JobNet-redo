@@ -3,6 +3,7 @@
 .blog-search {
 	.search {
 		&__form {
+			z-index: 0;
 			position: relative;
 
 			&-wrapper {

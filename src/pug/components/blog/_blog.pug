@@ -1,0 +1,104 @@
+// SECTION :: START
+
+section#blog.blog
+
+	.blog__wrapper
+		.blog__wrapper-left
+
+			.blog__box
+				each val, idx in [1,2,3,4,5,6]
+					div
+						.card
+							a.card-head(href="#")
+								img.card-img-top(src='img/img-blog-main-bg--mobile.jpg', alt='')
+							.card-body
+								a.card-title(href="#") ဇူလိုင်လအတွင်း အလုပ်ခေါ်ယူမှုအများဆုံးပြုလုပ်နေသောလုပ်ငန်းနယ်ပယ်များ
+								p.card-data 28th July, 2020
+								p.card-text ယခုနှစ်အစပိုင်းမှာဖြစ်ပျက်သွားတဲ့ကျန်းမာရေးပြဿနာတွေကြောင့် စီးပွားရေးနယ်ပယ်မှာနောက်ဆက်တွဲအကျိုးဆက်တွေကို ခံစားခဲ့ရပြီး အလုပ်အကိုင်ကဏ္ဍမှာလည်းအကြပ်အတည်းေ...
+								a.card-link(href='#') Read More
+
+			.blog__paginational
+				a.blog__paginational-link.blog__paginational-link--first(href="#")
+					i.icon-font.icon-double-arrows
+				a.blog__paginational-link.blog__paginational-link--prev(href="#")
+					i.icon-font.icon-keyboard-arrow-down
+				a.blog__paginational-link.is-active(href="#") 1
+				a.blog__paginational-link(href="#") 2
+				a.blog__paginational-link(href="#") 3
+				a.blog__paginational-link(href="#") ...
+				a.blog__paginational-link.blog__paginational-link--next(href="#")
+					i.icon-font.icon-keyboard-arrow-down
+				a.blog__paginational-link.blog__paginational-link--last(href="#")
+					i.icon-font.icon-double-arrows
+
+		.blog__wrapper-right
+
+			.blog__social
+				p.blog__social-title Social Media:
+				div
+					a.blog__social-link.blog__social-link--facebook(href="https://www.facebook.com/sharer/sharer.php?u=https://www.jobnet.com.mm/blog/")
+						i.icon-font.icon-facebook-circle
+					a.blog__social-link.blog__social-link--linkedin(href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.jobnet.com.mm/blog/&title=")
+						i.icon-font.icon-linkedin-circle
+					a.blog__social-link.blog__social-link--twitter(href="https://twitter.com/share?text=&url=https://www.jobnet.com.mm/blog/")
+						i.icon-font.icon-twitter-circle
+					a.blog__social-link.blog__social-link--google-plus(href="https://plus.google.com/share?text=&url=https://www.jobnet.com.mm/blog/")
+						i.icon-font.icon-google-plus-circle
+
+			.blog__recent
+				.blog__recent-head
+					p Recent Posts
+
+				.blog__recent-body
+
+					each val, idx in [1,2,3,4,5]
+						a.blog__recent-link(href="#" title='')
+							div
+								img(src="img/img-blog-main-bg--mobile.jpg" alt="")
+							div
+								p နယ်ပယ်တစ်ခုတည်းမှာပဲကျွမ်းကျင်တဲ့သူတွေက အနာဂတ်မှာအလုပ်ရဖို့လွယ်ပါမလား
+								span 6th August, 2020
+
+					.blog__paginational
+						a.blog__paginational-link.blog__paginational-link--first(href="#")
+							i.icon-font.icon-double-arrows
+						a.blog__paginational-link.blog__paginational-link--prev(href="#")
+							i.icon-font.icon-keyboard-arrow-down
+						a.blog__paginational-link.is-active(href="#") 1
+						a.blog__paginational-link(href="#") 2
+						a.blog__paginational-link(href="#") 3
+						a.blog__paginational-link(href="#") ...
+						a.blog__paginational-link.blog__paginational-link--next(href="#")
+							i.icon-font.icon-keyboard-arrow-down
+						a.blog__paginational-link.blog__paginational-link--last(href="#")
+							i.icon-font.icon-double-arrows
+
+			.blog__topics
+				.blog__topics-head
+					p Hot topics
+
+				.blog__topics-body
+					a(href="#") Career Advice
+					a(href="#") Companies Hiring
+					a(href="#") Job Fairs
+					a(href="#") Job Search
+
+			.blog__employers
+				.blog__employers-head
+					p Top EMPLOYERS
+
+				.blog__employers-body
+					a(href="#")
+						img(src="img/img-employers-ooredoo.png" alt="")
+					a(href="#")
+						img(src="img/img-employers-kbz-bank.png" alt="")
+					a(href="#")
+						img(src="img/img-employers-cdsg.png" alt="")
+					a(href="#")
+						img(src="img/img-employers-prudential.png" alt="")
+					a(href="#")
+						img(src="img/img-employers-jotun-myanmar.jpg" alt="")
+					a(href="#")
+						img(src="img/img-employers-unilever.png" alt="")
+
+// SECTION :: END
