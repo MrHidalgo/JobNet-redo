@@ -1,10 +1,11 @@
 // LOGOTYPE :: START
 
 .logo {
+	&.logo--employers-sign,
 	&.logo--employers {
 		.logo {
 			&__btn {
-				align-items: center;
+				align-items: flex-end;
 				max-width: unset;
 
 				img {
@@ -13,19 +14,48 @@
 				}
 
 				span {
+					position: relative;
 					padding-left: 5px;
 					color: #ffffff;
 					font-size: 14px;
 					font-weight: 600;
-					line-height: 22px;
+					line-height: 1;
 
 					&:last-of-type {
+						top: 1px;
 						font-size: 16px;
 					}
 				}
 			}
 		}
 	}
+	&.logo--employers {
+		.logo {
+			&__btn {
+				img {
+					max-width: 187px;
+					@include adaptive(1023) {
+						max-width: 157px;
+					}
+				}
+			}
+		}
+	}
+	&.logo--employers-sign {
+		.logo {
+			&__btn {
+				span {
+					top: -1px;
+					line-height: 1.2;
+
+					&:last-of-type {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+
 	&__btn {
 		display: flex;
 		align-items: flex-start;

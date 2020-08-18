@@ -1,0 +1,18 @@
+---
+title: JobNet | Employers
+
+pageClassName: p-employers pt0
+---
+extends shared/_layout
+
+block header
+	include components/_header--employers
+block footer
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/employers/_main
+		include components/employers/_benefits
+		include components/employers/_trusted
+
+		#overlay.overlay

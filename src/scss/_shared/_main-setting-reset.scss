@@ -38,10 +38,18 @@ body {
 		padding-top: 60px;
 	}
 
-	&.p-register ,
-	&.p-employers-login,
-	&.p-employers-signup {
+	&.pt0 {
 		padding-top: 0;
+	}
+
+	&.p-employers {
+		font-family: Roboto, Helvetica, Verdana, Arial, sans-serif, Zawgyi-One;
+
+		.c-btn {
+			span {
+				font-family: Roboto, Helvetica, Verdana, Arial, sans-serif, Zawgyi-One;
+			}
+		}
 	}
 
   > .body {

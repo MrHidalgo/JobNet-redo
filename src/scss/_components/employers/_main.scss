@@ -1,0 +1,151 @@
+// SECTION :: START
+
+.employers-main {
+	font-size: 14px;
+
+	&__wrapper {
+		display: flex;
+		height: 500px;
+		@include adaptive(1023) {
+			flex-direction: column-reverse;
+			height: auto;
+		}
+
+		&-left {
+			width: 40%;
+			padding-bottom: 0;
+			padding-top: 0;
+			background-color: #663398;
+			color: white;
+			text-align: center;
+			@include adaptive(1023) {
+				width: 100%;
+				height: auto;
+				padding-bottom: 30px;
+				padding-top: 30px;
+				margin-top: -5px;
+			}
+		}
+
+		&-right {
+			width: 60%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			@include adaptive(1023) {
+				width: 100%;
+				margin-top: 45px;
+				background-image: none;
+			}
+
+			img {
+				display: none;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				@include adaptive(1023) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__title {
+		margin-top: 100px;
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1;
+		@include adaptive(1023) {
+			margin-top: 0;
+			font-size: 20px;
+		}
+	}
+
+	&__divider {
+		height: 30px;
+		margin: 0 50px;
+		border-bottom: 1px solid silver;
+
+		&-2 {
+			width: 200px;
+			height: 25px;
+			margin: 0 auto;
+		}
+	}
+
+	&__sep {
+		width: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: #663398;
+		font-style: italic;
+		line-height: 1;
+	}
+
+	&__subtitle {
+		padding: 40px 0 15px;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1;
+		@include adaptive(1023) {
+			font-size: 20px;
+			padding-top: 30px;
+		}
+	}
+
+	&__desc {
+		line-height: 2;
+		color: #d4d4d4;
+	}
+
+	&__call {
+		margin-top: 20px;
+		font-weight: bold;
+		line-height: 1;
+
+		a {
+			color: orange;
+		}
+	}
+
+	.c-btn {
+		min-width: 205px;
+		height: 39px;
+		margin: 0 5px;
+		border-radius: 4px;
+		@include adaptive(767) {
+			min-width: 90%;
+			height: 32px;
+			margin-bottom: 10px;
+		}
+
+		span {
+			font-family: Roboto, Helvetica, Verdana, Arial, sans-serif, Zawgyi-One;
+			font-size: 15px;
+			@include adaptive(767) {
+				font-size: 14px;
+			}
+		}
+
+		&__wrapper {
+			justify-content: center;
+			margin: 40px auto 0;
+			@include adaptive(1279) {
+				flex-direction: column;
+			}
+			@include adaptive(1023) {
+				flex-direction: row;
+			}
+			@include adaptive(767) {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+// SECTION :: END

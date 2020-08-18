@@ -354,6 +354,18 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	var employers = function employers() {
+		$('.benefits__pagination i').on('click', function (ev) {
+			var elID = $(ev.currentTarget).attr('data-id');
+
+			$('.benefits__pagination i').removeClass('is-active');
+			$(ev.currentTarget).addClass('is-active');
+
+			$('.benefits__box').removeClass('is-show');
+			$('.benefits__box-' + elID).addClass('is-show');
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -390,6 +402,7 @@ window.addEventListener('scroll', function (ev) {});
 		jobDetailsCard();
 		initDatePicker();
 		addMoreWork();
+		employers();
 
 		modals();
 		// ==========================================

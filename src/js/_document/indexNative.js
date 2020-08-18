@@ -331,6 +331,19 @@
 	};
 
 
+	const employers = () => {
+		$('.benefits__pagination i').on('click', (ev) => {
+			const elID = $(ev.currentTarget).attr('data-id');
+
+			$('.benefits__pagination i').removeClass('is-active');
+			$(ev.currentTarget).addClass('is-active');
+
+			$('.benefits__box').removeClass('is-show');
+			$('.benefits__box-' + elID).addClass('is-show');
+		});
+	};
+
+
 
 	const modals = () => {
 		setTimeout((ev) => {
@@ -369,6 +382,7 @@
 		jobDetailsCard();
 		initDatePicker();
 		addMoreWork();
+		employers();
 
 		modals();
 		// ==========================================
