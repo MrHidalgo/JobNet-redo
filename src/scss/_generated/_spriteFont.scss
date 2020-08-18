@@ -168,14 +168,17 @@
 	@if $filename == twitter-circle {
 		$char: "\E02F";
 	}
-	@if $filename == upload {
+	@if $filename == twitter {
 		$char: "\E030";
 	}
-	@if $filename == user {
+	@if $filename == upload {
 		$char: "\E031";
 	}
-	@if $filename == users {
+	@if $filename == user {
 		$char: "\E032";
+	}
+	@if $filename == users {
+		$char: "\E033";
 	}
 
 	@return $char;
@@ -378,6 +381,10 @@
 }
 .icon-twitter-circle {
 	@include icon(twitter-circle);
+
+}
+.icon-twitter {
+	@include icon(twitter);
 
 }
 .icon-upload {

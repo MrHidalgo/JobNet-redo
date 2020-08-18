@@ -121,6 +121,112 @@
 		}
 	}
 
+	&__description {
+		display: flex;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+
+		&.blog__description--content {
+			p {
+				padding-bottom: 10px;
+				line-height: 28px;
+				color: #000000;
+
+				strong {
+					font-weight: 600;
+				}
+
+				a {
+					color: rgb(5, 99, 193);
+					text-decoration: underline;
+				}
+			}
+		}
+
+		> div {
+			&:nth-of-type(1) {
+				display: flex;
+				align-items: flex-start;
+				width: 75px;
+			}
+
+			&:nth-of-type(2) {
+				flex: 1;
+				min-width: 1px;
+				max-width: 100%;
+			}
+		}
+
+		&-title {
+			padding-top: 0.67em;
+			padding-bottom: 0.67em;
+			font-size: 22px;
+			font-weight: bold;
+			text-align: center;
+			color: purple;
+		}
+
+		&-data {
+			padding-bottom: 10px;
+			font-size: 13px;
+			text-align: center;
+		}
+
+		&-img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+		}
+
+		.blog__topics {
+			border: none;
+		}
+	}
+
+	&__share {
+		position: sticky;
+		top: 125px;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			cursor: default;
+			margin-bottom: 15px;
+			text-decoration: underline;
+			color: #999999;
+			font-size: 12px;
+			font-weight: 500;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 40px;
+
+			&:not(:last-of-type) {
+				margin-bottom: 15px;
+			}
+
+			.icon-font {
+				color: #999999;
+				font-size: 20px;
+			}
+		}
+	}
+
+	&__comment {
+		width: 100%;
+		margin: 15px 0 40px;
+		padding: 26px 18px;
+		box-shadow: 0px 1px 11px -3px rgba(0, 0, 0, 0.59);
+	}
+
 	&__social {
 		display: flex;
 		align-items: center;
@@ -202,6 +308,7 @@
 		&-head {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 			margin-bottom: 15px;
 			padding-left: 5px;
 			padding-bottom: 10px;
@@ -210,6 +317,13 @@
 			p {
 				font-size: 12px;
 				text-transform: uppercase;
+			}
+
+			a {
+				display: flex;
+				color: purple;
+				text-transform: uppercase;
+				font-size: 12px;
 			}
 		}
 

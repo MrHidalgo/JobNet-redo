@@ -63,7 +63,7 @@ PageList:
   ready: 100
 - file: blog.html
   titleName: Blog
-  ready: 1
+  ready: 100
 - file: blog-details.html
   titleName: Blog Details
   ready: 1
