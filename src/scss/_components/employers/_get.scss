@@ -1,0 +1,36 @@
+// SECTION :: START
+
+.get {
+	padding: 30px;
+	background-color: #73479E;
+	color: #ffffff;
+	text-align: center;
+
+	&__title {
+		padding-bottom: 15px;
+		font-size: 20px;
+	}
+
+	&__info {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #d4d4d4;
+	}
+
+	.c-btn {
+		min-width: auto;
+		width: 100%;
+		max-width: 325px;
+		@include adaptive(767) {
+			max-width: 100%;
+		}
+
+		&__wrapper {
+			justify-content: center;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+// SECTION :: END
