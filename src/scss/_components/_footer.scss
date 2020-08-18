@@ -5,6 +5,10 @@
 	flex-wrap: wrap;
 	padding-top: 15px;
 
+	.p-blog & {
+		background-color: #eeeeee;
+	}
+
 	&.footer--employers {
 		padding-top: 0;
 		.footer {

@@ -137,7 +137,7 @@
 			return (vertInView && horInView);
 		}
 
-		if($(window).width() > 1023 && searchForm.length) {
+		if($(window).width() > 1023 && searchFilter.length) {
 			stickybits('.search__filter', {
 				useStickyClasses: true,
 				stickyBitStickyOffset: 95

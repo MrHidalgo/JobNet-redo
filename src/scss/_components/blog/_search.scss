@@ -1,0 +1,15 @@
+// SECTION :: START
+
+.blog-search {
+	.search {
+		&__form {
+			position: relative;
+
+			&-wrapper {
+				max-width: 1350px;
+			}
+		}
+	}
+}
+
+// SECTION :: END
