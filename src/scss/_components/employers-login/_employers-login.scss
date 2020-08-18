@@ -76,6 +76,9 @@
 
 		&-body {
 			padding: 13px 30px 25px 30px;
+			@include adaptive(767) {
+				padding: 25px 20px;
+			}
 		}
 
 		&-title {
