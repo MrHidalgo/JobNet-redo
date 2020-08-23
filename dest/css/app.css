@@ -14843,6 +14843,154 @@ picture {
   font-size: 8px;
 }
 
+/* line 3, src/scss/_components/career/_details.scss */
+.career-details {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+/* line 7, src/scss/_components/career/_details.scss */
+.career-details__wrapper {
+  width: 100%;
+  max-width: 1056px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 14, src/scss/_components/career/_details.scss */
+.career-details__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+/* line 19, src/scss/_components/career/_details.scss */
+.career-details__block > div:nth-of-type(1) {
+  position: relative;
+  width: 56px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/_components/career/_details.scss */
+  .career-details__block > div:nth-of-type(1) {
+    display: none;
+  }
+}
+
+/* line 26, src/scss/_components/career/_details.scss */
+.career-details__block > div:nth-of-type(1) u {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dotted #9458d1;
+}
+
+/* line 36, src/scss/_components/career/_details.scss */
+.career-details__block > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+/* line 44, src/scss/_components/career/_details.scss */
+.career-details__block-icon {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #9458d1;
+}
+
+/* line 55, src/scss/_components/career/_details.scss */
+.career-details__block-icon .icon-font {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 61, src/scss/_components/career/_details.scss */
+  .career-details__block-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  /* line 70, src/scss/_components/career/_details.scss */
+  .career-details__block-title > div:nth-of-type(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-width: 1px;
+    max-width: 100%;
+    padding-left: 10px;
+  }
+}
+
+/* line 79, src/scss/_components/career/_details.scss */
+.career-details__block-title .career-details__block-icon {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/career/_details.scss */
+  .career-details__block-title .career-details__block-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 86, src/scss/_components/career/_details.scss */
+.career-details__block-title p {
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 24px;
+  color: #9458d1;
+}
+
+/* line 94, src/scss/_components/career/_details.scss */
+.career-details__block-desc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #777777;
+}
+
 /* line 3, src/scss/_components/career/_reviews.scss */
 .reviews {
   padding-top: 30px;
