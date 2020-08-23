@@ -150,6 +150,29 @@ var initSmoothScroll = function initSmoothScroll() {
 };
 
 /**
+ * @name initSwiper
+ *
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+
+	new Swiper('.reviewsSlider', {
+		loop: true,
+		effect: 'slide',
+		speed: 750,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false
+		},
+		spaceBetween: 10,
+		navigation: {
+			nextEl: '.reviews__btn--next',
+			prevEl: '.reviews__btn--prev'
+		}
+	});
+};
+
+/**
  * @description Window on load.
  */
 window.addEventListener('load', function (ev) {});
@@ -201,9 +224,7 @@ window.addEventListener('scroll', function (ev) {});
 				$("#sliderDetails .carousel-control").css("display", "none");
 				$("#sliderDetails .carousel-indicators").css("display", "none");
 			} else {
-				$("#sliderDetails").carousel({
-					interval: 7500
-				});
+				$("#sliderDetails").carousel({ interval: 7500 });
 				$("#sliderDetails .carousel-control").attr("style", "");
 				$("#sliderDetails .carousel-indicators").attr("style", "none");
 			}
@@ -454,6 +475,7 @@ window.addEventListener('scroll', function (ev) {});
 		initDatePicker();
 		addMoreWork();
 		employers();
+		initSwiper();
 
 		modals();
 		// ==========================================

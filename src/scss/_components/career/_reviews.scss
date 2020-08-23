@@ -1,0 +1,161 @@
+// SECTION :: START
+
+.reviews {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 2px solid #dfdfdf;
+	border-bottom: 2px solid #dfdfdf;
+	background-color: #f3f3f3;
+
+	.c-grid {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+
+		&-left,
+		&-right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 47px;
+			padding-top: 50px;
+			@include adaptive(767) {
+				display: none;
+			}
+		}
+
+		&-middle {
+			width: 100%;
+			max-width: 962px;
+			@include adaptive(1279) {
+				max-width: calc(100% - (47px * 2));
+			}
+			@include adaptive(767) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+
+		.icon-font {
+			font-size: 40px;
+			color: #e0e0e0;
+		}
+
+		&--prev {
+			.icon-font {
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	.swiper {
+		&-container {
+			padding-top: 50px;
+		}
+
+		&-slide {
+			position: relative;
+			display: flex;
+			min-height: 155px;
+			padding-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #aeaeae;
+			background-color: #f3f3f3;
+			@include adaptive(767) {
+				flex-direction: column;
+			}
+
+			&-left {
+				position: absolute;
+				top: 0;
+				left: 70px;
+				transform: translateY(-50%);
+				display: flex;
+				align-items: center;
+				padding-left: 10px;
+				padding-right: 10px;
+				background-color: #f3f3f3;
+				@include adaptive(767) {
+					left: 10px;
+					transform: translateY(-50px);
+					align-items: flex-start;
+					flex-direction: column;
+					padding-left: 0;
+					background-color: transparent;
+				}
+
+				> div {
+					&:nth-of-type(1) {
+						padding-right: 35px;
+						@include adaptive(767) {
+							padding-right: 0;
+							padding-bottom: 20px;
+						}
+					}
+
+					&:nth-of-type(2) {
+						font-family: 'Gotham Pro', sans-serif;
+						@include adaptive(767) {
+							padding-bottom: 40px;
+						}
+
+						p {
+							font-weight: 500;
+							color: #3b3b3b;
+							font-size: 18px;
+						}
+
+						span {
+							color: #3b3b3b;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+
+			&-right {
+				padding-top: 50px;
+				padding-left: 215px;
+				@include adaptive(767) {
+					width: 100%;
+					padding-top: 157px;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+
+				p {
+					position: relative;
+					width: 100%;
+					max-width: 660px;
+					color: #666666;
+					line-height: 1.5;
+					font-size: 14px;
+				}
+			}
+
+			&-ava {
+				overflow: hidden;
+				position: relative;
+				width: 100px;
+				height: 100px;
+				border-radius: 100%;
+				border: 1px solid #aeaeae;
+
+				img {
+					@extend %imageResCoverAbs;
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END

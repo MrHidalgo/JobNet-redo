@@ -1,0 +1,53 @@
+// SECTION :: START
+
+section#reviews.reviews
+	.c-grid
+		.reviews__wrapper
+			.reviews__wrapper-left
+
+				a.reviews__btn.reviews__btn--prev(href='#careerSlider', role='button', data-slide='prev')
+					i.icon-font.icon-chevron
+
+			.reviews__wrapper-middle
+				mixin swiperContent()
+					.swiper-slide
+						.swiper-slide-left
+							div
+								.swiper-slide-ava
+									img(src="img/img-review-user.jpg" alt="")
+							div
+								p Minn Minn Ko
+								span Customer Development
+						.swiper-slide-right
+							p We value our customers and their contributions to our company. Through the distribution of different brands and products, we hope that we are able to infuse and spread a purpose-driven message within them. I am very proud of inspiring those living in rural areas with our purpose led brands and products
+
+					.swiper-slide
+						.swiper-slide-left
+							div
+								.swiper-slide-ava
+									img(src="img/img-review-user.jpg" alt="")
+							div
+								p Minn Minn Ko
+								span Customer Development
+						.swiper-slide-right
+							p We value our customers and their contributions to our company. Through the distribution of different brands and products, we hope that we are able to infuse and spread a purpose-driven message within them. I am very proud of inspiring those living in rural areas with our purpose led brands and products
+
+					.swiper-slide
+						.swiper-slide-left
+							div
+								.swiper-slide-ava
+									img(src="img/img-review-user.jpg" alt="")
+							div
+								p Minn Minn Ko
+								span Customer Development
+						.swiper-slide-right
+							p We value our customers and their contributions to our company. Through the distribution of different brands and products, we hope that we are able to infuse and spread a purpose-driven message within them. I am very proud of inspiring those living in rural areas with our purpose led brands and products
+
+				+swiper('reviewsSlider', 'swiperContent', false, false, false)
+
+			.reviews__wrapper-right
+
+				a.reviews__btn.reviews__btn--next(href='#careerSlider', role='button', data-slide='next')
+					i.icon-font.icon-chevron
+
+// SECTION :: END

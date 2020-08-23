@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.companies__locations-head img, .locations__box-head img {
+.companies__locations-head img, .locations__box-head img, .reviews .swiper-slide-ava img {
   position: absolute;
   top: 0;
   left: 0;
@@ -175,7 +175,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-edit:before, .icon-email:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
+.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-chevron:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-edit:before, .icon-email:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,259 +186,264 @@
   text-transform: none;
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-antenna:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-approved:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-bank:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-book:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-1:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
+/* line 191, src/scss/_generated/_spriteFont.scss */
 .icon-calendar:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-circle-check:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-chevron:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-clock:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-circle-check:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-close:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-clock:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-cogwheel:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-close:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-cost:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-cogwheel:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-cursor:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-cost:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-dollar-symbol:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-cursor:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-double-arrows:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-dollar-symbol:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-edit:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-double-arrows:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-email:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-edit:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-facebook-circle:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-email:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-facebook-circle:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-factory:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-fast-forward:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-factory:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-filter:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-fast-forward:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-folder:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-filter:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-google-plus-circle:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-folder:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-google:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-google-plus-circle:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-graph:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-google:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-home:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-graph:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-keyboard-arrow-down:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-home:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-like:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-keyboard-arrow-down:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin-circle:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-like:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin-circle:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-locked:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-locked:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-menu:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-notification:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-menu:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-office-building:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-notification:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-photo:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-office-building:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-photo:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-printer:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-programming:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-printer:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-programming:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-shopping-bag:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-sort:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-shopping-bag:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-star-empty:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-sort:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-star:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-star-empty:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-success:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-three-chevron-arrows:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-success:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-twitter-circle:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-three-chevron-arrows:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-twitter-circle:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-upload:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-upload:before {
   content: "";
 }
 
-/* line 188, src/scss/_generated/_spriteFont.scss */
-.icon-users:before {
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
+}
+
+/* line 191, src/scss/_generated/_spriteFont.scss */
+.icon-users:before {
+  content: "";
 }
 
 @font-face {
@@ -14838,33 +14843,257 @@ picture {
   font-size: 8px;
 }
 
-/* line 5, src/scss/_components/career/_search.scss */
-.career-search .search__form {
-  z-index: 0;
-  position: relative;
-  background-image: url("../img/img-career-search-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
+/* line 3, src/scss/_components/career/_reviews.scss */
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  background-color: #f3f3f3;
 }
 
-/* line 13, src/scss/_components/career/_search.scss */
-.career-search .search__form:after {
-  content: '';
+/* line 10, src/scss/_components/career/_reviews.scss */
+.reviews .c-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 15, src/scss/_components/career/_reviews.scss */
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* line 21, src/scss/_components/career/_reviews.scss */
+.reviews__wrapper-left, .reviews__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/career/_reviews.scss */
+  .reviews__wrapper-left, .reviews__wrapper-right {
+    display: none;
+  }
+}
+
+/* line 33, src/scss/_components/career/_reviews.scss */
+.reviews__wrapper-middle {
+  width: 100%;
+  max-width: 962px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 33, src/scss/_components/career/_reviews.scss */
+  .reviews__wrapper-middle {
+    max-width: -webkit-calc(100% - (47px * 2));
+    max-width: calc(100% - (47px * 2));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 33, src/scss/_components/career/_reviews.scss */
+  .reviews__wrapper-middle {
+    max-width: 100%;
+  }
+}
+
+/* line 45, src/scss/_components/career/_reviews.scss */
+.reviews__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 48, src/scss/_components/career/_reviews.scss */
+.reviews__btn .icon-font {
+  font-size: 40px;
+  color: #e0e0e0;
+}
+
+/* line 54, src/scss/_components/career/_reviews.scss */
+.reviews__btn--prev .icon-font {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* line 61, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-container {
+  padding-top: 50px;
+}
+
+/* line 65, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 155px;
+  padding-bottom: 20px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #aeaeae;
+  background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 65, src/scss/_components/career/_reviews.scss */
+  .reviews .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 77, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-left {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  left: 70px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f3f3f3;
 }
 
-/* line 23, src/scss/_components/career/_search.scss */
-.career-search .search__form-wrapper {
-  z-index: 2;
+@media screen and (max-width: 767px) {
+  /* line 77, src/scss/_components/career/_reviews.scss */
+  .reviews .swiper-slide-left {
+    left: 10px;
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+    background-color: transparent;
+  }
+}
+
+/* line 97, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-left > div:nth-of-type(1) {
+  padding-right: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 97, src/scss/_components/career/_reviews.scss */
+  .reviews .swiper-slide-left > div:nth-of-type(1) {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 105, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-left > div:nth-of-type(2) {
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 105, src/scss/_components/career/_reviews.scss */
+  .reviews .swiper-slide-left > div:nth-of-type(2) {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 111, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-left > div:nth-of-type(2) p {
+  font-weight: 500;
+  color: #3b3b3b;
+  font-size: 18px;
+}
+
+/* line 117, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-left > div:nth-of-type(2) span {
+  color: #3b3b3b;
+  font-size: 16px;
+}
+
+/* line 125, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-right {
+  padding-top: 50px;
+  padding-left: 215px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 125, src/scss/_components/career/_reviews.scss */
+  .reviews .swiper-slide-right {
+    width: 100%;
+    padding-top: 157px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* line 135, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-right p {
   position: relative;
-  max-width: 1350px;
+  width: 100%;
+  max-width: 660px;
+  color: #666666;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* line 145, src/scss/_components/career/_reviews.scss */
+.reviews .swiper-slide-ava {
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 1px solid #aeaeae;
 }
 
 /* line 4, src/scss/_components/career/_video.scss */
@@ -14945,6 +15174,35 @@ picture {
   -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 5, src/scss/_components/career/_search.scss */
+.career-search .search__form {
+  z-index: 0;
+  position: relative;
+  background-image: url("../img/img-career-search-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 13, src/scss/_components/career/_search.scss */
+.career-search .search__form:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 23, src/scss/_components/career/_search.scss */
+.career-search .search__form-wrapper {
+  z-index: 2;
+  position: relative;
+  max-width: 1350px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

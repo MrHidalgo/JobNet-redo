@@ -37,9 +37,7 @@
 				$("#sliderDetails .carousel-control").css("display", "none");
 				$("#sliderDetails .carousel-indicators").css("display", "none");
 			} else {
-				$("#sliderDetails").carousel({
-					interval: 7500
-				});
+				$("#sliderDetails").carousel({interval: 7500});
 				$("#sliderDetails .carousel-control").attr("style", "");
 				$("#sliderDetails .carousel-indicators").attr("style", "none");
 			}
@@ -391,6 +389,7 @@
 		initDatePicker();
 		addMoreWork();
 		employers();
+		initSwiper();
 
 		modals();
 		// ==========================================
