@@ -375,6 +375,7 @@
 		// lib
 		initHamburger();
 		initSmoothScroll();
+		initPopups();
 		// ==========================================
 
 		// callback

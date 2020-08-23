@@ -958,6 +958,105 @@ picture {
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
+/* line 1, src/scss/_shared/_magnificPopup.scss */
+.modal {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+/* line 16, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/* line 22, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 28, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+/* line 32, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 38, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+/* line 42, src/scss/_shared/_magnificPopup.scss */
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* line 53, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* line 59, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 65, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 69, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* line 75, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+/* line 79, src/scss/_shared/_magnificPopup.scss */
+.mfp-slide-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
@@ -5333,18 +5432,57 @@ picture {
 }
 
 /* line 11, src/scss/_components/homepage/_description.scss */
+.description--career {
+  padding-top: 30px;
+}
+
+/* line 14, src/scss/_components/homepage/_description.scss */
+.description--career .c-grid {
+  max-width: 1084px;
+}
+
+/* line 19, src/scss/_components/homepage/_description.scss */
+.description--career .description__title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3b3b3b;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 27, src/scss/_components/homepage/_description.scss */
+.description--career .description__desc {
+  color: #777777;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* line 33, src/scss/_components/homepage/_description.scss */
+.description--career .description__more {
+  margin-top: 0;
+}
+
+/* line 36, src/scss/_components/homepage/_description.scss */
+.description--career .description__more a {
+  color: #9458d1;
+  border: 1px solid #9458d1;
+  background: #ffffff;
+  height: 40px;
+}
+
+/* line 46, src/scss/_components/homepage/_description.scss */
 .description__title {
   padding-bottom: 26px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/homepage/_description.scss */
+  /* line 46, src/scss/_components/homepage/_description.scss */
   .description__title {
     text-align: center;
   }
 }
 
-/* line 18, src/scss/_components/homepage/_description.scss */
+/* line 53, src/scss/_components/homepage/_description.scss */
 .description__desc {
   padding-bottom: 20px;
   color: #777777;
@@ -5352,13 +5490,13 @@ picture {
   line-height: 28px;
 }
 
-/* line 24, src/scss/_components/homepage/_description.scss */
+/* line 59, src/scss/_components/homepage/_description.scss */
 .description__desc a {
   color: #663399;
   font-weight: bold;
 }
 
-/* line 30, src/scss/_components/homepage/_description.scss */
+/* line 65, src/scss/_components/homepage/_description.scss */
 .description__more {
   position: relative;
   display: -webkit-box;
@@ -5377,7 +5515,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 30, src/scss/_components/homepage/_description.scss */
+  /* line 65, src/scss/_components/homepage/_description.scss */
   .description__more {
     width: 100%;
     max-width: 350px;
@@ -5386,7 +5524,7 @@ picture {
   }
 }
 
-/* line 44, src/scss/_components/homepage/_description.scss */
+/* line 79, src/scss/_components/homepage/_description.scss */
 .description__more:hover:after {
   background-color: #663399;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -5394,7 +5532,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 49, src/scss/_components/homepage/_description.scss */
+/* line 84, src/scss/_components/homepage/_description.scss */
 .description__more:hover a {
   color: #663399;
   -webkit-transition: color 0.4s ease-in-out;
@@ -5402,7 +5540,7 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 55, src/scss/_components/homepage/_description.scss */
+/* line 90, src/scss/_components/homepage/_description.scss */
 .description__more:after {
   content: '';
   position: absolute;
@@ -5418,13 +5556,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 55, src/scss/_components/homepage/_description.scss */
+  /* line 90, src/scss/_components/homepage/_description.scss */
   .description__more:after {
     display: none;
   }
 }
 
-/* line 69, src/scss/_components/homepage/_description.scss */
+/* line 104, src/scss/_components/homepage/_description.scss */
 .description__more a {
   z-index: 2;
   position: relative;
@@ -5455,19 +5593,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/homepage/_description.scss */
+  /* line 104, src/scss/_components/homepage/_description.scss */
   .description__more a {
     width: 100%;
     height: 47px;
   }
 }
 
-/* line 89, src/scss/_components/homepage/_description.scss */
+/* line 124, src/scss/_components/homepage/_description.scss */
 .description__more a:after {
   content: attr(data-more);
 }
 
-/* line 99, src/scss/_components/homepage/_description.scss */
+/* line 134, src/scss/_components/homepage/_description.scss */
 .description .collapse.show + .description__more a:after {
   content: attr(data-less);
 }
@@ -14698,6 +14836,115 @@ picture {
 /* line 529, src/scss/_components/blog/_blog.scss */
 .blog__paginational-link .icon-font.icon-keyboard-arrow-down {
   font-size: 8px;
+}
+
+/* line 5, src/scss/_components/career/_search.scss */
+.career-search .search__form {
+  z-index: 0;
+  position: relative;
+  background-image: url("../img/img-career-search-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 13, src/scss/_components/career/_search.scss */
+.career-search .search__form:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 23, src/scss/_components/career/_search.scss */
+.career-search .search__form-wrapper {
+  z-index: 2;
+  position: relative;
+  max-width: 1350px;
+}
+
+/* line 4, src/scss/_components/career/_video.scss */
+.career-video .c-grid {
+  max-width: 1084px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_components/career/_video.scss */
+  .career-video__wrapper-1 .description__more {
+    max-width: 100%;
+  }
+  /* line 15, src/scss/_components/career/_video.scss */
+  .career-video__wrapper-1 .description__more a {
+    width: 105px;
+    margin-left: 0;
+  }
+}
+
+/* line 23, src/scss/_components/career/_video.scss */
+.career-video__wrapper-2 {
+  border-bottom: 1px solid #aeaeae;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_components/career/_video.scss */
+  .career-video__wrapper-2 {
+    border-bottom: 0;
+  }
+}
+
+/* line 31, src/scss/_components/career/_video.scss */
+.career-video__box {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 31, src/scss/_components/career/_video.scss */
+  .career-video__box {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 48, src/scss/_components/career/_video.scss */
+.career-video__box:hover:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 55, src/scss/_components/career/_video.scss */
+.career-video__box:after {
+  content: '';
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.43);
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

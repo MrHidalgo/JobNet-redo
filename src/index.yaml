@@ -67,3 +67,6 @@ PageList:
 - file: blog-details.html
   titleName: Blog Details
   ready: 100
+- file: career.html
+  titleName: Career
+  ready: 100

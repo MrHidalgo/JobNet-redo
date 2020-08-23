@@ -8,6 +8,41 @@
 		padding-bottom: 21px;
 	}
 
+	&--career {
+		padding-top: 30px;
+
+		.c-grid {
+			max-width: 1084px;
+		}
+
+		.description {
+			&__title {
+				text-align: left;
+				font-size: 18px;
+				font-weight: 600;
+				color: #3b3b3b;
+				font-family: 'Quicksand', sans-serif;
+			}
+
+			&__desc {
+				color: #777777;
+				font-size: 16px;
+				line-height: 18px;
+			}
+
+			&__more {
+				margin-top: 0;
+
+				a {
+					color: #9458d1;
+					border: 1px solid #9458d1;
+					background: #ffffff;
+					height: 40px;
+				}
+			}
+		}
+	}
+
 	&__title {
 		padding-bottom: 26px;
 		@include adaptive(767) {
