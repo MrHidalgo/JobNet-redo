@@ -374,6 +374,7 @@
 		initHamburger();
 		initSmoothScroll();
 		initPopups();
+		initSwiper();
 		// ==========================================
 
 		// callback
@@ -389,7 +390,6 @@
 		initDatePicker();
 		addMoreWork();
 		employers();
-		initSwiper();
 
 		modals();
 		// ==========================================

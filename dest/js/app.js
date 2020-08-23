@@ -170,6 +170,36 @@ var initSwiper = function initSwiper() {
 			prevEl: '.reviews__btn--prev'
 		}
 	});
+
+	new Swiper('.jobsSlider', {
+		loop: false,
+		effect: 'slide',
+		speed: 750,
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false
+		},
+		slidesPerView: 3,
+		spaceBetween: 10,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 10
+			},
+			1024: {
+				slidesPerView: 3,
+				spaceBetween: 10
+			}
+		},
+		navigation: {
+			nextEl: '.jobs__btn--next',
+			prevEl: '.jobs__btn--prev'
+		}
+	});
 };
 
 /**
@@ -460,6 +490,7 @@ window.addEventListener('scroll', function (ev) {});
 		initHamburger();
 		initSmoothScroll();
 		initPopups();
+		initSwiper();
 		// ==========================================
 
 		// callback
@@ -475,7 +506,6 @@ window.addEventListener('scroll', function (ev) {});
 		initDatePicker();
 		addMoreWork();
 		employers();
-		initSwiper();
 
 		modals();
 		// ==========================================

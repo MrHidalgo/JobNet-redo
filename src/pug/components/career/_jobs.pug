@@ -1,0 +1,45 @@
+// SECTION :: START
+
+section#jobs.jobs
+	.c-grid
+		.jobs__wrapper.jobs__wrapper-1
+
+			p.jobs__title
+				i.icon-font.icon-fire
+				span Hot Jobs at Unilever Myanmar Group
+
+		.jobs__wrapper.jobs__wrapper-2
+			.jobs__wrapper-left
+
+				a.jobs__btn.jobs__btn--prev(href='#', role='button', data-slide='prev')
+					i.icon-font.icon-chevron
+
+			.jobs__wrapper-middle
+
+				mixin swiperContent()
+					each val, idx in [1,2,3,4,5]
+						.swiper-slide
+							.swiper-slide-head
+								p Project Consultant
+								span Unilever Myanmar Group
+							.swiper-slide-body
+								ul
+									li
+										div
+											i.icon-font.icon-shopping-bag
+										div
+											p Manager
+									li
+										div
+											i.icon-font.icon-pin
+										div
+											p Yangon
+
+				+swiper('jobsSlider', 'swiperContent', false, false, false)
+
+			.jobs__wrapper-right
+
+				a.jobs__btn.jobs__btn--next(href='#', role='button', data-slide='next')
+					i.icon-font.icon-chevron
+
+// SECTION :: END

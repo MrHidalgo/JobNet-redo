@@ -175,7 +175,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-chevron:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-edit:before, .icon-email:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
+.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-chevron:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-edit:before, .icon-email:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-fire:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,264 +186,269 @@
   text-transform: none;
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-antenna:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-approved:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-bank:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-book:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-1:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-calendar:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-chevron:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-circle-check:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-clock:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-close:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-cogwheel:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-cost:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-cursor:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-dollar-symbol:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-double-arrows:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-edit:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-email:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-facebook-circle:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-factory:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-fast-forward:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
+/* line 194, src/scss/_generated/_spriteFont.scss */
 .icon-filter:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-folder:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-fire:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-google-plus-circle:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-folder:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-google:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-google-plus-circle:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-graph:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-google:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-home:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-graph:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-keyboard-arrow-down:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-home:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-like:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-keyboard-arrow-down:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin-circle:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-like:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin-circle:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-locked:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-locked:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-menu:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-notification:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-menu:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-office-building:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-notification:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-photo:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-office-building:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-photo:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-printer:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-programming:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-printer:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-programming:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-shopping-bag:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-sort:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-shopping-bag:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-star-empty:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-sort:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-star:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-star-empty:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-success:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-three-chevron-arrows:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-success:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-twitter-circle:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-three-chevron-arrows:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-twitter-circle:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-upload:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-upload:before {
   content: "";
 }
 
-/* line 191, src/scss/_generated/_spriteFont.scss */
-.icon-users:before {
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
+}
+
+/* line 194, src/scss/_generated/_spriteFont.scss */
+.icon-users:before {
+  content: "";
 }
 
 @font-face {
@@ -14843,6 +14848,266 @@ picture {
   font-size: 8px;
 }
 
+/* line 3, src/scss/_components/career/_jobs.scss */
+.jobs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #dfdfdf;
+  border-bottom: 2px solid #dfdfdf;
+  background-color: #f3f3f3;
+}
+
+/* line 11, src/scss/_components/career/_jobs.scss */
+.jobs__wrapper-1 {
+  padding-bottom: 20px;
+}
+
+/* line 15, src/scss/_components/career/_jobs.scss */
+.jobs__wrapper-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+/* line 23, src/scss/_components/career/_jobs.scss */
+.jobs__wrapper-2 .jobs__wrapper-left, .jobs__wrapper-2 .jobs__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_components/career/_jobs.scss */
+  .jobs__wrapper-2 .jobs__wrapper-left, .jobs__wrapper-2 .jobs__wrapper-right {
+    width: 30px;
+  }
+}
+
+/* line 34, src/scss/_components/career/_jobs.scss */
+.jobs__wrapper-2 .jobs__wrapper-middle {
+  width: 100%;
+  max-width: 962px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 34, src/scss/_components/career/_jobs.scss */
+  .jobs__wrapper-2 .jobs__wrapper-middle {
+    max-width: -webkit-calc(100% - (47px * 2));
+    max-width: calc(100% - (47px * 2));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 34, src/scss/_components/career/_jobs.scss */
+  .jobs__wrapper-2 .jobs__wrapper-middle {
+    max-width: -webkit-calc(100% - (20px * 2));
+    max-width: calc(100% - (20px * 2));
+  }
+}
+
+/* line 49, src/scss/_components/career/_jobs.scss */
+.jobs__title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 49, src/scss/_components/career/_jobs.scss */
+  .jobs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+/* line 59, src/scss/_components/career/_jobs.scss */
+.jobs__title .icon-font {
+  color: #f69322;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 59, src/scss/_components/career/_jobs.scss */
+  .jobs__title .icon-font {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/* line 69, src/scss/_components/career/_jobs.scss */
+.jobs__title span {
+  font-size: 24px;
+  color: #3b3b3b;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+/* line 77, src/scss/_components/career/_jobs.scss */
+.jobs__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 80, src/scss/_components/career/_jobs.scss */
+.jobs__btn .icon-font {
+  font-size: 40px;
+  color: #e0e0e0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 80, src/scss/_components/career/_jobs.scss */
+  .jobs__btn .icon-font {
+    font-size: 30px;
+  }
+}
+
+/* line 89, src/scss/_components/career/_jobs.scss */
+.jobs__btn--prev .icon-font {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* line 96, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 130px;
+  padding: 8px 14px;
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #9458d1;
+}
+
+/* line 107, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide-head {
+  padding: 10px 10px 12px 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 111, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide-head p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* line 119, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide-head span {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: block;
+  font-size: 14px;
+  color: #666666;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 130, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 133, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+/* line 139, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li > div:nth-of-type(1) {
+  padding-right: 10px;
+}
+
+/* line 142, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 149, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li .icon-font {
+  font-size: 14px;
+  color: #9b63d4;
+}
+
+/* line 153, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li .icon-font.icon-pin {
+  color: #f69322;
+}
+
+/* line 158, src/scss/_components/career/_jobs.scss */
+.jobs .swiper-slide ul li p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  font-size: 14px;
+  color: #666666;
+}
+
 /* line 3, src/scss/_components/career/_details.scss */
 .career-details {
   padding-top: 40px;
@@ -15050,7 +15315,7 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 21, src/scss/_components/career/_reviews.scss */
   .reviews__wrapper-left, .reviews__wrapper-right {
-    display: none;
+    width: 30px;
   }
 }
 
@@ -15071,7 +15336,8 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 33, src/scss/_components/career/_reviews.scss */
   .reviews__wrapper-middle {
-    max-width: 100%;
+    max-width: -webkit-calc(100% - (20px * 2));
+    max-width: calc(100% - (20px * 2));
   }
 }
 
@@ -15089,19 +15355,26 @@ picture {
   color: #e0e0e0;
 }
 
-/* line 54, src/scss/_components/career/_reviews.scss */
+@media screen and (max-width: 767px) {
+  /* line 48, src/scss/_components/career/_reviews.scss */
+  .reviews__btn .icon-font {
+    font-size: 30px;
+  }
+}
+
+/* line 57, src/scss/_components/career/_reviews.scss */
 .reviews__btn--prev .icon-font {
   -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-/* line 61, src/scss/_components/career/_reviews.scss */
+/* line 64, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-container {
   padding-top: 50px;
 }
 
-/* line 65, src/scss/_components/career/_reviews.scss */
+/* line 68, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide {
   position: relative;
   display: -webkit-box;
@@ -15117,7 +15390,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 65, src/scss/_components/career/_reviews.scss */
+  /* line 68, src/scss/_components/career/_reviews.scss */
   .reviews .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15127,7 +15400,7 @@ picture {
   }
 }
 
-/* line 77, src/scss/_components/career/_reviews.scss */
+/* line 80, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-left {
   position: absolute;
   top: 0;
@@ -15149,7 +15422,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 77, src/scss/_components/career/_reviews.scss */
+  /* line 80, src/scss/_components/career/_reviews.scss */
   .reviews .swiper-slide-left {
     left: 10px;
     -webkit-transform: translateY(-50px);
@@ -15169,52 +15442,52 @@ picture {
   }
 }
 
-/* line 97, src/scss/_components/career/_reviews.scss */
+/* line 100, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-left > div:nth-of-type(1) {
   padding-right: 35px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 97, src/scss/_components/career/_reviews.scss */
+  /* line 100, src/scss/_components/career/_reviews.scss */
   .reviews .swiper-slide-left > div:nth-of-type(1) {
     padding-right: 0;
     padding-bottom: 20px;
   }
 }
 
-/* line 105, src/scss/_components/career/_reviews.scss */
+/* line 108, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-left > div:nth-of-type(2) {
   font-family: 'Gotham Pro', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 105, src/scss/_components/career/_reviews.scss */
+  /* line 108, src/scss/_components/career/_reviews.scss */
   .reviews .swiper-slide-left > div:nth-of-type(2) {
     padding-bottom: 40px;
   }
 }
 
-/* line 111, src/scss/_components/career/_reviews.scss */
+/* line 114, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-left > div:nth-of-type(2) p {
   font-weight: 500;
   color: #3b3b3b;
   font-size: 18px;
 }
 
-/* line 117, src/scss/_components/career/_reviews.scss */
+/* line 120, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-left > div:nth-of-type(2) span {
   color: #3b3b3b;
   font-size: 16px;
 }
 
-/* line 125, src/scss/_components/career/_reviews.scss */
+/* line 128, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-right {
   padding-top: 50px;
   padding-left: 215px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/career/_reviews.scss */
+  /* line 128, src/scss/_components/career/_reviews.scss */
   .reviews .swiper-slide-right {
     width: 100%;
     padding-top: 157px;
@@ -15223,7 +15496,7 @@ picture {
   }
 }
 
-/* line 135, src/scss/_components/career/_reviews.scss */
+/* line 138, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-right p {
   position: relative;
   width: 100%;
@@ -15233,7 +15506,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 145, src/scss/_components/career/_reviews.scss */
+/* line 148, src/scss/_components/career/_reviews.scss */
 .reviews .swiper-slide-ava {
   overflow: hidden;
   position: relative;

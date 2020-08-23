@@ -93,95 +93,98 @@
 	@if $filename == filter {
 		$char: "\E016";
 	}
-	@if $filename == folder {
+	@if $filename == fire {
 		$char: "\E017";
 	}
-	@if $filename == google-plus-circle {
+	@if $filename == folder {
 		$char: "\E018";
 	}
-	@if $filename == google {
+	@if $filename == google-plus-circle {
 		$char: "\E019";
 	}
-	@if $filename == graph {
+	@if $filename == google {
 		$char: "\E01A";
 	}
-	@if $filename == home {
+	@if $filename == graph {
 		$char: "\E01B";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == home {
 		$char: "\E01C";
 	}
-	@if $filename == like {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E01D";
 	}
-	@if $filename == linkedin-circle {
+	@if $filename == like {
 		$char: "\E01E";
 	}
-	@if $filename == linkedin {
+	@if $filename == linkedin-circle {
 		$char: "\E01F";
 	}
-	@if $filename == locked {
+	@if $filename == linkedin {
 		$char: "\E020";
 	}
-	@if $filename == mail {
+	@if $filename == locked {
 		$char: "\E021";
 	}
-	@if $filename == menu {
+	@if $filename == mail {
 		$char: "\E022";
 	}
-	@if $filename == notification {
+	@if $filename == menu {
 		$char: "\E023";
 	}
-	@if $filename == office-building {
+	@if $filename == notification {
 		$char: "\E024";
 	}
-	@if $filename == photo {
+	@if $filename == office-building {
 		$char: "\E025";
 	}
-	@if $filename == pin {
+	@if $filename == photo {
 		$char: "\E026";
 	}
-	@if $filename == printer {
+	@if $filename == pin {
 		$char: "\E027";
 	}
-	@if $filename == programming {
+	@if $filename == printer {
 		$char: "\E028";
 	}
-	@if $filename == search {
+	@if $filename == programming {
 		$char: "\E029";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E02A";
 	}
-	@if $filename == sort {
+	@if $filename == shopping-bag {
 		$char: "\E02B";
 	}
-	@if $filename == star-empty {
+	@if $filename == sort {
 		$char: "\E02C";
 	}
-	@if $filename == star {
+	@if $filename == star-empty {
 		$char: "\E02D";
 	}
-	@if $filename == success {
+	@if $filename == star {
 		$char: "\E02E";
 	}
-	@if $filename == three-chevron-arrows {
+	@if $filename == success {
 		$char: "\E02F";
 	}
-	@if $filename == twitter-circle {
+	@if $filename == three-chevron-arrows {
 		$char: "\E030";
 	}
-	@if $filename == twitter {
+	@if $filename == twitter-circle {
 		$char: "\E031";
 	}
-	@if $filename == upload {
+	@if $filename == twitter {
 		$char: "\E032";
 	}
-	@if $filename == user {
+	@if $filename == upload {
 		$char: "\E033";
 	}
-	@if $filename == users {
+	@if $filename == user {
 		$char: "\E034";
+	}
+	@if $filename == users {
+		$char: "\E035";
 	}
 
 	@return $char;
@@ -284,6 +287,10 @@
 }
 .icon-filter {
 	@include icon(filter);
+
+}
+.icon-fire {
+	@include icon(fire);
 
 }
 .icon-folder {

@@ -26,7 +26,7 @@
 			width: 47px;
 			padding-top: 50px;
 			@include adaptive(767) {
-				display: none;
+				width: 30px;
 			}
 		}
 
@@ -37,7 +37,7 @@
 				max-width: calc(100% - (47px * 2));
 			}
 			@include adaptive(767) {
-				max-width: 100%;
+				max-width: calc(100% - (20px * 2));
 			}
 		}
 	}
@@ -48,6 +48,9 @@
 		.icon-font {
 			font-size: 40px;
 			color: #e0e0e0;
+			@include adaptive(767) {
+				font-size: 30px;
+			}
 		}
 
 		&--prev {
