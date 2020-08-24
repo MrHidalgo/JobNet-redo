@@ -81,3 +81,20 @@
     }
   }
 }
+
+.mfp-gallery {
+	.mfp-content {
+		width: 100%;
+		max-width: 768px;
+
+		figure {
+			img {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}

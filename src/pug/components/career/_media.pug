@@ -1,0 +1,24 @@
+// SECTION :: START
+
+section#media.media
+	.c-grid
+		.media__wrapper.media__wrapper-1
+
+			.media__heading
+				p Unilever Myanmar Group jobs and Career Profile
+
+		.media__wrapper.media__wrapper-2
+
+			.media__img-wrapper(popup-gallery-js)
+				each val, idx in [1,2,3,4,5,6,7,8]
+					if(idx % 2 === 0)
+						div
+							a.media__img(href="img/img-login-bg.jpg")
+								img(src="img/img-login-bg.jpg" alt="")
+					else
+						div
+							a.media__img(href="img/img-blog-main-bg--mobile.jpg")
+								img(src="img/img-blog-main-bg--mobile.jpg" alt="")
+
+
+// SECTION :: END
