@@ -1,0 +1,53 @@
+// SECTION :: START
+
+section#blog-main.blog-main.blog-main--slider
+
+	.blog-main__btn-wrapper
+		a.blog-main__btn.blog-main__btn--prev(href="#")
+			i.icon-font.icon-chevron
+		a.blog-main__btn.blog-main__btn--next(href="#")
+			i.icon-font.icon-chevron
+
+	mixin swiperContent()
+		.swiper-slide
+			img.swiper-slide-img.swiper-slide-img--desktop(src='img/img-blog-main-bg-1.png')
+			img.swiper-slide-img.swiper-slide-img--mobile(src='img/img-blog-main-bg-1--mobile.jpg')
+			a.blog-main__wrapper(href="#")
+
+				.blog-main__wrapper-left
+					div
+						p.blog-main__label Featured Article
+						p.blog-main__title နယ်ပယ်တစ်ခုတည်းမှာပဲကျွမ်းကျင်တဲ့သူတွေက အနာဂတ်မှာအလုပ်ရဖို့လွယ်ပါမလား
+						p.blog-main__data 6th August, 2020
+
+				.blog-main__wrapper-right
+
+		.swiper-slide
+			img.swiper-slide-img.swiper-slide-img--desktop(src='img/img-blog-main-bg-2.png')
+			img.swiper-slide-img.swiper-slide-img--mobile(src='img/img-blog-main-bg-2--mobile.png')
+			a.blog-main__wrapper(href="#")
+
+				.blog-main__wrapper-left
+					div
+						p.blog-main__label Featured Article
+						p.blog-main__title နယ်ပယ်တစ်ခုတည်းမှာပဲကျွမ်းကျင်တဲ့သူတွေက အနာဂတ်မှာအလုပ်ရဖို့လွယ်ပါမလား
+						p.blog-main__data 6th August, 2020
+
+				.blog-main__wrapper-right
+
+		.swiper-slide
+			img.swiper-slide-img.swiper-slide-img--desktop(src='img/img-blog-main-bg-3.png')
+			img.swiper-slide-img.swiper-slide-img--mobile(src='img/img-blog-main-bg-3--mobile.jpg')
+			a.blog-main__wrapper(href="#")
+
+				.blog-main__wrapper-left
+					div
+						p.blog-main__label Featured Article
+						p.blog-main__title နယ်ပယ်တစ်ခုတည်းမှာပဲကျွမ်းကျင်တဲ့သူတွေက အနာဂတ်မှာအလုပ်ရဖို့လွယ်ပါမလား
+						p.blog-main__data 6th August, 2020
+
+				.blog-main__wrapper-right
+
+	+swiper('mainBlogSlider', 'swiperContent', false, false, false)
+
+// SECTION :: END

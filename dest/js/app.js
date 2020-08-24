@@ -225,6 +225,16 @@ var initSwiper = function initSwiper() {
 			prevEl: '.jobs__btn--prev'
 		}
 	});
+
+	new Swiper('.mainBlogSlider', {
+		loop: true,
+		effect: 'slide',
+		speed: 750,
+		navigation: {
+			nextEl: '.blog-main__btn--next',
+			prevEl: '.blog-main__btn--prev'
+		}
+	});
 };
 
 /**

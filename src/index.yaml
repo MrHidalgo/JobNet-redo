@@ -64,6 +64,9 @@ PageList:
 - file: blog.html
   titleName: Blog
   ready: 100
+- file: employer-blog.html
+  titleName: Employer Blog
+  ready: 100
 - file: blog-details.html
   titleName: Blog Details
   ready: 100

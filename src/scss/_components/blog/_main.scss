@@ -1,6 +1,7 @@
 // SECTION :: START
 
 .blog-main {
+	overflow: hidden;
 	position: relative;
 	background-image: url('../img/img-blog-main-bg.png');
 	background-position: top right;
@@ -8,6 +9,54 @@
 	background-size: cover;
 	@include adaptive(1023) {
 		background-image: none;
+	}
+
+	&.blog-main--slider {
+		background-image: none;
+
+		.blog-main {
+			&__wrapper {
+				padding-left: 95px;
+				padding-right: 95px;
+				@include adaptive(1279) {
+					left: 0;
+					width: 100%;
+					height: 355px;
+
+					&:after {
+						background: linear-gradient(transparent, rgba(0, 0, 0, 0.68));
+					}
+				}
+				@include adaptive(767) {
+					height: 227px;
+				}
+			}
+		}
+
+		.swiper {
+			&-slide {
+				background-position: top right;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				&-img {
+					@extend %imageResCoverAbs;
+
+					&--desktop {
+						@include adaptive(767) {
+							display: none;
+						}
+					}
+
+					&--mobile {
+						display: none;
+						@include adaptive(767) {
+							display: flex;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&:after {
@@ -19,6 +68,39 @@
 		width: 100%;
 		height: 100%;
 		background: linear-gradient(transparent, rgba(0, 0, 0, 0.68));
+	}
+
+	&__btn {
+		z-index: 10;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		@include adaptive(767) {
+			display: none;
+		}
+
+		&--prev {
+			left: 20px;
+			@include adaptive(1023) {
+				left: 10px;
+			}
+
+			.icon-font {
+				transform: scaleX(-1);
+			}
+		}
+
+		&--next {
+			right: 20px;
+			@include adaptive(1023) {
+				right: 10px;
+			}
+		}
+
+		.icon-font {
+			color: rgba(#fff, 0.9);
+			font-size: 50px;
+		}
 	}
 
 	&__img {
@@ -58,6 +140,8 @@
 		}
 
 		&-left {
+			z-index: 2;
+			position: relative;
 			display: flex;
 			align-items: center;
 			width: 100%;
