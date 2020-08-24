@@ -1,0 +1,60 @@
+// SECTION :: START
+
+section#career-table.career-table
+	.c-grid
+
+		p.career-table__title All KBZ Bank Jobs
+
+		.career-table__wrapper.career-table__wrapper-1
+
+			.career-table__box
+
+				.career-table__box-head
+					.career-table__box-col.career-table__box-col-1
+						p Position
+					.career-table__box-col.career-table__box-col-2
+						p Experience level
+					.career-table__box-col.career-table__box-col-3
+						p Posts
+					.career-table__box-col.career-table__box-col-4
+						p Max Salary
+					.career-table__box-col.career-table__box-col-5
+						p Job Location
+					.career-table__box-col.career-table__box-col-6
+						p Last Posted
+					.career-table__box-col.career-table__box-col-7
+						a(href="#") View all
+
+				.career-table__box-body
+					each val, idx in [1,2,3]
+						.career-table__box-row
+							.career-table__box-col.career-table__box-col-1
+								p Position
+								a(href="#") Customer Relationship Supervisor (Mandalay)
+							.career-table__box-col.career-table__box-col-2
+								p Experience level
+								span Experienced Non-Manager
+							.career-table__box-col.career-table__box-col-3
+								p Posts
+								span 11
+							.career-table__box-col.career-table__box-col-4
+								p Max Salary
+								a(href="#") Login to view Salary
+							.career-table__box-col.career-table__box-col-5
+								p Job Location
+								span Mandalay
+							.career-table__box-col.career-table__box-col-6
+								p Last Posted
+								span 2 days ago
+							.career-table__box-col.career-table__box-col-7
+								.c-btn__wrapper.c-btn__wrapper--center
+									a.c-btn.c-btn--purple(href="#")
+										span View job
+
+
+		.career-table__wrapper.career-table__wrapper-2
+			.c-btn__wrapper.c-btn__wrapper--center
+				a.c-btn.c-btn--green(href="#")
+					span See All Jobs
+
+// SECTION :: END

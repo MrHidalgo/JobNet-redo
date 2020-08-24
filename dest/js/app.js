@@ -492,6 +492,16 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	var careerCB = function careerCB() {
+		$('[career-floater-js]').on('click', function (ev) {
+			$('.career-floater__info').fadeIn(350);
+
+			setTimeout(function (ev) {
+				$('.career-floater__info').fadeOut(350);
+			}, 3500);
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -531,6 +541,7 @@ window.addEventListener('scroll', function (ev) {});
 		initDatePicker();
 		addMoreWork();
 		employers();
+		careerCB();
 
 		modals();
 		// ==========================================

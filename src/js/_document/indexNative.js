@@ -349,6 +349,17 @@
 	};
 
 
+	const careerCB = () => {
+		$('[career-floater-js]').on('click', (ev) => {
+			$('.career-floater__info').fadeIn(350);
+
+			setTimeout((ev) => {
+				$('.career-floater__info').fadeOut(350);
+			}, 3500);
+		});
+	};
+
+
 
 	const modals = () => {
 		setTimeout((ev) => {
@@ -390,6 +401,7 @@
 		initDatePicker();
 		addMoreWork();
 		employers();
+		careerCB();
 
 		modals();
 		// ==========================================

@@ -169,10 +169,8 @@
 			justify-content: space-between;
 			min-height: calc(100% - 38px);
 			padding: 15px;
-			@include adaptive(1023) {
-				flex-wrap: wrap;
-			}
 			@include adaptive(767) {
+				flex-wrap: wrap;
 				padding-left: 0;
 				padding-right: 0;
 			}
@@ -239,12 +237,15 @@
 						flex: 1;
 						min-width: 1px;
 						max-width: 100%;
+						@include adaptive(1023) {
+							flex: unset;
+						}
 					}
 					&:nth-of-type(3) {
 						flex: 3;
 						min-width: 1px;
 						max-width: 100%;
-						@include adaptive(1023) {
+						@include adaptive(767) {
 							flex: unset;
 							width: 100%;
 							padding-left: 25px;

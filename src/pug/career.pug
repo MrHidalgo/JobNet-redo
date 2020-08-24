@@ -10,9 +10,22 @@ block content
 
 		include components/career/_main
 		include components/career/_media
+		include components/career/_table
 		include components/career/_jobs
 		include components/career/_details
 		include components/career/_reviews
 		include components/career/_video
 		include components/career/_description
 		include components/career/_search
+
+		.career-floater
+			div
+				.c-btn__wrapper
+					a.c-btn.c-btn--green(href="#")
+						span Submit General Application!
+			div
+				a(href="#" career-floater-js)
+					i.icon-font.icon-information
+
+			.career-floater__info
+				p If you haven't found a suitable job, submit a General Application and recruiters at this company will keep your CV for future review!

@@ -111,80 +111,83 @@
 	@if $filename == home {
 		$char: "\E01C";
 	}
-	@if $filename == keyboard-arrow-down {
+	@if $filename == information {
 		$char: "\E01D";
 	}
-	@if $filename == like {
+	@if $filename == keyboard-arrow-down {
 		$char: "\E01E";
 	}
-	@if $filename == linkedin-circle {
+	@if $filename == like {
 		$char: "\E01F";
 	}
-	@if $filename == linkedin {
+	@if $filename == linkedin-circle {
 		$char: "\E020";
 	}
-	@if $filename == locked {
+	@if $filename == linkedin {
 		$char: "\E021";
 	}
-	@if $filename == mail {
+	@if $filename == locked {
 		$char: "\E022";
 	}
-	@if $filename == menu {
+	@if $filename == mail {
 		$char: "\E023";
 	}
-	@if $filename == notification {
+	@if $filename == menu {
 		$char: "\E024";
 	}
-	@if $filename == office-building {
+	@if $filename == notification {
 		$char: "\E025";
 	}
-	@if $filename == photo {
+	@if $filename == office-building {
 		$char: "\E026";
 	}
-	@if $filename == pin {
+	@if $filename == photo {
 		$char: "\E027";
 	}
-	@if $filename == printer {
+	@if $filename == pin {
 		$char: "\E028";
 	}
-	@if $filename == programming {
+	@if $filename == printer {
 		$char: "\E029";
 	}
-	@if $filename == search {
+	@if $filename == programming {
 		$char: "\E02A";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == search {
 		$char: "\E02B";
 	}
-	@if $filename == sort {
+	@if $filename == shopping-bag {
 		$char: "\E02C";
 	}
-	@if $filename == star-empty {
+	@if $filename == sort {
 		$char: "\E02D";
 	}
-	@if $filename == star {
+	@if $filename == star-empty {
 		$char: "\E02E";
 	}
-	@if $filename == success {
+	@if $filename == star {
 		$char: "\E02F";
 	}
-	@if $filename == three-chevron-arrows {
+	@if $filename == success {
 		$char: "\E030";
 	}
-	@if $filename == twitter-circle {
+	@if $filename == three-chevron-arrows {
 		$char: "\E031";
 	}
-	@if $filename == twitter {
+	@if $filename == twitter-circle {
 		$char: "\E032";
 	}
-	@if $filename == upload {
+	@if $filename == twitter {
 		$char: "\E033";
 	}
-	@if $filename == user {
+	@if $filename == upload {
 		$char: "\E034";
 	}
-	@if $filename == users {
+	@if $filename == user {
 		$char: "\E035";
+	}
+	@if $filename == users {
+		$char: "\E036";
 	}
 
 	@return $char;
@@ -311,6 +314,10 @@
 }
 .icon-home {
 	@include icon(home);
+
+}
+.icon-information {
+	@include icon(information);
 
 }
 .icon-keyboard-arrow-down {

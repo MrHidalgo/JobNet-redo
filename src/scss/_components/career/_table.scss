@@ -1,0 +1,258 @@
+// SECTION :: START
+
+.career-table {
+	padding-top: 15px;
+	padding-bottom: 30px;
+
+	&__title {
+		padding-bottom: 25px;
+		font-size: 24px;
+		font-weight: 700;
+		color: #3b3b3b;
+	}
+
+	&__wrapper {
+		&-2 {
+			padding-top: 20px;
+
+			.c-btn {
+				width: 100%;
+				max-width: 240px;
+			}
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+
+		&-head,
+		&-body {
+			width: 100%;
+		}
+
+		&-head {
+			display: flex;
+			align-items: center;
+			height: 48px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			margin-bottom: 3px;
+			border: 1px solid #dfdfdf;
+			border-bottom: 2px solid #9458d1;
+			border-radius: 5px 5px 0 0;
+			@include adaptive(1023) {
+				display: none;
+			}
+
+			p {
+				font-weight: 500;
+				font-size: 14px;
+				color: #3b3b3b;
+			}
+
+			a {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				font-size: 14px;
+				color: #9458d1;
+				font-weight: 500;
+			}
+		}
+
+		&-body {
+			border: 1px solid #dfdfdf;
+			border-radius: 0 0 5px 5px;
+			@include adaptive(1023) {
+				border-radius: 0;
+				border: none;
+			}
+
+			p {
+				display: none;
+				font-weight: 500;
+				font-size: 14px;
+				color: #3b3b3b;
+				@include adaptive(1023) {
+					display: flex;
+				}
+			}
+
+			.career-table__box {
+				&-row {
+					&:hover {
+						background-color: #f3f4f5;
+						@include transition(background-color);
+					}
+				}
+
+				&-col {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: flex;
+					align-items: center;
+					min-height: 100%;
+					padding-left: 5px;
+					padding-right: 5px;
+					@include adaptive(1023) {
+						display: block;
+						padding: 10px 13px;
+
+						&-7 {
+							display: flex;
+							align-items: center;
+						}
+					}
+
+					&:not(:first-of-type) {
+						justify-content: center;
+						text-align: center;
+						@include adaptive(1023) {
+							text-align: left;
+						}
+					}
+
+					> span,
+					> a {
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: block;
+					}
+
+					> span {
+						font-size: 14px;
+						color: #3b3b3b;
+					}
+
+					> a {
+						font-size: 14px;
+						color: #9458d1;
+					}
+
+					.c-btn {
+						width: 100%;
+						max-width: 130px;
+						min-width: unset;
+						height: 33px;
+						@include adaptive(1023) {
+							max-width: 100%;
+						}
+
+						span {
+							text-transform: uppercase;
+							font-weight: 500;
+							font-size: 14px;
+						}
+
+						&__wrapper {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		&-row {
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 48px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			@include transition(background-color);
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+				height: auto;
+				padding: 0;
+				border: 1px solid #dfdfdf;
+
+				&:not(:last-of-type) {
+					margin-bottom: 20px;
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: -10px;
+						left: 0;
+						width: 100%;
+						height: 2px;
+						background-color: #9458d1;
+					}
+				}
+			}
+		}
+
+		&-col {
+			flex-basis: 50px;
+			@include adaptive(1023) {
+				flex: unset;
+				height: 60px;
+			}
+
+			&:not(:last-of-type) {
+				border-right: 1px solid #dfdfdf;
+				@include adaptive(1023) {
+					border-right: none;
+					border-bottom: 1px solid #dfdfdf;
+				}
+			}
+
+			&-1 {
+				padding: 0 5px 0 10px;
+			}
+
+			&-2,
+			&-3,
+			&-4,
+			&-5,
+			&-6 {
+				padding-left: 20px;
+			}
+
+			&-1 {
+				flex-grow: 6;
+				@include adaptive(1023) {
+					width: 100%;
+				}
+			}
+			&-2 {
+				flex-grow: 4;
+				@include adaptive(1023) {
+					width: 100%;
+				}
+			}
+			&-3 {
+				flex-grow: 1;
+				@include adaptive(1023) {
+					width: 50%;
+				}
+			}
+			&-4 {
+				flex-grow: 3;
+				@include adaptive(1023) {
+					width: 50%;
+				}
+			}
+			&-5 {
+				flex-grow: 3;
+				@include adaptive(1023) {
+					width: 50%;
+				}
+			}
+			&-6 {
+				flex-grow: 2;
+				@include adaptive(1023) {
+					width: 50%;
+				}
+			}
+			&-7 {
+				flex-grow: 3;
+			}
+		}
+	}
+}
+
+// SECTION :: END

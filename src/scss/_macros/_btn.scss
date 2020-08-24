@@ -55,6 +55,10 @@
 	&__wrapper {
 		display: flex;
 		align-items: center;
+
+		&--center {
+			justify-content: center;
+		}
 	}
 
 	span {
