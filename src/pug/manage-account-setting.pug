@@ -1,0 +1,21 @@
+---
+title: JobNet | Manage Account Setting
+
+pageClassName: p-manage-account-setting body--inner
+---
+extends shared/_layout
+
+block header
+	include components/_header--inner
+block footer
+	include components/_footer--inner
+
+block modal
+	include components/modal/_modal-manage
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/search/_search--inner
+
+		include components/manage-account-setting/_manage

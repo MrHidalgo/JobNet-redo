@@ -96,6 +96,19 @@
 		}
 	}
 
+	&--red {
+		background-color: #fb0109;
+
+		&:before,
+		&:after {
+			background-color: lighten(#fb0109, 2%);
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
+
 	&--purple {
 		background-color: #663399;
 
@@ -169,6 +182,20 @@
 		}
 	}
 
+	&--borderRed {
+		border: 1px solid red;
+		background-color: #fff;
+
+		&:before,
+		&:after {
+			background-color: lighten(#DCDCDC, 11%);
+		}
+
+		span {
+			color: red;
+		}
+	}
+
 	&--borderBlue {
 		border: 1px solid #2A65D1;
 		background-color: #fff;
@@ -226,6 +253,26 @@
 
 		span {
 			color: #fff;
+		}
+	}
+
+	&--borderGray {
+		border: 1px solid silver;
+		background-color: transparent;
+
+		&:hover {
+			span {
+				color: #000;
+			}
+		}
+
+		&:before,
+		&:after {
+			background-color: lighten(silver, 11%);
+		}
+
+		span {
+			color: gray;
 		}
 	}
 }

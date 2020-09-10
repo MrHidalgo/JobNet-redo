@@ -1,0 +1,65 @@
+// SECTION :: START
+
+.profile {
+	padding-top: 7px;
+	@include adaptive(1279) {
+		padding-top: 15px;
+	}
+
+	.c-grid {
+		max-width: 1370px;
+	}
+
+	&__wrapper {
+		display: flex;
+		@include adaptive(1279) {
+			flex-wrap: wrap;
+		}
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-right: 20px;
+			@include adaptive(1279) {
+				padding-right: 0;
+			}
+		}
+
+		&-right {
+			width: 100%;
+			max-width: 365px;
+			@include adaptive(1279) {
+				max-width: 100%;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.profile__section {
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	&__section {
+		overflow: hidden;
+		border-radius: 3px;
+		background-color: #fff;
+		box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+	}
+
+	@import "profile--main";
+	@import "profile--strength";
+	@import "profile--about";
+	@import "profile--experience";
+	@import "profile--skills";
+	@import "profile--languages";
+	@import "profile--references";
+	@import "profile--preferred";
+	@import "profile--manage";
+	@import "profile--jobs";
+	@import "profile--employers";
+	@import "profile--news";
+}
+
+// SECTION :: END

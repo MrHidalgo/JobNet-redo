@@ -360,6 +360,128 @@
 	};
 
 
+	/*const headerSearch = () => {
+		const headerFormElem = $('.header__form input');
+
+		headerFormElem.on('focus', (ev) => {
+			$(ev.currentTarget).closest('.header__form').addClass('is-focus');
+		});
+		headerFormElem.on('blur', (ev) => {
+			$(ev.currentTarget).closest('.header__form').removeClass('is-focus');
+		});
+	};*/
+
+
+	const headerNavLine = () => {
+		$('.header__nav-link').hover(
+			(ev) => {
+				const el = $(ev.currentTarget),
+					elParent = $(el).closest('.header__nav'),
+					lineNav = $('.header__nav-line');
+
+				lineNav.css({
+					left: el[0].getBoundingClientRect().left - $(elParent)[0].getBoundingClientRect().left,
+					width: el[0].getBoundingClientRect().width
+				});
+			},
+			(ev) => {
+				const lineNav = $('.header__nav-line');
+
+				lineNav.css({
+					left: 0, width: 0
+				});
+			}
+		);
+	};
+
+
+	/*const mainFormFieldToggle = () => {
+		$('[main-more-js]').on('click', (ev) => {
+			const _parentNode = $(ev.currentTarget).closest('.main__form');
+
+			$(ev.currentTarget).toggleClass('is-active');
+
+			_parentNode.find('.main__form-field-2, .main__form-field-3').slideToggle(400).css({
+				'display': 'flex'
+			});
+		});
+	};*/
+
+
+	const profileOpportunity = () => {
+		$('[profile-opportunity-js]').on('click', (ev) => {
+			$('[profile-opportunity-js]').removeClass('is-active');
+			$(ev.currentTarget).addClass('is-active');
+		});
+	};
+
+
+	const selectDropdown = () => {
+		$('[select-dropdown-js]').select2({
+			width: '100%',
+			placeholder: 'Select an option'
+		});
+	};
+
+
+	const manageAccountSettingCB = () => {
+		$('[manage-account-js]').on('change', (ev) => {
+			if($(ev.currentTarget).is(':checked')) {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').show();
+			} else {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').hide();
+			}
+		});
+		$('[manage-accountOther-js]').on('change', (ev) => {
+			if($(ev.currentTarget).is(':checked')) {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').hide();
+			}
+		});
+	};
+
+
+	const menuCB = () => {
+		$('[menu-open-js]').on('click', (ev) => {
+			$('#menu').addClass('is-open');
+			$('#overlay').addClass('is-show');
+		});
+		$('[menu-close-js]').on('click', (ev) => {
+			$('#menu').addClass('is-animate').removeClass('is-open');
+			$('#overlay').removeClass('is-show');
+
+			setTimeout(() => {
+				$('#menu').removeClass('is-animate');
+			}, 350);
+		});
+	};
+
+
+	const stickyBox = () => {
+		const elem = $('[sticky-box-js]');
+
+		function helperFixed() {
+			if($(window).width() > 1279) {
+				if (elem.length > 0 && $(document).scrollTop() > 392) {
+					elem.css({
+						position: 'fixed',
+						width: 405,
+						bottom: 40
+					});
+				} else {
+					elem.css({position: 'static'});
+				}
+			} else {
+				elem.css({position: 'static', width: '100%'});
+			}
+		}
+
+		helperFixed();
+
+		$(window).on("resize scroll", function () {
+			helperFixed();
+		});
+	};
+
 
 	const modals = () => {
 		setTimeout((ev) => {
@@ -402,6 +524,12 @@
 		addMoreWork();
 		employers();
 		careerCB();
+		headerNavLine();
+		profileOpportunity();
+		selectDropdown();
+		manageAccountSettingCB();
+		menuCB();
+		stickyBox();
 
 		modals();
 		// ==========================================

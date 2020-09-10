@@ -73,3 +73,24 @@ PageList:
 - file: career.html
   titleName: Career
   ready: 100
+- file: profile.html
+  titleName: My Profile
+  ready: 100
+- file: manage-account-setting.html
+  titleName: Manage Account Setting
+  ready: 100
+- file: job-alert.html
+  titleName: Job Alert
+  ready: 100
+- file: recommended-jobs.html
+  titleName: Recommended Jobs
+  ready: 100
+- file: applications.html
+  titleName: Applications
+  ready: 100
+- file: dashboard.html
+  titleName: Dashboard
+  ready: 100
+- file: employer-views.html
+  titleName: Employer Views
+  ready: 100

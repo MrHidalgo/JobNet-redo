@@ -1,0 +1,18 @@
+---
+title: JobNet | Job Alert
+
+pageClassName: p-job-alert body--inner
+---
+extends shared/_layout
+
+block header
+	include components/_header--inner
+block footer
+	include components/_footer--inner
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/search/_search--inner
+
+		include components/job-alert/_job-alert

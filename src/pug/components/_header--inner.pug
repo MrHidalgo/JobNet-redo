@@ -1,0 +1,124 @@
+// HEADER :: START
+
+header#header.header-inner
+
+	.c-grid-fluid
+
+		.header-inner__wrapper
+			.header-inner__wrapper-left
+				div
+
+					.logo.logo--header
+						a.logo__btn(href="/")
+							img.logo__img(src="img/logo.png" alt="")
+
+				div
+					div
+						a.header-inner__hamburger(href="#" menu-open-js)
+							.header-inner__hamburger-img
+								img(src="img/img-user.jpg" alt="")
+							.header-inner__hamburger-circle
+								span
+								span
+								span
+					div
+
+						form.header-inner__search(action='' method='' autocomplete='off')
+							i.icon-font.icon-search
+							input(type='text' name='' placeholder='Search Jobs, Companies,..')
+
+					div
+
+						.logo.logo--header
+							a.logo__btn(href="/")
+								img.logo__img(src="img/logo-sq.png" alt="")
+
+
+			.header-inner__wrapper-mobile
+
+				div
+
+					.header-inner__nav-wrapper
+						nav.header-inner__nav
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/index.html") Home
+							li.header-inner__nav-item
+								a.header-inner__nav-link.is-active(href="/profile.html") My Profile
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/dashboard.html") Dashboard
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/job-alert.html") Job Alerts
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/recommended-jobs.html") Recommended Jobs
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/applications.html") Applications
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/employer-views.html")
+									span Employer Views
+									img(src="img/img-blog-noti.gif" alt="")
+							li.header-inner__nav-item
+								a.header-inner__nav-link(href="/blog.html") News
+
+						.header-inner__nav-line
+
+				div
+
+					a.header-inner__lang(href="#")
+						img(src="img/myanmar.svg" alt="")
+
+				div
+
+					.header-inner__user
+
+						a.header-inner__user-ava(href="#" id="headerUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							img(src="img/img-user.jpg" alt="")
+
+						.header-inner__user-dropdown(class="dropdown-menu dropdown-menu-right" aria-labelledby="headerUser")
+							.header-inner__user-head
+								div
+									.header-inner__user-img
+										img(src="img/img-user.jpg" alt="")
+								div
+									p Htet Aung Kyaw
+									a(href="#") htetaungkyaw.viper@gmail.com
+									span 09972418987
+
+							.header-inner__user-body
+								a.header-inner__user-link(href="#")
+									div
+										i.icon-font.icon-graph
+									div
+										span Update Profile
+								.header-inner__user-link-dropdown
+									a.header-inner__user-link.header-inner__user-link--dropdown(href="#" id="headerUserInner" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+										div
+											i.icon-font.icon-graph
+										div
+											span Download CV Templates
+									.header-inner__user-dropdownInner(class="dropdown-menu dropdown-menu-right" aria-labelledby="headerUserInner")
+										.header-inner__user-body
+											a.header-inner__user-link(href="#")
+												div
+												div
+													span Corporate CV Version
+											a.header-inner__user-link(href="#")
+												div
+												div
+													span Creative CV Version
+											a.header-inner__user-link(href="#")
+												div
+												div
+													span Classic CV Version
+								a.header-inner__user-link(href="#")
+									div
+										i.icon-font.icon-graph
+									div
+										span Change Password
+								a.header-inner__user-link(href="#")
+									div
+										i.icon-font.icon-graph
+									div
+										span Log Out
+
+
+// HEADER :: END

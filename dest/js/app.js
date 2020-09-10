@@ -235,6 +235,30 @@ var initSwiper = function initSwiper() {
 			prevEl: '.blog-main__btn--prev'
 		}
 	});
+
+	new Swiper('.dashboardJobsLast', {
+		loop: true,
+		effect: 'slide',
+		speed: 750,
+		spaceBetween: 11,
+		slidesPerView: 'auto',
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		}
+	});
+
+	new Swiper('.dashboardHiringSlider', {
+		loop: true,
+		effect: 'slide',
+		speed: 750,
+		spaceBetween: 0,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.dashboard__hiring-btn--next',
+			prevEl: '.dashboard__hiring-btn--prev'
+		}
+	});
 };
 
 /**
@@ -512,6 +536,115 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	/*const headerSearch = () => {
+ 	const headerFormElem = $('.header__form input');
+ 		headerFormElem.on('focus', (ev) => {
+ 		$(ev.currentTarget).closest('.header__form').addClass('is-focus');
+ 	});
+ 	headerFormElem.on('blur', (ev) => {
+ 		$(ev.currentTarget).closest('.header__form').removeClass('is-focus');
+ 	});
+ };*/
+
+	var headerNavLine = function headerNavLine() {
+		$('.header__nav-link').hover(function (ev) {
+			var el = $(ev.currentTarget),
+			    elParent = $(el).closest('.header__nav'),
+			    lineNav = $('.header__nav-line');
+
+			lineNav.css({
+				left: el[0].getBoundingClientRect().left - $(elParent)[0].getBoundingClientRect().left,
+				width: el[0].getBoundingClientRect().width
+			});
+		}, function (ev) {
+			var lineNav = $('.header__nav-line');
+
+			lineNav.css({
+				left: 0, width: 0
+			});
+		});
+	};
+
+	/*const mainFormFieldToggle = () => {
+ 	$('[main-more-js]').on('click', (ev) => {
+ 		const _parentNode = $(ev.currentTarget).closest('.main__form');
+ 			$(ev.currentTarget).toggleClass('is-active');
+ 			_parentNode.find('.main__form-field-2, .main__form-field-3').slideToggle(400).css({
+ 			'display': 'flex'
+ 		});
+ 	});
+ };*/
+
+	var profileOpportunity = function profileOpportunity() {
+		$('[profile-opportunity-js]').on('click', function (ev) {
+			$('[profile-opportunity-js]').removeClass('is-active');
+			$(ev.currentTarget).addClass('is-active');
+		});
+	};
+
+	var selectDropdown = function selectDropdown() {
+		$('[select-dropdown-js]').select2({
+			width: '100%',
+			placeholder: 'Select an option'
+		});
+	};
+
+	var manageAccountSettingCB = function manageAccountSettingCB() {
+		$('[manage-account-js]').on('change', function (ev) {
+			if ($(ev.currentTarget).is(':checked')) {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').show();
+			} else {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').hide();
+			}
+		});
+		$('[manage-accountOther-js]').on('change', function (ev) {
+			if ($(ev.currentTarget).is(':checked')) {
+				$(ev.currentTarget).closest('.modal__form').find('.modal__form-field').hide();
+			}
+		});
+	};
+
+	var menuCB = function menuCB() {
+		$('[menu-open-js]').on('click', function (ev) {
+			$('#menu').addClass('is-open');
+			$('#overlay').addClass('is-show');
+		});
+		$('[menu-close-js]').on('click', function (ev) {
+			$('#menu').addClass('is-animate').removeClass('is-open');
+			$('#overlay').removeClass('is-show');
+
+			setTimeout(function () {
+				$('#menu').removeClass('is-animate');
+			}, 350);
+		});
+	};
+
+	var stickyBox = function stickyBox() {
+		var elem = $('[sticky-box-js]');
+
+		function helperFixed() {
+			if ($(window).width() > 1279) {
+				if (elem.length > 0 && $(document).scrollTop() > 392) {
+					elem.css({
+						position: 'fixed',
+						width: 405,
+						bottom: 40
+					});
+				} else {
+					elem.css({ position: 'static' });
+				}
+			} else {
+				elem.css({ position: 'static', width: '100%' });
+			}
+		}
+
+		helperFixed();
+
+		$(window).on("resize scroll", function () {
+			helperFixed();
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -552,6 +685,12 @@ window.addEventListener('scroll', function (ev) {});
 		addMoreWork();
 		employers();
 		careerCB();
+		headerNavLine();
+		profileOpportunity();
+		selectDropdown();
+		manageAccountSettingCB();
+		menuCB();
+		stickyBox();
 
 		modals();
 		// ==========================================

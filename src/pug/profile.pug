@@ -1,0 +1,31 @@
+---
+title: JobNet | My Profile
+
+pageClassName: p-profile body--inner
+---
+extends shared/_layout
+
+block header
+	include components/_header--inner
+block footer
+	include components/_footer--inner
+
+block modal
+	include components/modal/_modal-profile-main
+	include components/modal/_modal-profile-qr
+	include components/modal/_modal-profile-cv
+	include components/modal/_modal-profile-update
+	include components/modal/_modal-profile-about
+	include components/modal/_modal-profile-experience
+	include components/modal/_modal-profile-education
+	include components/modal/_modal-profile-skills
+	include components/modal/_modal-profile-languages
+	include components/modal/_modal-profile-references
+	include components/modal/_modal-profile-preferred
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/search/_search--inner
+
+		include components/profile/_profile

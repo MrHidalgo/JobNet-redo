@@ -1,0 +1,136 @@
+// SECTION :: START
+
+.dashboard {
+	padding-top: 7px;
+	@include adaptive(1279) {
+		padding-top: 15px;
+	}
+
+	.c-grid {
+		max-width: 1370px;
+	}
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		@include adaptive(1279) {
+			flex-direction: column-reverse;
+		}
+
+		&-left {
+			width: 405px;
+			@include adaptive(1279) {
+				width: 100%;
+				padding-top: 20px;
+			}
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-left: 20px;
+			@include adaptive(1279) {
+				padding-left: 0;
+			}
+		}
+	}
+
+	&__line {
+		height: 1px;
+		margin: 22px 0;
+		border: none;
+		background-color: #dcdcdc;
+	}
+
+	@import "dashboard--stat";
+	@import "dashboard--employers";
+	@import "dashboard--jobs";
+	@import "dashboard--hiring";
+	@import "dashboard--news";
+
+	.manage {
+		padding: 0;
+
+		&__profile,
+		&__upload {
+			display: flex;
+		}
+
+		&__profile {
+			margin: 0;
+			margin-bottom: 20px;
+			@include adaptive(767) {
+				box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+			}
+
+			.profile__main {
+				overflow: hidden;
+
+				&-bg {
+					> div {
+						height: 140px;
+						@include adaptive(767) {
+							height: 110px;
+						}
+					}
+				}
+
+				&-body-wrapper {
+					&-1 {
+						padding: 30px 10px 15px;
+					}
+				}
+
+				&-toggle {
+					display: block;
+				}
+
+				&-head {
+					padding: 15px 5px;
+					@include adaptive(767) {
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+				}
+
+				&-body {
+					&-wrapper {
+						&-1  {
+							> div:nth-of-type(1) {
+								@include adaptive(767) {
+									padding-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+
+				&-name span,
+				&-position span,
+				&-country span {
+					min-width: 75px;
+				}
+
+				&-steps-title {
+					padding-bottom: 15px;
+					@include adaptive(767) {
+						padding-bottom: 0;
+					}
+				}
+
+				&-strength {
+					@include adaptive(767) {
+						padding-bottom: 5px;
+
+						&-title {
+							padding-bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END

@@ -44,7 +44,10 @@
 /// COMPONENTS
 /// ===============
 @import "_components/header";
+@import "_components/header--inner";
 @import "_components/footer";
+@import "_components/footer--inner";
+@import "_components/menu";
 
 @import "_components/homepage/main";
 @import "_components/homepage/employers";
@@ -93,12 +96,27 @@
 @import "_components/blog/navigation";
 @import "_components/blog/blog";
 
-//@import "_components/career/main";
-//@import "_components/career/table";
-//@import "_components/career/media";
-//@import "_components/career/jobs";
-//@import "_components/career/details";
-//@import "_components/career/reviews";
-//@import "_components/career/video";
-//@import "_components/career/search";
-//@import "_components/career/floater";
+@import "_components/career/main";
+@import "_components/career/table";
+@import "_components/career/media";
+@import "_components/career/jobs";
+@import "_components/career/details";
+@import "_components/career/reviews";
+@import "_components/career/video";
+@import "_components/career/search";
+@import "_components/career/floater";
+
+@import "_components/profile/profile";
+
+@import "_components/manage-account-setting/manage";
+
+@import "_components/job-alert/job-alert";
+
+@import "_components/recommended-jobs/recommended-jobs";
+
+@import "_components/applications/job";
+@import "_components/applications/update";
+
+@import "_components/dashboard/dashboard";
+
+@import "_components/employer-views/employer-views";
