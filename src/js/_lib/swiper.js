@@ -92,10 +92,7 @@ const initSwiper = () => {
 
 	new Swiper('.mainSlider', {
 		loop: true,
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		},
+		effect: 'slide',
 		speed: 750,
 		autoplay: {
 			delay: 7500,
