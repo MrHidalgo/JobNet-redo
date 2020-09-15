@@ -252,11 +252,34 @@ var initSwiper = function initSwiper() {
 		loop: true,
 		effect: 'slide',
 		speed: 750,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
 		spaceBetween: 0,
 		slidesPerView: 1,
 		navigation: {
 			nextEl: '.dashboard__hiring-btn--next',
 			prevEl: '.dashboard__hiring-btn--prev'
+		}
+	});
+
+	new Swiper('.mainSlider', {
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
+		speed: 750,
+		autoplay: {
+			delay: 7500,
+			disableOnInteraction: false
+		},
+		spaceBetween: 0,
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
 		}
 	});
 };
@@ -587,6 +610,8 @@ window.addEventListener('scroll', function (ev) {});
 			width: '100%',
 			placeholder: 'Select an option'
 		});
+
+		$("[choose-dropdown-js]").chosen({ no_results_text: "Oops, nothing found!" });
 	};
 
 	var manageAccountSettingCB = function manageAccountSettingCB() {

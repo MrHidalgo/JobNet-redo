@@ -78,6 +78,10 @@ const initSwiper = () => {
 		loop: true,
 		effect: 'slide',
 		speed: 750,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false
+		},
 		spaceBetween: 0,
 		slidesPerView: 1,
 		navigation: {
@@ -86,5 +90,23 @@ const initSwiper = () => {
 		},
 	});
 
+	new Swiper('.mainSlider', {
+		loop: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
+		speed: 750,
+		autoplay: {
+			delay: 7500,
+			disableOnInteraction: false
+		},
+		spaceBetween: 0,
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
+		}
+	});
 
 };

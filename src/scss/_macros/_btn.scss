@@ -13,7 +13,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	border: none;
-	border-radius: 6px;
+	border-radius: 4px;
 	@include transition(box-shadow);
 	@include adaptive(1535) {
 		padding-left: 10px;
@@ -136,11 +136,24 @@
 	}
 
 	&--green {
-		background-color: #36AF90;
+		background-color: #1ac880;
 
 		&:before,
 		&:after {
-			background-color: lighten(#36AF90, 2%);
+			background-color: lighten(#1ac880, 2%);
+		}
+
+		span {
+			color: #ffffff;
+		}
+	}
+
+	&--gray {
+		background-color: silver;
+
+		&:before,
+		&:after {
+			background-color: lighten(silver, 2%);
 		}
 
 		span {
@@ -169,7 +182,7 @@
 	}
 
 	&--borderGreen {
-		border: 1px solid #36AF90;
+		border: 1px solid #1ac880;
 		background-color: #fff;
 
 		&:before,
@@ -178,7 +191,7 @@
 		}
 
 		span {
-			color: #36AF90;
+			color: #1ac880;
 		}
 	}
 

@@ -118,6 +118,115 @@
 		z-index: 1999;
 	}
 
+	&#modalChangePass {
+		* {
+			font-family: 'GothamPro', sans-serif;
+		}
+
+		.close {
+			outline: none;
+			opacity: 1 !important;
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+
+			.icon-font {
+				color: #000000;
+				font-size: 14px;
+			}
+		}
+
+		.modal {
+			&-dialog {
+				width: 100%;
+				max-width: 470px;
+				@include adaptive(767) {
+					max-width: calc(90% + 20px);
+				}
+			}
+
+			&-content {
+				padding: 48px;
+				@include adaptive(767) {
+					padding: 35px;
+				}
+			}
+
+			&-header {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0;
+				padding-bottom: 45px;
+				border-bottom: none;
+				@include adaptive(767) {
+					padding-bottom: 30px;
+				}
+			}
+
+			&-body {
+				padding: 0;
+
+				form {
+					display: flex;
+					flex-direction: column;
+
+					> div {
+						position: relative;
+						display: flex;
+						width: 100%;
+						padding-bottom: 30px;
+					}
+
+					input {
+						outline: none;
+						width: 100%;
+						padding: 0 18px;
+						border: 1px solid #999;
+						border-radius: 3px;
+						background-color: white;
+						font-size: 13px;
+						line-height: 37px;
+						@include inputPlaceholder {
+							font-size: 13px;
+							line-height: 37px;
+							color: #757575;
+						}
+					}
+				}
+			}
+
+			&-title {
+				line-height: 1;
+				font-weight: 500;
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #639;
+			}
+
+			&-subtitle {
+				line-height: 1;
+				padding-bottom: 20px;
+				font-size: 13px;
+			}
+		}
+
+		.c-btn {
+			width: 100%;
+			max-width: calc((100% - 15px) / 2);
+			min-width: unset;
+
+			span {
+				font-size: 14px;
+			}
+
+			&__wrapper {
+				justify-content: space-between;
+				padding-top: 10px;
+			}
+		}
+	}
+
 	&.modal-profile-qr,
 	&.modal-profile-main,
 	&.modal-profile-cv,
@@ -144,6 +253,11 @@
 		}
 
 		.modal {
+			&-dialog {
+				margin: 0 auto;
+				padding: 10px;
+			}
+
 			&-content {
 				overflow: hidden;
 				border: none;
@@ -352,6 +466,34 @@
 	}
 
 	&#modalProfileMain {
+		.chosen-container {
+			width: 100% !important;
+
+		 	.chosen-choices {
+				outline: none;
+				position: relative;
+				width: 100%;
+				min-height: 36px;
+				padding: 0 12px;
+				border-radius: 2px;
+				border: 1px solid rgb(169, 169, 169);
+				background-color: rgb(255, 255, 255);
+				color: rgba(0, 0, 0, .9);
+				font-size: 14px;
+				font-weight: 400;
+				box-shadow: none;
+				background-image: none;
+
+				li.search-choice {
+					font-size: 13px;
+				}
+
+				li.search-field input[type="text"] {
+					min-height: 32px;
+				}
+			}
+		}
+
 		.modal {
 			&-dialog {
 				max-width: 744px;
@@ -375,6 +517,9 @@
 				height: calc(100% + 1rem);
 				display: flex;
 				padding: 30px 30px 0;
+				@include adaptive(767) {
+					padding: 15px 45px 0;
+				}
 
 				&-bg {
 					z-index: 0;
@@ -391,6 +536,9 @@
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: cover;
+						@include adaptive(767) {
+							height: 85px;
+						}
 					}
 				}
 
@@ -403,10 +551,20 @@
 					border-radius: 5px;
 					box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .24);
 					background-color: #ffffff;
+					@include adaptive(767) {
+						width: 105px;
+						height: 105px;
+					}
 
 					img {
 						@extend %imageResCoverAbs;
 					}
+				}
+			}
+
+			&-title {
+				@include adaptive(767) {
+					font-size: 14px;
 				}
 			}
 
@@ -455,10 +613,16 @@
 				&-group {
 					display: flex;
 					justify-content: space-between;
+					@include adaptive(767) {
+						flex-wrap: wrap;
+					}
 
 					> div {
 						width: 100%;
 						max-width: calc((100% - 10px) / 2);
+						@include adaptive(767) {
+							max-width: 100%;
+						}
 					}
 				}
 

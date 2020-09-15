@@ -2,99 +2,89 @@
 
 section#main.main
 	.main__slider
-		#sliderMain.carousel.carousel-fade.slide(data-ride="carousel" data-interval='6000')
-			ol.carousel-indicators
-				li.active(data-target='#sliderMain', data-slide-to='0')
-				li(data-target='#sliderMain', data-slide-to='1')
-				li(data-target='#sliderMain', data-slide-to='2')
-				li(data-target='#sliderMain', data-slide-to='3')
-				li(data-target='#sliderMain', data-slide-to='4')
-				li(data-target='#sliderMain', data-slide-to='5')
-				li(data-target='#sliderMain', data-slide-to='6')
-				li(data-target='#sliderMain', data-slide-to='7')
+		mixin swiperContent()
+			.swiper-slide(style='background-image:url("img/img-main-slider-1.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-ooredoo.png" alt="")
+						div
+							h6 Jotun Myanmar
+							p Manufacturing
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-2.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-kbz-bank.png" alt="")
+						div
+							h6 Unilever Myanmar Group
+							p FMCG
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-3.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-cdsg.png" alt="")
+						div
+							h6 Capital Diamond Star Group
+							p Agriculture/Forestry/Fishing
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-4.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-prudential.png" alt="")
+						div
+							h6 KBZ Bank
+							p Banking/ Financial Services/ Microfinance
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-5.png");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-jotun-myanmar.jpg" alt="")
+						div
+							h6 JobNet Myanmar
+							p Internet Services
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-6.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-unilever.png" alt="")
+						div
+							h6 Prudential Myanmar
+							p Insurance/Pensions
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-7.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-prudential.png" alt="")
+						div
+							h6 Yoma Bank
+							p Banking/ Financial Services/ Microfinance
+							span Yangon
+			.swiper-slide(style='background-image:url("img/img-main-slider-8.jpg");')
+				.swiper-slide-content
+					.main__hero
+						div
+							.main__hero-img
+								img(src="img/img-employers-jotun-myanmar.jpg" alt="")
+						div
+							h6 Ooredoo Myanmar
+							p Telecommunications
+							span Yangon
 
-			.carousel-inner
-				.carousel-item.active(style='background-image:url("img/img-main-slider-1.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-ooredoo.png" alt="")
-							div
-								h6 Jotun Myanmar
-								p Manufacturing
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-2.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-kbz-bank.png" alt="")
-							div
-								h6 Unilever Myanmar Group
-								p FMCG
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-3.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-cdsg.png" alt="")
-							div
-								h6 Capital Diamond Star Group
-								p Agriculture/Forestry/Fishing
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-4.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-prudential.png" alt="")
-							div
-								h6 KBZ Bank
-								p Banking/ Financial Services/ Microfinance
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-5.png");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-jotun-myanmar.jpg" alt="")
-							div
-								h6 JobNet Myanmar
-								p Internet Services
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-6.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-unilever.png" alt="")
-							div
-								h6 Prudential Myanmar
-								p Insurance/Pensions
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-7.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-prudential.png" alt="")
-							div
-								h6 Yoma Bank
-								p Banking/ Financial Services/ Microfinance
-								span Yangon
-				.carousel-item(style='background-image:url("img/img-main-slider-8.jpg");')
-					.carousel-item-content
-						.main__hero
-							div
-								.main__hero-img
-									img(src="img/img-employers-jotun-myanmar.jpg" alt="")
-							div
-								h6 Ooredoo Myanmar
-								p Telecommunications
-								span Yangon
-
+		+swiper('mainSlider', 'swiperContent', true, false, false)
 
 	.main__wrapper
 		div

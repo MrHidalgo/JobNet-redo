@@ -421,6 +421,8 @@
 			width: '100%',
 			placeholder: 'Select an option'
 		});
+
+		$("[choose-dropdown-js]").chosen({no_results_text: "Oops, nothing found!"});
 	};
 
 
