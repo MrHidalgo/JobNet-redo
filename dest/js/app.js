@@ -43,7 +43,6 @@ var initHamburger = function initHamburger() {
 
 		$('[mobile-close-js]').on('click', function (ev) {
 			mobileContainer.classList.add('is-animated');
-
 			mobileContainer.classList.remove('is-open');
 
 			hideScrollContainer.forEach(function (val, idx) {
@@ -53,6 +52,10 @@ var initHamburger = function initHamburger() {
 			setTimeout(function () {
 				mobileContainer.classList.remove('is-animated');
 			}, 350);
+		});
+
+		$(document).on('click', '.is-hideScroll #overlay', function (ev) {
+			$('[mobile-close-js]').trigger('click');
 		});
 	}
 };
@@ -630,14 +633,23 @@ window.addEventListener('scroll', function (ev) {});
 		$('[menu-open-js]').on('click', function (ev) {
 			$('#menu').addClass('is-open');
 			$('#overlay').addClass('is-show');
+
+			$('html, body').addClass('is-hideScroll');
 		});
+
 		$('[menu-close-js]').on('click', function (ev) {
 			$('#menu').addClass('is-animate').removeClass('is-open');
 			$('#overlay').removeClass('is-show');
 
+			$('html, body').removeClass('is-hideScroll');
+
 			setTimeout(function () {
 				$('#menu').removeClass('is-animate');
 			}, 350);
+		});
+
+		$(document).on('click', '#overlay.is-show', function (ev) {
+			$('[menu-close-js]').trigger('click');
 		});
 	};
 

@@ -446,14 +446,23 @@
 		$('[menu-open-js]').on('click', (ev) => {
 			$('#menu').addClass('is-open');
 			$('#overlay').addClass('is-show');
+
+			$('html, body').addClass('is-hideScroll');
 		});
+
 		$('[menu-close-js]').on('click', (ev) => {
 			$('#menu').addClass('is-animate').removeClass('is-open');
 			$('#overlay').removeClass('is-show');
 
+			$('html, body').removeClass('is-hideScroll');
+
 			setTimeout(() => {
 				$('#menu').removeClass('is-animate');
 			}, 350);
+		});
+
+		$(document).on('click', '#overlay.is-show', (ev) => {
+			$('[menu-close-js]').trigger('click');
 		});
 	};
 

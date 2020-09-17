@@ -24,9 +24,14 @@ block modal
 	include components/modal/_modal-profile-preferred
 	include components/modal/_modal-change-password
 
+block menu
+	include components/_menu
+
 block content
 	div.body.body--start(class!= pageClassName)
 
 		include components/search/_search--inner
 
 		include components/profile/_profile
+
+		section#overlay.overlay

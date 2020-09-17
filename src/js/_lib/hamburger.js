@@ -28,7 +28,6 @@ const initHamburger = () => {
 
 		$('[mobile-close-js]').on('click', (ev) => {
 			mobileContainer.classList.add('is-animated');
-
 			mobileContainer.classList.remove('is-open');
 
 			hideScrollContainer.forEach((val, idx) => {
@@ -38,6 +37,10 @@ const initHamburger = () => {
 			setTimeout(() => {
 				mobileContainer.classList.remove('is-animated');
 			}, 350);
+		});
+
+		$(document).on('click', '.is-hideScroll #overlay', (ev) => {
+			$('[mobile-close-js]').trigger('click');
 		});
 	}
 
