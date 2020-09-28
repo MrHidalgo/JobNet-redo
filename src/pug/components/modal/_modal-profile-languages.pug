@@ -16,8 +16,13 @@
 					p STEP 6 : YOUR LANGUAGES
 
 				form.modal__form(action='' method='' autocomplete='off')
-					p.modal__form-title Languages used
-					.modal__form-group
+					p.modal__form-title
+						span
+							| Languages used
+						span
+							a(href="#" form-add-js)
+								i.icon-font.icon-plus
+					.modal__form-group(form-collapse-js)
 						div
 							.modal__form-field
 								label.modal__form-label(for="language")!= "Language <span>*</span>"
@@ -32,8 +37,8 @@
 									option(value='3') Fluent
 									option(value='4') Native Tongue
 
-			.modal-footer.c-btn__wrapper
-				button.c-btn.c-btn--borderGray(type='button', data-dismiss='modal')
+			.modal-footer.c-btn__wrapper(form-collapse-js)
+				button.c-btn.c-btn--borderGray(type='button', form-cancel-js)
 					span Cancel
 				button.c-btn.c-btn--borderGreen(type='button')
 					span Save

@@ -6,6 +6,7 @@
 			.modal-header
 				div
 					h5.modal-title Skills achieved
+
 				div
 					button.close(type='button', data-dismiss='modal', aria-label='Close')
 						i.icon-font.icon-close
@@ -16,8 +17,13 @@
 					p STEP 5 : YOUR SKILLS
 
 				form.modal__form(action='' method='' autocomplete='off')
-					p.modal__form-title Skills achieved
-					.modal__form-group
+					p.modal__form-title
+						span
+							| Skills achieved
+						span
+							a(href="#" form-add-js)
+								i.icon-font.icon-plus
+					.modal__form-group(form-collapse-js)
 						div
 							.modal__form-field
 								label.modal__form-label(for="skill")!= "Skill <span>*</span>"
@@ -31,8 +37,8 @@
 									option(value='2') Intermediate
 									option(value='3') Professional
 
-			.modal-footer.c-btn__wrapper
-				button.c-btn.c-btn--borderGray(type='button', data-dismiss='modal')
+			.modal-footer.c-btn__wrapper(form-collapse-js)
+				button.c-btn.c-btn--borderGray(type='button' form-cancel-js)
 					span Cancel
 				button.c-btn.c-btn--borderGreen(type='button')
 					span Save

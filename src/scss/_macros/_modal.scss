@@ -1708,11 +1708,27 @@
 
 				&-title {
 					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
 					padding-top: 5px;
 					padding-bottom: 10px;
 					font-weight: 500;
 					font-size: 15px;
 					color: #9932cc;
+
+					a {
+						opacity: 0;
+						visibility: hidden;
+						color: #9932cc;
+						@include transition(opacity, visibility);
+
+						&.is-show {
+							opacity: 1;
+							visibility: visible;
+							@include transition(opacity, visibility);
+						}
+					}
 				}
 
 				.form-check {

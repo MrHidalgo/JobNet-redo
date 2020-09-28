@@ -4427,6 +4427,18 @@ picture {
 /* line 1709, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-title, .modal#modalProfileLanguages .modal__form-title {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 10px;
   font-weight: 500;
@@ -4434,7 +4446,26 @@ picture {
   color: #9932cc;
 }
 
-/* line 1719, src/scss/_macros/_modal.scss */
+/* line 1720, src/scss/_macros/_modal.scss */
+.modal#modalProfileSkills .modal__form-title a, .modal#modalProfileLanguages .modal__form-title a {
+  opacity: 0;
+  visibility: hidden;
+  color: #9932cc;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 1726, src/scss/_macros/_modal.scss */
+.modal#modalProfileSkills .modal__form-title a.is-show, .modal#modalProfileLanguages .modal__form-title a.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* line 1735, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form .form-check-input, .modal#modalProfileLanguages .modal__form .form-check-input {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -4443,12 +4474,12 @@ picture {
   margin-top: 0;
 }
 
-/* line 1725, src/scss/_macros/_modal.scss */
+/* line 1741, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form .form-check-label, .modal#modalProfileLanguages .modal__form .form-check-label {
   line-height: 1.2;
 }
 
-/* line 1730, src/scss/_macros/_modal.scss */
+/* line 1746, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-group, .modal#modalProfileLanguages .modal__form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4461,7 +4492,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1730, src/scss/_macros/_modal.scss */
+  /* line 1746, src/scss/_macros/_modal.scss */
   .modal#modalProfileSkills .modal__form-group, .modal#modalProfileLanguages .modal__form-group {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -4469,7 +4500,7 @@ picture {
   }
 }
 
-/* line 1737, src/scss/_macros/_modal.scss */
+/* line 1753, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-group > div, .modal#modalProfileLanguages .modal__form-group > div {
   width: 100%;
   max-width: -webkit-calc((100% - 10px) / 2);
@@ -4477,19 +4508,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1737, src/scss/_macros/_modal.scss */
+  /* line 1753, src/scss/_macros/_modal.scss */
   .modal#modalProfileSkills .modal__form-group > div, .modal#modalProfileLanguages .modal__form-group > div {
     max-width: 100%;
   }
 }
 
-/* line 1746, src/scss/_macros/_modal.scss */
+/* line 1762, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field, .modal#modalProfileLanguages .modal__form-field {
   position: relative;
   padding-bottom: 10px;
 }
 
-/* line 1750, src/scss/_macros/_modal.scss */
+/* line 1766, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field-group, .modal#modalProfileLanguages .modal__form-field-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4501,14 +4532,14 @@ picture {
           justify-content: space-between;
 }
 
-/* line 1754, src/scss/_macros/_modal.scss */
+/* line 1770, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field-group > div, .modal#modalProfileLanguages .modal__form-field-group > div {
   width: 100%;
   max-width: -webkit-calc((100% - 30px) / 3);
   max-width: calc((100% - 30px) / 3);
 }
 
-/* line 1758, src/scss/_macros/_modal.scss */
+/* line 1774, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field-group > div:nth-of-type(3), .modal#modalProfileLanguages .modal__form-field-group > div:nth-of-type(3) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4525,12 +4556,12 @@ picture {
   padding-top: 25px;
 }
 
-/* line 1765, src/scss/_macros/_modal.scss */
+/* line 1781, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field-group > div .modal__form-field, .modal#modalProfileLanguages .modal__form-field-group > div .modal__form-field {
   padding-bottom: 0;
 }
 
-/* line 1771, src/scss/_macros/_modal.scss */
+/* line 1787, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field > input,
 .modal#modalProfileSkills .modal__form-field > textarea,
 .modal#modalProfileSkills .modal__form-field > select, .modal#modalProfileLanguages .modal__form-field > input,
@@ -4550,13 +4581,13 @@ picture {
   font-weight: 400;
 }
 
-/* line 1787, src/scss/_macros/_modal.scss */
+/* line 1803, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-field > textarea, .modal#modalProfileLanguages .modal__form-field > textarea {
   resize: none;
   height: 130px;
 }
 
-/* line 1793, src/scss/_macros/_modal.scss */
+/* line 1809, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-label, .modal#modalProfileLanguages .modal__form-label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4566,12 +4597,12 @@ picture {
   font-size: 14px;
 }
 
-/* line 1798, src/scss/_macros/_modal.scss */
+/* line 1814, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__form-label span, .modal#modalProfileLanguages .modal__form-label span {
   color: red;
 }
 
-/* line 1804, src/scss/_macros/_modal.scss */
+/* line 1820, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box, .modal#modalProfileLanguages .modal__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4592,7 +4623,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 1814, src/scss/_macros/_modal.scss */
+/* line 1830, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box:hover, .modal#modalProfileLanguages .modal__box:hover {
   background-color: lightgray !important;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -4600,7 +4631,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 1820, src/scss/_macros/_modal.scss */
+/* line 1836, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(1), .modal#modalProfileLanguages .modal__box > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4623,7 +4654,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1820, src/scss/_macros/_modal.scss */
+  /* line 1836, src/scss/_macros/_modal.scss */
   .modal#modalProfileSkills .modal__box > div:nth-of-type(1), .modal#modalProfileLanguages .modal__box > div:nth-of-type(1) {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -4637,25 +4668,25 @@ picture {
   }
 }
 
-/* line 1832, src/scss/_macros/_modal.scss */
+/* line 1848, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(1) p, .modal#modalProfileLanguages .modal__box > div:nth-of-type(1) p {
   width: 50%;
   font-size: 13px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1832, src/scss/_macros/_modal.scss */
+  /* line 1848, src/scss/_macros/_modal.scss */
   .modal#modalProfileSkills .modal__box > div:nth-of-type(1) p, .modal#modalProfileLanguages .modal__box > div:nth-of-type(1) p {
     width: 100%;
   }
 }
 
-/* line 1839, src/scss/_macros/_modal.scss */
+/* line 1855, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(1) p strong, .modal#modalProfileLanguages .modal__box > div:nth-of-type(1) p strong {
   font-weight: 500;
 }
 
-/* line 1844, src/scss/_macros/_modal.scss */
+/* line 1860, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(2), .modal#modalProfileLanguages .modal__box > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4672,7 +4703,7 @@ picture {
   width: 115px;
 }
 
-/* line 1850, src/scss/_macros/_modal.scss */
+/* line 1866, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(2) a, .modal#modalProfileLanguages .modal__box > div:nth-of-type(2) a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4685,19 +4716,19 @@ picture {
   color: #b4202a;
 }
 
-/* line 1855, src/scss/_macros/_modal.scss */
+/* line 1871, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(2) a:hover, .modal#modalProfileLanguages .modal__box > div:nth-of-type(2) a:hover {
   text-decoration: underline;
 }
 
-/* line 1859, src/scss/_macros/_modal.scss */
+/* line 1875, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(2) a .icon-font, .modal#modalProfileLanguages .modal__box > div:nth-of-type(2) a .icon-font {
   margin-right: 3px;
   color: #b4202a;
   font-size: 11px;
 }
 
-/* line 1865, src/scss/_macros/_modal.scss */
+/* line 1881, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box > div:nth-of-type(2) a span, .modal#modalProfileLanguages .modal__box > div:nth-of-type(2) a span {
   position: relative;
   top: 2px;
@@ -4706,7 +4737,7 @@ picture {
   color: #b4202a;
 }
 
-/* line 1876, src/scss/_macros/_modal.scss */
+/* line 1892, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box-wrapper, .modal#modalProfileLanguages .modal__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4720,39 +4751,39 @@ picture {
           flex-direction: column;
 }
 
-/* line 1882, src/scss/_macros/_modal.scss */
+/* line 1898, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box-wrapper > div:not(:last-of-type), .modal#modalProfileLanguages .modal__box-wrapper > div:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-/* line 1887, src/scss/_macros/_modal.scss */
+/* line 1903, src/scss/_macros/_modal.scss */
 .modal#modalProfileSkills .modal__box-wrapper > div:nth-of-type(even) .modal__box, .modal#modalProfileLanguages .modal__box-wrapper > div:nth-of-type(even) .modal__box {
   background-color: #f0f0fb;
 }
 
-/* line 1899, src/scss/_macros/_modal.scss */
+/* line 1915, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .close .icon-font {
   color: #fff;
 }
 
-/* line 1905, src/scss/_macros/_modal.scss */
+/* line 1921, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-dialog {
   max-width: 360px;
 }
 
-/* line 1909, src/scss/_macros/_modal.scss */
+/* line 1925, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-content {
   background-color: #f3f3f3;
 }
 
-/* line 1913, src/scss/_macros/_modal.scss */
+/* line 1929, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: transparent;
 }
 
-/* line 1918, src/scss/_macros/_modal.scss */
+/* line 1934, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-content {
   width: 100%;
   max-width: 300px;
@@ -4763,20 +4794,20 @@ picture {
   background-color: #fff;
 }
 
-/* line 1927, src/scss/_macros/_modal.scss */
+/* line 1943, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-content p,
 .modal#modalProfileQr .modal-body-content span {
   text-align: center;
   font-weight: 500;
 }
 
-/* line 1933, src/scss/_macros/_modal.scss */
+/* line 1949, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-content p {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 1938, src/scss/_macros/_modal.scss */
+/* line 1954, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-content span {
   display: block;
   color: gray;
@@ -4784,7 +4815,7 @@ picture {
   line-height: 16px;
 }
 
-/* line 1946, src/scss/_macros/_modal.scss */
+/* line 1962, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-user {
   overflow: hidden;
   position: relative;
@@ -4799,7 +4830,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 1963, src/scss/_macros/_modal.scss */
+/* line 1979, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-image {
   display: block;
   max-width: 100%;
@@ -4809,7 +4840,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 1972, src/scss/_macros/_modal.scss */
+/* line 1988, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-save {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4829,34 +4860,34 @@ picture {
   color: #767676;
 }
 
-/* line 1981, src/scss/_macros/_modal.scss */
+/* line 1997, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-save .icon-font {
   margin-right: 3px;
   font-size: 11px;
 }
 
-/* line 1986, src/scss/_macros/_modal.scss */
+/* line 2002, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-body-save span {
   font-weight: 500;
   font-size: 12px;
 }
 
-/* line 1993, src/scss/_macros/_modal.scss */
+/* line 2009, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-header {
   background-color: #663399;
 }
 
-/* line 1997, src/scss/_macros/_modal.scss */
+/* line 2013, src/scss/_macros/_modal.scss */
 .modal#modalProfileQr .modal-title {
   color: #ffffff;
 }
 
-/* line 2005, src/scss/_macros/_modal.scss */
+/* line 2021, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-dialog {
   max-width: 744px;
 }
 
-/* line 2009, src/scss/_macros/_modal.scss */
+/* line 2025, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-subtitle {
   position: relative;
   padding-top: 10px;
@@ -4866,12 +4897,12 @@ picture {
   color: #9932cc;
 }
 
-/* line 2018, src/scss/_macros/_modal.scss */
+/* line 2034, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body {
   padding: 10px 30px;
 }
 
-/* line 2021, src/scss/_macros/_modal.scss */
+/* line 2037, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body-header {
   position: relative;
   left: -30px;
@@ -4889,7 +4920,7 @@ picture {
   background-color: #7d51a8;
 }
 
-/* line 2030, src/scss/_macros/_modal.scss */
+/* line 2046, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body-header p {
   text-transform: uppercase;
   font-size: 12px;
@@ -4897,7 +4928,7 @@ picture {
   color: #fff;
 }
 
-/* line 2038, src/scss/_macros/_modal.scss */
+/* line 2054, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4910,7 +4941,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 2042, src/scss/_macros/_modal.scss */
+/* line 2058, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body form > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4924,7 +4955,7 @@ picture {
   padding: 5px;
 }
 
-/* line 2048, src/scss/_macros/_modal.scss */
+/* line 2064, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body form label {
   padding-bottom: 5px;
   cursor: pointer;
@@ -4932,12 +4963,12 @@ picture {
   color: #000000;
 }
 
-/* line 2054, src/scss/_macros/_modal.scss */
+/* line 2070, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body form label span {
   color: red;
 }
 
-/* line 2059, src/scss/_macros/_modal.scss */
+/* line 2075, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-body form textarea {
   resize: none;
   outline: none;
@@ -4950,7 +4981,7 @@ picture {
   color: rgba(0, 0, 0, 0.9);
 }
 
-/* line 2073, src/scss/_macros/_modal.scss */
+/* line 2089, src/scss/_macros/_modal.scss */
 .modal#modalProfileAbout .modal-footer {
   display: -webkit-box;
   display: -webkit-flex;

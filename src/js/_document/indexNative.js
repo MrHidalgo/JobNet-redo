@@ -494,6 +494,18 @@
 	};
 
 
+	const modalFormCollapseField = () => {
+		$('[form-cancel-js]').on('click', (ev) => {
+			$('[form-collapse-js]').slideUp(350);
+			$('[form-add-js]').addClass('is-show');
+		});
+		$('[form-add-js]').on('click', (ev) => {
+			$(ev.currentTarget).removeClass('is-show');
+			$('[form-collapse-js]').slideDown(350);
+		});
+	};
+
+
 	const messageCB = () => {
 		$('[messages-card-js]').on('click', (ev) => {
 			if($(window).width() < 1024) {
@@ -553,6 +565,7 @@
 		manageAccountSettingCB();
 		menuCB();
 		stickyBox();
+		modalFormCollapseField();
 		messageCB();
 
 		modals();
