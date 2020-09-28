@@ -1,0 +1,20 @@
+---
+title: JobNet | Messages
+
+pageClassName: p-messages body--inner
+---
+extends shared/_layout
+
+block header
+	include components/_header--inner
+block footer
+	include components/_footer--inner
+block menu
+	include components/_menu
+
+block content
+	div.body.body--start(class!= pageClassName)
+
+		include components/search/_search--inner
+
+		include components/messages/_messages

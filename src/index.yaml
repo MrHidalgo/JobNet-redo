@@ -94,3 +94,6 @@ PageList:
 - file: employer-views.html
   titleName: Employer Views
   ready: 100
+- file: messages.html
+  titleName: Messages
+  ready: 100

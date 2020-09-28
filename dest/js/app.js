@@ -679,6 +679,17 @@ window.addEventListener('scroll', function (ev) {});
 		});
 	};
 
+	var messageCB = function messageCB() {
+		$('[messages-card-js]').on('click', function (ev) {
+			if ($(window).width() < 1024) {
+				$('[messages-content-js]').addClass('is-open');
+			}
+		});
+		$(document).on('click', '[messages-return-js]', function (ev) {
+			$('[messages-content-js]').removeClass('is-open');
+		});
+	};
+
 	var modals = function modals() {
 		setTimeout(function (ev) {
 			$('[home-modalAuto-js]').trigger('click');
@@ -725,6 +736,7 @@ window.addEventListener('scroll', function (ev) {});
 		manageAccountSettingCB();
 		menuCB();
 		stickyBox();
+		messageCB();
 
 		modals();
 		// ==========================================

@@ -9,7 +9,7 @@
     <meta name="robots" content="noindex">
     <meta name="AdsBot-Google" content="noindex">
     <!-- TITLE-->
-    <title>JobNet | Job Alert</title>
+    <title>JobNet | Messages</title>
     <!-- FAVICON-->
     <link rel="shortcut icon" href="./icon/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Roboto:wght@100;300;400;500;700;900&amp;family=Lato:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- STYLE :: END-->
   </head>
-  <body class="p-job-alert body--inner">
+  <body class="p-messages body--inner">
     <!-- HEADER :: START-->
     <header class="header-inner" id="header">
       <div class="c-grid-fluid">
@@ -101,7 +101,7 @@
       </div>
     </header>
     <!-- HEADER :: END-->
-    <div class="body body--start p-job-alert body--inner">
+    <div class="body body--start p-messages body--inner">
       <!-- SECTION :: START-->
       <section class="search" id="search">
         <div class="search__form">
@@ -136,339 +136,100 @@
       </section>
       <!-- SECTION :: END-->
       <!-- SECTION :: START-->
-      <section class="job-alert" id="job-alert">
+      <section class="messages" id="messages">
         <div class="c-grid">
-          <div class="job-alert__wrapper job-alert__wrapper-1">
-            <div class="job-alert__block">
-              <div class="job-alert__block-head">
-                <p>My Job Alerts <span>(1 of 5)</span></p>
+          <div class="messages__wrapper">
+            <div class="messages__wrapper-left">
+              <div class="messages__wrapper-left-top">
+                <div class="messages__form">
+                  <label for="messages-search"><i class="icon-font icon-search"></i>
+                    <input type="text" name="messages-search" id="messages-search" placeholder="Search"><span>
+                      <div class="icon-font icon-close"></div></span>
+                  </label>
+                </div>
               </div>
-              <div class="job-alert__block-body">
-                <div class="job-alert__block-row">
+              <div class="messages__wrapper-left-top">
+                <div class="form-group">
+                  <select class="form-control" id="messages-select">
+                    <option>All Recent</option>
+                    <option>Un-Read Messages</option>
+                  </select>
+                </div>
+              </div>
+              <div class="messages__wrapper-left-bottom"><a class="messages__card" href="#" messages-card-js>
                   <div>
-                    <div class="job-alert__block-title"><i class="icon-font icon-bell"></i><a href="#">Digital Marketing Manager</a></div>
-                    <p class="job-alert__block-position">Yangon</p>
+                    <div class="messages__card-logo"><img src="img/img-employers-unilever.png" alt=""></div>
                   </div>
                   <div>
-                    <ul>
-                      <li>
-                        <p>INDUSTRY</p><span>-</span>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <p>EXP: LEVEL</p><span>-</span>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <p>FFECTIVE TIME</p><span>08/25/2020 04:08 PM</span>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <p>FREQUENCY</p><span>Weekly</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div class="c-btn__wrapper"><a class="c-btn c-btn--borderOrange" href="#"><span>See Open Jobs</span></a>
-                      <div class="dropdown"><a id="jobAlertBlockMore" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-font icon-more"></i></a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="jobAlertBlockMore"><a class="dropdown-item dropdown-item--filter" href="#">
-                            <div><i class="icon-font icon-checked"></i></div>
-                            <div>
-                              <p>Daily</p>
-                            </div></a><a class="dropdown-item dropdown-item--filter is-active" href="#">
-                            <div><i class="icon-font icon-checked"></i></div>
-                            <div>
-                              <p>Weekly</p>
-                            </div></a><a class="dropdown-item dropdown-item--delete" href="#">
-                            <div><i class="icon-font icon-delete"></i></div>
-                            <div>
-                              <p>Delete</p>
-                            </div></a></div>
+                    <div class="messages__card-header">
+                      <div>
+                        <p class="messages__card-title">ShweProperty.com</p>
                       </div>
+                      <div><span class="messages__card-date">28/09/20</span></div>
+                    </div>
+                    <p class="messages__card-subtitle">Advertising/PR/Marketing</p>
+                    <div class="messages__card-status">
+                      <div><span class="messages__card-text">Hi</span></div>
+                      <div><i class="icon-font icon-double-tick"></i></div>
+                    </div>
+                  </div></a></div>
+            </div>
+            <div class="messages__wrapper-right" messages-content-js>
+              <div class="messages__wrapper-right-top">
+                <div class="messages__header">
+                  <div class="messages__header-left">
+                    <div class="messages__header-info">
+                      <div>
+                        <div class="messages__header-logo"><img src="img/img-employers-unilever.png" alt=""></div>
+                      </div>
+                      <div>
+                        <p>ShweProperty.com</p><span>Advertising/PR/Marketing</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="messages__header-right"><a class="messages__header-return" href="#" messages-return-js><i class="icon-font icon-return"></i></a>
+                    <div class="c-btn__wrapper"><a class="c-btn c-btn--white" href="#"><span>5 Open Jobs</span></a><a class="c-btn c-btn--orange" href="#"><span>Company Profile</span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__wrapper-right-middle">
+                <div class="messages__info">
+                  <div>
+                    <div><img src="img/img-employers-unilever.png" alt=""></div>
+                    <div><img src="img/img-user.jpg" alt=""></div>
+                  </div>
+                  <p class="messages__info-title">Start Messaging with ShweProperty.Com</p>
+                </div>
+                <div class="messages__content">
+                  <div class="messages__content-box messages__content-box--left">
+                    <div>
+                      <div class="messages__content-logo"><img src="img/img-employers-unilever.png" alt=""></div>
+                    </div>
+                    <div>
+                      <h6>ShweProperty.com</h6>
+                      <h5>Fri, Sep 2020 04:19 pm</h5>
+                      <p>Hi</p>
+                    </div>
+                  </div>
+                  <div class="messages__content-box messages__content-box--right">
+                    <div>
+                      <div class="messages__content-logo"><img src="img/img-user.jpg" alt=""></div>
+                    </div>
+                    <div>
+                      <h6>ShweProperty.com</h6>
+                      <h5>Fri, Sep 2020 04:19 pm</h5>
+                      <p>Hi</p>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="messages__wrapper-right-bottom">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="type your message here..."></textarea>
+                  <div class="c-btn__wrapper"><a class="c-btn c-btn--green" href="#"><span>Send</span></a></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="job-alert__wrapper job-alert__wrapper-2">
-            <p class="job-alert__title">Jobs You Will Love...</p>
-            <div class="job-alert__box-wrapper">
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-              <div><a class="job-alert__box" href="#">
-                  <div>
-                    <div class="job-alert__box-logo"><img src="img/img-employers-kbz-bank.png" alt=""></div>
-                  </div>
-                  <div>
-                    <h3>Digital Marketing Specialist</h3>
-                    <ul>
-                      <li>
-                        <div><i class="icon-font icon-pin"></i></div>
-                        <div>
-                          <p>Yangon</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-cogwheel"></i></div>
-                        <div>
-                          <p>Healthcare/Beauty Care</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div><i class="icon-font icon-calendar-1"></i></div>
-                        <div>
-                          <p>02.01.2020</p>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="c-btn__wrapper">
-                      <button class="c-btn c-btn--purple" type="button"><span>Apply Now</span></button>
-                    </div>
-                  </div></a></div>
-            </div>
-            <div class="c-btn__wrapper c-btn__wrapper--center job-alert__more"><a class="c-btn c-btn--borderGreen" href="#"><span>See More Jobs</span></a></div>
           </div>
         </div>
       </section>

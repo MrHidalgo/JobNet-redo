@@ -12,6 +12,13 @@
 		margin: 20px 0 0;
 	}
 
+	.p-messages & {
+		margin-top: 15px;
+		@include adaptive(767) {
+			display: none;
+		}
+	}
+
 	&__link {
 		display: flex;
 		color: #15c;

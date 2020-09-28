@@ -494,6 +494,18 @@
 	};
 
 
+	const messageCB = () => {
+		$('[messages-card-js]').on('click', (ev) => {
+			if($(window).width() < 1024) {
+				$('[messages-content-js]').addClass('is-open');
+			}
+		});
+		$(document).on('click', '[messages-return-js]', (ev) => {
+			$('[messages-content-js]').removeClass('is-open');
+		});
+	};
+
+
 	const modals = () => {
 		setTimeout((ev) => {
 			$('[home-modalAuto-js]').trigger('click');
@@ -541,6 +553,7 @@
 		manageAccountSettingCB();
 		menuCB();
 		stickyBox();
+		messageCB();
 
 		modals();
 		// ==========================================

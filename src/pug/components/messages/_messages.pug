@@ -1,0 +1,102 @@
+// SECTION :: START
+
+section#messages.messages
+	.c-grid
+		.messages__wrapper
+
+			.messages__wrapper-left
+
+				.messages__wrapper-left-top
+
+					.messages__form
+						label(for='messages-search')
+							i.icon-font.icon-search
+							input(type='text' name='messages-search' id='messages-search' placeholder='Search')
+							span
+								.icon-font.icon-close
+
+				.messages__wrapper-left-top
+
+					.form-group
+						select#messages-select.form-control
+							option All Recent
+							option Un-Read Messages
+
+				.messages__wrapper-left-bottom
+					a.messages__card(href="#" messages-card-js)
+						div
+							.messages__card-logo
+								img(src="img/img-employers-unilever.png" alt="")
+						div
+							.messages__card-header
+								div
+									p.messages__card-title ShweProperty.com
+								div
+									span.messages__card-date 28/09/20
+
+							p.messages__card-subtitle Advertising/PR/Marketing
+							.messages__card-status
+								div
+									span.messages__card-text Hi
+								div
+									i.icon-font.icon-double-tick
+
+			.messages__wrapper-right(messages-content-js)
+				.messages__wrapper-right-top
+
+					.messages__header
+						.messages__header-left
+							.messages__header-info
+								div
+									.messages__header-logo
+										img(src="img/img-employers-unilever.png" alt="")
+								div
+									p ShweProperty.com
+									span Advertising/PR/Marketing
+						.messages__header-right
+							a.messages__header-return(href="#" messages-return-js)
+								i.icon-font.icon-return
+							.c-btn__wrapper
+								a.c-btn.c-btn--white(href="#")
+									span 5 Open Jobs
+								a.c-btn.c-btn--orange(href="#")
+									span Company Profile
+
+				.messages__wrapper-right-middle
+
+					.messages__info
+						div
+							div
+								img(src="img/img-employers-unilever.png" alt="")
+							div
+								img(src="img/img-user.jpg" alt="")
+						p.messages__info-title Start Messaging with ShweProperty.Com
+
+					.messages__content
+						.messages__content-box.messages__content-box--left
+							div
+								.messages__content-logo
+									img(src="img/img-employers-unilever.png" alt="")
+							div
+								h6 ShweProperty.com
+								h5 Fri, Sep 2020 04:19 pm
+								p Hi
+						.messages__content-box.messages__content-box--right
+							div
+								.messages__content-logo
+									img(src="img/img-user.jpg" alt="")
+							div
+								h6 ShweProperty.com
+								h5 Fri, Sep 2020 04:19 pm
+								p Hi
+
+				.messages__wrapper-right-bottom
+					.form-group
+						textarea.form-control(placeholder='type your message here...')
+						.c-btn__wrapper
+							a.c-btn.c-btn--green(href="#")
+								span Send
+
+
+
+// SECTION :: END

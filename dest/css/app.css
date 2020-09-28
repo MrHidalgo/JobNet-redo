@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.modal#modalProfileMain .modal__header-user img, .modal#modalProfileCV .modal__header-user img, .modal#modalProfileQr .modal-body-user img, .header-inner__hamburger-img img, .header-inner__user-ava img, .header-inner__user-img img, .menu__wrapper-head-img img, .companies__locations-head img, .locations__box-head img, .blog-main.blog-main--slider .swiper-slide-img, .media__img img, .reviews .swiper-slide-ava img, .profile__main-user img, .profile__news-link-img img, .applications-job__table-logo img, .dashboard__news-block-head img {
+.modal#modalProfileMain .modal__header-user img, .modal#modalProfileCV .modal__header-user img, .modal#modalProfileQr .modal-body-user img, .header-inner__hamburger-img img, .header-inner__user-ava img, .header-inner__user-img img, .menu__wrapper-head-img img, .companies__locations-head img, .locations__box-head img, .blog-main.blog-main--slider .swiper-slide-img, .media__img img, .reviews .swiper-slide-ava img, .profile__main-user img, .profile__news-link-img img, .applications-job__table-logo img, .dashboard__news-block-head img, .messages__info > div > div img, .messages__content-logo img {
   position: absolute;
   top: 0;
   left: 0;
@@ -175,7 +175,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-bell:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-checked:before, .icon-chevron:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-delete:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-envelope:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-fire:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-information:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-more:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-plus-sign:before, .icon-plus:before, .icon-printer:before, .icon-programming:before, .icon-search:before, .icon-settings:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
+.icon-antenna:before, .icon-approved:before, .icon-bank:before, .icon-bell:before, .icon-book:before, .icon-calendar-1:before, .icon-calendar:before, .icon-checked:before, .icon-chevron:before, .icon-circle-check:before, .icon-clock:before, .icon-close:before, .icon-cogwheel:before, .icon-cost:before, .icon-cursor:before, .icon-delete:before, .icon-dollar-symbol:before, .icon-double-arrows:before, .icon-double-tick:before, .icon-download:before, .icon-edit:before, .icon-email:before, .icon-envelope:before, .icon-facebook-circle:before, .icon-facebook:before, .icon-factory:before, .icon-fast-forward:before, .icon-filter:before, .icon-fire:before, .icon-folder:before, .icon-google-plus-circle:before, .icon-google:before, .icon-graph:before, .icon-home:before, .icon-information:before, .icon-keyboard-arrow-down:before, .icon-like:before, .icon-linkedin-circle:before, .icon-linkedin:before, .icon-locked:before, .icon-mail:before, .icon-menu:before, .icon-more:before, .icon-notification:before, .icon-office-building:before, .icon-photo:before, .icon-pin:before, .icon-plus-sign:before, .icon-plus:before, .icon-printer:before, .icon-programming:before, .icon-return:before, .icon-search:before, .icon-settings:before, .icon-shopping-bag:before, .icon-sort:before, .icon-star-empty:before, .icon-star:before, .icon-success:before, .icon-three-chevron-arrows:before, .icon-twitter-circle:before, .icon-twitter:before, .icon-upload:before, .icon-user:before, .icon-users:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,319 +186,329 @@
   text-transform: none;
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-antenna:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-approved:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-bank:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-bell:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-book:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-calendar-1:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-calendar:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-checked:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-chevron:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-circle-check:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-clock:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-close:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-cogwheel:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-cost:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-cursor:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-delete:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-dollar-symbol:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
+/* line 230, src/scss/_generated/_spriteFont.scss */
 .icon-double-arrows:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-download:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-double-tick:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-edit:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-download:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-email:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-edit:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-envelope:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-email:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-facebook-circle:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-envelope:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-facebook-circle:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-factory:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-fast-forward:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-factory:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-filter:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-fast-forward:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-fire:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-filter:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-folder:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-fire:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-google-plus-circle:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-folder:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-google:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-google-plus-circle:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-graph:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-google:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-home:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-graph:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-information:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-home:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-keyboard-arrow-down:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-information:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-like:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-keyboard-arrow-down:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin-circle:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-like:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-linkedin:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin-circle:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-locked:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-linkedin:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-mail:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-locked:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-menu:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-mail:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-more:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-menu:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-notification:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-more:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-office-building:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-notification:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-photo:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-office-building:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-pin:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-photo:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-plus-sign:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-pin:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-plus:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-plus-sign:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-printer:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-plus:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-programming:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-printer:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-search:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-programming:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-settings:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-return:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-shopping-bag:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-search:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-sort:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-settings:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-star-empty:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-shopping-bag:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-star:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-sort:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-success:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-star-empty:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-three-chevron-arrows:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-twitter-circle:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-success:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-three-chevron-arrows:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-upload:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-twitter-circle:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 224, src/scss/_generated/_spriteFont.scss */
-.icon-users:before {
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-upload:before {
   content: "";
+}
+
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
+}
+
+/* line 230, src/scss/_generated/_spriteFont.scss */
+.icon-users:before {
+  content: "";
 }
 
 @font-face {
@@ -686,22 +696,27 @@ body.body--inner .search__form .main__form {
   }
 }
 
-/* line 116, src/scss/_shared/_main-setting-reset.scss */
+/* line 115, src/scss/_shared/_main-setting-reset.scss */
+body.body--inner.p-messages {
+  background-color: #eeeeee;
+}
+
+/* line 120, src/scss/_shared/_main-setting-reset.scss */
 body.pt0 {
   padding-top: 0;
 }
 
-/* line 120, src/scss/_shared/_main-setting-reset.scss */
+/* line 124, src/scss/_shared/_main-setting-reset.scss */
 body.p-employers {
   font-family: Roboto, Helvetica, Verdana, Arial, sans-serif, Zawgyi-One;
 }
 
-/* line 124, src/scss/_shared/_main-setting-reset.scss */
+/* line 128, src/scss/_shared/_main-setting-reset.scss */
 body.p-employers .c-btn span {
   font-family: Roboto, Helvetica, Verdana, Arial, sans-serif, Zawgyi-One;
 }
 
-/* line 130, src/scss/_shared/_main-setting-reset.scss */
+/* line 134, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -718,7 +733,7 @@ body > .body {
           justify-content: center;
 }
 
-/* line 136, src/scss/_shared/_main-setting-reset.scss */
+/* line 140, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -726,19 +741,19 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 143, src/scss/_shared/_main-setting-reset.scss */
+/* line 147, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 146, src/scss/_shared/_main-setting-reset.scss */
+/* line 150, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 153, src/scss/_shared/_main-setting-reset.scss */
+/* line 157, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -748,36 +763,36 @@ textarea {
   margin: 0;
 }
 
-/* line 163, src/scss/_shared/_main-setting-reset.scss */
+/* line 167, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 169, src/scss/_shared/_main-setting-reset.scss */
+/* line 173, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 175, src/scss/_shared/_main-setting-reset.scss */
+/* line 179, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 181, src/scss/_shared/_main-setting-reset.scss */
+/* line 185, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 187, src/scss/_shared/_main-setting-reset.scss */
+/* line 191, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 192, src/scss/_shared/_main-setting-reset.scss */
+/* line 196, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -785,36 +800,36 @@ hr {
   padding: 0;
 }
 
-/* line 200, src/scss/_shared/_main-setting-reset.scss */
+/* line 204, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 205, src/scss/_shared/_main-setting-reset.scss */
+/* line 209, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 211, src/scss/_shared/_main-setting-reset.scss */
+/* line 215, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 216, src/scss/_shared/_main-setting-reset.scss */
+/* line 220, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 223, src/scss/_shared/_main-setting-reset.scss */
+/* line 227, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 227, src/scss/_shared/_main-setting-reset.scss */
+/* line 231, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7112,6 +7127,18 @@ picture {
 }
 
 /* line 15, src/scss/_components/_footer--inner.scss */
+.p-messages .footer-inner {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 15, src/scss/_components/_footer--inner.scss */
+  .p-messages .footer-inner {
+    display: none;
+  }
+}
+
+/* line 22, src/scss/_components/_footer--inner.scss */
 .footer-inner__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7121,7 +7148,7 @@ picture {
   font-size: 12px;
 }
 
-/* line 21, src/scss/_components/_footer--inner.scss */
+/* line 28, src/scss/_components/_footer--inner.scss */
 .footer-inner ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7138,7 +7165,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 21, src/scss/_components/_footer--inner.scss */
+  /* line 28, src/scss/_components/_footer--inner.scss */
   .footer-inner ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7148,18 +7175,18 @@ picture {
   }
 }
 
-/* line 29, src/scss/_components/_footer--inner.scss */
+/* line 36, src/scss/_components/_footer--inner.scss */
 .footer-inner ul li {
   padding: 0 17px;
 }
 
-/* line 32, src/scss/_components/_footer--inner.scss */
+/* line 39, src/scss/_components/_footer--inner.scss */
 .footer-inner ul li:not(:last-of-type) {
   border-right: 1px solid #5d5d5d;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 32, src/scss/_components/_footer--inner.scss */
+  /* line 39, src/scss/_components/_footer--inner.scss */
   .footer-inner ul li:not(:last-of-type) {
     border: none;
   }
@@ -28546,6 +28573,907 @@ picture {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+/* line 3, src/scss/_components/messages/_messages.scss */
+.messages {
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/messages/_messages.scss */
+  .messages {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 9, src/scss/_components/messages/_messages.scss */
+  .messages .c-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 16, src/scss/_components/messages/_messages.scss */
+.messages__wrapper {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 925px;
+  height: -webkit-calc(100vh - (50px + 79px + 52px + 15px + 5px));
+  height: calc(100vh - (50px + 79px + 52px + 15px + 5px));
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 16, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper {
+    height: -webkit-calc(100vh - (50px + 52px + 15px + 5px));
+    height: calc(100vh - (50px + 52px + 15px + 5px));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper {
+    height: -webkit-calc(100vh - 50px);
+    height: calc(100vh - 50px);
+  }
+}
+
+/* line 34, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  border-right: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 34, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper-left {
+    width: 100%;
+  }
+}
+
+/* line 43, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-left-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 43, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper-left-top {
+    height: auto;
+  }
+}
+
+/* line 53, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-left-top .form-group {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 57, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-left-top .form-group select {
+  height: 36px;
+  padding: 0 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: transparent;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  color: #757575;
+}
+
+/* line 71, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-left-bottom {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+}
+
+/* line 79, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 79, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper-right {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: #ffffff;
+    -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  /* line 97, src/scss/_components/messages/_messages.scss */
+  .messages__wrapper-right.is-open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+}
+
+/* line 105, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* line 113, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-middle {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+  padding: 15px;
+}
+
+/* line 121, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+}
+
+/* line 128, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom .form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 135, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom .form-group textarea {
+  resize: none;
+  outline: none;
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #fff;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+}
+
+/* line 155, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom .c-btn {
+  min-width: unset;
+  width: 100px;
+  height: 36px;
+}
+
+/* line 160, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom .c-btn span {
+  font-size: 14px;
+}
+
+/* line 164, src/scss/_components/messages/_messages.scss */
+.messages__wrapper-right-bottom .c-btn__wrapper {
+  padding-left: 15px;
+}
+
+/* line 172, src/scss/_components/messages/_messages.scss */
+.messages__form {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 177, src/scss/_components/messages/_messages.scss */
+.messages__form label {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 182, src/scss/_components/messages/_messages.scss */
+.messages__form label > .icon-font {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 100%;
+}
+
+/* line 194, src/scss/_components/messages/_messages.scss */
+.messages__form input {
+  outline: none;
+  position: relative;
+  width: 100%;
+  height: 36px;
+  padding: 0 20px 0 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: transparent;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  color: #757575;
+}
+
+/* line 209, src/scss/_components/messages/_messages.scss */
+.messages__form span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 100%;
+}
+
+/* line 219, src/scss/_components/messages/_messages.scss */
+.messages__form span .icon-font {
+  font-size: 8px;
+  color: #757575;
+}
+
+/* line 226, src/scss/_components/messages/_messages.scss */
+.messages__card {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #ECEDF1;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 226, src/scss/_components/messages/_messages.scss */
+  .messages__card {
+    background-color: transparent;
+  }
+}
+
+/* line 238, src/scss/_components/messages/_messages.scss */
+.messages__card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #663399;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 238, src/scss/_components/messages/_messages.scss */
+  .messages__card:after {
+    opacity: 0;
+  }
+}
+
+/* line 252, src/scss/_components/messages/_messages.scss */
+.messages__card > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 15px;
+}
+
+/* line 260, src/scss/_components/messages/_messages.scss */
+.messages__card-logo {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 266, src/scss/_components/messages/_messages.scss */
+.messages__card-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 276, src/scss/_components/messages/_messages.scss */
+.messages__card-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+/* line 285, src/scss/_components/messages/_messages.scss */
+.messages__card-header > div:nth-of-type(1) {
+  max-width: -webkit-calc(100% - 70px);
+  max-width: calc(100% - 70px);
+}
+
+/* line 288, src/scss/_components/messages/_messages.scss */
+.messages__card-header > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70px;
+  padding-left: 15px;
+}
+
+/* line 297, src/scss/_components/messages/_messages.scss */
+.messages__card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  width: 100%;
+  color: #663399;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* line 307, src/scss/_components/messages/_messages.scss */
+.messages__card-date {
+  color: #999;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* line 313, src/scss/_components/messages/_messages.scss */
+.messages__card-subtitle {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  padding-bottom: 5px;
+  color: #999;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* line 323, src/scss/_components/messages/_messages.scss */
+.messages__card-status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 329, src/scss/_components/messages/_messages.scss */
+.messages__card-status > div:nth-of-type(1) {
+  max-width: -webkit-calc(100% - 50px);
+  max-width: calc(100% - 50px);
+}
+
+/* line 332, src/scss/_components/messages/_messages.scss */
+.messages__card-status > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50px;
+  padding-left: 15px;
+}
+
+/* line 340, src/scss/_components/messages/_messages.scss */
+.messages__card-status .icon-font {
+  font-size: 12px;
+  color: #999;
+}
+
+/* line 346, src/scss/_components/messages/_messages.scss */
+.messages__card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  padding-bottom: 5px;
+  color: #999;
+  font-size: 11px;
+  line-height: 1;
+}
+
+/* line 357, src/scss/_components/messages/_messages.scss */
+.messages__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+/* line 363, src/scss/_components/messages/_messages.scss */
+.messages__header-left {
+  max-width: -webkit-calc(100% - 325px);
+  max-width: calc(100% - 325px);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 363, src/scss/_components/messages/_messages.scss */
+  .messages__header-left {
+    max-width: -webkit-calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+}
+
+/* line 370, src/scss/_components/messages/_messages.scss */
+.messages__header-right {
+  padding-left: 15px;
+}
+
+/* line 373, src/scss/_components/messages/_messages.scss */
+.messages__header-right .c-btn {
+  width: 150px;
+  min-width: unset;
+  height: 34px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* line 380, src/scss/_components/messages/_messages.scss */
+.messages__header-right .c-btn--white span {
+  color: #06aa86;
+}
+
+/* line 385, src/scss/_components/messages/_messages.scss */
+.messages__header-right .c-btn:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* line 389, src/scss/_components/messages/_messages.scss */
+.messages__header-right .c-btn span {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 393, src/scss/_components/messages/_messages.scss */
+  .messages__header-right .c-btn__wrapper {
+    display: none;
+  }
+}
+
+/* line 401, src/scss/_components/messages/_messages.scss */
+.messages__header-return {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 401, src/scss/_components/messages/_messages.scss */
+  .messages__header-return {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 407, src/scss/_components/messages/_messages.scss */
+.messages__header-return .icon-font {
+  font-size: 20px;
+  color: #663399;
+}
+
+/* line 413, src/scss/_components/messages/_messages.scss */
+.messages__header-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 418, src/scss/_components/messages/_messages.scss */
+.messages__header-info > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 15px;
+}
+
+/* line 426, src/scss/_components/messages/_messages.scss */
+.messages__header-info p,
+.messages__header-info span {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: block;
+  line-height: 1.2;
+}
+
+/* line 435, src/scss/_components/messages/_messages.scss */
+.messages__header-info p {
+  font-size: 13px;
+  color: #000000;
+}
+
+/* line 440, src/scss/_components/messages/_messages.scss */
+.messages__header-info span {
+  font-size: 11px;
+  color: #999;
+}
+
+/* line 446, src/scss/_components/messages/_messages.scss */
+.messages__header-logo {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 452, src/scss/_components/messages/_messages.scss */
+.messages__header-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 463, src/scss/_components/messages/_messages.scss */
+.messages__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
+}
+
+/* line 470, src/scss/_components/messages/_messages.scss */
+.messages__info > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 474, src/scss/_components/messages/_messages.scss */
+.messages__info > div > div {
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #eee;
+  background-color: #ffffff;
+}
+
+/* line 484, src/scss/_components/messages/_messages.scss */
+.messages__info > div > div:nth-of-type(1) {
+  left: 3px;
+}
+
+/* line 487, src/scss/_components/messages/_messages.scss */
+.messages__info > div > div:nth-of-type(2) {
+  right: 3px;
+}
+
+/* line 497, src/scss/_components/messages/_messages.scss */
+.messages__info-title {
+  padding-top: 5px;
+  font-size: 11px;
+  color: #999;
+}
+
+/* line 504, src/scss/_components/messages/_messages.scss */
+.messages__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 509, src/scss/_components/messages/_messages.scss */
+.messages__content-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+/* line 514, src/scss/_components/messages/_messages.scss */
+.messages__content-box--right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/* line 518, src/scss/_components/messages/_messages.scss */
+.messages__content-box--right > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+/* line 525, src/scss/_components/messages/_messages.scss */
+.messages__content-box--right > div:nth-of-type(2) p {
+  background-color: #663399;
+  color: #ffffff;
+}
+
+/* line 532, src/scss/_components/messages/_messages.scss */
+.messages__content-box--right .messages__content-logo {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #eee;
+  background-color: #ffffff;
+}
+
+/* line 540, src/scss/_components/messages/_messages.scss */
+.messages__content-box > div:nth-of-type(2) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 10px;
+}
+
+/* line 548, src/scss/_components/messages/_messages.scss */
+.messages__content-box h6 {
+  color: #636262;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+/* line 555, src/scss/_components/messages/_messages.scss */
+.messages__content-box h5 {
+  padding-bottom: 5px;
+  font-weight: normal;
+  line-height: 1.1;
+  color: #636262;
+  font-size: 10px;
+}
+
+/* line 563, src/scss/_components/messages/_messages.scss */
+.messages__content-box p {
+  display: inline-block;
+  max-width: 70%;
+  font-size: 13px;
+  padding: 6px 15px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background-color: #f5f3f3;
+}
+
+/* line 573, src/scss/_components/messages/_messages.scss */
+.messages__content-logo {
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
