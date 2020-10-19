@@ -23,23 +23,24 @@ section#messages.messages
 							option Un-Read Messages
 
 				.messages__wrapper-left-bottom
-					a.messages__card(href="#" messages-card-js)
-						div
-							.messages__card-logo
-								img(src="img/img-employers-unilever.png" alt="")
-						div
-							.messages__card-header
-								div
-									p.messages__card-title ShweProperty.com
-								div
-									span.messages__card-date 28/09/20
+					each idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+						a.messages__card(href="#" messages-card-js)
+							div
+								.messages__card-logo
+									img(src="img/img-employers-unilever.png" alt="")
+							div
+								.messages__card-header
+									div
+										p.messages__card-title ShweProperty.com
+									div
+										span.messages__card-date 28/09/20
 
-							p.messages__card-subtitle Advertising/PR/Marketing
-							.messages__card-status
-								div
-									span.messages__card-text Hi
-								div
-									i.icon-font.icon-double-tick
+								p.messages__card-subtitle Advertising/PR/Marketing
+								.messages__card-status
+									div
+										span.messages__card-text Hi
+									div
+										i.icon-font.icon-double-tick
 
 			.messages__wrapper-right(messages-content-js)
 				.messages__wrapper-right-top
@@ -73,22 +74,24 @@ section#messages.messages
 						p.messages__info-title Start Messaging with ShweProperty.Com
 
 					.messages__content
-						.messages__content-box.messages__content-box--left
-							div
-								.messages__content-logo
-									img(src="img/img-employers-unilever.png" alt="")
-							div
-								h6 ShweProperty.com
-								h5 Fri, Sep 2020 04:19 pm
-								p Hi
-						.messages__content-box.messages__content-box--right
-							div
-								.messages__content-logo
-									img(src="img/img-user.jpg" alt="")
-							div
-								h6 ShweProperty.com
-								h5 Fri, Sep 2020 04:19 pm
-								p Hi
+						each val, idx in [1,2,3]
+							.messages__content-box.messages__content-box--left
+								div
+									.messages__content-logo
+										img(src="img/img-employers-unilever.png" alt="")
+								div
+									h6 ShweProperty.com
+									h5 Fri, Sep 2020 04:19 pm
+									p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						each val, idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+							.messages__content-box.messages__content-box--right
+								div
+									.messages__content-logo
+										img(src="img/img-user.jpg" alt="")
+								div
+									h6 ShweProperty.com
+									h5 Fri, Sep 2020 04:19 pm
+									p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 				.messages__wrapper-right-bottom
 					.form-group

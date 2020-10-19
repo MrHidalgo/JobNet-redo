@@ -569,6 +569,19 @@
 		messageCB();
 
 		modals();
+
+		if($(window).width() > 767 && $(window).width() < 1024) {
+			$('#messages .messages__wrapper').css({
+				height: window.innerHeight - ($('header').outerHeight(true) + $('footer').outerHeight(true))
+			});
+		} else if($(window).width() < 768) {
+			$('#messages .messages__wrapper').css({
+				height: window.innerHeight - ($('header').outerHeight(true))
+			});
+			$('html, body').addClass('is-hideScroll');
+		} else {
+			$('html, body').removeClass('is-hideScroll');
+		}
 		// ==========================================
 	};
 
@@ -578,6 +591,19 @@
 
 	window.addEventListener('resize', (ev) => {
 		if($(window).width() > 1023 && $('html').hasClass('is-hideScroll')) {
+			$('html, body').removeClass('is-hideScroll');
+		}
+
+		if($(window).width() > 767 && $(window).width() < 1024) {
+			$('#messages .messages__wrapper').css({
+				height: window.innerHeight - ($('header').outerHeight(true) + $('footer').outerHeight(true))
+			});
+		} else if($(window).width() < 768) {
+			$('#messages .messages__wrapper').css({
+				height: window.innerHeight - ($('header').outerHeight(true))
+			});
+			$('html, body').addClass('is-hideScroll');
+		} else {
 			$('html, body').removeClass('is-hideScroll');
 		}
 	}, false);

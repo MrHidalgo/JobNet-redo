@@ -2,6 +2,10 @@
 
 .messages {
 	padding-top: 5px;
+	@include adaptive(1023) {
+		overflow: hidden;
+		padding-top: 0;
+	}
 	@include adaptive(767) {
 		padding-top: 0;
 	}
@@ -28,7 +32,7 @@
 			height: calc(100vh - (50px + 52px + 15px + 5px));
 		}
 		@include adaptive(767) {
-			height: calc(100vh - 50px);
+			height: calc(100% - 50px);
 		}
 
 		&-left {
@@ -38,6 +42,7 @@
 			border-right: 1px solid #dcdcdc;
 			@include adaptive(1023) {
 				width: 100%;
+				height: 100%;
 			}
 
 			&-top {

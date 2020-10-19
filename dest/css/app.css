@@ -28611,6 +28611,14 @@ picture {
   padding-top: 5px;
 }
 
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/messages/_messages.scss */
+  .messages {
+    overflow: hidden;
+    padding-top: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   /* line 3, src/scss/_components/messages/_messages.scss */
   .messages {
@@ -28619,14 +28627,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 9, src/scss/_components/messages/_messages.scss */
+  /* line 13, src/scss/_components/messages/_messages.scss */
   .messages .c-grid {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 16, src/scss/_components/messages/_messages.scss */
+/* line 20, src/scss/_components/messages/_messages.scss */
 .messages__wrapper {
   overflow: hidden;
   position: relative;
@@ -28645,7 +28653,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 16, src/scss/_components/messages/_messages.scss */
+  /* line 20, src/scss/_components/messages/_messages.scss */
   .messages__wrapper {
     height: -webkit-calc(100vh - (50px + 52px + 15px + 5px));
     height: calc(100vh - (50px + 52px + 15px + 5px));
@@ -28653,14 +28661,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 16, src/scss/_components/messages/_messages.scss */
+  /* line 20, src/scss/_components/messages/_messages.scss */
   .messages__wrapper {
-    height: -webkit-calc(100vh - 50px);
-    height: calc(100vh - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
   }
 }
 
-/* line 34, src/scss/_components/messages/_messages.scss */
+/* line 38, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28676,13 +28684,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 34, src/scss/_components/messages/_messages.scss */
+  /* line 38, src/scss/_components/messages/_messages.scss */
   .messages__wrapper-left {
     width: 100%;
+    height: 100%;
   }
 }
 
-/* line 43, src/scss/_components/messages/_messages.scss */
+/* line 48, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-left-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28698,19 +28707,19 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 43, src/scss/_components/messages/_messages.scss */
+  /* line 48, src/scss/_components/messages/_messages.scss */
   .messages__wrapper-left-top {
     height: auto;
   }
 }
 
-/* line 53, src/scss/_components/messages/_messages.scss */
+/* line 58, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-left-top .form-group {
   width: 100%;
   margin-bottom: 0;
 }
 
-/* line 57, src/scss/_components/messages/_messages.scss */
+/* line 62, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-left-top .form-group select {
   height: 36px;
   padding: 0 20px;
@@ -28725,7 +28734,7 @@ picture {
   color: #757575;
 }
 
-/* line 71, src/scss/_components/messages/_messages.scss */
+/* line 76, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-left-bottom {
   overflow-y: auto;
   -webkit-box-flex: 1;
@@ -28736,7 +28745,7 @@ picture {
   max-height: 100%;
 }
 
-/* line 79, src/scss/_components/messages/_messages.scss */
+/* line 84, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28756,7 +28765,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 79, src/scss/_components/messages/_messages.scss */
+  /* line 84, src/scss/_components/messages/_messages.scss */
   .messages__wrapper-right {
     opacity: 0;
     visibility: hidden;
@@ -28775,7 +28784,7 @@ picture {
     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
-  /* line 97, src/scss/_components/messages/_messages.scss */
+  /* line 102, src/scss/_components/messages/_messages.scss */
   .messages__wrapper-right.is-open {
     opacity: 1;
     visibility: visible;
@@ -28790,7 +28799,7 @@ picture {
   }
 }
 
-/* line 105, src/scss/_components/messages/_messages.scss */
+/* line 110, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28805,7 +28814,7 @@ picture {
   border-bottom: 1px solid #dcdcdc;
 }
 
-/* line 113, src/scss/_components/messages/_messages.scss */
+/* line 118, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-middle {
   overflow-y: auto;
   -webkit-box-flex: 1;
@@ -28817,7 +28826,7 @@ picture {
   padding: 15px;
 }
 
-/* line 121, src/scss/_components/messages/_messages.scss */
+/* line 126, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28832,7 +28841,7 @@ picture {
   background-color: #f1f1f1;
 }
 
-/* line 128, src/scss/_components/messages/_messages.scss */
+/* line 133, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom .form-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28850,7 +28859,7 @@ picture {
   margin-bottom: 0;
 }
 
-/* line 135, src/scss/_components/messages/_messages.scss */
+/* line 140, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom .form-group textarea {
   resize: none;
   outline: none;
@@ -28875,24 +28884,24 @@ picture {
   color: #000;
 }
 
-/* line 155, src/scss/_components/messages/_messages.scss */
+/* line 160, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom .c-btn {
   min-width: unset;
   width: 100px;
   height: 36px;
 }
 
-/* line 160, src/scss/_components/messages/_messages.scss */
+/* line 165, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom .c-btn span {
   font-size: 14px;
 }
 
-/* line 164, src/scss/_components/messages/_messages.scss */
+/* line 169, src/scss/_components/messages/_messages.scss */
 .messages__wrapper-right-bottom .c-btn__wrapper {
   padding-left: 15px;
 }
 
-/* line 172, src/scss/_components/messages/_messages.scss */
+/* line 177, src/scss/_components/messages/_messages.scss */
 .messages__form {
   position: relative;
   display: -webkit-box;
@@ -28902,7 +28911,7 @@ picture {
   width: 100%;
 }
 
-/* line 177, src/scss/_components/messages/_messages.scss */
+/* line 182, src/scss/_components/messages/_messages.scss */
 .messages__form label {
   position: relative;
   display: -webkit-box;
@@ -28912,7 +28921,7 @@ picture {
   width: 100%;
 }
 
-/* line 182, src/scss/_components/messages/_messages.scss */
+/* line 187, src/scss/_components/messages/_messages.scss */
 .messages__form label > .icon-font {
   position: absolute;
   top: 0;
@@ -28933,7 +28942,7 @@ picture {
   height: 100%;
 }
 
-/* line 194, src/scss/_components/messages/_messages.scss */
+/* line 199, src/scss/_components/messages/_messages.scss */
 .messages__form input {
   outline: none;
   position: relative;
@@ -28951,7 +28960,7 @@ picture {
   color: #757575;
 }
 
-/* line 209, src/scss/_components/messages/_messages.scss */
+/* line 214, src/scss/_components/messages/_messages.scss */
 .messages__form span {
   position: absolute;
   top: 0;
@@ -28972,13 +28981,13 @@ picture {
   height: 100%;
 }
 
-/* line 219, src/scss/_components/messages/_messages.scss */
+/* line 224, src/scss/_components/messages/_messages.scss */
 .messages__form span .icon-font {
   font-size: 8px;
   color: #757575;
 }
 
-/* line 226, src/scss/_components/messages/_messages.scss */
+/* line 231, src/scss/_components/messages/_messages.scss */
 .messages__card {
   position: relative;
   display: -webkit-box;
@@ -28996,13 +29005,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 226, src/scss/_components/messages/_messages.scss */
+  /* line 231, src/scss/_components/messages/_messages.scss */
   .messages__card {
     background-color: transparent;
   }
 }
 
-/* line 238, src/scss/_components/messages/_messages.scss */
+/* line 243, src/scss/_components/messages/_messages.scss */
 .messages__card:after {
   content: '';
   position: absolute;
@@ -29014,13 +29023,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 238, src/scss/_components/messages/_messages.scss */
+  /* line 243, src/scss/_components/messages/_messages.scss */
   .messages__card:after {
     opacity: 0;
   }
 }
 
-/* line 252, src/scss/_components/messages/_messages.scss */
+/* line 257, src/scss/_components/messages/_messages.scss */
 .messages__card > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -29031,7 +29040,7 @@ picture {
   padding-left: 15px;
 }
 
-/* line 260, src/scss/_components/messages/_messages.scss */
+/* line 265, src/scss/_components/messages/_messages.scss */
 .messages__card-logo {
   position: relative;
   display: -webkit-box;
@@ -29042,7 +29051,7 @@ picture {
   height: 50px;
 }
 
-/* line 266, src/scss/_components/messages/_messages.scss */
+/* line 271, src/scss/_components/messages/_messages.scss */
 .messages__card-logo img {
   display: block;
   max-width: 100%;
@@ -29052,7 +29061,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 276, src/scss/_components/messages/_messages.scss */
+/* line 281, src/scss/_components/messages/_messages.scss */
 .messages__card-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29071,13 +29080,13 @@ picture {
   padding-bottom: 2px;
 }
 
-/* line 285, src/scss/_components/messages/_messages.scss */
+/* line 290, src/scss/_components/messages/_messages.scss */
 .messages__card-header > div:nth-of-type(1) {
   max-width: -webkit-calc(100% - 70px);
   max-width: calc(100% - 70px);
 }
 
-/* line 288, src/scss/_components/messages/_messages.scss */
+/* line 293, src/scss/_components/messages/_messages.scss */
 .messages__card-header > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29091,7 +29100,7 @@ picture {
   padding-left: 15px;
 }
 
-/* line 297, src/scss/_components/messages/_messages.scss */
+/* line 302, src/scss/_components/messages/_messages.scss */
 .messages__card-title {
   overflow: hidden;
   white-space: nowrap;
@@ -29103,14 +29112,14 @@ picture {
   line-height: 1;
 }
 
-/* line 307, src/scss/_components/messages/_messages.scss */
+/* line 312, src/scss/_components/messages/_messages.scss */
 .messages__card-date {
   color: #999;
   font-size: 11px;
   line-height: 1;
 }
 
-/* line 313, src/scss/_components/messages/_messages.scss */
+/* line 318, src/scss/_components/messages/_messages.scss */
 .messages__card-subtitle {
   overflow: hidden;
   white-space: nowrap;
@@ -29122,7 +29131,7 @@ picture {
   line-height: 1;
 }
 
-/* line 323, src/scss/_components/messages/_messages.scss */
+/* line 328, src/scss/_components/messages/_messages.scss */
 .messages__card-status {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29138,13 +29147,13 @@ picture {
           justify-content: space-between;
 }
 
-/* line 329, src/scss/_components/messages/_messages.scss */
+/* line 334, src/scss/_components/messages/_messages.scss */
 .messages__card-status > div:nth-of-type(1) {
   max-width: -webkit-calc(100% - 50px);
   max-width: calc(100% - 50px);
 }
 
-/* line 332, src/scss/_components/messages/_messages.scss */
+/* line 337, src/scss/_components/messages/_messages.scss */
 .messages__card-status > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29158,13 +29167,13 @@ picture {
   padding-left: 15px;
 }
 
-/* line 340, src/scss/_components/messages/_messages.scss */
+/* line 345, src/scss/_components/messages/_messages.scss */
 .messages__card-status .icon-font {
   font-size: 12px;
   color: #999;
 }
 
-/* line 346, src/scss/_components/messages/_messages.scss */
+/* line 351, src/scss/_components/messages/_messages.scss */
 .messages__card-text {
   overflow: hidden;
   white-space: nowrap;
@@ -29176,7 +29185,7 @@ picture {
   line-height: 1;
 }
 
-/* line 357, src/scss/_components/messages/_messages.scss */
+/* line 362, src/scss/_components/messages/_messages.scss */
 .messages__header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29193,26 +29202,26 @@ picture {
   width: 100%;
 }
 
-/* line 363, src/scss/_components/messages/_messages.scss */
+/* line 368, src/scss/_components/messages/_messages.scss */
 .messages__header-left {
   max-width: -webkit-calc(100% - 325px);
   max-width: calc(100% - 325px);
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 363, src/scss/_components/messages/_messages.scss */
+  /* line 368, src/scss/_components/messages/_messages.scss */
   .messages__header-left {
     max-width: -webkit-calc(100% - 40px);
     max-width: calc(100% - 40px);
   }
 }
 
-/* line 370, src/scss/_components/messages/_messages.scss */
+/* line 375, src/scss/_components/messages/_messages.scss */
 .messages__header-right {
   padding-left: 15px;
 }
 
-/* line 373, src/scss/_components/messages/_messages.scss */
+/* line 378, src/scss/_components/messages/_messages.scss */
 .messages__header-right .c-btn {
   width: 150px;
   min-width: unset;
@@ -29221,35 +29230,35 @@ picture {
           box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.24);
 }
 
-/* line 380, src/scss/_components/messages/_messages.scss */
+/* line 385, src/scss/_components/messages/_messages.scss */
 .messages__header-right .c-btn--white span {
   color: #06aa86;
 }
 
-/* line 385, src/scss/_components/messages/_messages.scss */
+/* line 390, src/scss/_components/messages/_messages.scss */
 .messages__header-right .c-btn:not(:last-of-type) {
   margin-right: 10px;
 }
 
-/* line 389, src/scss/_components/messages/_messages.scss */
+/* line 394, src/scss/_components/messages/_messages.scss */
 .messages__header-right .c-btn span {
   font-size: 13px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 393, src/scss/_components/messages/_messages.scss */
+  /* line 398, src/scss/_components/messages/_messages.scss */
   .messages__header-right .c-btn__wrapper {
     display: none;
   }
 }
 
-/* line 401, src/scss/_components/messages/_messages.scss */
+/* line 406, src/scss/_components/messages/_messages.scss */
 .messages__header-return {
   display: none;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 401, src/scss/_components/messages/_messages.scss */
+  /* line 406, src/scss/_components/messages/_messages.scss */
   .messages__header-return {
     display: -webkit-box;
     display: -webkit-flex;
@@ -29258,13 +29267,13 @@ picture {
   }
 }
 
-/* line 407, src/scss/_components/messages/_messages.scss */
+/* line 412, src/scss/_components/messages/_messages.scss */
 .messages__header-return .icon-font {
   font-size: 20px;
   color: #663399;
 }
 
-/* line 413, src/scss/_components/messages/_messages.scss */
+/* line 418, src/scss/_components/messages/_messages.scss */
 .messages__header-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29276,7 +29285,7 @@ picture {
           align-items: center;
 }
 
-/* line 418, src/scss/_components/messages/_messages.scss */
+/* line 423, src/scss/_components/messages/_messages.scss */
 .messages__header-info > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -29287,7 +29296,7 @@ picture {
   padding-left: 15px;
 }
 
-/* line 426, src/scss/_components/messages/_messages.scss */
+/* line 431, src/scss/_components/messages/_messages.scss */
 .messages__header-info p,
 .messages__header-info span {
   overflow: hidden;
@@ -29298,19 +29307,19 @@ picture {
   line-height: 1.2;
 }
 
-/* line 435, src/scss/_components/messages/_messages.scss */
+/* line 440, src/scss/_components/messages/_messages.scss */
 .messages__header-info p {
   font-size: 13px;
   color: #000000;
 }
 
-/* line 440, src/scss/_components/messages/_messages.scss */
+/* line 445, src/scss/_components/messages/_messages.scss */
 .messages__header-info span {
   font-size: 11px;
   color: #999;
 }
 
-/* line 446, src/scss/_components/messages/_messages.scss */
+/* line 451, src/scss/_components/messages/_messages.scss */
 .messages__header-logo {
   position: relative;
   display: -webkit-box;
@@ -29321,7 +29330,7 @@ picture {
   height: 50px;
 }
 
-/* line 452, src/scss/_components/messages/_messages.scss */
+/* line 457, src/scss/_components/messages/_messages.scss */
 .messages__header-logo img {
   display: block;
   max-width: 100%;
@@ -29331,7 +29340,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 463, src/scss/_components/messages/_messages.scss */
+/* line 468, src/scss/_components/messages/_messages.scss */
 .messages__info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29353,7 +29362,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 470, src/scss/_components/messages/_messages.scss */
+/* line 475, src/scss/_components/messages/_messages.scss */
 .messages__info > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29365,7 +29374,7 @@ picture {
           justify-content: center;
 }
 
-/* line 474, src/scss/_components/messages/_messages.scss */
+/* line 479, src/scss/_components/messages/_messages.scss */
 .messages__info > div > div {
   overflow: hidden;
   position: relative;
@@ -29378,24 +29387,24 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 484, src/scss/_components/messages/_messages.scss */
+/* line 489, src/scss/_components/messages/_messages.scss */
 .messages__info > div > div:nth-of-type(1) {
   left: 3px;
 }
 
-/* line 487, src/scss/_components/messages/_messages.scss */
+/* line 492, src/scss/_components/messages/_messages.scss */
 .messages__info > div > div:nth-of-type(2) {
   right: 3px;
 }
 
-/* line 497, src/scss/_components/messages/_messages.scss */
+/* line 502, src/scss/_components/messages/_messages.scss */
 .messages__info-title {
   padding-top: 5px;
   font-size: 11px;
   color: #999;
 }
 
-/* line 504, src/scss/_components/messages/_messages.scss */
+/* line 509, src/scss/_components/messages/_messages.scss */
 .messages__content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29409,7 +29418,7 @@ picture {
   width: 100%;
 }
 
-/* line 509, src/scss/_components/messages/_messages.scss */
+/* line 514, src/scss/_components/messages/_messages.scss */
 .messages__content-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29418,7 +29427,7 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 514, src/scss/_components/messages/_messages.scss */
+/* line 519, src/scss/_components/messages/_messages.scss */
 .messages__content-box--right {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -29427,7 +29436,7 @@ picture {
           flex-direction: row-reverse;
 }
 
-/* line 518, src/scss/_components/messages/_messages.scss */
+/* line 523, src/scss/_components/messages/_messages.scss */
 .messages__content-box--right > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -29446,13 +29455,13 @@ picture {
   padding-right: 10px;
 }
 
-/* line 525, src/scss/_components/messages/_messages.scss */
+/* line 530, src/scss/_components/messages/_messages.scss */
 .messages__content-box--right > div:nth-of-type(2) p {
   background-color: #663399;
   color: #ffffff;
 }
 
-/* line 532, src/scss/_components/messages/_messages.scss */
+/* line 537, src/scss/_components/messages/_messages.scss */
 .messages__content-box--right .messages__content-logo {
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -29460,7 +29469,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 540, src/scss/_components/messages/_messages.scss */
+/* line 545, src/scss/_components/messages/_messages.scss */
 .messages__content-box > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -29471,7 +29480,7 @@ picture {
   padding-left: 10px;
 }
 
-/* line 548, src/scss/_components/messages/_messages.scss */
+/* line 553, src/scss/_components/messages/_messages.scss */
 .messages__content-box h6 {
   color: #636262;
   font-weight: normal;
@@ -29479,7 +29488,7 @@ picture {
   line-height: 1.1;
 }
 
-/* line 555, src/scss/_components/messages/_messages.scss */
+/* line 560, src/scss/_components/messages/_messages.scss */
 .messages__content-box h5 {
   padding-bottom: 5px;
   font-weight: normal;
@@ -29488,7 +29497,7 @@ picture {
   font-size: 10px;
 }
 
-/* line 563, src/scss/_components/messages/_messages.scss */
+/* line 568, src/scss/_components/messages/_messages.scss */
 .messages__content-box p {
   display: inline-block;
   max-width: 70%;
@@ -29499,7 +29508,7 @@ picture {
   background-color: #f5f3f3;
 }
 
-/* line 573, src/scss/_components/messages/_messages.scss */
+/* line 578, src/scss/_components/messages/_messages.scss */
 .messages__content-logo {
   overflow: hidden;
   position: relative;
